@@ -4,10 +4,10 @@ import { glob } from 'astro/loaders';
 const guitars = defineCollection({
   loader: glob({
     pattern: '**/*.md',
-    base: './src/content/***tars'
+    base: './src/content/guitars'
   })
 });
 
-export const col***tions = {
+export const collections = {
   guitars
 };
