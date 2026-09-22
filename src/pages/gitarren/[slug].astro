@@ -57,10 +57,19 @@ const heroSrc = data.hero?.src
         margin-top: 2.5rem;
       }
 
-      .year {
+      .year{
         color: #777;
         font-size: 1.1rem;
       }
+     .hero {
+       display: block;
+       width: 100%;
+       max-height: 700px;
+       object-fit: contain;
+       margin-top: 2rem;
+       border-radius: 8px;
+       background: #f5f5f5;
+     }
 
       .description {
         margin-top: 2rem;
@@ -107,6 +116,9 @@ const heroSrc = data.hero?.src
       {data.year && (
         <div class="year">
           Baujahr {data.year}
+          {heroSrc && (
+           {heroSrc}
+          )}
         </div>
       )}
 
