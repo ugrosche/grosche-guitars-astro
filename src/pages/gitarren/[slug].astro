@@ -34,7 +34,15 @@ const data = guitar.data;
 
       <p>Baujahr: {data.year}</p>
 
-      {data.hero.src}
+  {heroSrc && (
+    < img
+    class="hero"
+    src={heroSrc}
+    alt={data.hero.alt || data.title}
+    loading="lazy"
+    / >
+  )}
+
 
       <p>{data.description}</p>
     </main>
