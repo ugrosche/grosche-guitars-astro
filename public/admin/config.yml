@@ -1,0 +1,123 @@
+backend:
+  name: github
+  repo: ugrosche/grosche-guitars
+  branch: main
+
+media_folder: public/images
+public_folder: /images
+
+collections:
+  - name: guitars
+    label: Gitarren
+    label_singular: Gitarre
+    folder: src/content/guitars
+    create: true
+    slug: "{{slug}}"
+
+    fields:
+      - label: Titel
+        name: title
+        widget: string
+
+      - label: Baujahr
+        name: year
+        widget: number
+        required: false
+
+      - label: Titelbild
+        name: hero
+        widget: object
+        fields:
+          - label: Bild
+            name: src
+            widget: image
+
+          - label: Bildbeschreibung
+            name: alt
+            widget: string
+            required: false
+
+      - label: Beschreibung
+        name: description
+        widget: markdown
+        required: false
+
+      - label: Technische Daten
+        name: specifications
+        widget: list
+        required: false
+        fields:
+          - label: Eigenschaft
+            name: label
+            widget: string
+
+          - label: Wert
+            name: value
+            widget: string
+
+      - label: Bauschritte
+        name: build_steps
+        widget: list
+        required: false
+        summary: "{{fields.title}}"
+
+        fields:
+          - label: Titel
+            name: title
+            widget: string
+
+          - label: Beschreibung
+            name: description
+            widget: markdown
+            required: false
+
+          - label: Darstellung
+            name: display
+            widget: select
+            default: gallery
+            options:
+              - label: Galerie
+                value: gallery
+              - label: Karussell
+                value: carousel
+              - label: Einzelbilder
+                value: single
+
+          - label: Bilder
+            name: images
+            widget: list
+            required: false
+            fields:
+              - label: Bild
+                name: src
+                widget: image
+
+              - label: Bildunterschrift
+                name: caption
+                widget: string
+                required: false
+
+              - label: Bildbeschreibung
+                name: alt
+                widget: string
+                required: false
+
+      - label: Abschlussgalerie
+        name: gallery
+        widget: list
+        required: false
+
+        fields:
+          - label: Bild
+            name: src
+            widget: image
+
+          - label: Bildunterschrift
+            name: caption
+            widget: string
+            required: false
+
+          - label: Bildbeschreibung
+            name: alt
+            widget: string
+            required: false
