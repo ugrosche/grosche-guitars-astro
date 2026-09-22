@@ -17,6 +17,9 @@ export async function getStaticPaths() {
 const { guitar } = Astro.props;
 const data = guitar.data;
 const base = import.meta.env.BASE_URL;
+const heroSrc = data.hero?.src
+  ? `${base}${data.hero.src.replace(/^\//, '')}`
+  : null;
 ---
 
 <!doctype html>
