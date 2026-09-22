@@ -28,19 +28,25 @@ const data = guitar.data;
   <body>
     <main>
       <a href="/">Zurück zur Startseite</a>
+<h1>{data.title}</h1>
 
-      <h1>{data.title}</h1>
+{data.year && (
+  <div class="year">
+    Baujahr {data.year}
+  </div>
+)}
 
-      {data.year && <p>Baujahr: {data.year}</p>}
+{data.hero?.src && (
+  {`${base}${data.hero.src.replace(/^\//,}`}
+    alt={data.hero.alt || data.title}
+  />
+)}
 
-      {
-        data.hero?.src && (
-          {data.hero.src}
-        )
-      }
-
-      {data.description && <p>{data.description}</p>}
-
+{data.description && (
+  <div class="description">
+    {data.description}
+  </div>
+)}
       {
         data.specifications?.length > 0 && (
           <section>
