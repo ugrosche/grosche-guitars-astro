@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
 
 export async function getStaticPaths() {
   const guitars = await getCollection('guitars');
@@ -17,9 +18,6 @@ export async function getStaticPaths() {
 const { guitar } = Astro.props;
 const data = guitar.data;
 const base = import.meta.env.BASE_URL;
-const heroSrc = data.hero?.src
-  ? `${base}${data.hero.src.replace(/^\//, '')}`
-  : null;
 ---
 
 <!doctype html>
@@ -57,19 +55,22 @@ const heroSrc = data.hero?.src
         margin-top: 2.5rem;
       }
 
-      .year{
+      .year {
         color: #777;
         font-size: 1.1rem;
+        margin-top: 0.5rem;
       }
-     .hero {
-       display: block;
-       width: 100%;
-       max-height: 700px;
-       object-fit: contain;
-       margin-top: 2rem;
-       border-radius: 8px;
-       background: #f5f5f5;
-     }
+
+      .hero {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 700px;
+        object-fit: contain;
+        margin-top: 2rem;
+        border-radius: 8px;
+        background: #f5f5f5;
+      }
 
       .description {
         margin-top: 2rem;
@@ -102,6 +103,25 @@ const heroSrc = data.hero?.src
         display: inline-block;
         margin-bottom: 2rem;
         color: #333;
+        text-decoration: none;
+      }
+
+      .back:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 600px) {
+        main {
+          padding: 20px 15px 60px;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        .specifications {
+          grid-template-columns: 1fr;
+        }
       }
     </style>
   </head>
@@ -116,10 +136,11 @@ const heroSrc = data.hero?.src
       {data.year && (
         <div class="year">
           Baujahr {data.year}
-          {heroSrc && (
-           {heroSrc}
-          )}
         </div>
+      )}
+
+      {data.hero?.src && (
+        {data.hero.src}
       )}
 
       {data.description && (
