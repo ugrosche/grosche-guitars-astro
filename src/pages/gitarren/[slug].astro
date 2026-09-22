@@ -9,192 +9,55 @@ export async function getStaticPaths() {
       slug: guitar.id.replace(/\.md$/, '')
     },
     props: {
-      guitar
+      guitar: guitar
     }
   }));
 }
+
 const { guitar } = Astro.props;
 const data = guitar.data;
-const base = import.meta.env.BASE_URL;
-const heroSrc = data.hero?.src?.src
-  ? `${base}${data.hero.src.src.replace(/^\//, '')}`
-  : null;
 ---
 
 <!doctype html>
 <html lang="de">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>{data.title} | Grosche Guitars</title>
+  </head>
+
+  <body>
+    <main>
+      <p><a href="/">Zur Startseite</a></p>
+
+      <h1>{data.title}</h1>
+
+      <p>Baujahr: {data.year}</p>
+
+      {data.hero.src}
+
+      <p>{data.description}</p>
+    </main>
 
     <style>
       body {
-        margin: 0;
         font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
         color: #222;
-        background: #fff;
       }
 
       main {
-        max-width: 1100px;
+        max-width: 1000px;
         margin: 0 auto;
-        padding: 30px 20px 80px;
-      }
-
-      h1 {
-        font-size: 2.5rem;
-        margin-bottom: 0.25rem;
-      }
-
-      h2 {
-        margin-top: 3rem;
-      }
-
-      h3 {
-        margin-top: 2.5rem;
-      }
-
-      .year {
-        color: #777;
-        font-size: 1.1rem;
-        margin-top: 0.5rem;
+        padding: 40px 20px;
       }
 
       .hero {
         display: block;
         width: 100%;
         height: auto;
-        max-height: 700px;
-        object-fit: contain;
-        margin-top: 2rem;
-        border-radius: 8px;
-        background: #f5f5f5;
-      }
-
-      .description {
-        margin-top: 2rem;
-        font-size: 1.1rem;
-        line-height: 1.7;
-      }
-
-      .specifications {
-        display: grid;
-        grid-template-columns: 180px 1fr;
-        gap: 0.5rem 1rem;
-        max-width: 650px;
-      }
-
-      .spec-label {
-        font-weight: bold;
-      }
-
-      .build-step {
-        margin-top: 3rem;
-        padding-top: 1rem;
-        border-top: 1px solid #ddd;
-      }
-
-      .build-description {
-        line-height: 1.7;
-      }
-
-      .back {
-        display: inline-block;
-        margin-bottom: 2rem;
-        color: #333;
-        text-decoration: none;
-      }
-
-      .back:hover {
-        text-decoration: underline;
-      }
-
-      @media (max-width: 600px) {
-        main {
-          padding: 20px 15px 60px;
-        }
-
-        h1 {
-          font-size: 2rem;
-        }
-
-        .specifications {
-          grid-template-columns: 1fr;
-        }
+        margin: 30px 0;
       }
     </style>
-  </head>
-
-  <body>
-    <main>
-
-      <a class="back" href={base}>← Zurück</a>
-
-<h1>{data.title}</h1>
-
-{data.year && (
-  <div class="year">
-    Baujahr {data.year}
-  </div>
-)}
-
-{heroSrc && (
-  <img
-    class="hero"
-    src={heroSrc}
-    class="description">
-    {data.description}
-  </div>
-)}
-  
-      {data.description && (
-        <div class="description">
-          {data.description}
-        </div>
-      )}
-
-      {data.specifications?.length > 0 && (
-        <>
-          <h2>Technische Daten</h2>
-
-          <div class="specifications">
-            {data.specifications.map((spec) => (
-              <>
-                <div class="spec-label">
-                  {spec.label}
-                </div>
-
-                <div>
-                  {spec.value}
-                </div>
-              </>
-            ))}
-          </div>
-        </>
-      )}
-
-      {data.build_steps?.length > 0 && (
-        <>
-          <h2>Der Bau</h2>
-
-          {data.build_steps.map((step) => (
-            <section class="build-step">
-
-              <h3>{step.title}</h3>
-
-              {step.description && (
-                <div class="build-description">
-                  {step.description}
-                </div>
-              )}
-
-            </section>
-          ))}
-        </>
-      )}
-
-    </main>
   </body>
 </html>
