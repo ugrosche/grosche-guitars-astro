@@ -19,6 +19,9 @@ const heroSrc = data.hero?.src?.src
 const { guitar } = Astro.props;
 const data = guitar.data;
 const base = import.meta.env.BASE_URL;
+const heroSrc = data.hero?.src?.src
+  ? `${base}${data.hero.src.src.replace(/^\//, '')}`
+  : null;
 ---
 
 <!doctype html>
@@ -132,19 +135,22 @@ const base = import.meta.env.BASE_URL;
 
       <a class="back" href={base}>← Zurück</a>
 
-      <h1>{data.title}</h1>
+<h1>{data.title}</h1>
 
-      {data.year && (
-        <div class="year">
-          Baujahr {data.year}
-        </div>
-      )}
+{data.year && (
+  <div class="year">
+    Baujahr {data.year}
+  </div>
+)}
 
-      {data.hero?.src && (
-        {data.hero.src}
-           alt={data.hero.alt || data.title}
-         />
-     )}
+{heroSrc && (
+  <img
+    class="hero"
+    src={heroSrc}
+    class="description">
+    {data.description}
+  </div>
+)}
   
       {data.description && (
         <div class="description">
