@@ -129,9 +129,7 @@ const data = guitar.data;
   </head>
 
   <body>
-
     <main>
-
       <a class="back" href="/">← Zurück</a>
 
       <h1>{data.title}</h1>
@@ -177,9 +175,7 @@ const data = guitar.data;
           <h2>Der Bau</h2>
 
           {data.build_steps.map((step) => (
-
             <section class="build-step">
-
               <h3>{step.title}</h3>
 
               {step.description && (
@@ -189,13 +185,9 @@ const data = guitar.data;
               )}
 
               {step.images?.length > 0 && (
-
                 <div class="images">
-
                   {step.images.map((image) => (
-
                     <figure>
-
                       {image.src}
 
                       {image.caption && (
@@ -203,17 +195,11 @@ const data = guitar.data;
                           {image.caption}
                         </figcaption>
                       )}
-
                     </figure>
-
                   ))}
-
                 </div>
-
               )}
-
             </section>
-
           ))}
         </>
       )}
@@ -223,11 +209,8 @@ const data = guitar.data;
           <h2>Galerie</h2>
 
           <div class="images">
-
             {data.gallery.map((image) => (
-
               <figure>
-
                 {image.src}
 
                 {image.caption && (
@@ -235,16 +218,11 @@ const data = guitar.data;
                     {image.caption}
                   </figcaption>
                 )}
-
               </figure>
-
             ))}
-
           </div>
         </>
       )}
-
     </main>
-
   </body>
 </html>
