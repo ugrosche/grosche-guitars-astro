@@ -16,6 +16,7 @@ export async function getStaticPaths() {
 
 const { guitar } = Astro.props;
 const data = guitar.data;
+
 const base = import.meta.env.BASE_URL;
 ---
 
@@ -59,6 +60,16 @@ const base = import.meta.env.BASE_URL;
         font-size: 1.1rem;
       }
 
+      .hero {
+        display: block;
+        width: 100%;
+        max-height: 700px;
+        object-fit: contain;
+        margin-top: 2rem;
+        border-radius: 8px;
+        background: #f5f5f5;
+      }
+
       .description {
         margin-top: 2rem;
         font-size: 1.1rem;
@@ -90,6 +101,29 @@ const base = import.meta.env.BASE_URL;
         display: inline-block;
         margin-bottom: 2rem;
         color: #333;
+        text-decoration: none;
+      }
+
+      .back:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 600px) {
+        main {
+          padding: 20px 15px 60px;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        .specifications {
+          grid-template-columns: 1fr;
+        }
+
+        .spec-label {
+          margin-top: 0.75rem;
+        }
       }
     </style>
   </head>
@@ -107,6 +141,12 @@ const base = import.meta.env.BASE_URL;
         </div>
       )}
 
+      {data.hero?.src && (
+        {`${base}${data.hero.src.replace(/^\//, '')}`}
+          alt={data.hero.alt || data.title}
+        />
+      )}
+
       {data.description && (
         <div class="description">
           {data.description}
@@ -120,8 +160,13 @@ const base = import.meta.env.BASE_URL;
           <div class="specifications">
             {data.specifications.map((spec) => (
               <>
-                <div class="spec-label">{spec.label}</div>
-                <div>{spec.value}</div>
+                <div class="spec-label">
+                  {spec.label}
+                </div>
+
+                <div>
+                  {spec.value}
+                </div>
               </>
             ))}
           </div>
@@ -134,6 +179,7 @@ const base = import.meta.env.BASE_URL;
 
           {data.build_steps.map((step) => (
             <section class="build-step">
+
               <h3>{step.title}</h3>
 
               {step.description && (
@@ -141,6 +187,7 @@ const base = import.meta.env.BASE_URL;
                   {step.description}
                 </div>
               )}
+
             </section>
           ))}
         </>
