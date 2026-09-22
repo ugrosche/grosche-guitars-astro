@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: ugrosche/grosche-guitars
+  repo: ugrosche/grosche-guitars-astro
   branch: main
 
 media_folder: public/images
