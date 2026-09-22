@@ -1,0 +1,250 @@
+---
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const guitars = await getCollection('guitars');
+
+  return guitars.map((guitar) => ({
+    params: {
+      slug: guitar.id.replace(/\.md$/, '')
+    },
+    props: {
+      guitar
+    }
+  }));
+}
+
+const { guitar } = Astro.props;
+const data = guitar.data;
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>{data.title} | Grosche Guitars</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #222;
+        background: #fff;
+      }
+
+      main {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 30px 20px 80px;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.25rem;
+      }
+
+      h2 {
+        margin-top: 3rem;
+      }
+
+      h3 {
+        margin-top: 2.5rem;
+      }
+
+      .year {
+        color: #777;
+        font-size: 1.1rem;
+      }
+
+      .hero {
+        width: 100%;
+        max-height: 700px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-top: 2rem;
+      }
+
+      .description {
+        margin-top: 2rem;
+        font-size: 1.1rem;
+        line-height: 1.7;
+      }
+
+      .specifications {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 0.5rem 1rem;
+        max-width: 650px;
+      }
+
+      .spec-label {
+        font-weight: bold;
+      }
+
+      .build-step {
+        margin-top: 3rem;
+        padding-top: 1rem;
+        border-top: 1px solid #ddd;
+      }
+
+      .build-description {
+        line-height: 1.7;
+      }
+
+      .images {
+        display: grid;
+        grid-template-columns: repeat(
+          auto-fit,
+          minmax(250px, 1fr)
+        );
+        gap: 20px;
+        margin-top: 1.5rem;
+      }
+
+      figure {
+        margin: 0;
+      }
+
+      figure img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+        border-radius: 6px;
+      }
+
+      figcaption {
+        margin-top: 0.5rem;
+        color: #666;
+        font-size: 0.9rem;
+      }
+
+      .back {
+        display: inline-block;
+        margin-bottom: 2rem;
+        color: #333;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <main>
+
+      <a class="back" href="/">← Zurück</a>
+
+      <h1>{data.title}</h1>
+
+      {data.year && (
+        <div class="year">
+          Baujahr {data.year}
+        </div>
+      )}
+
+      {data.hero?.src && (
+        {data.hero.src}
+      )}
+
+      {data.description && (
+        <div class="description">
+          {data.description}
+        </div>
+      )}
+
+      {data.specifications?.length > 0 && (
+        <>
+          <h2>Technische Daten</h2>
+
+          <div class="specifications">
+            {data.specifications.map((spec) => (
+              <>
+                <div class="spec-label">
+                  {spec.label}
+                </div>
+
+                <div>
+                  {spec.value}
+                </div>
+              </>
+            ))}
+          </div>
+        </>
+      )}
+
+      {data.build_steps?.length > 0 && (
+        <>
+          <h2>Der Bau</h2>
+
+          {data.build_steps.map((step) => (
+
+            <section class="build-step">
+
+              <h3>{step.title}</h3>
+
+              {step.description && (
+                <div class="build-description">
+                  {step.description}
+                </div>
+              )}
+
+              {step.images?.length > 0 && (
+
+                <div class="images">
+
+                  {step.images.map((image) => (
+
+                    <figure>
+
+                      {image.src}
+
+                      {image.caption && (
+                        <figcaption>
+                          {image.caption}
+                        </figcaption>
+                      )}
+
+                    </figure>
+
+                  ))}
+
+                </div>
+
+              )}
+
+            </section>
+
+          ))}
+        </>
+      )}
+
+      {data.gallery?.length > 0 && (
+        <>
+          <h2>Galerie</h2>
+
+          <div class="images">
+
+            {data.gallery.map((image) => (
+
+              <figure>
+
+                {image.src}
+
+                {image.caption && (
+                  <figcaption>
+                    {image.caption}
+                  </figcaption>
+                )}
+
+              </figure>
+
+            ))}
+
+          </div>
+        </>
+      )}
+
+    </main>
+
+  </body>
+</html>
