@@ -3,7 +3,7 @@ backend:
   repo: ugrosche/grosche-guitars-astro
   branch: main
 
-media_folder: public/images
+media_folder: /public/images
 public_folder: /images
 
 collections:
