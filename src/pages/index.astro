@@ -1,22 +1,197 @@
 ---
-const title = "Grosche Guitars";
+import { getCollection } from 'astro:content';
+
+const guitars = await getCollection('guitars');
+const base = import.meta.env.BASE_URL;
+
+function pageUrl(slug) {
+  return (
+    base.replace(/\/$/, '') +
+    '/gitarren/' +
+    slug +
+    '/'
+  );
+}
+
+function imageUrl(src) {
+  if (!src) return '';
+
+  return (
+    base.replace(/\/$/, '') +
+    '/' +
+    src.replace(/^\//, '')
+  );
+}
+
+const sortedGuitars = guitars.sort(
+  (a, b) => (b.data.year || 0) - (a.data.year || 0)
+);
 ---
 
 <!doctype html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>{title}</title>
-  </head>
 
-  <body>
-    <main>
-      <h1>Grosche Guitars</h1>
+<head>
+  <meta charset="utf-8" /GREATER
+  <meta name="viewport" content="width=device-width" /GREATER
 
-      <p>
-        Handgebaute Gitarren, Bauberichte und Einblicke in meine Werkstatt.
-      </p>
-    </main>
-  </body>
+  <title> Gitarren | Grosche Guitars </title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      background: #fff;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    h1 {
+      margin-bottom: 0.5rem;
+      font-size: 2.5rem;
+    }
+
+    .intro {
+      margin-bottom: 3rem;
+      color: #555;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .guitar-grid {
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(280px, 1fr)
+      );
+      gap: 30px;
+    }
+
+    .guitar-card {
+      overflow: hidden;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background: #fff;
+    }
+
+    .guitar-card a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .guitar-card img {
+      display: block;
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      background: #f5f5f5;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+
+    .year {
+      margin-top: 8px;
+      color: #777;
+    }
+
+    .description {
+      margin-top: 15px;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 25px 15px 60px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .guitar-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .guitar-card img {
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+
+    <h1> Meine Gitarren </h1>
+
+    <p class="intro">
+      Eine Auswahl meiner selbst gebauten Gitarren und ihrer Entstehung.
+    </p>
+
+    <div class="guitar-grid">
+
+      {sortedGuitars.map((guitar) => (
+
+        <article class="guitar-card">
+
+          <a href={pageUrl(guitar.id)}>
+
+            {guitar.data.hero?.src && (
+
+              <img
+                src={imageUrl(guitar.data.hero.src)}
+                alt={guitar.data.hero.alt || guitar.data.title}
+                loading="lazy"
+              /GREATER
+
+            )}
+
+            <div class="card-content">
+
+              <h2>
+                {guitar.data.title}
+              </h2>
+
+              {guitar.data.year && (
+
+                <div class="year">
+                  Baujahr {guitar.data.year}
+                </div>
+
+              )}
+
+              {guitar.data.description && (
+
+                <div class="description">
+                  {guitar.data.description}
+                </div>
+
+              )}
+
+            </div>
+
+          </a>
+
+        </article>
+
+      ))}
+
+    </div>
+
+  </main>
+
+</body>
 </html>
