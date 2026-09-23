@@ -48,9 +48,13 @@ function imageUrl(src) {
       )}
 
       {data.hero?.src && (
-        {imageUrl(data.hero.src)}          alt={data.hero.alt || data.title}
-        />
-      )}
+{data.hero?.src && (
+  <img
+    class="hero"
+    src={imageUrl(ero.alt || data.title}
+    loading="lazy"
+  />
+)}
 
       {data.description && (
         <p class="description">{data.description}</p>
@@ -89,9 +93,9 @@ function imageUrl(src) {
   <div class="build-images">
     {step.images.map((image) => (
       <figure class="build-image">
-        {imageUrl(image.src)}          alt={image.alt || image.caption || step.title}
-          loading="lazy"
-        />
+{imageUrl(image.src)}  alt={image.alt || image.caption || step.title}
+  loading="lazy"
+/>
 
         {image.caption && (
           <figcaption>
@@ -110,9 +114,9 @@ function imageUrl(src) {
           <div class="gallery">
             {data.gallery.map((image) => (
               <figure>
-                {imageUrl(image.src)}                  alt={image.alt || image.caption || data.title}
-                  loading="lazy"
-                />
+{imageUrl(image.src)}  alt={image.alt || image.caption || data.title}
+  loading="lazy"
+/>
 
                 {image.caption && (
                   <figcaption>
