@@ -16,17 +16,12 @@ export async function getStaticPaths() {
 
 const { guitar } = Astro.props;
 const data = guitar.data;
-const base = import.meta.env.BASE_URL;
-
-function imageUrl(src) {
-  if (!src) return '';
-
-  return (
-    base.replace(/\/$/, '') +
-    '/' +
-    src.replace(/^\//, '')
-  );
-}
+{data.hero?.src ? (
+  {imageUrl(data.hero.src)}    alt={data.hero.alt || data.title}
+    class="hero"
+    loading="lazy"
+  />
+) : null}
 ---
 
 <!doctype html>
@@ -90,16 +85,14 @@ function imageUrl(src) {
         color: #666;
       }
 
-      .hero {
-        display: block;
-        width: 100%;
-        height: auto;
-        max-height: 700px;
-        margin: 30px 0;
-        object-fit: contain;
-        border-radius: 8px;
-        background: #f5f5f5;
-      }
+
+  .hero {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+  }
+
 
       .description {
         font-size: 1.1rem;
