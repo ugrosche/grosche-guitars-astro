@@ -41,11 +41,7 @@ function imageUrl(src) {
         <a href="/">Zur Startseite</a>
       </p>
 
-      <h1>{data.title}</h1>
-
-      {data.year && (
-        <p class="year">Baujahr: {data.year}</p>
-      )}
+<h1>{data.title}</h1>
 
 {data.year && (
   <p class="year">Baujahr: {data.year}</p>
@@ -53,13 +49,10 @@ function imageUrl(src) {
 
 {heroSrc && (
   <img
-    class{data.description && (
+    class="hero"
+    src={ && (
   <p class="description">{data.description}</p>
 )}
-
-      {data.description && (
-        <p class="description">{data.description}</p>
-      )}
 
       {data.specifications?.length > 0 && (
         <section>
