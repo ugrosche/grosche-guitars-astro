@@ -6,21 +6,25 @@ export async function getStaticPaths() {
 
   return guitars.map((guitar) => ({
     params: {
-      slug: guitar.id.replace(/\.md$/, '')
+      slug: guitar.id
     },
     props: {
-      guitar: guitar
+      guitar
     }
   }));
 }
 
 const { guitar } = Astro.props;
 const data = guitar.data;
-const base = import.meta.env.BASE_URL;
 
-const heroSrc = data.hero?.src
-  ? `${base.replace(/\/$/, '')}/${data.hero.src.replace(/^\//, '')}`
-  : null;
+function imageUrl(src) {
+  if (!src) return '';
+
+  const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+  const path = src.replace(/^\//, '');
+
+  return `${base}/${path}`;
+}
 ---
 
 <!doctype html>
@@ -33,43 +37,226 @@ const heroSrc = data.hero?.src
 
   <body>
     <main>
-      <p><a href="/">Zur Startseite</a></p>
+      <p>
+        <a href="/">Zur Startseite</a>
+      </p>
 
       <h1>{data.title}</h1>
 
-      <p>Baujahr: {data.year}</p>
+      {data.year && (
+        <p class="year">Baujahr: {data.year}</p>
+      )}
 
-  {heroSrc && (
-    <img
-    class="hero"
-    src={heroSrc}
-    alt={data.hero.alt || data.title}
-    loading="lazy"
-    / >
-  )}
+      {data.hero?.src && (
+        {imageUrl(data.hero.src)}          alt={data.hero.alt || data.title}
+        />
+      )}
 
+      {data.description && (
+        <p class="description">{data.description}</p>
+      )}
 
-      <p>{data.description}</p>
+      {data.specifications?.length > 0 && (
+        <section>
+          <h2>Technische Daten</h2>
+
+          <dl class="specifications">
+            {data.specifications.map((spec) => (
+              <div class="spec-row">
+                <dt>{spec.label}</dt>
+                <dd>{spec.value}</dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+      )}
+
+      {data.build_steps?.length > 0 && (
+        <section>
+          <h2>Der Bau</h2>
+
+          {data.build_steps.map((step) => (
+            <article class="build-step">
+              <h3>{step.title}</h3>
+
+              {step.description && (
+                <p class="step-description">
+                  {step.description}
+                </p>
+              )}
+
+              {step.images?.length > 0 && (
+                <div class="gallery">
+                  {step.images.map((image) => (
+                    <figure>
+                      {imageUrl(image.src)}                        alt={image.alt || image.caption || step.title}
+                        loading="lazy"
+                      />
+
+                      {image.caption && (
+                        <figcaption>
+                          {image.caption}
+                        </figcaption>
+                      )}
+                    </figure>
+                  ))}
+                </div>
+              )}
+            </article>
+          ))}
+        </section>
+      )}
+
+      {data.gallery?.length > 0 && (
+        <section>
+          <h2>Galerie</h2>
+
+          <div class="gallery">
+            {data.gallery.map((image) => (
+              <figure>
+                {imageUrl(image.src)}                  alt={image.alt || image.caption || data.title}
+                  loading="lazy"
+                />
+
+                {image.caption && (
+                  <figcaption>
+                    {image.caption}
+                  </figcaption>
+                )}
+              </figure>
+            ))}
+          </div>
+        </section>
+      )}
     </main>
 
     <style>
       body {
-        font-family: Arial, Helvetica, sans-serif;
         margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
         color: #222;
+        background: #fff;
       }
 
       main {
-        max-width: 1000px;
+        max-width: 1100px;
         margin: 0 auto;
-        padding: 40px 20px;
+        padding: 40px 20px 80px;
+      }
+
+      h1 {
+        margin-bottom: 0.25rem;
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        margin-top: 3rem;
+      }
+
+      h3 {
+        margin-top: 0;
+        font-size: 1.5rem;
+      }
+
+      .year {
+        color: #666;
+        font-size: 1.1rem;
       }
 
       .hero {
         display: block;
         width: 100%;
-        height: auto;
+        max-height: 650px;
+        object-fit: cover;
         margin: 30px 0;
+        border-radius: 8px;
+      }
+
+      .description {
+        font-size: 1.1rem;
+        line-height: 1.7;
+      }
+
+      .specifications {
+        max-width: 700px;
+      }
+
+      .spec-row {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 20px;
+        padding: 8px 0;
+        border-bottom: 1px solid #ddd;
+      }
+
+      dt {
+        font-weight: bold;
+      }
+
+      dd {
+        margin: 0;
+      }
+
+      .build-step {
+        margin-top: 2.5rem;
+        padding-top: 2rem;
+        border-top: 1px solid #ddd;
+      }
+
+      .step-description {
+        line-height: 1.6;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(
+          auto-fit,
+          minmax(240px, 1fr)
+        );
+        gap: 20px;
+        margin-top: 1.5rem;
+      }
+
+      figure {
+        margin: 0;
+      }
+
+      figure img {
+        display: block;
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 6px;
+      }
+
+      figcaption {
+        margin-top: 8px;
+        color: #666;
+        font-size: 0.95rem;
+        line-height: 1.4;
+      }
+
+      @media (max-width: 600px) {
+        main {
+          padding: 25px 15px 60px;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        .spec-row {
+          grid-template-columns: 1fr;
+          gap: 2px;
+        }
+
+        .gallery {
+          grid-template-columns: 1fr;
+        }
+
+        figure img {
+          height: auto;
+        }
       }
     </style>
   </body>
