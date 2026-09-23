@@ -51,13 +51,13 @@ function imageUrl(src) {
         </p>
       )}
 
-      {data.hero?.src && (
-        <img
-          class="hero"
-          src={imageUrl(data.hero.src)}
-          alt={data.heror"
-        />
-      )}
+{data.hero?.src && (
+  <img
+    class="hero"
+  }    alt={data.hero.alt || data.title}
+    loading="lazy"
+  />
+)}
 
       {data.description && (
         <p class="description">
