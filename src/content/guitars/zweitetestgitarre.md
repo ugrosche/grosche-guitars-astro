@@ -2,7 +2,7 @@
 title: zweitetestgitarre
 year: 2020
 hero:
-  src: /images/2017-04-17 12.28.12.jpg
+  src: /images/Massari.jpg
   alt: Gitarrenhobel
 description: Dies ist nur ein Test ...
 specifications: []
