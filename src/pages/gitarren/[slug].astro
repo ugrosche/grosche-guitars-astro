@@ -97,6 +97,45 @@ function imageUrl(src) {
           font-size: 2rem;
         }
       }
+
+.spec-section,
+.build-section {
+  margin-top: 3rem;
+}
+
+.specifications {
+  margin: 0;
+}
+
+.spec-row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.spec-row dt {
+  font-weight: bold;
+}
+
+.spec-row dd {
+  margin: 0;
+}
+
+.build-step {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #ddd;
+}
+
+.build-step h3 {
+  margin: 0 0 0.75rem;
+}
+
+.step-description {
+  line-height: 1.7;
+}
     </style>
   </head>
 
@@ -126,6 +165,40 @@ function imageUrl(src) {
           {data.description}
         </p>
       )}
+
+{data.specifications?.length > 0 && (
+  <section class="spec-section">
+    <h2>Technische Daten</h2>
+
+    <dl class="specifications">
+      {data.specifications.map((spec) => (
+        <div class="spec-row">
+          <dt>{spec.label}</dt>
+          <dd>{spec.value}</dd>
+        </div>
+      ))}
+    </dl>
+  </section>
+)}
+
+{data.build_steps?.length > 0 && (
+  <section class="build-section">
+    <h2>Der Bau</h2>
+
+    {data.build_steps.map((step) => (
+      <article class="build-step">
+        <h3>{step.title}</h3>
+
+        {step.description && (
+          <p class="step-description">
+            {step.description}
+          </p>
+        )}
+      </article>
+    ))}
+  </section>
+)}
+
     </main>
   </body>
 </html>
