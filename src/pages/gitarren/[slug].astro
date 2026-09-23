@@ -85,27 +85,23 @@ function imageUrl(src) {
                 </p>
               )}
 
-              {step.images?.length > 0 && (
-                <div class="gallery">
-                  {step.images.map((image) => (
-                    <figure>
-                      {imageUrl(image.src)}                        alt={image.alt || image.caption || step.title}
-                        loading="lazy"
-                      />
+      {step.images?.length > 0 && (
+  <div class="build-images">
+    {step.images.map((image) => (
+      <figure class="build-image">
+        {imageUrl(image.src)}          alt={image.alt || image.caption || step.title}
+          loading="lazy"
+        />
 
-                      {image.caption && (
-                        <figcaption>
-                          {image.caption}
-                        </figcaption>
-                      )}
-                    </figure>
-                  ))}
-                </div>
-              )}
-            </article>
-          ))}
-        </section>
-      )}
+        {image.caption && (
+          <figcaption>
+            {image.caption}
+          </figcaption>
+        )}
+      </figure>
+    ))}
+  </div>
+)}
 
       {data.gallery?.length > 0 && (
         <section>
