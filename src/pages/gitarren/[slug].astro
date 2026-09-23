@@ -167,10 +167,9 @@ function imageUrl(src) {
 <body>
   <main>
 
-    <p>
-      {base}← Zur Startseite</a>
-    </p>
-
+<p>
+{base}← Zur Startseite</a>
+</p>
     <h1>{data.title}</h1>
 
     {data.year && (
@@ -179,13 +178,12 @@ function imageUrl(src) {
       </p>
     )}
 
-    {data.hero?.src && (
-      <img
-    (data.hero.src)}        alt={data.hero.alt || data.title}
-        class="hero"
-        loading="lazy"
-      />
-    )}
+{data.hero?.src && (
+  {imageUrl(data.hero.src)}    alt={data.hero.alt || data.title}
+    class="hero"
+    loading="lazy"
+  />
+)}
 
     {data.description && (
       <p class="description">
