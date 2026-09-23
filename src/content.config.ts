@@ -4,7 +4,8 @@ import { glob } from 'astro/loaders';
 const guitars = defineCollection({
   loader: glob({
     pattern: '**/*.md',
-    base: './src/content/guitars'
+    base: './src/content/guitars',
+    generateId: ({ entry }) => entry.replace(/\.md$/, '')
   })
 });
 
