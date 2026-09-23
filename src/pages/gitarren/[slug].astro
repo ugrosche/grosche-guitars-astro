@@ -136,6 +136,31 @@ function imageUrl(src) {
 .step-description {
   line-height: 1.7;
 }
+
+.build-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 1.5rem;
+}
+
+.build-image {
+  margin: 0;
+}
+
+.build-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.build-image figcaption {
+  margin-top: 8px;
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
     </style>
   </head>
 
@@ -187,6 +212,7 @@ function imageUrl(src) {
 
     {data.build_steps.map((step) => (
       <article class="build-step">
+
         <h3>{step.title}</h3>
 
         {step.description && (
@@ -194,6 +220,29 @@ function imageUrl(src) {
             {step.description}
           </p>
         )}
+
+        {step.images?.length > 0 && (
+          <div class="build-images">
+
+            {step.images.map((image) => (
+              <figure class="build-image">
+
+                {imageUrl(image.src)}                  alt={image.alt || image.caption || step.title}
+                  loading="lazy"
+                />
+
+                {image.caption && (
+                  <figcaption>
+                    {image.caption}
+                  </figcaption>
+                )}
+
+              </figure>
+            ))}
+
+          </div>
+        )}
+
       </article>
     ))}
   </section>
