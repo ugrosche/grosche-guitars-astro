@@ -228,7 +228,8 @@ function imageUrl(src) {
 {step.images.map((image) => (
   <figure class="build-image">
     <img
-      src={imageUrl(image={image.alt || image.caption || step.title}
+     src={imageUrl(image.src)}
+alt={image.alt || image.caption || step.title}
       loading="lazy"
     />
 
