@@ -167,9 +167,9 @@ function imageUrl(src) {
 <body>
   <main>
 
-<p>
-{base}← Zur Startseite</a>
-</p>
+<a class="back" href={base} >
+← Zur Startseite
+</a>
     <h1>{data.title}</h1>
 
     {data.year && (
@@ -212,9 +212,12 @@ function imageUrl(src) {
                 {step.images.map((image) => (
                   <figure>
 
-                    {imageUrl(image.src)}                      alt={image.alt || image.caption || step.title}
-                      loading="lazy"
-                    />
+
+<img
+src={imageUrl(image.src)}
+alt={image.alt || image.caption || step.title}
+loading="lazy"
+/>
 
                     {image.caption && (
                       <figcaption>
