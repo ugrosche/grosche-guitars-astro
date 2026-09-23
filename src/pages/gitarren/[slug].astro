@@ -19,7 +19,7 @@ const data = guitar.data;
 const base = import.meta.env.BASE_URL;
 
 const heroSrc = data.hero?.src
-  ? `${base}${data.hero.src.replace(/^\//, '')}`
+  ? `${base.replace(/\/$/, '')}/${data.hero.src.replace(/^\//, '')}`
   : null;
 ---
 
