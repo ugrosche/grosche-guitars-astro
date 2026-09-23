@@ -21,56 +21,100 @@ const base = import.meta.env.BASE_URL;
 function imageUrl(src) {
   if (!src) return '';
 
-  return base.replace(/\/$/, '') + '/' + src.replace(/^\//, '');
+  return (
+    base.replace(/\/$/, '') +
+    '/' +
+    src.replace(/^\//, '')
+  );
 }
 ---
 
 <!doctype html>
 <html lang="de">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>{data.title} | Grosche Guitars</title>
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{data.title} | Grosche Guitars</title>
+  </head>
 
-<body>
+  <body>
+    <main>
+      <p>
+        {base}Zur Startseite</a>
+      </p>
 
-  <main>
+      <h1>{data.title}</h1>
 
-    <p><a href={base}>Zur Startseite</a></h1>{data.title}</h1>
+      {data.year && (
+        <p class="year">
+          Baujahr: {data.year}
+        </p>
+      )}
 
-    <p>Baujahr: {data.year}</p>
+      {data.hero?.src && (
+        <img
+          class="hero"
+          src={imageUrl(data.hero.src)}
+          alt={data.heror"
+        />
+      )}
 
-    {data.hero?.src ? (
-      {imageUrl(data.hero.src)}        alt={data.hero?.alt || data.title}
-        class="hero"
-      />
-    ) : null}
+      {data.description && (
+        <p class="description">
+          {data.description}
+        </p>
+      )}
+    </main>
 
-    <p>{data.description}</p>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #222;
+        background: #fff;
+      }
 
-  </main>
+      main {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px 20px 80px;
+      }
 
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 0;
-      color: #222;
-    }
+      h1 {
+        margin-bottom: 0.25rem;
+        font-size: 2.5rem;
+      }
 
-    main {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
+      .year {
+        margin-top: 0.5rem;
+        color: #666;
+      }
 
-    .hero {
-      display: block;
-      width: 100%;
-      height: auto;
-      margin: 30px 0;
-    }
-  </style>
+      .hero {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 700px;
+        margin: 30px 0;
+        object-fit: contain;
+        border-radius: 8px;
+        background: #f5f5f5;
+      }
 
-</body>
+      .description {
+        font-size: 1.1rem;
+        line-height: 1.7;
+      }
+
+      @media (max-width: 600px) {
+        main {
+          padding: 24px 16px 60px;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </body>
 </html>
