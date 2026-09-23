@@ -47,13 +47,14 @@ function imageUrl(src) {
         <p class="year">Baujahr: {data.year}</p>
       )}
 
-      {data.hero?.src && (
-{data.hero?.src && (
+{data.year && (
+  <p class="year">Baujahr: {data.year}</p>
+)}
+
+{heroSrc && (
   <img
-    class="hero"
-    src={imageUrl(ero.alt || data.title}
-    loading="lazy"
-  />
+    class{data.description && (
+  <p class="description">{data.description}</p>
 )}
 
       {data.description && (
