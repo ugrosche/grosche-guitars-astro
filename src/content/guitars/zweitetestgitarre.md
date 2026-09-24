@@ -11,8 +11,14 @@ build_steps:
     description: so geht's los
     display: gallery
     images:
-      - src: /images/2017-05-14 16.17.23.jpg
+      - src: /images/2017-04-2718.55.30.jpg
         caption: fuge sauber
         alt: hier sehen wir die verleimung
+      - src: /images/12.jpg
+        caption: bild 2
+        alt: boden
+      - src: /images/14.jpg
+        caption: bild 3
+        alt: kopfplatte
 gallery: []
 ---
