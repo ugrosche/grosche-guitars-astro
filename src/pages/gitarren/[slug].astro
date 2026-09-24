@@ -210,30 +210,29 @@ function imageUrl(src) {
               </p>
             )}
 
-            {step.images?.length > 0 && (
-              <div class="gallery">
+{step.images?.length > 0 && (
+  <div class="build-images">
 
-                {step.images.map((image) => (
-                  <figure>
+    {step.images.map((image) => (
+      <figure class="build-image">
 
+        <img
+          src={imageUrl(image.src)}
+          alt={image.alt || image.caption || step.title}
+          loading="lazy"
+        />
 
-<img
-src={imageUrl(image.src)}
-alt={image.alt || image.caption || step.title}
-loading="lazy"
-/>
+        {image.caption && (
+          <figcaption>
+            {image.caption}
+          </figcaption>
+        )}
 
-                    {image.caption && (
-                      <figcaption>
-                        {image.caption}
-                      </figcaption>
-                    )}
+      </figure>
+    ))}
 
-                  </figure>
-                ))}
-
-              </div>
-            )}
+  </div>
+)}
 
           </article>
         ))}
