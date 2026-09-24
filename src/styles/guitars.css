@@ -358,14 +358,15 @@ figcaption,
 }
 
 .lightbox {
-  width: min(96vw, 1400px);
-  max-width: none;
-  height: 96vh;
+  width: 96vw;
+  max-width: 1400px;
+  height: auto;
   max-height: 96vh;
   padding: 0;
   border: 0;
   color: #fff;
   background: transparent;
+  overflow: visible;
 }
 
 .lightbox::backdrop {
@@ -373,14 +374,16 @@ figcaption,
 }
 
 .lightbox-panel {
-   position: relative;
-   display: grid;
-   grid-template-rows: minmax(0, 1fr) auto;
-   width: 100%;
-   height: 100%;
-   padding: 56px 80px 20px;
-   border-radius: var(--radius);
-   background: #17130f;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+  padding: 55px 80px 20px;
+ 
+  border-radius: var(--radius);
+  background: #17130f;
 }
 
 .lightbox-nav {
@@ -468,14 +471,15 @@ figcaption,
 }
 
 .lightbox-image {
-   display: block;
-   width: 100%;
-   height: 100%;
-   min-height: 0;
-   max-width: 100%;
-   max-height: 100%;
-   margin: auto;
-   object-fit: contain;
+  display: block;
+ 
+  width: auto;
+  height: auto;
+ 
+  max-width: calc(96vw - 160px);
+  max-height: calc(100vh - 180px);
+ 
+  object-fit: contain;
 }
 
 .lightbox-caption {
@@ -520,17 +524,17 @@ figcaption,
 @media (max-width: 600px) {
   .lightbox {
     width: 100vw;
-    height: 100vh;
+    max-width: 100vw;
     max-height: 100vh;
   }
 
-.lightbox-panel {
-   padding: 55px 12px 80px;
-   border-radius: 0;
+  .lightbox-panel {
+    padding: 55px 12px 80px;
+    border-radius: 0;
   }
 
   .lightbox-image {
-   max-width: 100%;
-   max-height: calc(100vh - 180px);
+    max-width: calc(100vw - 24px);
+    max-height: calc(100vh - 180px);
   }
 }
