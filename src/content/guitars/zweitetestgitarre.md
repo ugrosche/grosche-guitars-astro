@@ -9,7 +9,7 @@ specifications: []
 build_steps:
   - title: erster bauschritt
     description: so geht's los
-    display: gallery
+    display: carousel
     images:
       - src: /images/2017-04-2718.55.30.jpg
         caption: fuge sauber
