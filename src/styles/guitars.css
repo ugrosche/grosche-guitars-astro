@@ -342,160 +342,148 @@ figcaption,
     height: auto;
   }
 }
+
 /* Lightbox */
 
 .lightbox-trigger {
-  display: *lock;
+  display: block;
   width: 100%;
-  padding: 0;*  border: 0;
+  padding: 0;
+  border: 0;
   color: inherit;
-  b*ckground: transparent;
-  cursor: z*om-in;
+  background: transparent;
+  cursor: zoom-in;
 }
 
 .lightbox-trigger img {
-* display: block;
+  display: block;
 }
 
 .lightbox {
-  *idth: 96vw;
+  width: 92vw;
   max-width: 1400px;
- *height: 94vh;
-  max-height: 94vh;
-* padding: 0;
+  height: 92vh;
+  max-height: 92vh;
+  margin: auto;
+  padding: 0;
   border: 0;
-  color:*#fff;
+  color: #fff;
   background: transparent;
- *overflow: hidden;
+  overflow: hidden;
 }
 
-.lightbox::ba*kdrop {
-  background: rgb(18 14 11*/ 92%);
+.lightbox::backdrop {
+  background: rgb(18 14 11 / 92%);
 }
 
 .lightbox-panel {
-  pos*tion: relative;
-  display: flex;
- *flex-direction: column;
-  align-it*ms: center;
-  justify-content: cen*er;
-
+  position: relative;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
   width: 100%;
-  height: 100%*
-
-  padding: 55px 80px 20px;
-
-  bo*der-radius: var(--radius);
-  backg*ound: #17130f;
-
-  overflow: hidden*
+  height: 100%;
+  padding: 55px 70px 20px;
+  border-radius: var(--radius);
+  background: #17130f;
+  overflow: hidden;
 }
 
 .lightbox-image {
-  display: b*ock;
-
-  width: auto;
-  height: aut*;
-
+  display: block;
+  width: 100%;
+  height: 100%;
   max-width: 100%;
-  max-height* calc(94vh - 160px);
-
-  object-fit* contain;
-
-  flex-shrink: 1;
-  min*height: 0;
+  max-height: 100%;
+  min-width: 0;
+  min-height: 0;
+  object-fit: contain;
 }
 
 .lightbox-info {
-  f*ex: 0 0 auto;
-  padding-top: 10px;*  text-align: center;
+  width: 100%;
+  min-width: 0;
+  padding-top: 10px;
+  text-align: center;
 }
 
-.lightbox*counter {
+.lightbox-counter {
   margin: 0;
-  color: #c*c7bc;
+  color: #cfc7bc;
   font-size: 0.9rem;
+  white-space: nowrap;
+  text-align: center;
 }
 
-.lig*tbox-caption {
-  max-width: 900px;*  margin: 6px 0 0;
-  color: #f4f1e*;
+.lightbox-caption {
+  max-width: 900px;
+  margin: 6px auto 0;
+  color: #f4f1eb;
   line-height: 1.5;
-  text-align* center;
+  text-align: center;
 }
 
 .lightbox-close {
-  po*ition: absolute;
+  position: absolute;
   top: 10px;
-  ri*ht: 12px;
+  right: 12px;
   z-index: 3;
-
-  display* inline-flex;
-  align-items: cente*;
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
-
-  wi*th: 42px;
+  width: 42px;
   height: 42px;
-  paddin*: 0;
-
-  border: 1px solid rgb(255 *55 255 / 35%);
-  border-radius: 50*;
-
+  padding: 0;
+  border: 1px solid rgb(255 255 255 / 35%);
+  border-radius: 50%;
   color: #fff;
-  background: rg*(0 0 0 / 35%);
-
+  background: rgb(0 0 0 / 35%);
   font: inherit;
- *font-size: 2rem;
-  line-height: 1;*
+  font-size: 2rem;
+  line-height: 1;
   cursor: pointer;
 }
 
-.lightbox-c*ose:hover {
+.lightbox-close:hover {
   border-color: #fff;
-* background: var(--color-accent);
-*
+  background: var(--color-accent);
+}
 
 .lightbox-nav {
-  position: abso*ute;
+  position: absolute;
   top: 50%;
   z-index: 2;
-
-  *isplay: inline-flex;
-  align-items* center;
-  justify-content: center*
-
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 52px;
   height: 52px;
- *padding: 0;
-
-  border: 1px solid r*b(255 255 255 / 40%);
-  border-rad*us: 50%;
-
+  padding: 0;
+  border: 1px solid rgb(255 255 255 / 40%);
+  border-radius: 50%;
   color: #fff;
-  backgro*nd: rgb(0 0 0 / 45%);
-
-  font: inh*rit;
+  background: rgb(0 0 0 / 45%);
+  font: inherit;
   font-size: 2.5rem;
-  line-h*ight: 1;
-
+  line-height: 1;
   cursor: pointer;
-  tra*sform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
-.light*ox-nav-prev {
+.lightbox-nav-prev {
   left: 18px;
 }
 
-.li*htbox-nav-next {
+.lightbox-nav-next {
   right: 18px;
 }
-*.lightbox-nav:hover:not(:disabled)*{
+
+.lightbox-nav:hover:not(:disabled) {
   border-color: #fff;
-  backgrou*d: var(--color-accent);
+  background: var(--color-accent);
 }
 
-.lightb*x-nav:disabled {
-  cursor: default*
+.lightbox-nav:disabled {
+  cursor: default;
   opacity: 0.25;
 }
 
@@ -510,7 +498,6 @@ figcaption,
 /* Lightbox Mobil */
 
 @media (max-width: 600px) {
-
   .lightbox {
     width: 100vw;
     max-width: 100vw;
@@ -524,17 +511,18 @@ figcaption,
   }
 
   .lightbox-image {
+    width: 100%;
+    height: 100%;
     max-width: 100%;
-    max-height: calc(100vh - 180px);
+    max-height: 100%;
+    object-fit: contain;
   }
 
   .lightbox-nav {
     top: auto;
     bottom: 18px;
-
     width: 44px;
     height: 44px;
-
     transform: none;
   }
 
