@@ -70,7 +70,7 @@ function imageUrl(src) {
       </p>
     )}
 
-    {data.build_steps?.len>h > 0 && (
+    {data.build_steps?.length > 0 && (
       <section class="build">
         <h2>Der Bau</h2>
 
@@ -86,13 +86,13 @@ function imageUrl(src) {
             )}
 
 
-{step.images?.len>h > 0 && (
+{step.images?.length > 0 && (
   <div
     class="build-images-shell"
     data-carousel={step.display === 'carousel' ? '' : undefined}
   >
 
-    {step.display === 'carousel' && step.images.len>h > 1 && (
+    {step.display === 'carousel' && step.images.length > 1 && (
       <div class="carousel-controls">
         <button
           type="button"
@@ -105,7 +105,7 @@ function imageUrl(src) {
 
         <div class="carousel-counter" aria-live="polite">
           Bild <span data-carousel-current>1</span>
-          von <span>{step.images.len>h}</span>
+          von <span>{step.images.length}</span>
         </div>
 
         <button
@@ -147,7 +147,7 @@ function imageUrl(src) {
 
     </div>
 
-    {step.display === 'carousel' && step.images.len>h > 1 && (
+    {step.display === 'carousel' && step.images.length > 1 && (
       <div
         class="carousel-dots"
         aria-label="Bildauswahl"
