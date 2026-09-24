@@ -74,7 +74,7 @@ function imageUrl(src) {
       <section class="build">
         <h2>Der Bau</h2>
 
-        {data.build_steps.map((step) => (
+        {data.build_steps.map((step, stepIndex) => (
           <article class="build-step">
 
             <h3>{step.title}</h3>
@@ -134,11 +134,21 @@ function imageUrl(src) {
   type="button"
   class="lightbox-trigger"
   data-lightbox-trigger
+  data-lightbox-group={`build-step-${stepIndex}`}
+  data-lightbox-index={imageIndex}
   data-lightbox-src={imageUrl(image.src)}
   data-lightbox-alt={image.alt || image.caption || step.title}
   data-lightbox-caption={image.caption || ''}
   aria-label={`Bild groß anzeigen: ${image.alt || image.caption || step.title}`}
 >
+
+  <img
+    src={imageUrl(image.src)}
+    alt={image.alt || image.caption || step.title}
+    loading="lazy"
+  />
+
+</button>
 
   <img
     src={imageUrl(image.src)}
@@ -200,9 +210,17 @@ function imageUrl(src) {
       class="lightbox-close"
       data-lightbox-close
       aria-label="Bildansicht schließen"
-      autofocus
     >
       ×
+    </button>
+
+    <button
+      type="button"
+      class="lightbox-nav lightbox-nav-prev"
+      data-lightbox-prev
+      aria-label="Vorheriges Bild"
+    >
+      ‹
     </button>
 
     <img
@@ -212,17 +230,37 @@ function imageUrl(src) {
       alt=""
     />
 
-    <p
-      class="lightbox-caption"
-      data-lightbox-caption
-      hidden
+    <button
+      type="button"
+      class="lightbox-nav lightbox-nav-next"
+      data-lightbox-next
+      aria-label="Nächstes Bild"
     >
-    </p>
+      ›
+    </button>
+
+    <div class="lightbox-info">
+
+      <p
+        class="lightbox-counter"
+        data-lightbox-counter
+        aria-live="polite"
+      >
+        Bild 1 von 1
+      </p>
+
+      <p
+        class="lightbox-caption"
+        data-lightbox-caption
+        hidden
+      >
+      </p>
+
+    </div>
 
   </div>
 
 </dialog>
-
 <script>
   document.querySelectorAll('[data-carousel]').forEach((carousel) => {
     const track = carousel.querySelector('[data-carousel-track]');
@@ -336,35 +374,99 @@ function imageUrl(src) {
   const lightboxCaption = document.querySelector(
     '[data-lightbox-caption]'
   );
+  const lightboxCounter = document.querySelector(
+    '[data-lightbox-counter]'
+  );
   const lightboxClose = document.querySelector(
     '[data-lightbox-close]'
   );
-  const lightboxTriggers = document.querySelectorAll(
-    '[data-lightbox-trigger]'
+  const lightboxPrevious = document.querySelector(
+    '[data-lightbox-prev]'
+  );
+  const lightboxNext = document.querySelector(
+    '[data-lightbox-next]'
+  );
+
+  const allLightboxTriggers = Array.from(
+    document.querySelectorAll('[data-lightbox-trigger]')
   );
 
   if (
     lightbox instanceof HTMLDialogElement &&
     lightboxImage instanceof HTMLImageElement &&
-    lightboxCaption instanceof HTMLElement
+    lightboxCaption instanceof HTMLElement &&
+    lightboxCounter instanceof HTMLElement
   ) {
-    lightboxTriggers.forEach((trigger) => {
+    let currentGroup = [];
+    let currentIndex = 0;
+
+    function showLightboxImage(index) {
+      if (currentGroup.length === 0) {
+        return;
+      }
+
+      currentIndex = Math.max(
+        0,
+        Math.min(index, currentGroup.length - 1)
+      );
+
+      const trigger = currentGroup[currentIndex];
+
+      if (!(trigger instanceof HTMLElement)) {
+        return;
+      }
+
+      const src = trigger.dataset.lightboxSrc || '';
+      const alt = trigger.dataset.lightboxAlt || '';
+      const caption = trigger.dataset.lightboxCaption || '';
+
+      lightboxImage.src = src;
+      lightboxImage.alt = alt;
+
+      lightboxCaption.textContent = caption;
+      lightboxCaption.hidden = caption.length === 0;
+
+      lightboxCounter.textContent =
+        `Bild ${currentIndex + 1} von ${currentGroup.length}`;
+
+      if (lightboxPrevious instanceof HTMLButtonElement) {
+        lightboxPrevious.disabled = currentIndex === 0;
+      }
+
+      if (lightboxNext instanceof HTMLButtonElement) {
+        lightboxNext.disabled =
+          currentIndex === currentGroup.length - 1;
+      }
+    }
+
+    allLightboxTriggers.forEach((trigger) => {
       trigger.addEventListener('click', () => {
         if (!(trigger instanceof HTMLElement)) {
           return;
         }
 
-        const src = trigger.dataset.lightboxSrc || '';
-        const alt = trigger.dataset.lightboxAlt || '';
-        const caption = trigger.dataset.lightboxCaption || '';
+        const groupName = trigger.dataset.lightboxGroup || '';
 
-        lightboxImage.src = src;
-        lightboxImage.alt = alt;
-        lightboxCaption.textContent = caption;
-        lightboxCaption.hidden = caption.length === 0;
+        currentGroup = allLightboxTriggers.filter((item) => {
+          return (
+            item instanceof HTMLElement &&
+            item.dataset.lightboxGroup === groupName
+          );
+        });
 
+        currentIndex = currentGroup.indexOf(trigger);
+
+        showLightboxImage(currentIndex);
         lightbox.showModal();
       });
+    });
+
+    lightboxPrevious?.addEventListener('click', () => {
+      showLightboxImage(currentIndex - 1);
+    });
+
+    lightboxNext?.addEventListener('click', () => {
+      showLightboxImage(currentIndex + 1);
     });
 
     lightboxClose?.addEventListener('click', () => {
@@ -377,11 +479,28 @@ function imageUrl(src) {
       }
     });
 
+    document.addEventListener('keydown', (event) => {
+      if (!lightbox.open) {
+        return;
+      }
+
+      if (event.key === 'ArrowLeft') {
+        showLightboxImage(currentIndex - 1);
+      }
+
+      if (event.key === 'ArrowRight') {
+        showLightboxImage(currentIndex + 1);
+      }
+    });
+
     lightbox.addEventListener('close', () => {
       lightboxImage.src = '';
       lightboxImage.alt = '';
       lightboxCaption.textContent = '';
       lightboxCaption.hidden = true;
+      lightboxCounter.textContent = '';
+      currentGroup = [];
+      currentIndex = 0;
     });
   }
 </script>
