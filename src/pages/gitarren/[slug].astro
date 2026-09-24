@@ -58,7 +58,7 @@ function imageUrl(src) {
 {data.hero?.src && (
   <img
     src={imageUrl(data.hero.src)}
-    a<={data.hero.alt || data.title}
+    alt={data.hero.alt || data.title}
     class="hero"
     loading="lazy"
   />
