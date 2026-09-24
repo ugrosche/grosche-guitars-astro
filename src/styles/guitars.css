@@ -186,8 +186,12 @@ a:hover {
 }
 
 .build-images-single .build-image img {
-  width: 100%;
+  display: block;
+  width: auto;
+  max-width: 100%;
   height: auto;
+  max-height: 600px;
+  margin: 0 auto;
   object-fit: contain;
 }
 
@@ -237,9 +241,12 @@ figcaption,
 }
 
 .build-images-carousel .build-image img {
-  width: 100%;
+  display: block;
+  width: auto;
+  max-width: 100%;
   height: auto;
-  max-height: 700px;
+  max-height: 500px;
+  margin: 0 auto;
   object-fit: contain;
 }
 
