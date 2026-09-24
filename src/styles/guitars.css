@@ -161,24 +161,26 @@ a:hover {
 }
 
 .gallery,
+
+
 .build-images {
   margin-top: 1.5rem;
 }
 
 .build-images-gallery {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(250px, 1fr)
-  );
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
 .build-images-single {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .build-images-single .build-image {
+  width: 100%;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -200,24 +202,6 @@ a:hover {
   border-radius: var(--radius);
 }
 
-.build-image figcaption {
-  margin-top: 8px;
-  color: var(--color-muted);
-  font-size: 0.9rem;
-  line-height: 1.4;
-}
-
-figure {
-  margin: 0;
-}
-
-figure img,
-.build-image img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: var(--radius);
-}
 
 figcaption,
 .build-image figcaption {
