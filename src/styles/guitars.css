@@ -397,6 +397,7 @@ figcaption,
   min-width: 0;
   min-height: 0;
   object-fit: contain;
+  touch-action: pan-y;
 }
 
 .lightbox-info {
