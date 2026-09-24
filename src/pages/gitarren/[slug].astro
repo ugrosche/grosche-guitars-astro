@@ -211,7 +211,10 @@ function imageUrl(src) {
             )}
 
 {step.images?.length > 0 && (
-  <div class="build-images">
+   <div class:list={[
+  'build-images',
+  step.display === 'single' ? 'build-images-single' : 'build-images-gallery'
+]}>
 
     {step.images.map((image) => (
       <figure class="build-image">
