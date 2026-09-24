@@ -176,4 +176,109 @@ function imageUrl(src) {
 
   </main>
 
+<script>
+  document.querySelectorAll('[data-carousel]').forEach((carousel) => {
+    const track = carousel.querySelector('[data-carousel-track]');
+    const previousButton = carousel.querySelector('[data-carousel-prev]');
+    const nextButton = carousel.querySelector('[data-carousel-next]');
+    const currentCounter = carousel.querySelector('[data-carousel-current]');
+    const dots = Array.from(
+      carousel.querySelectorAll('[data-carousel-dot]')
+    );
+    const slides = Array.from(
+      carousel.querySelectorAll('[data-carousel-slide]')
+    );
+
+    if (!(track instanceof HTMLElement) || slides.length === 0) {
+      return;
+    }
+
+    let currentIndex = 0;
+    let scrollTimer;
+
+    function updateControls(index) {
+      currentIndex = Math.max(
+        0,
+        Math.min(index, slides.length - 1)
+      );
+
+      if (currentCounter) {
+        currentCounter.textContent = String(currentIndex + 1);
+      }
+
+      if (previousButton instanceof HTMLButtonElement) {
+        previousButton.disabled = currentIndex === 0;
+      }
+
+      if (nextButton instanceof HTMLButtonElement) {
+        nextButton.disabled = currentIndex === slides.length - 1;
+      }
+
+      dots.forEach((dot, dotIndex) => {
+        dot.setAttribute(
+          'aria-current',
+          dotIndex === currentIndex ? 'true' : 'false'
+        );
+      });
+    }
+
+    function goToSlide(index) {
+      const target = slides[index];
+
+      if (!(target instanceof HTMLElement)) {
+        return;
+      }
+
+      track.scrollTo({
+        left: target.offsetLeft,
+        behavior: 'smooth'
+      });
+
+      updateControls(index);
+    }
+
+    previousButton?.addEventListener('click', () => {
+      goToSlide(currentIndex - 1);
+    });
+
+    nextButton?.addEventListener('click', () => {
+      goToSlide(currentIndex + 1);
+    });
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        goToSlide(index);
+      });
+    });
+
+    track.addEventListener('scroll', () => {
+      window.clearTimeout(scrollTimer);
+
+      scrollTimer = window.setTimeout(() => {
+        let closestIndex = 0;
+        let closestDistance = Number.POSITIVE_INFINITY;
+
+        slides.forEach((slide, index) => {
+          if (!(slide instanceof HTMLElement)) {
+            return;
+          }
+
+          const distance = Math.abs(
+            slide.offsetLeft - track.scrollLeft
+          );
+
+          if (distance < closestDistance) {
+            closestDistance = distance;
+            closestIndex = index;
+          }
+        });
+
+        updateControls(closestIndex);
+      }, 80);
+    });
+
+    updateControls(0);
+  });
+</script>
+
 </body></html>
