@@ -211,6 +211,9 @@ function imageUrl(src) {
             )}
 
 <p>DEBUG display: {step.display}</p>
+<p>
+  DEBUG class: {'build-images build-images-' + (step.display || 'gallery')}
+</p>
 
 {step.images?.length > 0 && (
 <div class={'build-images build-images-' + (step.display || 'gallery')}>
