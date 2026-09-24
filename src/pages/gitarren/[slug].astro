@@ -42,7 +42,7 @@ function imageUrl(src) {
   </head>
 
 <body>
-  <main>
+  <>
 
 <a class="back" href={base} >
 ← Zur Startseite
@@ -187,6 +187,42 @@ function imageUrl(src) {
 
   </main>
 
+<dialog
+  class="lightbox"
+  data-lightbox
+  aria-label="Bildvergrößerung"
+>
+
+  <div class="lightbox-panel">
+
+    <button
+      type="button"
+      class="lightbox-close"
+      data-lightbox-close
+      aria-label="Bildansicht schließen"
+      autofocus
+    >
+      ×
+    </button>
+
+    <img
+      class="lightbox-image"
+      data-lightbox-image
+      src=""
+      alt=""
+    />
+
+    <p
+      class="lightbox-caption"
+      data-lightbox-caption
+      hidden
+    >
+    </p>
+
+  </div>
+
+</dialog>
+
 <script>
   document.querySelectorAll('[data-carousel]').forEach((carousel) => {
     const track = carousel.querySelector('[data-carousel-track]');
@@ -290,6 +326,64 @@ function imageUrl(src) {
 
     updateControls(0);
   });
+</script>
+
+<script>
+  const lightbox = document.querySelector('[data-lightbox]');
+  const lightboxImage = document.querySelector(
+    '[data-lightbox-image]'
+  );
+  const lightboxCaption = document.querySelector(
+    '[data-lightbox-caption]'
+  );
+  const lightboxClose = document.querySelector(
+    '[data-lightbox-close]'
+  );
+  const lightboxTriggers = document.querySelectorAll(
+    '[data-lightbox-trigger]'
+  );
+
+  if (
+    lightbox instanceof HTMLDialogElement &&
+    lightboxImage instanceof HTMLImageElement &&
+    lightboxCaption instanceof HTMLElement
+  ) {
+    lightboxTriggers.forEach((trigger) => {
+      trigger.addEventListener('click', () => {
+        if (!(trigger instanceof HTMLElement)) {
+          return;
+        }
+
+        const src = trigger.dataset.lightboxSrc || '';
+        const alt = trigger.dataset.lightboxAlt || '';
+        const caption = trigger.dataset.lightboxCaption || '';
+
+        lightboxImage.src = src;
+        lightboxImage.alt = alt;
+        lightboxCaption.textContent = caption;
+        lightboxCaption.hidden = caption.length === 0;
+
+        lightbox.showModal();
+      });
+    });
+
+    lightboxClose?.addEventListener('click', () => {
+      lightbox.close();
+    });
+
+    lightbox.addEventListener('click', (event) => {
+      if (event.target === lightbox) {
+        lightbox.close();
+      }
+    });
+
+    lightbox.addEventListener('close', () => {
+      lightboxImage.src = '';
+      lightboxImage.alt = '';
+      lightboxCaption.textContent = '';
+      lightboxCaption.hidden = true;
+    });
+  }
 </script>
 
 </body></html>
