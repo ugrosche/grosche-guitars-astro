@@ -130,12 +130,23 @@ function imageUrl(src) {
           data-carousel-slide={step.display === 'carousel' ? '' : undefined}
         >
 
-          <img
-            src={imageUrl(image.src)}
-            alt={image.alt || image.caption || step.title}
-            loading="lazy"
-          />
+<button
+  type="button"
+  class="lightbox-trigger"
+  data-lightbox-trigger
+  data-lightbox-src={imageUrl(image.src)}
+  data-lightbox-alt={image.alt || image.caption || step.title}
+  data-lightbox-caption={image.caption || ''}
+  aria-label={`Bild groß anzeigen: ${image.alt || image.caption || step.title}`}
+>
 
+  <img
+    src={imageUrl(image.src)}
+    alt={image.alt || image.caption || step.title}
+    loading="lazy"
+  />
+
+</button>
           {image.caption && (
             <figcaption>
               {image.caption}
