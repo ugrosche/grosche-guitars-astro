@@ -9,7 +9,7 @@ specifications: []
 build_steps:
   - title: Boden
     description: kleine Sofa-Gitarre
-    display: gallery
+    display: carousel
     images:
       - src: /images/2025-03-19 18.12.16.jpg
         caption: Fugleisten
