@@ -202,13 +202,33 @@ a:hover {
   border-radius: var(--radius);
 }
 
-
 figcaption,
 .build-image figcaption {
   margin-top: 8px;
   color: var(--color-muted);
   font-size: 0.9rem;
   line-height: 1.4;
+}
+
+.build-images-carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+  padding-bottom: 12px;
+}
+
+.build-images-carousel .build-image {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+}
+
+.build-images-carousel .build-image img {
+  width: 100%;
+  height: auto;
+  max-height: 700px;
+  object-fit: contain;
 }
 
 @media (max-width: 600px) {
