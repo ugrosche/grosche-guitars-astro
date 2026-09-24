@@ -1,6 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 
+import '../../styles/guitars.css';
+
 export async function getStaticPaths() {
   const guitars = await getCollection('guitars');
 
