@@ -452,18 +452,62 @@ function imageUrl(src) {
         lightbox.showModal();
       });
     });
+lightboxPrevious?.addEventListener('click', () => {
+  showLightboxImage(currentIndex - 1);
+});
 
-    lightboxPrevious?.addEventListener('click', () => {
-      showLightboxImage(currentIndex - 1);
-    });
+lightboxNext?.addEventListener('click', () => {
+  showLightboxImage(currentIndex + 1);
+});
 
-    lightboxNext?.addEventListener('click', () => {
-      showLightboxImage(currentIndex + 1);
-    });
 
-    lightboxClose?.addEventListener('click', () => {
-      lightbox.close();
-    });
+let swipeStartX = 0;
+let swipeStartY = 0;
+let swipePointerId = null;
+
+lightboxImage.addEventListener('pointerdown', (event) => {
+  if (event.pointerType === 'mouse') {
+    return;
+  }
+
+  swipeStartX = event.clientX;
+  swipeStartY = event.clientY;
+  swipePointerId = event.pointerId;
+});
+
+lightboxImage.addEventListener('pointerup', (event) => {
+  if (event.pointerId !== swipePointerId) {
+    return;
+  }
+
+  const deltaX = event.clientX - swipeStartX;
+  const deltaY = event.clientY - swipeStartY;
+
+  swipePointerId = null;
+
+  if (Math.abs(deltaX) < 50) {
+    return;
+  }
+
+  if (Math.abs(deltaX) <= Math.abs(deltaY)) {
+    return;
+  }
+
+  if (deltaX < 0) {
+    showLightboxImage(currentIndex + 1);
+  } else {
+    showLightboxImage(currentIndex - 1);
+  }
+});
+
+lightboxImage.addEventListener('pointercancel', () => {
+  swipePointerId = null;
+});
+
+
+lightboxClose?.addEventListener('click', () => {
+  lightbox.close();
+});
 
     lightbox.addEventListener('click', (event) => {
       if (event.target === lightbox) {
