@@ -1,0 +1,99 @@
+---
+
+import "../styles/guitars.css";
+
+import Footer from "../components/Footer.astro";
+
+const homeUrl = import.meta.env.BASE_URL + "/";
+
+---
+
+<html lang="de">
+
+<head>
+
+ <meta charset="UTF-8" />
+
+ <meta name="viewport" content="width=device-width" />
+
+ <title>Datenschutz | Grosche Guitars</title>
+
+</head>
+
+<body>
+
+ <main class="legal-page">
+
+  <a href={homeUrl} class="back-link" > ← Zur Startseite</a>
+
+ <h1>Datenschutzerklärung</h1>
+
+ <h2>1. Verantwortlicher</h2>
+
+ <p>
+
+ Uwe Grosche<br />
+
+ Kaarster Heide 113<br />
+
+ 41462 Neuss<br />
+
+ Deutschland<br />
+
+ E-Mail: uwe.grosche@vodafone.de
+
+ </p>
+
+ <h2>2. Hosting</h2>
+
+ <p>
+
+ Diese Website wird über GitHub Pages bereitgestellt. Anbieter ist GitHub, Inc. Beim Aufruf der Website können durch den Hosting-Anbieter technisch erforderliche Zugriffsdaten verarbeitet werden, insbesondere zur Bereitstellung sowie zur Gewährleistung der Stabilität und Sicherheit des Dienstes.
+
+ </p>
+
+ <p>
+
+ Weitere Informationen zur Verarbeitung personenbezogener Daten durch GitHub finden sich in der Datenschutzerklärung von GitHub.
+
+ </p>
+
+ <h2>3. Kontaktaufnahme</h2>
+
+ <p>
+
+ Wenn Sie per E-Mail Kontakt aufnehmen, werden die von Ihnen übermittelten Daten zur Bearbeitung Ihrer Anfrage verarbeitet.
+
+ </p>
+
+ <h2>4. Cookies und Tracking</h2>
+
+ <p>
+
+ Auf dieser Website werden vom Betreiber keine Analyse-, Marketing- oder Tracking-Dienste eingesetzt.
+
+ </p>
+
+ <h2>5. Ihre Rechte</h2>
+
+ <p>
+
+ Soweit die gesetzlichen Voraussetzungen erfüllt sind, stehen Ihnen insbesondere Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Widerspruch gegen die Verarbeitung personenbezogener Daten zu.
+
+ </p>
+
+ <h2>6. Änderung dieser Datenschutzerklärung</h2>
+
+ <p>
+
+ Diese Datenschutzerklärung wird angepasst, wenn sich die Website, die eingesetzten Dienste oder die rechtlichen Anforderungen ändern.
+
+ </p>
+
+ </main>
+
+ <Footer />
+
+</body>
+
+</html>
