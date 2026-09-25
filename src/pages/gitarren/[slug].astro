@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 
 import '../../styles/guitars.css';
+import Footer from '../../components/Footer.astro';
 
 export async function getStaticPaths() {
   const guitars = await getCollection('guitars');
@@ -189,11 +190,7 @@ function imageUrl(src) {
 
   </main>
 
-<footer class="site-footer">
-<p>
-© {new Date().getFullYear()} Grosche Guitars · Gitarrenbau aus Leidenschaft
-</p>
-</footer>
+<Footer />
 
 <dialog
   class="lightbox"
