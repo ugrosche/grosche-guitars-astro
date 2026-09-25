@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 
 import '../../styles/guitars.css';
+import Footer from '../../components/Footer.astro';
 
 const guitars = await getCollection('guitars');
 const base = import.meta.env.BASE_URL;
@@ -57,7 +58,7 @@ const sortedGuitars = [...guitars].sort(
             {guitar.data.hero?.src && (
               <img
                 src={imageUrl(guitar.data.hero.src)}
-                a<={guitar.data.hero.alt || guitar.data.title}
+                alt={guitar.data.hero.alt || guitar.data.title}
                 loading="lazy"
               />
             )}
@@ -88,6 +89,6 @@ const sortedGuitars = [...guitars].sort(
     </div>
 
   </main>
-
+<Footer />
 </body>
 </html>
