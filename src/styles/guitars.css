@@ -658,3 +658,19 @@ figcaption,
 .back-link:hover {
  text-decoration: underline;
  }
+
+/* Footer */
+
+.site-footer {
+  width: 100%;
+  margin-top: 64px;
+  padding: 24px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.site-footer p {
+  margin: 0;
+}
