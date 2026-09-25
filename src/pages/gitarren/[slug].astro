@@ -42,9 +42,9 @@ function imageUrl(src) {
   </head>
 
 <body>
-  <>
-
-<a class="back" href={base} >
+<main class="guitar-detail">
+ 
+{base}
 ← Zur Startseite
 </a>
     <h1>{data.title}</h1>
@@ -188,6 +188,12 @@ function imageUrl(src) {
     )}
 
   </main>
+
+<footer class="site-footer">
+<p>
+© {new Date().getFullYear()} Grosche Guitars · Gitarrenbau aus Leidenschaft
+</p>
+</footer>
 
 <dialog
   class="lightbox"
