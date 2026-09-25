@@ -82,6 +82,7 @@ a:hover {
   line-height: 1.7;
 }
 
+
 /* Gitarrenübersicht */
 
 .guitar-grid {
@@ -137,6 +138,7 @@ a:hover {
   font-size: 1rem;
 }
 
+
 /* Gitarrendetailseite */
 
 .hero {
@@ -160,7 +162,8 @@ a:hover {
   line-height: 1.7;
 }
 
-.gallery, .build-images {
+.gallery,
+.build-images {
   margin-top: 1.5rem;
 }
 
@@ -210,6 +213,9 @@ figcaption,
   font-size: 0.9rem;
   line-height: 1.4;
 }
+
+
+/* Carousel */
 
 .build-images-shell {
   position: relative;
@@ -316,29 +322,6 @@ figcaption,
   background: var(--color-accent-hover);
 }
 
-@media (max-width: 600px) {
-  .carousel-arrow {
-    width: 40px;
-    height: 40px;
-  }
-
-  .build-images-carousel {
-    gap: 12px;
-  }
-}
-@media (max-width: 600px) {
-  main {
-    padding: 28px 16px 60px;
-  }
-
-  .guitar-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .guitar-card img {
-    height: auto;
-  }
-}
 
 /* Lightbox */
 
@@ -493,9 +476,173 @@ figcaption,
 }
 
 
-/* Lightbox Mobil */
+/* Startseite */
+
+.home {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 70px 24px 80px;
+}
+
+.home-hero {
+  width: 100%;
+  text-align: center;
+}
+
+.home-kicker {
+  margin: 0 0 14px;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.home-hero h1 {
+  margin: 0 0 24px;
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 1;
+}
+
+.home-intro {
+  max-width: 650px;
+  margin: 0 auto 32px;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.home-button {
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: 8px;
+  color: #fff;
+  background: var(--color-text);
+  text-decoration: none;
+  font-weight: 600;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.home-button:hover {
+  color: #fff;
+  background: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.home-image {
+  width: 100%;
+  max-width: 900px;
+  margin: 60px auto 0;
+}
+
+.home-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: contain;
+  border-radius: var(--radius);
+}
+
+
+/* Gemeinsamer Footer */
+
+.site-footer {
+  max-width: var(--page-width);
+  margin: 60px auto 0;
+  padding: 24px 20px;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer nav {
+  display: flex;
+  gap: 20px;
+}
+
+.site-footer a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--color-accent-hover);
+  text-decoration: underline;
+}
+
+
+/* Impressum und Datenschutz */
+
+.legal-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.legal-page h1 {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.legal-page h2 {
+  margin-top: 32px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.legal-page p {
+  line-height: 1.7;
+}
+
+.back-link {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: var(--color-accent-hover);
+  text-decoration: underline;
+}
+
+
+/* Mobil */
 
 @media (max-width: 600px) {
+  main {
+    padding: 28px 16px 60px;
+  }
+
+  .guitar-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .guitar-card img {
+    height: auto;
+  }
+
+  .build-images-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .build-images-carousel {
+    gap: 12px;
+  }
+
+  .carousel-arrow {
+    width: 40px;
+    height: 40px;
+  }
+
   .lightbox {
     width: 100vw;
     max-width: 100vw;
@@ -535,156 +682,25 @@ figcaption,
   .lightbox-info {
     padding-top: 10px;
   }
-}
 
-/* Startseite */
+  .home {
+    padding: 45px 16px 60px;
+  }
 
-.home {
-  min-height: calc(100vh - 70px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 20px;
-}
+  .home-hero h1 {
+    font-size: clamp(2.8rem, 15vw, 4.5rem);
+  }
 
-.home-hero {
-  width: 100%;
-  max-width: 900px;
-  text-align: center;
-  padding: 80px 30px;
-}
+  .home-intro {
+    font-size: 1.05rem;
+  }
 
-.home-kicker {
-  margin: 0 0 12px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
+  .home-image {
+    margin-top: 40px;
+  }
 
-.home-hero h1 {
-  margin: 0 0 24px;
-  font-size: clamp(3rem, 8vw, 6rem);
-  line-height: 1;
-}
-
-.home-intro {
-  max-width: 650px;
-  margin: 0 auto 36px;
-  font-size: 1.2rem;
-  line-height: 1.7;
-}
-
-.home-button {
-  display: inline-block;
-  padding: 14px 24px;
-  border-radius: 8px;
-  background: #333;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  transition:
-    background 0.2s ease,
-    transform 0.2s ease;
-}
-
-.home-button:hover {
-  background: #555;
-  transform: translateY(-2px);
-}
-
-.home-image {
- max-width: 900px;
- margin: 60px auto 0;
- }
-
-.home-image img {
- display: block;
- width: 100%;
- height: auto;
- max-height: 600px;
- object-fit: contain;
- border-radius: var(--radius);
- }
-
-/* Gemeinsamer Footer */
-
-.site-footer {
- max-width: 1100px;
- margin: 60px auto 0;
- padding: 24px 20px;
- border-top: 1px solid var(--color-border);
- display: flex;
- justify-content: space-between;
- align-items: center;
- gap: 20px;
- color: var(--color-muted);
- font-size: 0.9rem;
-}
-.site-footer p {
- margin: 0;
-}
-.site-footer nav {
- display: flex;
- gap: 20px;
-}
-.site-footer a {
- color: var(--color-accent);
- text-decoration: none;
-}
-.site-footer a:hover {
- color: var(--color-accent-hover);
- text-decoration: underline;
-}
-@media (max-width: 600px) {
- .site-footer {
- flex-direction: column;
- text-align: center;
- }
-}
-
-.legal-page {
- max-width: 800px;
- margin: 0 auto;
- padding: 60px 20px;
- }
-
-.legal-page h1 {
- margin-top: 30px;
- margin-bottom: 40px;
- }
-
-.legal-page h2 {
- margin-top: 32px;
- margin-bottom: 10px;
- font-size: 1.2rem;
- }
-
-.legal-page p {
- line-height: 1.7;
- }
-
-.back-link {
- color: inherit;
- text-decoration: none;
- }
-
-.back-link:hover {
- text-decoration: underline;
- }
-
-/* Footer */
-
-.site-footer {
-  width: 100%;
-  margin-top: 64px;
-  padding: 24px 20px;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #666;
-  border-top: 1px solid rgba(0, 0, 0, 0.12);
-}
-
-.site-footer p {
-  margin: 0;
+  .site-footer {
+    flex-direction: column;
+    text-align: center;
+  }
 }
