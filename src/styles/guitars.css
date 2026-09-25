@@ -666,3 +666,15 @@ figcaption,
 .back-link:hover {
  text-decoration: underline;
  }
+/* Footer */
+
+.site-footer {
+  padding: 24px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.site-footer p {
+  margin: 0;
+}
