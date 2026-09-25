@@ -595,3 +595,44 @@ figcaption,
   background: #555;
   transform: translateY(-2px);
 }
+
+/* Gemeinsamer Footer */
+
+.site-footer {
+  max-wi*th: 1200px;
+  margin* 60px auto 0;
+  padding: 24px 20px*
+  border-top: 1px solid #d*d3ca;
+
+  display: flex;
+  justify-*ontent: space-between;
+  align-ite*s: center;
+  gap: 20px;
+
+  font*size: 0.9rem;
+}
+
+.site-footer p {
+* margin: 0;
+}
+
+.site-footer nav {
+* display: flex;
+  gap: 20px;
+}
+
+.s*te-footer a {
+  color: inherit;
+  *ext-decoration: none;
+}
+
+.site-foo*er a:hover {
+  text-decoration: un*erline;
+}
+
+@media (max-width: 600p*) {
+  .site-footer {
+    flex-dire*tion: column;
+    text-align: cent*r;
+  }
+}
