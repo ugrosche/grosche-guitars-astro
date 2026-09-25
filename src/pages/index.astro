@@ -4,6 +4,7 @@ import Footer from "../components/Footer.astro";
 
 const title = "Grosche Guitars";
 const guitarUrl = `${import.meta.env.BASE_URL}/gitarren/`;
+const heroUrl = import.meta.env.BASE_URL + "/images/home/hero.jpg";
 ---
 
 <!doctype html>
@@ -30,6 +31,11 @@ Handgebaute Gitarren, Bauberichte und Einblicke in meine Werkstatt.
 </p>
 
 <a href={guitarUrl} class="home-button">Gitarren entdecken</a>
+
+<div class="home-image">
+{heroUrl}
+</div>
+
 </section>
     </main>
     <Footer />
