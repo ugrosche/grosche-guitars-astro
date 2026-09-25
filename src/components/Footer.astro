@@ -1,0 +1,17 @@
+---
+const baseUrl = import.meta.env.BASE_URL;
+
+const impressumUrl = `${baseUrl}/impressum/`;
+const datenschutzUrl = `${baseUrl}/datenschutz/`;
+---
+
+<footer class="site-footer">
+  <p>
+    © {new Date().getFullYear()} Grosche Guitars
+  </p>
+
+  <nav aria-label="Rechtliche Informationen">
+    <a href={impressumUrl}>Impressum</a>
+    <a href={datenschutzUrl}>Datenschutz</a>
+  </nav>
+</footer>
