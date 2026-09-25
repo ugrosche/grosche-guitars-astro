@@ -593,6 +593,20 @@ figcaption,
   transform: translateY(-2px);
 }
 
+.home-image {
+ max-width: 900px;
+ margin: 60px auto 0;
+ }
+
+.home-image img {
+ display: block;
+ width: 100%;
+ height: auto;
+ max-height: 600px;
+ object-fit: contain;
+ border-radius: var(--radius);
+ }
+
 /* Gemeinsamer Footer */
 
 .site-footer {
