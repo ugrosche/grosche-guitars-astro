@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import Head from '../../components/Head.astro';
 import '../../styles/guitars.css';
 import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
 
 export async function getStaticPaths() {
   const guitars = await getCollection('guitars');
@@ -42,6 +43,7 @@ function imageUrl(src) {
   </head>
 
 <body>
+<Header />
 <main class="guitar-detail">
  
 <a href={base + "/"} class="back">← Zur Startseite</a>
