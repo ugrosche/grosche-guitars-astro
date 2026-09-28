@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
-
+import Head from '../../components/Head.astro';
 import '../../styles/guitars.css';
 import Footer from '../../components/Footer.astro';
 
@@ -39,7 +39,7 @@ function imageUrl(src) {
     <meta name="viewport" content="width=device-width" />
 
     <title>{data.title} | Grosche Guitars</title>
-
+    <Head title={${data.title} | Grosche Guitars} />
   </head>
 
 <body>
