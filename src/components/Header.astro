@@ -11,18 +11,17 @@ const isGuitars = pathname.startsWith(guitarsUrl);
 
 <header class="site-header">
   <div class="site-header-inner">
+
     {homeUrl}
       Grosche Guitars
     </a>
 
     <nav class="site-nav" aria-label="Hauptnavigation">
+
       {homeUrl}
         Startseite
       </a>
 
-      {guitarsUrl}
-        Gitarren
-      </a>
-    </nav>
-  </div>
-</header>
+      <a
+        href={guitarsUrl}
+        class={isGuitars ? 'active</header>
