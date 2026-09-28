@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
-
+import Head from '../../components/Head.astro';
 import '../../styles/guitars.css';
 import Footer from '../../components/Footer.astro';
 
@@ -37,6 +37,7 @@ const sortedGuitars = [...guitars].sort(
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
   <title>Gitarren | Grosche Guitars</title>
+  <Head title="Gitarren | Grosche Guitars" />
 </head>
 
 <body>
