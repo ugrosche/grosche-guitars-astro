@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import Head from '../../components/Head.astro';
 import '../../styles/guitars.css';
 import Footer from '../../components/Footer.astro';
+import Header from '../components/Header.astro';
 
 const guitars = await getCollection('guitars');
 const base = import.meta.env.BASE_URL;
@@ -41,6 +42,7 @@ const sortedGuitars = [...guitars].sort(
 </head>
 
 <body>
+<Header />
   <main>
 
     <h1>Meine Gitarren</h1>
