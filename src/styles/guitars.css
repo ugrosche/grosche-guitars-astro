@@ -521,6 +521,9 @@ figcaption,
 .site-nav a:hover {
   color: var(--color-accent);
 }
+.site-nav a.active {
+color: var(--color-accent);
+}
 
 
 /* Startseite */
