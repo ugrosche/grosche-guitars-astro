@@ -505,6 +505,19 @@ figcaption,
   color: var(--color-accent);
 }
 
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.site-logo-image {
+  width: 34px;
+  height: 34px;
+  display: block;
+  object-fit: contain;
+}
+
 .site-nav {
   display: flex;
   align-items: center;
