@@ -475,6 +475,53 @@ figcaption,
   outline-offset: 4px;
 }
 
+/* Gemeinsamer Header */
+
+.site-header {
+  width: 100%;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-background);
+}
+
+.site-header-inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 20px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.site-logo {
+  color: var(--color-text);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-logo:hover {
+  color: var(--color-accent);
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.site-nav a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.site-nav a:hover {
+  color: var(--color-accent);
+}
+
 
 /* Startseite */
 
@@ -722,4 +769,19 @@ figcaption,
     flex-direction: column;
     text-align: center;
   }
+  .site-header-inner {
+padding: 16px;
+}
+ 
+.site-nav {
+gap: 16px;
+}
+ 
+.site-logo {
+font-size: 1.05rem;
+}
+ 
+.site-nav a {
+font-size: 0.9rem;
+}
 }
