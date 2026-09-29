@@ -88,77 +88,74 @@ a:hover {
 }
 
 
-/* Gitarrenübersicht */
+** Gitarrenübersicht */
 
-.guitar-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-gap: 40px 28px;
-margin-top: 40px;
-width: 100%;
-}
-
-.guitar-card {
-width: 100%;
-min-width: 0;
-overflow: hidden;
-}
- 
-.guitar-card a {
-display: block;
-width: 100%;
-color: inherit;
-text-decoration: none;
-}
- 
-.guitar-card img {
-  display: block;
+.guitar-gr*d {
+  display: grid;
+  grid-templa*e-columns: repeat(auto-fit, minmax*280px, 1fr));
+  gap: 40px 28px;
+  *argin-top: 40px;
   width: 100%;
-  max-width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  border-radius: 6px;
-  transition: transform 0.25s ease;
-}}
- 
-.guitar-card a:hover img {
-transform: scale(1.015);
 }
- 
-.card-content {
-padding-top: 16px;
-}
- 
-.card-content h2 {
-margin: 0 0 6px;
-font-family: 'Manrope', Arial, sans-serif;
-font-size: 1.3rem;
-font-weight: 600;
-}
- 
-.card-content .year {
-margin: 0 0 10px;
-font-size: 0.9rem;
-color: var(--color-muted);
-}
- 
-.card-content .description {
-margin: 0 0 12px;
-line-height: 1.6;
-}
- 
-.card-link {
-font-family: 'Manrope', Arial, sans-serif;
-font-size: 0.9rem;
-font-weight: 600;
-color: var(--color-accent);
-}
- 
-.guitar-card a:hover .card-link {
-text-decoration: underline;
+*.guitar-card {
+  width: 100%;
+  mi*-width: 0;
+  overflow: hidden;
 }
 
+*guitar-card > a {
+  display: block*
+  width: 100%;
+  color: inherit;
+* text-decoration: none;
+}
+
+.guitar*card img {
+  display: block;
+  wid*h: 100%;
+  max-width: 100%;
+  heig*t: auto;
+  aspect-ratio: 4 / 3;
+  *bject-fit: cover;
+  border-radius:*6px;
+  transition: transform 0.25s*ease;
+}
+
+.guitar-card > a:hover im* {
+  transform: scale(1.015);
+}
+
+.*ard-content {
+  padding-top: 16px;*}
+
+.card-content h2 {
+  margin: 0 * 6px;
+  font-family: 'Manrope', Ar*al, sans-serif;
+  font-size: 1.3re*;
+  font-weight: 600;
+}
+
+.card-con*ent .year {
+  margin: 0 0 10px;
+  *ont-size: 0.9rem;
+  color: var(--c*lor-muted);
+}
+
+.card-content .desc*iption {
+  margin: 0 0 12px;
+  lin*-height: 1.6;
+}
+
+.card-link {
+  fo*t-family: 'Manrope', Arial, sans-s*rif;
+  font-size: 0.9rem;
+  font-w*ight: 600;
+  color: var(--color-ac*ent);
+}
+
+.guitar-card > a:hover .c*rd-link {
+  text-decoration: under*ine;
+}
 /* Gitarrendetailseite */
 
 .hero {
