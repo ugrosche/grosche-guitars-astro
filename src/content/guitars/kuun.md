@@ -1,10 +1,10 @@
 ---
-title: Kuun
+title: Graveyard Oak
 year: 2024
 hero:
   src: /images/13.jpg
   alt: Die fertige Gitarre
-description: das war mein letzter Bau bisher.
+description: Eine handliche Gitarre aus Holz mit Geschichte
 specifications: []
 build_steps:
   - title: Boden
