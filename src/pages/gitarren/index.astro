@@ -66,23 +66,27 @@ const sortedGuitars = [...guitars].sort(
               />
             )}
 
-            <div class="card-content">
-
-              <h2>{guitar.data.title}</h2>
-
-              {guitar.data.year && (
-                <p class="year">
-                  Baujahr {guitar.data.year}
-                </p>
-              )}
-
-              {guitar.data.description && (
-                <p class="description">
-                  {guitar.data.description}
-                </p>
-              )}
-
-            </div>
+<div class="card-content">
+ 
+<h2>{guitar.data.title}</h2>
+ 
+{guitar.data.year && (
+<p class="year">
+Baujahr {guitar.data.year}
+</p>
+)}
+ 
+{guitar.data.description && (
+<p class="description">
+{guitar.data.description}
+</p>
+)}
+ 
+<span class="card-link">
+Baubericht ansehen →
+</span>
+ 
+</div>
 
           </a>
 
