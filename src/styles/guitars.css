@@ -718,18 +718,27 @@ figcaption,
   text-decoration: underline;
 }
 
+/* Startseite */
+
+.home {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 70px 24px 80px;
+}
+
 .home-hero {
+  width: 100%;
   text-align: center;
 }
 
 .home-kicker {
   margin: 0 0 0.5rem;
+  color: var(--color-muted);
   font-family: 'Manrope', Arial, sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--color-muted);
 }
 
 .home-hero h1 {
@@ -737,6 +746,7 @@ figcaption,
   font-size: clamp(2.5rem, 6vw, 4rem);
   font-weight: 700;
   letter-spacing: -0.03em;
+  line-height: 1;
 }
 
 .home-intro {
@@ -749,19 +759,53 @@ figcaption,
 .home-button {
   display: inline-block;
   padding: 0.8rem 1.4rem;
+  border-radius: 8px;
+  color: #fff;
+  background: var(--color-text);
   font-family: 'Manrope', Arial, sans-serif;
   font-weight: 600;
   text-decoration: none;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.home-button:hover {
+  color: #fff;
+  background: var(--color-accent);
+  transform: translateY(-2px);
 }
 
 .home-image {
-  margin-top: 2.5rem;
+  width: 100%;
+  max-width: 900px;
+  margin: 2.5rem auto 0;
 }
 
 .home-image img {
   display: block;
   width: 100%;
   height: auto;
+  max-height: 600px;
+  object-fit: contain;
+  border-radius: var(--radius);
+}
+
+.home-about {
+  max-width: 760px;
+  margin: 80px auto 0;
+  text-align: left;
+}
+
+.home-about h2 {
+  margin: 0 0 24px;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+.home-about p {
+  margin: 0 0 18px;
+  font-size: 1.05rem;
+  line-height: 1.8;
 }
 
 /* Mobil */
@@ -831,23 +875,7 @@ figcaption,
   .lightbox-info {
     padding-top: 10px;
   }
-
-  .home {
-    padding: 45px 16px 60px;
-  }
-
-  .home-hero h1 {
-    font-size: clamp(2.8rem, 15vw, 4.5rem);
-  }
-
-  .home-intro {
-    font-size: 1.05rem;
-  }
-
-  .home-image {
-    margin-top: 40px;
-  }
-
+  
   .site-footer {
     flex-direction: column;
     text-align: center;
