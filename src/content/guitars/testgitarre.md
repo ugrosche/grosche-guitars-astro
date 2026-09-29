@@ -4,7 +4,7 @@ year: 2026
 hero:
   src: /images/Fuege.jpg
   alt: Vollansicht
-description: Eine Archtop im Stil der "Massari" von Pagelli.
+description: Archtop im Stil der "Massari" von Pagelli.
 specifications: []
 build_steps:
   - title: Deckenwölbung
