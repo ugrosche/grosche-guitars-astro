@@ -4,7 +4,7 @@ year: 2024
 hero:
   src: /images/13.jpg
   alt: Die fertige Gitarre
-description: Handliche Gitarre aus Holz mit Vorgeschichte
+description: Handliche Gitarre aus Hölzern mit Vorgeschichte
 specifications: []
 build_steps:
   - title: Boden
