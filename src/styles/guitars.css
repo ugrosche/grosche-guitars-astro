@@ -89,11 +89,17 @@ a:hover {
 
 /* Gitarrenübersicht */
 
+.intro {
+  max-width: 700px;
+  margin: 0 0 48px;
+  color: var(--color-muted);
+  font-size: 1.05rem;
+}
+
 .guitar-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px 28px;
-  margin-top: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 56px 32px;
   width: 100%;
 }
 
@@ -117,7 +123,7 @@ a:hover {
   height: auto;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: var(--radius);
   transition: transform 0.25s ease;
 }
 
@@ -126,24 +132,27 @@ a:hover {
 }
 
 .card-content {
-  padding-top: 16px;
+  padding-top: 18px;
 }
 
 .card-content h2 {
-  margin: 0 0 6px;
+  margin: 0 0 8px;
   font-family: 'Manrope', Arial, sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 600;
 }
 
 .card-content .year {
-  margin: 0 0 10px;
-  font-size: 0.9rem;
+  margin: 0 0 12px;
   color: var(--color-muted);
+  font-size: 0.9rem;
 }
 
 .card-content .description {
-  margin: 0 0 12px;
+  max-width: none;
+  margin: 0 0 16px;
+  color: var(--color-text);
+  font-size: 1rem;
   line-height: 1.6;
 }
 
@@ -155,6 +164,7 @@ a:hover {
 }
 
 .guitar-card > a:hover .card-link {
+  color: var(--color-accent-hover);
   text-decoration: underline;
 }
 
