@@ -500,20 +500,19 @@ figcaption,
 }
 
 .site-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
   color: var(--color-text);
+  font-family: 'Manrope', Arial, sans-serif;
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
 }
 
 .site-logo:hover {
   color: var(--color-accent);
-}
-
-.site-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
 }
 
 .site-logo-image {
@@ -527,23 +526,25 @@ figcaption,
   display: flex;
   align-items: center;
   gap: 28px;
+
+  font-family: 'Manrope', Arial, sans-serif;
 }
 
 .site-nav a {
   color: var(--color-text);
   text-decoration: none;
   font-size: 0.95rem;
-  font-family: 'Manrope', Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .site-nav a:hover {
   color: var(--color-accent);
 }
-.site-nav a.active {
-color: var(--color-accent);
-}
 
+.site-nav a.active {
+  color: var(--color-accent);
+  font-weight: 600;
+}
 
 /* Startseite */
 
