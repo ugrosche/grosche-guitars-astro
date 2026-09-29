@@ -1,19 +1,10 @@
 ---
-title: Testgitarre
+title: Massari
 year: 2026
 hero:
   src: /images/Fuege.jpg
   alt: Vollansicht
-description: |-
-  Titel:
-
-  Beleistung der Decke
-
-  Beschreibung:
-
-  Die Leisten werden positioniert und anschließend
-
-  auf ihr endgültiges Profil ausgearbeitet.
+description: Eine Archtop im Stil der "Massari" von Pagelli.
 specifications: []
 build_steps:
   - title: Deckenwölbung
