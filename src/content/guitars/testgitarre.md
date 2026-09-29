@@ -2,7 +2,7 @@
 title: Testgitarre
 year: 2026
 hero:
-  src: /images/Massari.jpg
+  src: /images/Fuege.jpg
   alt: Vollansicht
 description: |-
   Titel:
