@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap');
 :root {
   --color-background: #f4f1eb;
   --color-surface: #ffffff;
@@ -17,7 +18,7 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', Arial, sans-serif;
   color: var(--color-text);
   background: var(--color-background);
 }
@@ -31,21 +32,25 @@ main {
 h1,
 h2,
 h3 {
-  color: var(--color-text);
+color: var(--color-text);
+font-family: 'Manrope', Arial, sans-serif;
+font-weight: 600;
 }
-
+ 
 h1 {
-  margin: 0 0 0.5rem;
-  font-size: clamp(2rem, 5vw, 3rem);
+margin: 0 0 0.5rem;
+font-size: clamp(2rem, 5vw, 3rem);
+font-weight: 700;
+letter-spacing: -0.02em;
 }
-
+ 
 h2 {
-  margin-top: 3rem;
-  font-size: 1.8rem;
+margin-top: 3rem;
+font-size: 1.8rem;
 }
-
+ 
 h3 {
-  font-size: 1.35rem;
+font-size: 1.35rem;
 }
 
 p {
@@ -528,6 +533,7 @@ figcaption,
   color: var(--color-text);
   text-decoration: none;
   font-size: 0.95rem;
+  font-family: 'Manrope', Arial, sans-serif;
   font-weight: 600;
 }
 
@@ -581,6 +587,7 @@ color: var(--color-accent);
   color: #fff;
   background: var(--color-text);
   text-decoration: none;
+  font-family: 'Manrope', Arial, sans-serif;
   font-weight: 600;
   transition:
     background 0.2s ease,
