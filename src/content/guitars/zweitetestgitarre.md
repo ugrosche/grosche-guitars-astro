@@ -4,7 +4,7 @@ year: 2020
 hero:
   src: /images/Kaizen.jpg
   alt: Gitarrenhobel
-description: Ein Bass mit Form-Experimenten
+description: Bass mit Form-Experimenten
 specifications: []
 build_steps:
   - title: erster bauschritt
