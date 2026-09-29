@@ -1,10 +1,10 @@
 ---
-title: zweitetestgitarre
+title: Kaizen Bass
 year: 2020
 hero:
-  src: /images/Massari.jpg
+  src: /images/Kaizen.jpg
   alt: Gitarrenhobel
-description: Dies ist nur ein Test ...
+description: Ein Bass mit Form-Experimenten
 specifications: []
 build_steps:
   - title: erster bauschritt
