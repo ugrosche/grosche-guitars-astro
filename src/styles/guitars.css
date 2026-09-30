@@ -1,144 +1,357 @@
----
-import { getCollection } from 'astro:content';
-import { Image } from 'astro:assets';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap');
 
-import Head from '../../components/Head.astro';
-import '../../styles/guitars.css';
-import Footer from '../../components/Footer.astro';
-import Header from '../../components/Header.astro';
+:root {
+  --color-background: #f4f1eb;
+  --color-surface: #ffffff;
+  --color-text: #292621;
+  --color-muted: #746d63;
+  --color-accent: #855936;
+  --color-accent-hover: #603d25;
+  --color-border: #ded7ce;
 
-const guitars = await getCollection('guitars');
-const base = import.meta.env.BASE_URL;
-
-/*
- * Alle Gitarrenbilder unter src/assets/images/guitars
- * werden Astro beim Build bekannt gemacht.
- */
-const images = import.meta.glob(
-  '/src/assets/images/guitars/**/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}',
-  {
-    eager: true,
-    import: 'default'
-  }
-);
-
-function pageUrl(id) {
-  return (
-    base.replace(/\/$/, '') +
-    '/gitarren/' +
-    id +
-    '/'
-  );
+  --page-width: 1100px;
+  --radius: 10px;
 }
 
-/*
- * Sveltia speichert z.B.:
- *
- * /src/assets/images/guitars/kuu/01.jpg
- *
- * Dieser Pfad entspricht direkt dem Schlüssel
- * in import.meta.glob().
- */
-function getImage(src) {
-  if (!src) return undefined;
-
-  return images[src];
+* {
+  box-sizing: border-box;
 }
 
-const sortedGuitars = [...guitars].sort(
-  (a, b) => (b.data.year || 0) - (a.data.year || 0)
-);
----
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  color: var(--color-text);
+  background: var(--color-background);
+}
 
-<!doctype html>
-<html lang="de">
+main {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
+h1,
+h2,
+h3 {
+  color: var(--color-text);
+  font-family: 'Manrope', Arial, sans-serif;
+  font-weight: 600;
+}
 
-  <title>
-    Gitarren | Grosche Guitars
-  </title>
+h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
 
-  <Head title="Gitarren | Grosche Guitars" />
-</head>
+h2 {
+  margin-top: 3rem;
+  font-size: 1.8rem;
+}
 
-<body>
+h3 {
+  font-size: 1.35rem;
+}
 
-  <Header />
+p {
+  line-height: 1.7;
+}
 
-  <main>
+a {
+  color: var(--color-accent);
+}
 
-    <h1>Meine Gitarren</h1>
+a:hover {
+  color: var(--color-accent-hover);
+}
 
-    <p class="intro">
-      Eine Auswahl meiner selbst gebauten Gitarren und ihrer Entstehung.
-    </p>
+.back {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: var(--color-accent);
+  text-decoration: none;
+}
 
-    <div class="guitar-grid">
+.back:hover {
+  color: var(--color-accent-hover);
+  text-decoration: underline;
+}
 
-      {sortedGuitars.map((guitar) => {
+.year {
+  color: var(--color-muted);
+}
 
-        const heroImage = getImage(guitar.data.hero?.src);
+.description {
+  max-width: 800px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
 
-        return (
 
-          <article class="guitar-card">
+/* Gitarrenübersicht */
 
-            <a href={pageUrl(guitar.id)}>
+.intro {
+  max-width: 700px;
+  margin: 0 0 48px;
+  color: var(--color-muted);
+  font-size: 1.05rem;
+}
 
-              <div class="card-image">
+.guitar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 56px 32px;
+  width: 100%;
+}
 
-                {heroImage && (
-                  <Image
-                    src={heroImage}
-                    alt={guitar.data.hero?.alt || guitar.data.title}
-                    widths={[400, 600, 800, 1200]}
-                    sizes="(max-width: 600px) calc(100vw - 32px), 520px"
-                    loading="lazy"
-                  />
-                )}
+.guitar-card {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
 
-              </div>
+.guitar-card > a {
+  display: block;
+  width: 100%;
+  color: inherit;
+  text-decoration: none;
+}
 
-              <div class="card-content">
 
-                <h2>
-                  {guitar.data.title}
-                </h2>
+/* Feste Bildfläche der Gitarrenkachel */
 
-                {guitar.data.year && (
-                  <p class="year">
-                    Baujahr {guitar.data.year}
-                  </p>
-                )}
+.card-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
 
-                {guitar.data.description && (
-                  <p class="description">
-                    {guitar.data.description}
-                  </p>
-                )}
+.card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.25s ease;
+}
 
-                <span class="card-link">
-                  Baubericht ansehen →
-                </span>
+.guitar-card > a:hover .card-image img {
+  transform: scale(1.015);
+}
 
-              </div>
 
-            </a>
+.card-content {
+  padding-top: 18px;
+}
 
-          </article>
+.card-content h2 {
+  margin: 0 0 8px;
+  font-family: 'Manrope', Arial, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
 
-        );
-      })}
+.card-content .year {
+  margin: 0 0 12px;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
 
-    </div>
+.card-content .description {
+  max-width: none;
+  margin: 0 0 16px;
+  color: var(--color-text);
+  font-size: 1rem;
+  line-height: 1.6;
+}
 
-  </main>
+.card-link {
+  font-family: 'Manrope', Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-accent);
+}
 
-  <Footer />
+.guitar-card > a:hover .card-link {
+  color: var(--color-accent-hover);
+  text-decoration: underline;
+}
 
-</body>
 
-</html>
+/* Gitarrendetailseite */
+
+.hero {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 700px;
+  margin: 30px 0;
+  object-fit: contain;
+  border-radius: var(--radius);
+  background: var(--color-surface);
+}
+
+.build-step {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.step-description {
+  line-height: 1.7;
+}
+
+.gallery,
+.build-images {
+  margin-top: 1.5rem;
+}
+
+.build-images-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.build-images-single {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.build-images-single .build-image {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.build-images-single .build-image img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 600px;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.build-image {
+  margin: 0;
+}
+
+.build-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+}
+
+figcaption,
+.build-image figcaption {
+  margin-top: 8px;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+
+/* Carousel */
+
+.build-images-shell {
+  position: relative;
+}
+
+.build-images-carousel {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  padding-bottom: 12px;
+}
+
+.build-images-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.build-images-carousel .build-image {
+  flex: 0 0 100%;
+  width: 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.build-images-carousel .build-image img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin: 0 0 14px;
+}
+
+.carousel-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  color: var(--color-text);
+  background: var(--color-surface);
+  font: inherit;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.carousel-arrow:hover:not(:disabled) {
+  color: #fff;
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+}
+
+.carousel-arrow:disabled {
+  cursor: default;
+  opacity: 0.35;
+}
+
+.carousel-counter {
+  min-width: 100px;
+  color: var(--color-muted);
+  text-align: center;
+}
+
+.carousel-dots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 14px;
+}
+
+.carousel-dot {
+  width: 11px;
+  height: 11px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--color-border);
+  cursor: pointer;
+}
+
+.carousel-dot
