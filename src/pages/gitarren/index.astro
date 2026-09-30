@@ -3,13 +3,24 @@ import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
 
 import Head from '../../components/Head.astro';
+import '../../styles/guitars.css';
 import Footer from '../../components/Footer.astro';
 import Header from '../../components/Header.astro';
 
-import '../../styles/guitars.css';
-
 const guitars = await getCollection('guitars');
 const base = import.meta.env.BASE_URL;
+
+/*
+ * Alle Gitarrenbilder unter src/assets/images/guitars
+ * werden Astro beim Build bekannt gemacht.
+ */
+const images = import.meta.glob(
+  '/src/assets/images/guitars/**/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}',
+  {
+    eager: true,
+    import: 'default'
+  }
+);
 
 function pageUrl(id) {
   return (
@@ -21,32 +32,17 @@ function pageUrl(id) {
 }
 
 /*
-  Alle Gitarrenbilder aus src/assets/images/guitars
-  werden Astro bekannt gemacht.
-*/
-const images = import.meta.glob(
-  '/src/assets/images/guitars/**/*.{jpg,jpeg,png,webp}',
-  {
-    eager: true,
-    import: 'default'
-  }
-);
-
+ * Sveltia speichert z.B.:
+ *
+ * /src/assets/images/guitars/kuu/01.jpg
+ *
+ * Dieser Pfad entspricht direkt dem Schlüssel
+ * in unserem import.meta.glob().
+ */
 function getImage(src) {
   if (!src) return undefined;
 
-  /*
-    Beispiel aus Markdown:
-    images/guitars/kuun/hero.jpg
-
-    wird zu:
-    /src/assets/images/guitars/kuun/hero.jpg
-  */
-  const cleanSrc = src.replace(/^\/?images\/guitars\//, '');
-
-  return images[
-    `/src/assets/images/guitars/${cleanSrc}`
-  ];
+  return images[src];
 }
 
 const sortedGuitars = [...guitars].sort(
@@ -134,4 +130,5 @@ const sortedGuitars = [...guitars].sort(
 <Footer />
 
 </body>
+
 </html>
