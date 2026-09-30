@@ -13,6 +13,9 @@ collections:
     folder: src/content/guitars
     create: true
     slug: "{{slug}}"
+    
+    media_folder: "/src/assets/images/guitars/{{filename}}"
+    public_folder: "/src/assets/images/guitars/{{filename}}"
 
     fields:
       - label: Titel
