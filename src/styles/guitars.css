@@ -1,923 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap');
-:root {
-  --color-background: #f4f1eb;
-  --color-surface: #ffffff;
-  --color-text: #292621;
-  --color-muted: #746d63;
-  --color-accent: #855936;
-  --color-accent-hover: #603d25;
-  --color-border: #ded7ce;
-
-  --page-width: 1100px;
-  --radius: 10px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: 'Inter', Arial, sans-serif;
-  color: var(--color-text);
-  background: var(--color-background);
-}
-
-main {
-  max-width: var(--page-width);
-  margin: 0 auto;
-  padding: 48px 24px 80px;
-}
-
-h1,
-h2,
-h3 {
-color: var(--color-text);
-font-family: 'Manrope', Arial, sans-serif;
-font-weight: 600;
-}
- 
-h1 {
-margin: 0 0 0.5rem;
-font-size: clamp(2rem, 5vw, 3rem);
-font-weight: 700;
-letter-spacing: -0.02em;
-}
- 
-h2 {
-margin-top: 3rem;
-font-size: 1.8rem;
-}
- 
-h3 {
-font-size: 1.35rem;
-}
-
-p {
-  line-height: 1.7;
-}
-
-a {
-  color: var(--color-accent);
-}
-
-a:hover {
-  color: var(--color-accent-hover);
-}
-
-.back {
-  display: inline-block;
-  margin-bottom: 2rem;
-  color: var(--color-accent);
-  text-decoration: none;
-}
-
-.back:hover {
-  color: var(--color-accent-hover);
-  text-decoration: underline;
-}
-
-.year {
-  color: var(--color-muted);
-}
-
-.description {
-  max-width: 800px;
-  font-size: 1.1rem;
-  line-height: 1.7;
-}
-
-/* Gitarrenübersicht */
-
-.intro {
-  max-width: 700px;
-  margin: 0 0 48px;
-  color: var(--color-muted);
-  font-size: 1.05rem;
-}
-
-.guitar-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 56px 32px;
-  width: 100%;
-}
-
-.guitar-card {
-  width: 100%;
-  min-width: 0;
-  overflow: hidden;
-}
-
-.guitar-card > a {
-  display: block;
-  width: 100%;
-  color: inherit;
-  text-decoration: none;
-}
-
-.guitar-card img {
-display: block;
-width: 100%;
-aspect-ratio: 4 / 3;
-object-fit: cover;
-object-position: center;
-border-radius: var(--radius);
-transition: transform 0.25s ease;
-}
-
-.guitar-card > a:hover img {
-  transform: scale(1.015);
-}
-
-.card-content {
-  padding-top: 18px;
-}
-
-.card-content h2 {
-  margin: 0 0 8px;
-  font-family: 'Manrope', Arial, sans-serif;
-  font-size: 1.4rem;
-  font-weight: 600;
-}
-
-.card-content .year {
-  margin: 0 0 12px;
-  color: var(--color-muted);
-  font-size: 0.9rem;
-}
-
-.card-content .description {
-  max-width: none;
-  margin: 0 0 16px;
-  color: var(--color-text);
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-.card-link {
-  font-family: 'Manrope', Arial, sans-serif;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--color-accent);
-}
-
-.guitar-card > a:hover .card-link {
-  color: var(--color-accent-hover);
-  text-decoration: underline;
-}
-
-/* Gitarrendetailseite */
-
-.hero {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-height: 700px;
-  margin: 30px 0;
-  object-fit: contain;
-  border-radius: var(--radius);
-  background: var(--color-surface);
-}
-
-.build-step {
-  margin-top: 2rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--color-border);
-}
-
-.step-description {
-  line-height: 1.7;
-}
-
-.gallery,
-.build-images {
-  margin-top: 1.5rem;
-}
-
-.build-images-gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.build-images-single {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.build-images-single .build-image {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.build-images-single .build-image img {
-  display: block;
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  max-height: 600px;
-  margin: 0 auto;
-  object-fit: contain;
-}
-
-.build-image {
-  margin: 0;
-}
-
-.build-image img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: var(--radius);
-}
-
-figcaption,
-.build-image figcaption {
-  margin-top: 8px;
-  color: var(--color-muted);
-  font-size: 0.9rem;
-  line-height: 1.4;
-}
-
-
-/* Carousel */
-
-.build-images-shell {
-  position: relative;
-}
-
-.build-images-carousel {
-  position: relative;
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  overscroll-behavior-x: contain;
-  scrollbar-width: none;
-  padding-bottom: 12px;
-}
-
-.build-images-carousel::-webkit-scrollbar {
-  display: none;
-}
-
-.build-images-carousel .build-image {
-  flex: 0 0 100%;
-  width: 100%;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-}
-
-.build-images-carousel .build-image img {
-  display: block;
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  max-height: 500px;
-  margin: 0 auto;
-  object-fit: contain;
-}
-
-.carousel-controls {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 18px;
-  margin: 0 0 14px;
-}
-
-.carousel-arrow {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  padding: 0;
-  border: 1px solid var(--color-border);
-  border-radius: 50%;
-  color: var(--color-text);
-  background: var(--color-surface);
-  font: inherit;
-  font-size: 2rem;
-  line-height: 1;
-  cursor: pointer;
-}
-
-.carousel-arrow:hover:not(:disabled) {
-  color: #fff;
-  border-color: var(--color-accent);
-  background: var(--color-accent);
-}
-
-.carousel-arrow:disabled {
-  cursor: default;
-  opacity: 0.35;
-}
-
-.carousel-counter {
-  min-width: 100px;
-  color: var(--color-muted);
-  text-align: center;
-}
-
-.carousel-dots {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 9px;
-  margin-top: 14px;
-}
-
-.carousel-dot {
-  width: 11px;
-  height: 11px;
-  padding: 0;
-  border: 0;
-  border-radius: 50%;
-  background: var(--color-border);
-  cursor: pointer;
-}
-
-.carousel-dot[aria-current='true'] {
-  background: var(--color-accent);
-  transform: scale(1.25);
-}
-
-.carousel-dot:hover {
-  background: var(--color-accent-hover);
-}
-
-
-/* Lightbox */
-
-.lightbox-trigger {
-  display: block;
-  width: 100%;
-  padding: 0;
-  border: 0;
-  color: inherit;
-  background: transparent;
-  cursor: zoom-in;
-}
-
-.lightbox-trigger img {
-  display: block;
-}
-
-.lightbox {
-  width: 92vw;
-  max-width: 1400px;
-  height: 92vh;
-  max-height: 92vh;
-  margin: auto;
-  padding: 0;
-  border: 0;
-  color: #fff;
-  background: transparent;
-  overflow: hidden;
-}
-
-.lightbox::backdrop {
-  background: rgb(18 14 11 / 92%);
-}
-
-.lightbox-panel {
-  position: relative;
-  display: grid;
-  grid-template-rows: minmax(0, 1fr) auto;
-  width: 100%;
-  height: 100%;
-  padding: 55px 70px 20px;
-  border-radius: var(--radius);
-  background: #17130f;
-  overflow: hidden;
-}
-
-.lightbox-image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  max-height: 100%;
-  min-width: 0;
-  min-height: 0;
-  object-fit: contain;
-  touch-action: pan-y;
-}
-
-.lightbox-info {
-  width: 100%;
-  min-width: 0;
-  padding-top: 10px;
-  text-align: center;
-}
-
-.lightbox-counter {
-  margin: 0;
-  color: #cfc7bc;
-  font-size: 0.9rem;
-  white-space: nowrap;
-  text-align: center;
-}
-
-.lightbox-caption {
-  max-width: 900px;
-  margin: 6px auto 0;
-  color: #f4f1eb;
-  line-height: 1.5;
-  text-align: center;
-}
-
-.lightbox-close {
-  position: absolute;
-  top: 10px;
-  right: 12px;
-  z-index: 3;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  padding: 0;
-  border: 1px solid rgb(255 255 255 / 35%);
-  border-radius: 50%;
-  color: #fff;
-  background: rgb(0 0 0 / 35%);
-  font: inherit;
-  font-size: 2rem;
-  line-height: 1;
-  cursor: pointer;
-}
-
-.lightbox-close:hover {
-  border-color: #fff;
-  background: var(--color-accent);
-}
-
-.lightbox-nav {
-  position: absolute;
-  top: 50%;
-  z-index: 2;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 52px;
-  height: 52px;
-  padding: 0;
-  border: 1px solid rgb(255 255 255 / 40%);
-  border-radius: 50%;
-  color: #fff;
-  background: rgb(0 0 0 / 45%);
-  font: inherit;
-  font-size: 2.5rem;
-  line-height: 1;
-  cursor: pointer;
-  transform: translateY(-50%);
-}
-
-.lightbox-nav-prev {
-  left: 18px;
-}
-
-.lightbox-nav-next {
-  right: 18px;
-}
-
-.lightbox-nav:hover:not(:disabled) {
-  border-color: #fff;
-  background: var(--color-accent);
-}
-
-.lightbox-nav:disabled {
-  cursor: default;
-  opacity: 0.25;
-}
-
-.lightbox-close:focus-visible,
-.lightbox-trigger:focus-visible,
-.lightbox-nav:focus-visible {
-  outline: 3px solid var(--color-accent);
-  outline-offset: 4px;
-}
-
-/* Gemeinsamer Header */
-
-.site-header {
-  width: 100%;
-  border-bottom: 1px solid var(--color-border);
-  background: var(--color-background);
-}
-
-.site-header-inner {
-  max-width: var(--page-width);
-  margin: 0 auto;
-  padding: 20px 24px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-}
-
-.site-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-
-  color: var(--color-text);
-  font-family: 'Manrope', Arial, sans-serif;
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.site-logo:hover {
-  color: var(--color-accent);
-}
-
-.site-logo-image {
-  width: 24px;
-  height: 24px;
-  display: block;
-  object-fit: contain;
-}
-
-.site-nav {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-
-  font-family: 'Manrope', Arial, sans-serif;
-}
-
-.site-nav a {
-  color: var(--color-text);
-  text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 500;
-}
-
-.site-nav a:hover {
-  color: var(--color-accent);
-}
-
-.site-nav a.active {
-  color: var(--color-accent);
-  font-weight: 600;
-}
-
-/* Startseite */
-
-.home {
-  max-width: var(--page-width);
-  margin: 0 auto;
-  padding: 70px 24px 80px;
-}
-
-.home-hero {
-  width: 100%;
-  text-align: center;
-}
-
-.home-kicker {
-  margin: 0 0 14px;
-  color: var(--color-muted);
-  font-size: 0.9rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.home-hero h1 {
-  margin: 0 0 24px;
-  font-size: clamp(3rem, 8vw, 6rem);
-  line-height: 1;
-}
-
-.home-intro {
-  max-width: 650px;
-  margin: 0 auto 32px;
-  font-size: 1.2rem;
-  line-height: 1.7;
-}
-
-.home-button {
-  display: inline-block;
-  padding: 14px 24px;
-  border-radius: 8px;
-  color: #fff;
-  background: var(--color-text);
-  text-decoration: none;
-  font-family: 'Manrope', Arial, sans-serif;
-  font-weight: 600;
-  transition:
-    background 0.2s ease,
-    transform 0.2s ease;
-}
-
-.home-button:hover {
-  color: #fff;
-  background: var(--color-accent);
-  transform: translateY(-2px);
-}
-
-.home-image {
-  width: 100%;
-  max-width: 900px;
-  margin: 60px auto 0;
-}
-
-.home-about {
-
- max-width: 760px;
-
- margin: 80px auto 0;
-
- text-align: left;
-
-}
-.home-about h2 {
- margin: 0 0 24px;
- font-size: clamp(1.8rem, 4vw, 2.5rem);
-}
-.home-about p {
- margin: 0 0 18px;
- font-size: 1.05rem;
- line-height: 1.8;
-}
-
-.home-image img {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-height: 600px;
-  object-fit: contain;
-  border-radius: var(--radius);
-}
-
-
-/* Gemeinsamer Footer */
-
-.site-footer {
-  max-width: var(--page-width);
-  margin: 60px auto 0;
-  padding: 24px 20px;
-  border-top: 1px solid var(--color-border);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  color: var(--color-muted);
-  font-size: 0.9rem;
-}
-
-.site-footer p {
-  margin: 0;
-}
-
-.site-footer nav {
-  display: flex;
-  gap: 20px;
-}
-
-.site-footer a {
-  color: var(--color-accent);
-  text-decoration: none;
-}
-
-.site-footer a:hover {
-  color: var(--color-accent-hover);
-  text-decoration: underline;
-}
-
-
-/* Impressum und Datenschutz */
-
-.legal-page {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 60px 20px;
-}
-
-.legal-page h1 {
-  margin-top: 30px;
-  margin-bottom: 40px;
-}
-
-.legal-page h2 {
-  margin-top: 32px;
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-}
-
-.legal-page p {
-  line-height: 1.7;
-}
-
-.back-link {
-  color: var(--color-accent);
-  text-decoration: none;
-}
-
-.back-link:hover {
-  color: var(--color-accent-hover);
-  text-decoration: underline;
-}
-
-/* Startseite */
-
-.home {
-  max-width: var(--page-width);
-  margin: 0 auto;
-  padding: 70px 24px 80px;
-}
-
-.home-hero {
-  width: 100%;
-  text-align: center;
-}
-
-.home-kicker {
-  margin: 0 0 0.5rem;
-  color: var(--color-muted);
-  font-family: 'Manrope', Arial, sans-serif;
-  font-size: 0.9rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.home-hero h1 {
-  margin: 0;
-  font-size: clamp(2.5rem, 6vw, 4rem);
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  line-height: 1;
-}
-
-.home-intro {
-  max-width: 650px;
-  margin: 1rem auto 1.8rem;
-  font-size: 1.15rem;
-  line-height: 1.6;
-}
-
-.home-button {
-  display: inline-block;
-  padding: 0.8rem 1.4rem;
-  border-radius: 8px;
-  color: #fff;
-  background: var(--color-text);
-  font-family: 'Manrope', Arial, sans-serif;
-  font-weight: 600;
-  text-decoration: none;
-  transition:
-    background 0.2s ease,
-    transform 0.2s ease;
-}
-
-.home-button:hover {
-  color: #fff;
-  background: var(--color-accent);
-  transform: translateY(-2px);
-}
-
-.home-image {
-  width: 100%;
-  max-width: 900px;
-  margin: 2.5rem auto 0;
-}
-
-.home-image img {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-height: 600px;
-  object-fit: contain;
-  border-radius: var(--radius);
-}
-
-.home-about {
-  max-width: 760px;
-  margin: 80px auto 0;
-  text-align: left;
-}
-
-.home-about h2 {
-  margin: 0 0 24px;
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
-}
-
-.home-about p {
-  margin: 0 0 18px;
-  font-size: 1.05rem;
-  line-height: 1.8;
-}
-
-/* Mobil */
-
-@media (max-width: 600px) {
-  main {
-    padding: 28px 16px 60px;
+---
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+
+import Head from '../../components/Head.astro';
+import '../../styles/guitars.css';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+
+const guitars = await getCollection('guitars');
+const base = import.meta.env.BASE_URL;
+
+/*
+ * Alle Gitarrenbilder unter src/assets/images/guitars
+ * werden Astro beim Build bekannt gemacht.
+ */
+const images = import.meta.glob(
+  '/src/assets/images/guitars/**/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}',
+  {
+    eager: true,
+    import: 'default'
   }
+);
 
-  .guitar-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .build-images-gallery {
-    grid-template-columns: 1fr;
-  }
-
-  .build-images-carousel {
-    gap: 12px;
-  }
-
-  .carousel-arrow {
-    width: 40px;
-    height: 40px;
-  }
-
-  .lightbox {
-    width: 100vw;
-    max-width: 100vw;
-    height: 100vh;
-    max-height: 100vh;
-  }
-
-  .lightbox-panel {
-    padding: 55px 12px 80px;
-    border-radius: 0;
-  }
-
-  .lightbox-image {
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-  }
-
-  .lightbox-nav {
-    top: auto;
-    bottom: 18px;
-    width: 44px;
-    height: 44px;
-    transform: none;
-  }
-
-  .lightbox-nav-prev {
-    left: 18px;
-  }
-
-  .lightbox-nav-next {
-    right: 18px;
-  }
-
-  .lightbox-info {
-    padding-top: 10px;
-  }
-  
-  .site-footer {
-    flex-direction: column;
-    text-align: center;
-  }
-  .site-header-inner {
-padding: 16px;
-}
- 
-.site-nav {
-gap: 16px;
-}
- 
-.site-logo {
-font-size: 1.05rem;
-}
- 
-.site-nav a {
-font-size: 0.9rem;
-}
-.card-image {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  overflow: hidden;
-  border-radius: var(--radius);
+function pageUrl(id) {
+  return (
+    base.replace(/\/$/, '') +
+    '/gitarren/' +
+    id +
+    '/'
+  );
 }
 
-.card-image img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  transition: transform 0.25s ease;
+/*
+ * Sveltia speichert z.B.:
+ *
+ * /src/assets/images/guitars/kuu/01.jpg
+ *
+ * Dieser Pfad entspricht direkt dem Schlüssel
+ * in import.meta.glob().
+ */
+function getImage(src) {
+  if (!src) return undefined;
+
+  return images[src];
 }
 
-.guitar-card > a:hover .card-image img {
-  transform: scale(1.015);
-}
-  
-}
+const sortedGuitars = [...guitars].sort(
+  (a, b) => (b.data.year || 0) - (a.data.year || 0)
+);
+---
+
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+
+  <title>
+    Gitarren | Grosche Guitars
+  </title>
+
+  <Head title="Gitarren | Grosche Guitars" />
+</head>
+
+<body>
+
+  <Header />
+
+  <main>
+
+    <h1>Meine Gitarren</h1>
+
+    <p class="intro">
+      Eine Auswahl meiner selbst gebauten Gitarren und ihrer Entstehung.
+    </p>
+
+    <div class="guitar-grid">
+
+      {sortedGuitars.map((guitar) => {
+
+        const heroImage = getImage(guitar.data.hero?.src);
+
+        return (
+
+          <article class="guitar-card">
+
+            <a href={pageUrl(guitar.id)}>
+
+              <div class="card-image">
+
+                {heroImage && (
+                  <Image
+                    src={heroImage}
+                    alt={guitar.data.hero?.alt || guitar.data.title}
+                    widths={[400, 600, 800, 1200]}
+                    sizes="(max-width: 600px) calc(100vw - 32px), 520px"
+                    loading="lazy"
+                  />
+                )}
+
+              </div>
+
+              <div class="card-content">
+
+                <h2>
+                  {guitar.data.title}
+                </h2>
+
+                {guitar.data.year && (
+                  <p class="year">
+                    Baujahr {guitar.data.year}
+                  </p>
+                )}
+
+                {guitar.data.description && (
+                  <p class="description">
+                    {guitar.data.description}
+                  </p>
+                )}
+
+                <span class="card-link">
+                  Baubericht ansehen →
+                </span>
+
+              </div>
+
+            </a>
+
+          </article>
+
+        );
+      })}
+
+    </div>
+
+  </main>
+
+  <Footer />
+
+</body>
+
+</html>
