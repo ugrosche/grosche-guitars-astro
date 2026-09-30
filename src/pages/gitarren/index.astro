@@ -1,9 +1,12 @@
 ---
 import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+
 import Head from '../../components/Head.astro';
-import '../../styles/guitars.css';
 import Footer from '../../components/Footer.astro';
 import Header from '../../components/Header.astro';
+
+import '../../styles/guitars.css';
 
 const guitars = await getCollection('guitars');
 const base = import.meta.env.BASE_URL;
@@ -17,14 +20,33 @@ function pageUrl(id) {
   );
 }
 
-function imageUrl(src) {
-  if (!src) return '';
+/*
+  Alle Gitarrenbilder aus src/assets/images/guitars
+  werden Astro bekannt gemacht.
+*/
+const images = import.meta.glob(
+  '/src/assets/images/guitars/**/*.{jpg,jpeg,png,webp}',
+  {
+    eager: true,
+    import: 'default'
+  }
+);
 
-  return (
-    base.replace(/\/$/, '') +
-    '/' +
-    src.replace(/^\//, '')
-  );
+function getImage(src) {
+  if (!src) return undefined;
+
+  /*
+    Beispiel aus Markdown:
+    images/guitars/kuun/hero.jpg
+
+    wird zu:
+    /src/assets/images/guitars/kuun/hero.jpg
+  */
+  const cleanSrc = src.replace(/^\/?images\/guitars\//, '');
+
+  return images[
+    `/src/assets/images/guitars/${cleanSrc}`
+  ];
 }
 
 const sortedGuitars = [...guitars].sort(
@@ -34,6 +56,7 @@ const sortedGuitars = [...guitars].sort(
 
 <!doctype html>
 <html lang="de">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
@@ -42,60 +65,73 @@ const sortedGuitars = [...guitars].sort(
 </head>
 
 <body>
+
 <Header />
-  <main>
 
-    <h1>Meine Gitarren</h1>
+<main>
 
-    <p class="intro">
-      Eine Auswahl meiner selbst gebauten Gitarren und ihrer Entstehung.
-    </p>
+  <h1>Meine Gitarren</h1>
 
-    <div class="guitar-grid">
+  <p class="intro">
+    Eine Auswahl meiner selbst gebauten Gitarren und ihrer Entstehung.
+  </p>
 
-      {sortedGuitars.map((guitar) => (
+  <div class="guitar-grid">
+
+    {sortedGuitars.map((guitar) => {
+
+      const heroImage = getImage(guitar.data.hero?.src);
+
+      return (
         <article class="guitar-card">
 
           <a href={pageUrl(guitar.id)}>
 
-            {guitar.data.hero?.src && (
-              <img
-                src={imageUrl(guitar.data.hero.src)}
-                alt={guitar.data.hero.alt || guitar.data.title}
+            {heroImage && (
+              <Image
+                src={heroImage}
+                alt={guitar.data.hero?.alt || guitar.data.title}
+                widths={[400, 600, 800]}
+                sizes="(max-width: 700px) 100vw, 400px"
                 loading="lazy"
               />
             )}
 
-<div class="card-content">
- 
-<h2>{guitar.data.title}</h2>
- 
-{guitar.data.year && (
-<p class="year">
-Baujahr {guitar.data.year}
-</p>
-)}
- 
-{guitar.data.description && (
-<p class="description">
-{guitar.data.description}
-</p>
-)}
- 
-<span class="card-link">
-Baubericht ansehen →
-</span>
- 
-</div>
+            <div class="card-content">
+
+              <h2>
+                {guitar.data.title}
+              </h2>
+
+              {guitar.data.year && (
+                <p class="year">
+                  Baujahr {guitar.data.year}
+                </p>
+              )}
+
+              {guitar.data.description && (
+                <p class="description">
+                  {guitar.data.description}
+                </p>
+              )}
+
+              <span class="card-link">
+                Baubericht ansehen →
+              </span>
+
+            </div>
 
           </a>
 
         </article>
-      ))}
+      );
+    })}
 
-    </div>
+  </div>
 
-  </main>
+</main>
+
 <Footer />
+
 </body>
 </html>
