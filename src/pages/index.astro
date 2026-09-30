@@ -1,71 +1,97 @@
 ---
 import "../styles/guitars.css";
+
+import { Image } from "astro:assets";
+import heroImage from "../assets/images/home/hero.jpg";
+
 import Footer from "../components/Footer.astro";
 import Head from "../components/Head.astro";
 import Header from "../components/Header.astro";
 
 const title = "Grosche Guitars";
 const guitarUrl = `${import.meta.env.BASE_URL}/gitarren/`;
-const heroUrl = import.meta.env.BASE_URL + "/images/home/hero.jpg";
 ---
 
 <!doctype html>
 <html lang="de">
+
   <head>
-  <Head title={title} />
+    <Head title={title} />
   </head>
 
   <body>
-  <Header />
+
+    <Header />
+
     <main class="home">
-<section class="home-hero">
-<p class="home-kicker">Gitarrenbau aus Leidenschaft</p>
- 
-<h1>Grosche Guitars</h1>
- 
-<p class="home-intro">
-Handgebaute Gitarren, Bauberichte und Einblicke in meine Werkstatt.
-</p>
 
-<a href={guitarUrl} class="home-button">Gitarren entdecken</a>
+      <section class="home-hero">
 
-<div class="home-image">
-<img src={heroUrl} alt="Handgebaute Gitarre von Grosche Guitars"/>
-</div>
+        <p class="home-kicker">
+          Gitarrenbau aus Leidenschaft
+        </p>
 
-<section class="home-about">
-  <h2>Vom Stück Holz zum Instrument</h2>
+        <h1>Grosche Guitars</h1>
 
-  <p>
-    Die beiden Gitarren oben sind genau auf diese Weise entstanden:
-    aus einer Idee, aus Holz und aus der Freude daran, etwas Eigenes zu schaffen.
-    Der Weg zum fertigen Instrument ist dabei mindestens genauso spannend wie das Ergebnis.
-  </p>
+        <p class="home-intro">
+          Handgebaute Gitarren, Bauberichte und Einblicke in meine Werkstatt.
+        </p>
 
-  <p>
-    Danach folgen viele kleine Entscheidungen, viel Handarbeit,
-    manchmal Experimente und gelegentlich auch ein neuer Versuch.
-  </p>
+        <a href={guitarUrl} class="home-button">
+          Gitarren entdecken
+        </a>
 
-  <p>
-    Genau das macht für mich den Reiz des Gitarrenbaus aus.
-  </p>
+        <div class="home-image">
 
-  <p>
-    Auf Grosche Guitars möchte ich meine Projekte und Erfahrungen festhalten
-    und zeigen, wie meine Instrumente entstehen. Nicht als professioneller
-    Gitarrenbauer, sondern als Hobby-Luthier mit Freude an gutem Handwerk,
-    technischen Details und eigenen Lösungen.
-  </p>
+          <Image
+            src={heroImage}
+            alt="Handgebaute Gitarren von Grosche Guitars"
+            widths={[600, 900, 1200, 1600]}
+            sizes="(max-width: 950px) calc(100vw - 48px), 900px"
+          />
 
-  <p>
-    Grosche Guitars ist dabei keine kommerzielle Gitarrenmarke.
-    Der Name steht für mein persönliches Gitarrenbauprojekt und für die
-    Instrumente, die im Laufe der Zeit in meiner Werkstatt entstehen.
-  </p>
-</section>
+        </div>
+
+      </section>
+
+      <section class="home-about">
+
+        <h2>Vom Stück Holz zum Instrument</h2>
+
+        <p>
+          Die beiden Gitarren oben sind genau auf diese Weise entstanden:
+          aus einer Idee, aus Holz und aus der Freude daran, etwas Eigenes zu schaffen.
+          Der Weg zum fertigen Instrument ist dabei mindestens genauso spannend wie das Ergebnis.
+        </p>
+
+        <p>
+          Danach folgen viele kleine Entscheidungen, viel Handarbeit,
+          manchmal Experimente und gelegentlich auch ein neuer Versuch.
+        </p>
+
+        <p>
+          Genau das macht für mich den Reiz des Gitarrenbaus aus.
+        </p>
+
+        <p>
+          Auf Grosche Guitars möchte ich meine Projekte und Erfahrungen festhalten
+          und zeigen, wie meine Instrumente entstehen. Nicht als professioneller
+          Gitarrenbauer, sondern als Hobby-Luthier mit Freude an gutem Handwerk,
+          technischen Details und eigenen Lösungen.
+        </p>
+
+        <p>
+          Grosche Guitars ist dabei keine kommerzielle Gitarrenmarke.
+          Der Name steht für mein persönliches Gitarrenbauprojekt und für die
+          Instrumente, die im Laufe der Zeit in meiner Werkstatt entstehen.
+        </p>
+
+      </section>
 
     </main>
+
     <Footer />
+
   </body>
+
 </html>
