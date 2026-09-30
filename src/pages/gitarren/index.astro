@@ -87,8 +87,8 @@ const sortedGuitars = [...guitars].sort(
               <Image
                 src={heroImage}
                 alt={guitar.data.hero?.alt || guitar.data.title}
-                widths={[400, 600, 800]}
-                sizes="(max-width: 700px) 100vw, 400px"
+                widths={[400, 600, 800, 1200]}
+                sizes="(max-width: 600px) calc(100vw - 32px), 520px"
                 loading="lazy"
               />
             )}
