@@ -36,7 +36,7 @@ const heroImage = heroPath
   heroImage={heroImage}
   heroAlt={item.data.hero?.alt}
   heroDescription={item.data.hero?.description}
-  backHref={`${import.meta.env.BASE_URL}werkstatt/`}
+  backHref={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/werkstatt/`}
   backLabel="Zurück zur Werkstatt"
 >
 
