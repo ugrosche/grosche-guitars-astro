@@ -9,6 +9,15 @@ const guitars = defineCollection({
   })
 });
 
+const workshop = defineCollection({
+  loader: glob({
+    pattern: '**/*.md',
+    base: './src/content/workshop',
+    generateId: ({ entry }) => entry.replace(/\.md$/, '')
+  })
+});
+
 export const collections = {
-  guitars
+  guitars,
+  workshop
 };
