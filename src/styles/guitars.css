@@ -117,14 +117,13 @@ a:hover {
 }
 
 .guitar-card img {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  border-radius: var(--radius);
-  transition: transform 0.25s ease;
+display: block;
+width: 100%;
+aspect-ratio: 4 / 3;
+object-fit: cover;
+object-position: center;
+border-radius: var(--radius);
+transition: transform 0.25s ease;
 }
 
 .guitar-card > a:hover img {
@@ -827,10 +826,6 @@ figcaption,
 
   .guitar-grid {
     grid-template-columns: 1fr;
-  }
-
-  .guitar-card img {
-    height: auto;
   }
 
   .build-images-gallery {
