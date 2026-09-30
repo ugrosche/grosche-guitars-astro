@@ -2,7 +2,7 @@
 title: Massari
 year: 2026
 hero:
-  src: /images/Fuege.jpg
+  src: /src/assets/images/guitars/testgitarre/Massari.jpg
   alt: Vollansicht
 description: Archtop im Stil der "Massari" von Pagelli.
 specifications: []
