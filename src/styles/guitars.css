@@ -900,4 +900,24 @@ font-size: 1.05rem;
 .site-nav a {
 font-size: 0.9rem;
 }
+.card-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.25s ease;
+}
+
+.guitar-card > a:hover .card-image img {
+  transform: scale(1.015);
+}
+  
 }
