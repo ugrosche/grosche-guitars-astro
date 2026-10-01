@@ -7,17 +7,23 @@ media_folder: /public/images
 public_folder: /images
 
 collections:
+
+  # ============================================================
+  # GITARREN
+  # ============================================================
+
   - name: guitars
     label: Gitarren
     label_singular: Gitarre
     folder: src/content/guitars
     create: true
     slug: "{{slug}}"
-    
+
     media_folder: "/src/assets/images/guitars/{{filename}}"
     public_folder: "/src/assets/images/guitars/{{filename}}"
 
     fields:
+
       - label: Titel
         name: title
         widget: string
@@ -31,12 +37,18 @@ collections:
         name: hero
         widget: object
         fields:
+
           - label: Bild
             name: src
             widget: image
 
           - label: Bildbeschreibung
             name: alt
+            widget: string
+            required: false
+
+          - label: Bildunterschrift
+            name: description
             widget: string
             required: false
 
@@ -49,7 +61,9 @@ collections:
         name: specifications
         widget: list
         required: false
+
         fields:
+
           - label: Eigenschaft
             name: label
             widget: string
@@ -65,6 +79,7 @@ collections:
         summary: "{{fields.title}}"
 
         fields:
+
           - label: Titel
             name: title
             widget: string
@@ -78,11 +93,14 @@ collections:
             name: display
             widget: select
             default: gallery
+
             options:
               - label: Galerie
                 value: gallery
+
               - label: Karussell
                 value: carousel
+
               - label: Einzelbilder
                 value: single
 
@@ -90,7 +108,9 @@ collections:
             name: images
             widget: list
             required: false
+
             fields:
+
               - label: Bild
                 name: src
                 widget: image
@@ -111,6 +131,131 @@ collections:
         required: false
 
         fields:
+
+          - label: Bild
+            name: src
+            widget: image
+
+          - label: Bildunterschrift
+            name: caption
+            widget: string
+            required: false
+
+          - label: Bildbeschreibung
+            name: alt
+            widget: string
+            required: false
+
+
+  # ============================================================
+  # WERKSTATT
+  # ============================================================
+
+  - name: workshop
+    label: Werkstatt
+    label_singular: Werkstattprojekt
+    folder: src/content/workshop
+    create: true
+    slug: "{{slug}}"
+
+    media_folder: "/src/assets/images/workshop/{{filename}}"
+    public_folder: "/src/assets/images/workshop/{{filename}}"
+
+    fields:
+
+      - label: Titel
+        name: title
+        widget: string
+
+      - label: Titelbild
+        name: hero
+        widget: object
+        fields:
+
+          - label: Bild
+            name: src
+            widget: image
+
+          - label: Bildbeschreibung
+            name: alt
+            widget: string
+            required: false
+
+          - label: Bildunterschrift
+            name: description
+            widget: string
+            required: false
+
+      - label: Beschreibung
+        name: description
+        widget: markdown
+        required: false
+
+      - label: Inhalt
+        name: body
+        widget: markdown
+        required: false
+
+      - label: Bauschritte
+        name: build_steps
+        widget: list
+        required: false
+        summary: "{{fields.title}}"
+
+        fields:
+
+          - label: Titel
+            name: title
+            widget: string
+
+          - label: Beschreibung
+            name: description
+            widget: markdown
+            required: false
+
+          - label: Darstellung
+            name: display
+            widget: select
+            default: gallery
+
+            options:
+              - label: Galerie
+                value: gallery
+
+              - label: Karussell
+                value: carousel
+
+              - label: Einzelbilder
+                value: single
+
+          - label: Bilder
+            name: images
+            widget: list
+            required: false
+
+            fields:
+
+              - label: Bild
+                name: src
+                widget: image
+
+              - label: Bildunterschrift
+                name: caption
+                widget: string
+                required: false
+
+              - label: Bildbeschreibung
+                name: alt
+                widget: string
+                required: false
+
+      - label: Abschlussgalerie
+        name: gallery
+        widget: list
+        required: false
+
+        fields:
+
           - label: Bild
             name: src
             widget: image
