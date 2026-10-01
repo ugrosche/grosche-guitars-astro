@@ -81,8 +81,9 @@ const projects = workshop.map((item) => {
                 <Image
                   src={heroImage}
                   alt={item.data.hero?.alt || item.data.title}
-                  widths={[300, 500, 700]}
-                  sizes="(max-width: 600px) 100vw, 400px"
+                  width={400}
+                  height={300}
+                  fit="cover"
                   class="workshop-card-photo"
                   loading="lazy"
                 />
@@ -126,6 +127,7 @@ const projects = workshop.map((item) => {
 
 .workshop-card-image {
 width: 100%;
+aspect-ratio: 4 / 3;
 overflow: hidden;
 border-radius: 12px;
 }
@@ -133,9 +135,7 @@ border-radius: 12px;
 .workshop-card-photo {
 display: block;
 width: 100%;
-height: auto;
-aspect-ratio: auto;
-object-fit: initial;
+height: 100%;
 }
 
 </style>
