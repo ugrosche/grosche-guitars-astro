@@ -124,7 +124,7 @@ a:hover {
 .card-image {
   position: relative;
   width: 100%;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   border-radius: var(--radius);
 }
