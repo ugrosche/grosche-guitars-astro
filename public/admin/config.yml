@@ -151,7 +151,7 @@ collections:
   # WERKSTATT
   # ============================================================
 
-  - name: workshop
+   - name: workshop
     label: Werkstatt
     label_singular: Werkstattprojekt
     folder: src/content/workshop
@@ -163,13 +163,31 @@ collections:
 
     fields:
 
+      # --------------------------------------------------------
+      # Allgemeine Projektdaten
+      # --------------------------------------------------------
+
       - label: Titel
         name: title
         widget: string
+        hint: "Name des Werkstattprojekts, z. B. Binding-Fräsvorrichtung."
+
+      - label: Kurzbeschreibung
+        name: description
+        widget: text
+        required: false
+        hint: "Kurzer Text für die Werkstattübersicht und die Einleitung der Detailseite."
+
+
+      # --------------------------------------------------------
+      # Titelbild
+      # --------------------------------------------------------
 
       - label: Titelbild
         name: hero
         widget: object
+        collapsed: false
+
         fields:
 
           - label: Bild
@@ -180,26 +198,36 @@ collections:
             name: alt
             widget: string
             required: false
+            hint: "Kurze Beschreibung des Bildinhalts für die Barrierefreiheit."
 
           - label: Bildunterschrift
             name: description
             widget: string
             required: false
+            hint: "Optionaler Text unter dem Titelbild."
 
-      - label: Beschreibung
-        name: description
-        widget: markdown
-        required: false
 
-      - label: Inhalt
+      # --------------------------------------------------------
+      # Freier Einleitungstext
+      # --------------------------------------------------------
+
+      - label: Projektbeschreibung
         name: body
         widget: markdown
         required: false
+        hint: "Hier kannst du Hintergrund, Idee, Problemstellung und Funktionsprinzip des Projekts beschreiben."
+
+
+      # --------------------------------------------------------
+      # Bauschritte
+      # --------------------------------------------------------
 
       - label: Bauschritte
+        label_singular: Bauschritt
         name: build_steps
         widget: list
         required: false
+        collapsed: true
         summary: "{{fields.title}}"
 
         fields:
@@ -207,16 +235,19 @@ collections:
           - label: Titel
             name: title
             widget: string
+            hint: "Zum Beispiel: Grundkonstruktion, Fräseinheit oder Im Einsatz."
 
           - label: Beschreibung
             name: description
             widget: markdown
             required: false
+            hint: "Beschreibung dieses Arbeitsschritts."
 
-          - label: Darstellung
+          - label: Darstellung der Bilder
             name: display
             widget: select
             default: gallery
+            hint: "Legt fest, wie die Bilder dieses Bauschritts dargestellt werden."
 
             options:
               - label: Galerie
@@ -228,10 +259,18 @@ collections:
               - label: Einzelbilder
                 value: single
 
+
+          # ----------------------------------------------------
+          # Bilder innerhalb des Bauschritts
+          # ----------------------------------------------------
+
           - label: Bilder
+            label_singular: Bild
             name: images
             widget: list
             required: false
+            collapsed: true
+            summary: "{{fields.caption}}"
 
             fields:
 
@@ -243,29 +282,10 @@ collections:
                 name: caption
                 widget: string
                 required: false
+                hint: "Optionaler sichtbarer Text unter dem Bild."
 
               - label: Bildbeschreibung
                 name: alt
                 widget: string
                 required: false
-
-      - label: Abschlussgalerie
-        name: gallery
-        widget: list
-        required: false
-
-        fields:
-
-          - label: Bild
-            name: src
-            widget: image
-
-          - label: Bildunterschrift
-            name: caption
-            widget: string
-            required: false
-
-          - label: Bildbeschreibung
-            name: alt
-            widget: string
-            required: false
+                hint: "Kurze Beschreibung des Bildinhalts für die Barrierefreiheit."
