@@ -28,15 +28,26 @@ const heroPath = item.data.hero?.src;
 const heroImage = heroPath
   ? images[heroPath]?.default
   : undefined;
+
+const base = import.meta.env.BASE_URL;
+
+function baseUrl(path) {
+  return (
+    base.replace(/\/$/, '') +
+    '/' +
+    path.replace(/^\//, '')
+  );
+}
 ---
 
 <ProjectDetail
   title={item.data.title}
   description={item.data.description}
+  year={item.data.year}
   heroImage={heroImage}
   heroAlt={item.data.hero?.alt}
   heroDescription={item.data.hero?.description}
-  backHref={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/werkstatt/`}
+  backHref={baseUrl('/werkstatt/')}
   backLabel="Zurück zur Werkstatt"
 >
 
