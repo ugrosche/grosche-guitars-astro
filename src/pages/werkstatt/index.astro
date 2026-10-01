@@ -123,19 +123,20 @@ const projects = workshop.map((item) => {
 
 <style>
 
+.workshop-card {
+overflow: hidden;
+border-radius: 12px;
+}
+ 
 .workshop-card-image {
 width: 100%;
-aspect-ratio: 4 / 3;
 overflow: hidden;
-border-radius: 12px 12px 0 0;
 }
  
 .workshop-card-image :global(img) {
 display: block;
 width: 100%;
-height: 100%;
-object-fit: cover;
-object-position: center;
+height: auto;
 }
 
 </style>
