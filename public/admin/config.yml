@@ -151,7 +151,7 @@ collections:
   # WERKSTATT
   # ============================================================
 
-   - name: workshop
+  - name: workshop
     label: Werkstatt
     label_singular: Werkstattprojekt
     folder: src/content/workshop
