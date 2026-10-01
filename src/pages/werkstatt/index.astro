@@ -130,13 +130,17 @@ border-radius: 12px;
  
 .workshop-card-image {
 width: 100%;
+aspect-ratio: 3 / 2;
 overflow: hidden;
+border-radius: 12px;
 }
  
 .workshop-card-image :global(img) {
 display: block;
 width: 100%;
-height: auto;
+height: 100%;
+object-fit: cover;
+object-position: center;
 }
 
 </style>
