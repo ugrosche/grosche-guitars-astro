@@ -5,6 +5,19 @@ import Header from './Header.astro';
 import Footer from './Footer.astro';
 import '../styles/guitars.css';
 
+interface ProjectImage {
+  src: string;
+  alt?: string;
+  caption?: string;
+}
+
+interface BuildStep {
+  title: string;
+  description?: string;
+  display?: 'single' | 'gallery' | 'carousel';
+  images?: ProjectImage[];
+}
+
 interface Props {
   title: string;
   description?: string;
@@ -16,6 +29,11 @@ interface Props {
 
   backHref: string;
   backLabel: string;
+
+  buildTitle?: string;
+  buildSteps?: BuildStep[];
+
+  imageModules?: Record<string, any>;
 }
 
 const {
@@ -26,10 +44,21 @@ const {
   heroAlt = '',
   heroDescription,
   backHref,
-  backLabel
+  backLabel,
+  buildTitle = 'Der Bau',
+  buildSteps = [],
+  imageModules = {}
 } = Astro.props;
 
 const pageTitle = `${title} | Grosche Guitars`;
+
+function resolveImage(src?: string) {
+  if (!src) {
+    return undefined;
+  }
+
+  return imageModules[src]?.default;
+}
 ---
 
 <!doctype html>
@@ -47,6 +76,7 @@ const pageTitle = `${title} | Grosche Guitars`;
 
     <Head
       title={pageTitle}
+      description={description}
     />
 
   </head>
@@ -57,7 +87,7 @@ const pageTitle = `${title} | Grosche Guitars`;
     <Header />
 
 
-    <main class="guitar-detail">
+    <main class="guitar-detail project-detail">
 
       <a
         href={backHref}
@@ -71,13 +101,16 @@ const pageTitle = `${title} | Grosche Guitars`;
 
 
       {year && (
+
         <p class="year">
           Baujahr: {year}
         </p>
+
       )}
 
 
       {heroImage && (
+
         <figure class="project-hero">
 
           <Image
@@ -86,23 +119,28 @@ const pageTitle = `${title} | Grosche Guitars`;
             class="hero"
             widths={[600, 900, 1200, 1600]}
             sizes="(max-width: 900px) 100vw, 1200px"
-            loading="lazy"
+            loading="eager"
           />
 
           {heroDescription && (
+
             <figcaption>
               {heroDescription}
             </figcaption>
+
           )}
 
         </figure>
+
       )}
 
 
       {description && (
+
         <p class="description">
           {description}
         </p>
+
       )}
 
 
@@ -110,10 +148,729 @@ const pageTitle = `${title} | Grosche Guitars`;
         <slot />
       </div>
 
+
+      {buildSteps.length > 0 && (
+
+        <section class="build">
+
+          <h2>{buildTitle}</h2>
+
+
+          {buildSteps.map((step, stepIndex) => {
+
+            const display = step.display || 'gallery';
+            const stepImages = step.images || [];
+
+            return (
+
+              <article class="build-step">
+
+                <h3>{step.title}</h3>
+
+
+                {step.description && (
+
+                  <p class="step-description">
+                    {step.description}
+                  </p>
+
+                )}
+
+
+                {stepImages.length > 0 && (
+
+                  <div
+                    class="build-images-shell"
+                    data-carousel={
+                      display === 'carousel'
+                        ? ''
+                        : undefined
+                    }
+                  >
+
+
+                    {
+                      display === 'carousel' &&
+                      stepImages.length > 1 && (
+
+                        <div class="carousel-controls">
+
+                          <button
+                            type="button"
+                            class="carousel-arrow"
+                            data-carousel-prev
+                            aria-label="Vorheriges Bild"
+                          >
+                            ‹
+                          </button>
+
+
+                          <div
+                            class="carousel-counter"
+                            aria-live="polite"
+                          >
+                            Bild
+                            {' '}
+                            <span data-carousel-current>
+                              1
+                            </span>
+                            {' '}
+                            von
+                            {' '}
+                            <span>
+                              {stepImages.length}
+                            </span>
+                          </div>
+
+
+                          <button
+                            type="button"
+                            class="carousel-arrow"
+                            data-carousel-next
+                            aria-label="Nächstes Bild"
+                          >
+                            ›
+                          </button>
+
+                        </div>
+
+                      )
+                    }
+
+
+                    <div
+                      class={`build-images build-images-${display}`}
+                      data-carousel-track={
+                        display === 'carousel'
+                          ? ''
+                          : undefined
+                      }
+                    >
+
+                      {
+                        stepImages.map((image, imageIndex) => {
+
+                          const optimizedImage =
+                            resolveImage(image.src);
+
+                          if (!optimizedImage) {
+                            return null;
+                          }
+
+                          const imageAlt =
+                            image.alt ||
+                            image.caption ||
+                            step.title;
+
+                          return (
+
+                            <figure
+                              class="build-image"
+                              data-carousel-slide={
+                                display === 'carousel'
+                                  ? ''
+                                  : undefined
+                              }
+                            >
+
+                              <button
+                                type="button"
+                                class="lightbox-trigger"
+                                data-lightbox-trigger
+                                data-lightbox-group={`build-step-${stepIndex}`}
+                                data-lightbox-index={imageIndex}
+                                data-lightbox-src={optimizedImage.src}
+                                data-lightbox-alt={imageAlt}
+                                data-lightbox-caption={image.caption || ''}
+                                aria-label={`Bild groß anzeigen: ${imageAlt}`}
+                              >
+
+                                <Image
+                                  src={optimizedImage}
+                                  alt={imageAlt}
+                                  widths={[400, 700, 1000, 1400]}
+                                  sizes={
+                                    display === 'single'
+                                      ? '(max-width: 900px) 100vw, 1000px'
+                                      : '(max-width: 700px) 100vw, 500px'
+                                  }
+                                  loading="lazy"
+                                />
+
+                              </button>
+
+
+                              {image.caption && (
+
+                                <figcaption>
+                                  {image.caption}
+                                </figcaption>
+
+                              )}
+
+                            </figure>
+
+                          );
+                        })
+                      }
+
+                    </div>
+
+
+                    {
+                      display === 'carousel' &&
+                      stepImages.length > 1 && (
+
+                        <div
+                          class="carousel-dots"
+                          aria-label="Bildauswahl"
+                        >
+
+                          {
+                            stepImages.map((image, imageIndex) => (
+
+                              <button
+                                type="button"
+                                class="carousel-dot"
+                                data-carousel-dot
+                                data-index={imageIndex}
+                                aria-label={`Bild ${imageIndex + 1} anzeigen`}
+                                aria-current={
+                                  imageIndex === 0
+                                    ? 'true'
+                                    : 'false'
+                                }
+                              />
+
+                            ))
+                          }
+
+                        </div>
+
+                      )
+                    }
+
+                  </div>
+
+                )}
+
+              </article>
+
+            );
+          })}
+
+        </section>
+
+      )}
+
     </main>
 
 
     <Footer />
+
+
+    <dialog
+      class="lightbox"
+      data-lightbox
+      aria-label="Bildvergrößerung"
+    >
+
+      <div class="lightbox-panel">
+
+        <button
+          type="button"
+          class="lightbox-close"
+          data-lightbox-close
+          aria-label="Bildansicht schließen"
+        >
+          ×
+        </button>
+
+
+        <button
+          type="button"
+          class="lightbox-nav lightbox-nav-prev"
+          data-lightbox-prev
+          aria-label="Vorheriges Bild"
+        >
+          ‹
+        </button>
+
+
+        <img
+          class="lightbox-image"
+          data-lightbox-image
+          src=""
+          alt=""
+        />
+
+
+        <button
+          type="button"
+          class="lightbox-nav lightbox-nav-next"
+          data-lightbox-next
+          aria-label="Nächstes Bild"
+        >
+          ›
+        </button>
+
+
+        <div class="lightbox-info">
+
+          <p
+            class="lightbox-counter"
+            data-lightbox-counter
+            aria-live="polite"
+          >
+            Bild 1 von 1
+          </p>
+
+
+          <p
+            class="lightbox-caption"
+            data-lightbox-caption
+            hidden
+          >
+          </p>
+
+        </div>
+
+      </div>
+
+    </dialog>
+
+
+    <script>
+
+      document
+        .querySelectorAll('[data-carousel]')
+        .forEach((carousel) => {
+
+          const track = carousel.querySelector(
+            '[data-carousel-track]'
+          );
+
+          const previousButton = carousel.querySelector(
+            '[data-carousel-prev]'
+          );
+
+          const nextButton = carousel.querySelector(
+            '[data-carousel-next]'
+          );
+
+          const currentCounter = carousel.querySelector(
+            '[data-carousel-current]'
+          );
+
+          const dots = Array.from(
+            carousel.querySelectorAll('[data-carousel-dot]')
+          );
+
+          const slides = Array.from(
+            carousel.querySelectorAll('[data-carousel-slide]')
+          );
+
+          if (
+            !(track instanceof HTMLElement) ||
+            slides.length === 0
+          ) {
+            return;
+          }
+
+          let currentIndex = 0;
+          let scrollTimer;
+
+
+          function updateControls(index) {
+
+            currentIndex = Math.max(
+              0,
+              Math.min(index, slides.length - 1)
+            );
+
+            if (currentCounter) {
+              currentCounter.textContent =
+                String(currentIndex + 1);
+            }
+
+            if (
+              previousButton instanceof HTMLButtonElement
+            ) {
+              previousButton.disabled =
+                currentIndex === 0;
+            }
+
+            if (
+              nextButton instanceof HTMLButtonElement
+            ) {
+              nextButton.disabled =
+                currentIndex === slides.length - 1;
+            }
+
+            dots.forEach((dot, dotIndex) => {
+
+              dot.setAttribute(
+                'aria-current',
+                dotIndex === currentIndex
+                  ? 'true'
+                  : 'false'
+              );
+
+            });
+          }
+
+
+          function goToSlide(index) {
+
+            const target = slides[index];
+
+            if (!(target instanceof HTMLElement)) {
+              return;
+            }
+
+            track.scrollTo({
+              left: target.offsetLeft,
+              behavior: 'smooth'
+            });
+
+            updateControls(index);
+          }
+
+
+          previousButton?.addEventListener(
+            'click',
+            () => {
+              goToSlide(currentIndex - 1);
+            }
+          );
+
+
+          nextButton?.addEventListener(
+            'click',
+            () => {
+              goToSlide(currentIndex + 1);
+            }
+          );
+
+
+          dots.forEach((dot, index) => {
+
+            dot.addEventListener('click', () => {
+              goToSlide(index);
+            });
+
+          });
+
+
+          track.addEventListener('scroll', () => {
+
+            window.clearTimeout(scrollTimer);
+
+            scrollTimer = window.setTimeout(() => {
+
+              let closestIndex = 0;
+              let closestDistance =
+                Number.POSITIVE_INFINITY;
+
+              slides.forEach((slide, index) => {
+
+                if (!(slide instanceof HTMLElement)) {
+                  return;
+                }
+
+                const distance = Math.abs(
+                  slide.offsetLeft - track.scrollLeft
+                );
+
+                if (distance < closestDistance) {
+                  closestDistance = distance;
+                  closestIndex = index;
+                }
+
+              });
+
+              updateControls(closestIndex);
+
+            }, 80);
+
+          });
+
+
+          updateControls(0);
+
+        });
+
+    </script>
+
+
+    <script>
+
+      const lightbox = document.querySelector(
+        '[data-lightbox]'
+      );
+
+      const lightboxImage = document.querySelector(
+        '[data-lightbox-image]'
+      );
+
+      const lightboxCaption = document.querySelector(
+        '[data-lightbox-caption]'
+      );
+
+      const lightboxCounter = document.querySelector(
+        '[data-lightbox-counter]'
+      );
+
+      const lightboxClose = document.querySelector(
+        '[data-lightbox-close]'
+      );
+
+      const lightboxPrevious = document.querySelector(
+        '[data-lightbox-prev]'
+      );
+
+      const lightboxNext = document.querySelector(
+        '[data-lightbox-next]'
+      );
+
+      const allLightboxTriggers = Array.from(
+        document.querySelectorAll('[data-lightbox-trigger]')
+      );
+
+
+      if (
+        lightbox instanceof HTMLDialogElement &&
+        lightboxImage instanceof HTMLImageElement &&
+        lightboxCaption instanceof HTMLElement &&
+        lightboxCounter instanceof HTMLElement
+      ) {
+
+        let currentGroup = [];
+        let currentIndex = 0;
+
+        let swipeStartX = 0;
+        let swipeStartY = 0;
+        let swipePointerId = null;
+
+
+        function showLightboxImage(index) {
+
+          if (currentGroup.length === 0) {
+            return;
+          }
+
+          currentIndex = Math.max(
+            0,
+            Math.min(index, currentGroup.length - 1)
+          );
+
+          const trigger = currentGroup[currentIndex];
+
+          if (!(trigger instanceof HTMLElement)) {
+            return;
+          }
+
+          const src =
+            trigger.dataset.lightboxSrc || '';
+
+          const alt =
+            trigger.dataset.lightboxAlt || '';
+
+          const caption =
+            trigger.dataset.lightboxCaption || '';
+
+          lightboxImage.src = src;
+          lightboxImage.alt = alt;
+
+          lightboxCaption.textContent = caption;
+          lightboxCaption.hidden =
+            caption.length === 0;
+
+          lightboxCounter.textContent =
+            `Bild ${currentIndex + 1} von ${currentGroup.length}`;
+
+          if (
+            lightboxPrevious instanceof HTMLButtonElement
+          ) {
+            lightboxPrevious.disabled =
+              currentIndex === 0;
+          }
+
+          if (
+            lightboxNext instanceof HTMLButtonElement
+          ) {
+            lightboxNext.disabled =
+              currentIndex === currentGroup.length - 1;
+          }
+        }
+
+
+        allLightboxTriggers.forEach((trigger) => {
+
+          trigger.addEventListener('click', () => {
+
+            if (!(trigger instanceof HTMLElement)) {
+              return;
+            }
+
+            const groupName =
+              trigger.dataset.lightboxGroup || '';
+
+            currentGroup =
+              allLightboxTriggers.filter((item) => {
+
+                return (
+                  item instanceof HTMLElement &&
+                  item.dataset.lightboxGroup === groupName
+                );
+
+              });
+
+            currentIndex =
+              currentGroup.indexOf(trigger);
+
+            showLightboxImage(currentIndex);
+            lightbox.showModal();
+
+          });
+
+        });
+
+
+        lightboxPrevious?.addEventListener(
+          'click',
+          () => {
+            showLightboxImage(currentIndex - 1);
+          }
+        );
+
+
+        lightboxNext?.addEventListener(
+          'click',
+          () => {
+            showLightboxImage(currentIndex + 1);
+          }
+        );
+
+
+        lightboxImage.addEventListener(
+          'pointerdown',
+          (event) => {
+
+            if (event.pointerType === 'mouse') {
+              return;
+            }
+
+            swipeStartX = event.clientX;
+            swipeStartY = event.clientY;
+            swipePointerId = event.pointerId;
+
+          }
+        );
+
+
+        lightboxImage.addEventListener(
+          'pointerup',
+          (event) => {
+
+            if (event.pointerId !== swipePointerId) {
+              return;
+            }
+
+            const deltaX =
+              event.clientX - swipeStartX;
+
+            const deltaY =
+              event.clientY - swipeStartY;
+
+            swipePointerId = null;
+
+            if (Math.abs(deltaX) < 50) {
+              return;
+            }
+
+            if (
+              Math.abs(deltaX) <= Math.abs(deltaY)
+            ) {
+              return;
+            }
+
+            if (deltaX < 0) {
+              showLightboxImage(currentIndex + 1);
+            } else {
+              showLightboxImage(currentIndex - 1);
+            }
+
+          }
+        );
+
+
+        lightboxImage.addEventListener(
+          'pointercancel',
+          () => {
+            swipePointerId = null;
+          }
+        );
+
+
+        lightboxClose?.addEventListener(
+          'click',
+          () => {
+            lightbox.close();
+          }
+        );
+
+
+        lightbox.addEventListener(
+          'click',
+          (event) => {
+
+            if (event.target === lightbox) {
+              lightbox.close();
+            }
+
+          }
+        );
+
+
+        document.addEventListener(
+          'keydown',
+          (event) => {
+
+            if (!lightbox.open) {
+              return;
+            }
+
+            if (event.key === 'ArrowLeft') {
+              showLightboxImage(currentIndex - 1);
+            }
+
+            if (event.key === 'ArrowRight') {
+              showLightboxImage(currentIndex + 1);
+            }
+
+          }
+        );
+
+
+        lightbox.addEventListener('close', () => {
+
+          lightboxImage.src = '';
+          lightboxImage.alt = '';
+
+          lightboxCaption.textContent = '';
+          lightboxCaption.hidden = true;
+
+          lightboxCounter.textContent = '';
+
+          currentGroup = [];
+          currentIndex = 0;
+
+        });
+
+      }
+
+    </script>
 
   </body>
 
@@ -154,12 +911,6 @@ const pageTitle = `${title} | Grosche Guitars`;
 
   .project-content :global(p) {
     margin: 0 0 1.25rem;
-  }
-
-  .project-content :global(img) {
-    display: block;
-    max-width: 100%;
-    height: auto;
   }
 
 </style>
