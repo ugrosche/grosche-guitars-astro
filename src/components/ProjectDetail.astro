@@ -117,7 +117,15 @@ src={heroImage}
 alt={heroAlt || title}
 class="hero"
 widths={[600, 900, 1200, 1600]}
-sizes="(max-width:</figcaption>
+sizes="(max-width: 900px) 100vw, 1200px"
+loading="eager"
+/>
+</div>
+ 
+{heroDescription && (
+<figcaption>
+{heroDescription}
+</figcaption>
 )}
 </figure>
 )}
