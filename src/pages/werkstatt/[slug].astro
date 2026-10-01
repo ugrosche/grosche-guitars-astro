@@ -16,6 +16,8 @@ export async function getStaticPaths() {
 }
 
 const { item } = Astro.props;
+const data = item.data;
+
 const { Content } = await render(item);
 
 const images = import.meta.glob(
@@ -23,7 +25,7 @@ const images = import.meta.glob(
   { eager: true }
 );
 
-const heroPath = item.data.hero?.src;
+const heroPath = data.hero?.src;
 
 const heroImage = heroPath
   ? images[heroPath]?.default
@@ -41,14 +43,17 @@ function baseUrl(path) {
 ---
 
 <ProjectDetail
-  title={item.data.title}
-  description={item.data.description}
-  year={item.data.year}
+  title={data.title}
+  description={data.description}
+  year={data.year}
   heroImage={heroImage}
-  heroAlt={item.data.hero?.alt}
-  heroDescription={item.data.hero?.description}
+  heroAlt={data.hero?.alt}
+  heroDescription={data.hero?.description}
   backHref={baseUrl('/werkstatt/')}
   backLabel="Zurück zur Werkstatt"
+  buildTitle="Der Bau"
+  buildSteps={data.build_steps || []}
+  imageModules={images}
 >
 
   <Content />
