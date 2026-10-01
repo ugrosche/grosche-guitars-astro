@@ -1,13 +1,16 @@
 ---
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+
 const homeUrl = base + "/";
 const guitarsUrl = base + "/gitarren/";
+const workshopUrl = base + "/werkstatt/";
 const logoUrl = base + "/favicon.png";
 
 const pathname = Astro.url.pathname;
 
 const homeClass = pathname === homeUrl ? "active" : "";
 const guitarsClass = pathname.startsWith(guitarsUrl) ? "active" : "";
+const workshopClass = pathname.startsWith(workshopUrl) ? "active" : "";
 ---
 
 <header class="site-header">
@@ -26,6 +29,10 @@ const guitarsClass = pathname.startsWith(guitarsUrl) ? "active" : "";
 
       <a href={guitarsUrl} class={guitarsClass}>
         Gitarren
+      </a>
+
+      <a href={workshopUrl} class={workshopClass}>
+        Werkstatt
       </a>
 
     </nav>
