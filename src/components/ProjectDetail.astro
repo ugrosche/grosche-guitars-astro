@@ -112,7 +112,7 @@ function resolveImage(src?: string) {
       {heroImage && (
 
         <figure class="project-hero">
-
+          <div class="project-hero-image">
           <Image
             src={heroImage}
             alt={heroAlt || title}
@@ -882,15 +882,17 @@ function resolveImage(src?: string) {
   .project-hero {
   margin: 0 0 2rem;
   width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: var(--radius);
   }
  
   .project-hero :global(img) {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: 100%;
   object-fit: cover;
   object-position: center;
-  border-radius: var(--radius);
   }
 
   .project-hero figcaption {
