@@ -69,10 +69,7 @@ const projects = workshop.map((item) => {
 
         {projects.map(({ item, heroImage, href }) => (
 
-          <a
-            href={href}
-            class="guitar-card workshop-card"
-          >
+          <article class="guitar-card workshop-card">
 
             {heroImage && (
 
@@ -106,9 +103,13 @@ const projects = workshop.map((item) => {
 
               )}
 
+              <a href={href} class="card-link">
+                Projekt ansehen →
+              </a>
+
             </div>
 
-          </a>
+          </article>
 
         ))}
 
@@ -122,20 +123,20 @@ const projects = workshop.map((item) => {
 
 </html>
 
-
 <style is:global>
 
 .workshop-card-image {
-width: 100%;
-aspect-ratio: 4 / 3;
-overflow: hidden;
-border-radius: 12px;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 12px;
 }
- 
+
 .workshop-card-photo {
-display: block;
-width: 100%;
-height: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 </style>
