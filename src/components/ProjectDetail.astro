@@ -399,7 +399,6 @@ style="position: absolute; inset: 0; display: block; width: 100%; height: 100%; 
         <img
           class="lightbox-image"
           data-lightbox-image
-          src=""
           alt=""
         />
 
@@ -854,7 +853,7 @@ style="position: absolute; inset: 0; display: block; width: 100%; height: 100%; 
 
         lightbox.addEventListener('close', () => {
 
-          lightboxImage.src = '';
+          lightboxImage.removeAttribute('src');
           lightboxImage.alt = '';
 
           lightboxCaption.textContent = '';
