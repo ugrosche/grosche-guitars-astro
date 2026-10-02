@@ -1,6 +1,6 @@
 ---
 title: Dickenschleifer
-description: Gerade für den Bau von Akustikgitarren ist eine Dickenschleifmaschine eine große Hilfe. Die Kosten für den Eigenbau dieses Tischgerätes lagen unter 100€.
+description: Kompakter Eigenbau zum gleichmäßigen Schleifen dünner Hölzer.
 hero:
   src: /src/assets/images/workshop/dickenschleifer/DS01.jpg
   alt: beschr
