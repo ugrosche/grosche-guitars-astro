@@ -171,40 +171,37 @@ transition: transform 0.25s ease;
 }
 
 .card-link {
-display: inline-block;
-margin-top: 2px;
-font-family: 'Manrope', Arial, sans-serif;
-font-size: 0.9rem;
-font-weight: 600;
-color: var(--color-accent);
-text-decoration: none;
-transition: color 0.2s ease;
-}
- 
-.card-link:hover {
-color: var(--color-accent-hover);
-text-decoration: none;
-}
- 
-.card-link:hover {
-color: var(--color-accent-hover);
-text-decoration: none;
-}
- 
-.card-link::after {
-display: inline-block;
-transition: transform 0.2s ease;
-}
- 
-.card-link:hover::after {
-transform: translateX(4px);
-}
- 
-.card-link:hover {
-color: var(--color-accent-hover);
-gap: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 2px;
+  padding: 7px 12px;
+
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+
+  color: var(--color-accent);
+  background: transparent;
+
+  font-family: 'Manrope', Arial, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
 }
 
+.card-link:hover {
+  color: var(--color-accent-hover);
+  border-color: var(--color-accent);
+  background: rgb(133 89 54 / 6%);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
 
 /* Gitarrendetailseite */
 
