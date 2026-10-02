@@ -875,12 +875,12 @@ loading="eager"
 
 <style>
 
-.project-hero {
+:global(.project-hero) {
 margin: 0 0 2rem;
 width: 100%;
 }
  
-.project-hero-image {
+:global(.project-hero-image) {
 position: relative;
 width: 100%;
 aspect-ratio: 16 / 9;
@@ -888,17 +888,17 @@ overflow: hidden;
 border-radius: var(--radius);
 }
  
-.project-hero-image :global(.hero) {
+:global(.project-hero-image img) {
 position: absolute;
 inset: 0;
 display: block;
 width: 100%;
 height: 100%;
 object-fit: cover;
-object-position: center center;
+object-position: center;
 }
  
-.project-hero figcaption {
+:global(.project-hero figcaption) {
 margin-top: 0.6rem;
 font-size: 0.9rem;
 opacity: 0.7;
