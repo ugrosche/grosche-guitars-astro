@@ -173,14 +173,17 @@ transition: transform 0.25s ease;
 .card-link {
 display: inline-block;
 margin-top: 2px;
- 
 font-family: 'Manrope', Arial, sans-serif;
 font-size: 0.9rem;
 font-weight: 600;
 color: var(--color-accent);
 text-decoration: none;
- 
 transition: color 0.2s ease;
+}
+ 
+.card-link:hover {
+color: var(--color-accent-hover);
+text-decoration: none;
 }
  
 .card-link:hover {
