@@ -881,24 +881,17 @@ width: 100%;
 }
  
 .project-hero-image {
-position: relative;
 width: 100%;
-height: auto;
 aspect-ratio: 16 / 9;
 overflow: hidden;
 border-radius: var(--radius);
 }
  
 .project-hero-image :global(img.hero) {
-position: absolute !important;
-inset: 0 !important;
 width: 100% !important;
 height: 100% !important;
-max-width: none !important;
-max-height: none !important;
-margin: 0 !important;
-object-fit: cover !important;
-object-position: 50% 50% !important;
+object-fit: cover;
+object-position: center;
 border-radius: 0;
 }
  
