@@ -171,15 +171,25 @@ transition: transform 0.25s ease;
 }
 
 .card-link {
-  font-family: 'Manrope', Arial, sans-serif;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--color-accent);
+display: inline-flex;
+align-items: center;
+gap: 6px;
+margin-top: 2px;
+ 
+font-family: 'Manrope', Arial, sans-serif;
+font-size: 0.9rem;
+font-weight: 600;
+color: var(--color-accent);
+text-decoration: none;
+ 
+transition:
+color 0.2s ease,
+gap 0.2s ease;
 }
-
-.guitar-card > a:hover .card-link {
-  color: var(--color-accent-hover);
-  text-decoration: underline;
+ 
+.card-link:hover {
+color: var(--color-accent-hover);
+gap: 10px;
 }
 
 
