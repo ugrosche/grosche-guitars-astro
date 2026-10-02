@@ -851,20 +851,10 @@ style="position: absolute; inset: 0; display: block; width: 100%; height: 100%; 
         );
 
 
-        lightbox.addEventListener('close', () => {
-
-          lightboxImage.removeAttribute('src');
-          lightboxImage.alt = '';
-
-          lightboxCaption.textContent = '';
-          lightboxCaption.hidden = true;
-
-          lightboxCounter.textContent = '';
-
-          currentGroup = [];
-          currentIndex = 0;
-
-        });
+lightbox.addEventListener('close', () => {
+lightboxCaption.textContent = '';
+lightboxCaption.hidden = true;
+});
 
       }
 
