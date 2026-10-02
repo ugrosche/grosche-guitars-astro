@@ -185,37 +185,6 @@ transition: transform 0.25s ease;
 
 /* Gitarrendetailseite */
 
-.project-hero {
-width: 100%;
-margin: 0 0 2rem;
-}
- 
-.project-hero-image {
-position: relative;
-width: 100%;
-aspect-ratio: 16 / 9;
-overflow: hidden;
-border-radius: var(--radius);
-}
- 
-.project-hero-image img {
-position: absolute;
-inset: 0;
-display: block;
-width: 100%;
-height: 100%;
-margin: 0;
-object-fit: cover;
-object-position: center center;
-}
- 
-.project-hero figcaption {
-margin-top: 0.6rem;
-color: var(--color-muted);
-font-size: 0.9rem;
-line-height: 1.4;
-}
-
 .build-step {
   margin-top: 2rem;
   padding-top: 1.5rem;
