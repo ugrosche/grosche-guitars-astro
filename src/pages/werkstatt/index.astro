@@ -65,7 +65,7 @@ const projects = workshop.map((item) => {
         beim Gitarrenbau zum Einsatz kommen.
       </p>
 
-      <div class="guitar-grid workshop-grid">
+      <div class="guitar-grid">
 
         {projects.map(({ item, heroImage, href }) => (
 
@@ -73,23 +73,27 @@ const projects = workshop.map((item) => {
 
             {heroImage && (
 
-              <div class="workshop-card-image">
+              <a href={href} class="workshop-image-link">
 
-                <Image
-                  src={heroImage}
-                  alt={item.data.hero?.alt || item.data.title}
-                  width={400}
-                  height={300}
-                  fit="cover"
-                  class="workshop-card-photo"
-                  loading="lazy"
-                />
+                <div class="card-image workshop-card-image">
 
-              </div>
+                  <Image
+                    src={heroImage}
+                    alt={item.data.hero?.alt || item.data.title}
+                    width={400}
+                    height={300}
+                    fit="cover"
+                    class="card-image-img"
+                    loading="lazy"
+                  />
+
+                </div>
+
+              </a>
 
             )}
 
-            <div class="guitar-card-content">
+            <div class="card-content">
 
               <h2>
                 {item.data.title}
@@ -97,7 +101,7 @@ const projects = workshop.map((item) => {
 
               {item.data.description && (
 
-                <p>
+                <p class="description">
                   {item.data.description}
                 </p>
 
@@ -126,21 +130,18 @@ const projects = workshop.map((item) => {
 <style is:global>
 
 .workshop-card-image {
-  width: 100%;
   aspect-ratio: 4 / 3;
-  overflow: hidden;
-  border-radius: 12px;
 }
 
-.workshop-card-photo {
+.workshop-image-link {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  color: inherit;
+  text-decoration: none;
 }
 
-.workshop-card .guitar-card-content h2 {
-font-size: 1.35rem;
+.workshop-image-link:hover .card-image-img {
+  transform: scale(1.015);
 }
 
 </style>
