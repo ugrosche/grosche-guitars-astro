@@ -4,6 +4,7 @@ year: 2024
 hero:
   src: /src/assets/images/guitars/kuun/Kuun.jpg
   alt: Die fertige Gitarre
+  description: ''
 description: Handliche Gitarre aus Hölzern mit Vorgeschichte
 specifications: []
 build_steps:
