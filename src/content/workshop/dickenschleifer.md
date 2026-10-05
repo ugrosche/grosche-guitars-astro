@@ -32,7 +32,7 @@ build_steps:
         caption: nach der Montage wird die Walze plan geraspelt und geschliffen.
         alt: ''
       - src: /src/assets/images/workshop/dickenschleifer/DS10.jpg
-        caption: Ein Betrieb ohne Absaughaube ist nicht empfehlenswert. Gut ist, wenn man dabei etwas Sicht auf das Werkstück hat, deshalb kommt hier Plexiglas zum Einsatz.
+        caption: Ein Betrieb ohne Staubabsaugung ist nicht empfehlenswert. Gut ist, wenn man dabei noch etwas Sicht auf das Werkstück hat. Deshalb kommt hier eine Haube aus Plexiglas zum Einsatz.
         alt: ''
       - src: /src/assets/images/workshop/dickenschleifer/DS11.jpg
         caption: Auch der Antriebsriemen bekommt eine Schutzabdeckung.
@@ -52,6 +52,22 @@ build_steps:
         alt: ''
       - src: /src/assets/images/workshop/dickenschleifer/DS17.jpg
         caption: ... und plan geschliffen
+        alt: ''
+  - title: Weitere Einsatzbereiche
+    description: ''
+    display: gallery
+    images:
+      - src: /src/assets/images/workshop/dickenschleifer/DS18.jpg
+        caption: Hauptsächlich kalibriere ich damit Holz für Böden, Decken und Zargen, welches mit der Kreissäge grob aufgetrennt wurde (z.B. aus einer Treppenstufe).
+        alt: ''
+      - src: /src/assets/images/workshop/dickenschleifer/DS19.jpg
+        caption: Auch Kopfplatten Rückseiten können leicht auf Sollstärke gebracht werden. Dabei entsteht automatisch die Wölbung für eine Volute.
+        alt: ''
+      - src: /src/assets/images/workshop/dickenschleifer/DS20.jpg
+        caption: Die "Flügel" an einem Steg sind einfach herzustellen.
+        alt: ''
+      - src: /src/assets/images/workshop/dickenschleifer/DS21.jpg
+        caption: ''
         alt: ''
 gallery: []
 ---
