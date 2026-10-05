@@ -25,12 +25,6 @@ build_steps:
       - src: /src/assets/images/workshop/dickenschleifer/DS05.jpg
         caption: Als Höhenverstellung dient ein Stück Gewindestange, geführt in einer Einschlagmutter im Holzrahmen
         alt: ''
-      - src: /src/assets/images/workshop/dickenschleifer/DS05.jpg
-        caption: ''
-        alt: ''
-      - src: /src/assets/images/workshop/dickenschleifer/DS04.jpg
-        caption: ''
-        alt: ''
   - title: erster Test
     description: Einen Ahornkantel hatte ich für einen "bookmatched" Archtop-Boden an der Kreissäge aufgesägt.
     display: gallery
