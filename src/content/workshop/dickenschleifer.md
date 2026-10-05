@@ -3,8 +3,8 @@ title: Dickenschleifer
 description: Kompakter Eigenbau zum gleichmäßigen Schleifen dünner Hölzer.
 hero:
   src: /src/assets/images/workshop/dickenschleifer/DS15.jpg
-  alt: beschr
-  description: Dickenschleifer als Tischgerät
+  alt: ''
+  description: ''
 build_steps:
   - title: aufbau
     description: hier stehd ann, wie ich das gebaut habe
@@ -56,4 +56,4 @@ build_steps:
 gallery: []
 ---
 
-hier steht der allemgeine text zu dem projekt. warum und was kann das ding.
+Dickenschleifer als Tischgerät
