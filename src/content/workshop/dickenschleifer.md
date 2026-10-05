@@ -19,6 +19,22 @@ build_steps:
       - src: /src/assets/images/workshop/dickenschleifer/DS03.jpg
         caption: Das Gehäuse besteht aus Restholz
         alt: ''
+      - src: /src/assets/images/workshop/dickenschleifer/DS04.jpg
+        caption: Der Auflagetisch darf sich keinesfalls durchbiegen. Ein Stück Küchenarbeitsplatte sollte stabil genug sein (Kochfeld-Ausschnitt)
+        alt: ''
+      - src: /src/assets/images/workshop/dickenschleifer/DS05.jpg
+        caption: Als Höhenverstellung dient ein Stück Gewindestange, geführt in einer Einschlagmutter im Holzrahmen
+        alt: ''
+  - title: erster Test
+    description: Einen Ahornkantel hatte ich für einen "bookmatched" Archtop-Boden an der Kreissäge aufgesägt.
+    display: gallery
+    images:
+      - src: /src/assets/images/workshop/dickenschleifer/DS16.jpg
+        caption: Die beiden Hälften im Rohzustand
+        alt: ''
+      - src: /src/assets/images/workshop/dickenschleifer/DS17.jpg
+        caption: ... und geschliffen
+        alt: ''
 gallery: []
 ---
 
