@@ -25,6 +25,24 @@ build_steps:
       - src: /src/assets/images/workshop/dickenschleifer/DS05.jpg
         caption: Als Höhenverstellung dient ein Stück Gewindestange, geführt in einer Einschlagmutter im Holzrahmen
         alt: ''
+      - src: /src/assets/images/workshop/dickenschleifer/DS07.jpg
+        caption: Das Schleifpapier wird später an den Enden mit kleinen Klemmblöcken gesichert
+        alt: ''
+      - src: /src/assets/images/workshop/dickenschleifer/DS09.jpg
+        caption: nach der Montage wird die Walze plan geraspelt und geschliffen
+        alt: ''
+      - src: /src/assets/images/workshop/dickenschleifer/DS10.jpg
+        caption: Ein Betrieb ohne Absaughaube ist nicht empfehlenswert. Gut ist, wenn man etwas Sicht dabei hat, deshalb kommt hier Plexiglas zum Enisatz.
+        alt: ''
+      - src: /src/assets/images/workshop/dickenschleifer/DS11.jpg
+        caption: auch der Antriebsriemen bekommt eine Schutzabdeckung
+        alt: ''
+      - src: /src/assets/images/workshop/dickenschleifer/DS13.jpg
+        caption: nachdem die Walze eben ist, kann das Klettband aufgeklebt werden
+        alt: ''
+      - src: /src/assets/images/workshop/dickenschleifer/DS14.jpg
+        caption: als Finale wird das Klett-Schleifband aufgebracht und an den Enden mit den Klemmblöcken gesichert.
+        alt: ''
   - title: erster Test
     description: Einen Ahornkantel hatte ich für einen "bookmatched" Archtop-Boden an der Kreissäge aufgesägt.
     display: gallery
