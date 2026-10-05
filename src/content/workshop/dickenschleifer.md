@@ -55,5 +55,3 @@ build_steps:
         alt: ''
 gallery: []
 ---
-
-Dickenschleifer als Tischgerät
