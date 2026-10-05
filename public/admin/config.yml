@@ -280,7 +280,7 @@ collections:
 
               - label: Bildunterschrift
                 name: caption
-                widget: string
+                widget: text
                 required: false
                 hint: "Optionaler sichtbarer Text unter dem Bild."
 
