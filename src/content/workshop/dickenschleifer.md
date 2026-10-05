@@ -32,7 +32,7 @@ build_steps:
         caption: nach der Montage wird die Walze plan geraspelt und geschliffen
         alt: ''
       - src: /src/assets/images/workshop/dickenschleifer/DS10.jpg
-        caption: Ein Betrieb ohne Absaughaube ist nicht empfehlenswert. Gut ist, wenn man etwas Sicht dabei hat, deshalb kommt hier Plexiglas zum Enisatz.
+        caption: Ein Betrieb ohne Absaughaube ist nicht empfehlenswert. Gut ist, wenn man dabei etwas Sicht auf das Werkstück hat, deshalb kommt hier Plexiglas zum Einsatz.
         alt: ''
       - src: /src/assets/images/workshop/dickenschleifer/DS11.jpg
         caption: auch der Antriebsriemen bekommt eine Schutzabdeckung
