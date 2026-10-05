@@ -6,8 +6,8 @@ hero:
   alt: ''
   description: ''
 build_steps:
-  - title: aufbau
-    description: hier stehd ann, wie ich das gebaut habe
+  - title: Aufbau
+    description: ''
     display: gallery
     images:
       - src: /src/assets/images/workshop/dickenschleifer/DS01.jpg
