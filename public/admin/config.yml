@@ -28,6 +28,14 @@ collections:
         name: title
         widget: string
 
+      - label: Reihenfolge
+        name: order
+        widget: number
+        value_type: int
+        min: 1
+        required: false
+        hint: "Position auf der Gitarrenübersicht, z. B. 1, 2, 3 ..."
+
       - label: Baujahr
         name: year
         widget: number
@@ -171,6 +179,13 @@ collections:
         name: title
         widget: string
         hint: "Name des Werkstattprojekts, z. B. Binding-Fräsvorrichtung."
+      - label: Reihenfolge
+        name: order
+        widget: number
+        value_type: int
+        min: 1
+        required: false
+        hint: "Position auf der Werkstattübersicht, z. B. 1, 2, 3 ..."
 
       - label: Kurzbeschreibung
         name: description
