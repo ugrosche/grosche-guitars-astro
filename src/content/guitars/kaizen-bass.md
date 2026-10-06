@@ -6,7 +6,7 @@ hero:
   src: /src/assets/images/guitars/kaizen-bass/Kaizen2.jpg
   alt: ''
   description: ''
-description: Ein Bass mit Formexperimenten
+description: Bass mit Formexperimenten
 specifications: []
 build_steps: []
 gallery: []
