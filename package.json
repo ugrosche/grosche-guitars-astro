@@ -10,7 +10,10 @@
     "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
-    "astro": "^6.4.8"
+    "astro": "^6.4.8",
+    "katex": "^0.16.22",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0"
   },
   "devDependencies": {
     "wrangler": "^4.136.1"
