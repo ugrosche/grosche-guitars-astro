@@ -7,6 +7,9 @@ import Footer from '../../components/Footer.astro';
 import '../../styles/guitars.css';
 
 const workshop = await getCollection('workshop');
+workshop.sort((a, b) => {
+return (a.data.order ?? 999) - (b.data.order ?? 999);
+});
 
 const images = import.meta.glob(
   '/src/assets/images/workshop/**/*.{jpg,jpeg,png,webp}',
