@@ -1,5 +1,6 @@
 ---
 title: Graffiti
+order: 3
 year: 2021
 hero:
   src: /src/assets/images/guitars/graffiti/Graffiti.jpg
