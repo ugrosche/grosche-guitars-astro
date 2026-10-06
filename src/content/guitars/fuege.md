@@ -6,7 +6,7 @@ hero:
   src: /src/assets/images/guitars/fuege/Fuege2.jpg
   alt: ''
   description: ''
-description: erste Akustik
+description: Akustikgitarre mit versetztem Schallloch
 specifications: []
 build_steps: []
 gallery: []
