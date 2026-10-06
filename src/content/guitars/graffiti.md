@@ -6,7 +6,7 @@ hero:
   src: /src/assets/images/guitars/graffiti/Graffiti.jpg
   alt: ''
   description: ''
-description: einige Experimente
+description: Design Experimente
 specifications: []
 build_steps: []
 gallery: []
