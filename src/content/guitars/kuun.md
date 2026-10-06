@@ -1,5 +1,6 @@
 ---
 title: Graveyard Oak
+order: 5
 year: 2024
 hero:
   src: /src/assets/images/guitars/kuun/Kuun.jpg
