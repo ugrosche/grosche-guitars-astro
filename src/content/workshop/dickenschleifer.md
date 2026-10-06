@@ -9,7 +9,7 @@ hero:
 build_steps:
   - title: Aufbau
     description: ''
-    display: single
+    display: carousel
     images:
       - src: /src/assets/images/workshop/dickenschleifer/DS01.jpg
         caption: 'Das Ausgangsmaterial: Ein alter Rasenmähermotor, eine Welle, zwei Stehlager, Motorschalter und Multiplexreste.'
