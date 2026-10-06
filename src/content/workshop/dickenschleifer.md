@@ -72,13 +72,3 @@ build_steps:
         alt: ''
 gallery: []
 ---
-
-Zur Berechnung wird zunächst der Satz des Pythagoras verwendet:
-
-$$
-
-(R-h)^2 + a^2 = R^2
-
-$$
-
-Daraus lässt sich der benötigte Radius bestimmen.
