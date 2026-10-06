@@ -1,5 +1,6 @@
 ---
 title: Massari
+order: 1
 year: 2026
 hero:
   src: /src/assets/images/guitars/testgitarre/Massari2.jpg
