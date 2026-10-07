@@ -1,7 +1,10 @@
 ---
 title: Dickenschleifer
 order: 1
-description: Kompakter Eigenbau zum gleichmäßigen Schleifen dünner Hölzer.
+description: |-
+  Beim Bau meiner Akustikgitarren müssen Decke, Boden und Zargen auf ihre jeweilige Sollstärke gebracht werden. Gerade bei den dünnen Hölzern möchte ich dabei möglichst kontrolliert arbeiten und nur wenig Material pro Durchgang abtragen.
+
+  Professionelle Dickenschleifmaschinen sind für diesen Zweck ideal, aber entsprechend teuer. Also lag der Eigenbau nahe. Aus verschiedenen DIY-Ideen entstand meine eigene Konstruktion, die mit weniger als 100 € Materialkosten auskommt.
 hero:
   src: /src/assets/images/workshop/dickenschleifer/DS15.jpg
   alt: ''
