@@ -5,6 +5,9 @@ import Header from './Header.astro';
 import Footer from './Footer.astro';
 import '../styles/guitars.css';
 import 'katex/dist/katex.min.css';
+import { createMarkdownProcessor } from '@astrojs/markdown-remark';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 interface ProjectImage {
   src: string;
