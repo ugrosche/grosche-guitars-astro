@@ -38,12 +38,18 @@ build_steps:
       Damit kommt jetzt der Theorieteil: In der Skizze sehen wir einen halben Wölbungsstock im Schnitt. Für die Berechnung schauen wir auf das blaue Dreieck in der Skizze. Die lange Seite hat die Länge **R**. Das soll der Radius der Wölbung sein.
       Die waagerechte kurze Seite hat die Länge **a**. Das soll der Abstand von der Mitte sein.
       Die senkrechte Seite hat die Länge **R - h**. **h** ist dabei die Höhe des Klötzchens.
-      Nach Pythagoras gilt dann: $$ (R-h)^2+a^2=R^2 $$
+      Nach Pythagoras gilt dann: 
+
+      $$ (R-h)^2+a^2=R^2 $$
+
       Umgestellt nach der Klötzchen Höhe:
+
       $ h = R - \sqrt{R^2-a^2} $
+
       Oder man berechnet den Abstand zu vorhanden Klötzchen Material:
+
       $ a=\sqrt{h(2R-h)} $
-    display: gallery
+    display: single
     images:
       - src: /src/assets/images/workshop/wölbungsstock-oder-radius-dish/RD09.jpg
         caption: ''
