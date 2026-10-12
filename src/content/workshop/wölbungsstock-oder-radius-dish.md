@@ -35,9 +35,9 @@ build_steps:
   - title: Berechnung des Radius
     description: |-
       Aber wie hoch müssen die Klötzchen sein? Und welchen Radius sollen die Kreise haben?
-      Damit kommt jetzt der Theorieteil: Für die Berechnung schauen wir auf das blaue Dreieck in der Skizze. Die lange Seite hat die Länge **R**. Das soll der Radius der Wölbung sein.
-      Die waagerechte kurze Seite hat die Länge a. Das soll der Abstand von der Mitte sein.
-      Die senkrechte Seite hat die Länge R - h. h ist dabei die Höhe des Klötzchens.
+      Damit kommt jetzt der Theorieteil: In der Skizze sehen wir einen halben Wölbungsstock im Schnitt. Für die Berechnung schauen wir auf das blaue Dreieck in der Skizze. Die lange Seite hat die Länge **R**. Das soll der Radius der Wölbung sein.
+      Die waagerechte kurze Seite hat die Länge **a**. Das soll der Abstand von der Mitte sein.
+      Die senkrechte Seite hat die Länge **R - h**. **h** ist dabei die Höhe des Klötzchens.
       Nach Pythagoras gilt dann: $ h = r - \sqrt{r^2-\left(\frac{d}{2}\right)^2} $
     display: gallery
     images:
