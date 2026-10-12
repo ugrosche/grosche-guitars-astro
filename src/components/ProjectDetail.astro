@@ -65,6 +65,15 @@ async function renderMarkdown(content: string) {
   return code;
 }
 
+const renderedBuildSteps = await Promise.all(
+  buildSteps.map(async (step) => ({
+    ...step,
+    renderedDescription: step.description
+      ? await renderMarkdown(step.description)
+      : ''
+  }))
+);
+
 function resolveImage(src?: string) {
   if (!src) {
     return undefined;
@@ -161,12 +170,12 @@ style="position: absolute; inset: 0; display: block; width: 100%; height: 100%; 
       </div>
 
 
-      {buildSteps.length > 0 && (
+      {renderedBuildSteps.length > 0 && (
 
         <section class="build">
 
 
-          {buildSteps.map((step, stepIndex) => {
+          {renderedBuildSteps.map((step, stepIndex) => {
 
             const display = step.display || 'gallery';
             const stepImages = step.images || [];
@@ -178,12 +187,12 @@ style="position: absolute; inset: 0; display: block; width: 100%; height: 100%; 
                 <h3>{step.title}</h3>
 
 
-            {step.description && (
-            <div
-            class="step-description"
-            set:html={await renderMarkdown(step.description)}
-            />
-            )}
+          {step.renderedDescription && (
+          <div
+          class="step-description"
+          set:html={step.renderedDescription}
+          />
+          )}
 
                 {stepImages.length > 0 && (
 
