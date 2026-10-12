@@ -49,4 +49,9 @@ build_steps:
       - src: /src/assets/images/workshop/wölbungsstock-oder-radius-dish/RD15.jpg
         caption: Mit Schleifpapier beklebt zum Formen des Zargenkranz.
         alt: ''
+      - src: /src/assets/images/workshop/wölbungsstock-oder-radius-dish/RD16.jpg
+        caption: Anpassen der Leisten an die Wölbung
+        alt: ''
 ---
+
+Beim Bau einer Akustikgitarre werden Decke und Boden nicht vollkommen flach, sondern mit einer leichten Wölbung ausgeführt. Diese erhöht die Stabilität der dünnen Holzplatten und trägt zur Konstruktion des Korpus bei. Um die Leisten und später den Korpus mit einem definierten Radius aufzubauen, wird ein sogenannter **Wölbungsstock** verwendet. Er dient als präzise Arbeitsfläche zum Schleifen und Verleimen der gewölbten Bauteile.
