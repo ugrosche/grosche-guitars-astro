@@ -67,7 +67,7 @@ build_steps:
       10 cm Abstand → **0,65 mm**
       20 cm Abstand → **2,62 mm**
       30 cm Abstand → **5,91 mm**
-    display: gallery
+    display: single
     images:
       - src: /src/assets/images/workshop/wölbungsstock-oder-radius-dish/RD09.jpg
         caption: ''
