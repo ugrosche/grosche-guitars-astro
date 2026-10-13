@@ -13,14 +13,35 @@ build_steps:
     description: kleine Sofa-Gitarre
     display: carousel
     images:
-      - src: /images/2025-03-19 18.12.16.jpg
-        caption: Fugleisten
-        alt: Hier werden die Fugleisten geleimt
-      - src: /images/2025-03-20 18.23.09.jpg
-        caption: Fugleisten drauf
-        alt: Der Boden ohne Beleistung
-      - src: /images/2025-04-24 18.38.59.jpg
-        caption: Leisten
-        alt: Balken aufleimen
+      - src: /src/assets/images/guitars/kuun/2025-11-17 10.08.33.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/kuu/01.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/2025-11-17 10.09.27.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/2025-11-17 10.09.47.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/2025-11-17 10.10.49.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/2025-11-17 10.11.37.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/2025-11-17 10.12.20.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/2025-11-17 10.11.02.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/2025-11-17 10.09.00.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/20241208_194854.jpg
+        caption: ''
+        alt: ''
 gallery: []
 ---
