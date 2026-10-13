@@ -32,11 +32,11 @@ build_steps:
       - src: /src/assets/images/workshop/wölbungsstock-oder-radius-dish/RD01.jpg
         caption: Fertige Wölbungsstöcke oder Radius-Dishes und ein Dach für das Himmelbett.
         alt: ''
-  - title: Berechnung des Radius
+  - title: Berechnung von Höhe und Abstand
     description: |-
       Aber wie hoch müssen die Klötzchen sein? Und in welchem Abstand müssen sie angeordnet werden?
 
-      Dazu betrachten wir den Wölbungsstock im Querschnitt. In der Skizze bildet sich ein rechtwinkliges Dreieck: $R$ ist der gewünschte Radius der Wölbung, $a$ der Abstand des Klötzchens von der Mitte und $h$ seine Höhe. Die senkrechte Seite des Dreiecks hat damit die Länge $R-h$.
+      Dazu betrachten wir den Wölbungsstock im Querschnitt. In der Skizze bildet sich ein hellblaues rechtwinkliges Dreieck: $R$ ist der gewünschte Radius der Wölbung, $a$ der Abstand des Klötzchens von der Mitte und $h$ seine Höhe. Die senkrechte Seite des Dreiecks hat damit die Länge $R-h$.
 
       Nach dem Satz des Pythagoras gilt:
 
@@ -62,7 +62,11 @@ build_steps:
 
       $$
 
-      Ein Beispiel: Für eine übliche Deckenwölbung mit 25 Fuß Radius (7622mm) und einem Wölbungsstock mit 60cm Durchmesser ergeben sich für Klötzchen im Abstand von 10cm, 20cm und 30cm die Höhen 0,65mm, 2,6mm und 5,9mm.
+      **Beispiel:** Für eine typische Deckenwölbung mit 25 Fuß Radius (7622 mm) und einen Wölbungsstock mit 60 cm Durchmesser ergeben sich folgende Klötzchenhöhen:
+
+      10 cm Abstand → **0,65 mm**
+      20 cm Abstand → **2,62 mm**
+      30 cm Abstand → **5,91 mm**
     display: gallery
     images:
       - src: /src/assets/images/workshop/wölbungsstock-oder-radius-dish/RD09.jpg
