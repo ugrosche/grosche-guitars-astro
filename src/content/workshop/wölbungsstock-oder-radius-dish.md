@@ -36,7 +36,7 @@ build_steps:
     description: |-
       Aber wie hoch müssen die Klötzchen sein? Und in welchem Abstand müssen sie angeordnet werden?
 
-      Dazu betrachten wir den Wölbungsstock im Querschnitt. In der Skizze bildet sich ein hellblaues rechtwinkliges Dreieck: $R$ ist der gewünschte Radius der Wölbung, $a$ der Abstand des Klötzchens von der Mitte und $h$ seine Höhe. Die senkrechte Seite des Dreiecks hat damit die Länge $R-h$.
+      Dazu betrachten wir den Wölbungsstock im Querschnitt. In der Skizze unten bildet sich ein hellblaues rechtwinkliges Dreieck: $R$ ist der gewünschte Radius der Wölbung, $a$ der Abstand des Klötzchens von der Mitte und $h$ seine Höhe. Die senkrechte Seite des Dreiecks hat damit die Länge $R-h$.
 
       Nach dem Satz des Pythagoras gilt:
 
