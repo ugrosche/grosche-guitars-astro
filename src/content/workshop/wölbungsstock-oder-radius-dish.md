@@ -34,21 +34,33 @@ build_steps:
         alt: ''
   - title: Berechnung des Radius
     description: |-
-      Aber wie hoch müssen die Klötzchen sein? Und welchen Radius sollen die Kreise haben?
-      Damit kommt jetzt der Theorieteil: In der Skizze sehen wir einen halben Wölbungsstock im Schnitt. Für die Berechnung schauen wir auf das blaue Dreieck in der Skizze. Die lange Seite hat die Länge **R**. Das soll der Radius der Wölbung sein.
-      Die waagerechte kurze Seite hat die Länge **a**. Das soll der Abstand von der Mitte sein.
-      Die senkrechte Seite hat die Länge **R - h**. **h** ist dabei die Höhe des Klötzchens.
-      Nach Pythagoras gilt dann: 
+      Aber wie hoch müssen die Klötzchen sein? Und in welchem Abstand müssen sie angeordnet werden?
 
-      $$ (R-h)^2+a^2=R^2 $$
+      Dazu betrachten wir den Wölbungsstock im Querschnitt. In der Skizze bildet sich ein rechtwinkliges Dreieck: $R$ ist der gewünschte Radius der Wölbung, $a$ der Abstand des Klötzchens von der Mitte und $h$ seine Höhe. Die senkrechte Seite des Dreiecks hat damit die Länge $R-h$.
 
-      Umgestellt nach der Klötzchen Höhe:
+      Nach dem Satz des Pythagoras gilt:
 
-      $ h = R - \sqrt{R^2-a^2} $
+      $$
 
-      Oder man berechnet den Abstand zu vorhanden Klötzchen Material:
+      (R-h)^2+a^2=R^2
 
-      $ a=\sqrt{h(2R-h)} $
+      $$
+
+      Nach der Klötzchenhöhe $h$ aufgelöst:
+
+      $$
+
+      h=R-\sqrt{R^2-a^2}
+
+      $$
+
+      Ist dagegen die Höhe $h$ durch das vorhandene Klötzchenmaterial vorgegeben, lässt sich der dazugehörige Abstand $a$ berechnen:
+
+      $$
+
+      a=\sqrt{h(2R-h)}
+
+      $$
     display: gallery
     images:
       - src: /src/assets/images/workshop/wölbungsstock-oder-radius-dish/RD09.jpg
