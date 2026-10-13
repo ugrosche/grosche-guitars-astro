@@ -8,7 +8,7 @@ hero:
   description: ''
 build_steps:
   - title: Aufbau
-    description: ''
+    description: hier wäre generelles zum Bauabschnitt
     display: carousel
     images:
       - src: /src/assets/images/workshop/wölbungsstock-oder-radius-dish/RD02.jpg
