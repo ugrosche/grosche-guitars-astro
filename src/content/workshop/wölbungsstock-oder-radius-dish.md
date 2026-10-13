@@ -9,28 +9,28 @@ hero:
 build_steps:
   - title: Aufbau
     description: ''
-    display: gallery
+    display: carousel
     images:
       - src: /src/assets/images/workshop/wölbungsstock-oder-radius-dish/RD02.jpg
-        caption: Start mit dünner Hartfaserplatte
+        caption: Auf einer dünnen Hartfaserplatte werden Kreise angezeichnet.
         alt: ''
       - src: /src/assets/images/workshop/wölbungsstock-oder-radius-dish/RD03.jpg
-        caption: Darauf Kreise und Segmente z.B Wie bei einer Uhr
+        caption: Danach Kreissegmente, z.B Wie bei einer Uhr
         alt: ''
       - src: /src/assets/images/workshop/wölbungsstock-oder-radius-dish/RD04.jpg
-        caption: Das Gleiche auf stabileren Platten, z.B. Spanplatten
+        caption: Das Gleiche wird auf stabileren Platten, z.B. Spanplatten angezeichnet und ausgesägt.
         alt: ''
       - src: /src/assets/images/workshop/wölbungsstock-oder-radius-dish/RD05.jpg
-        caption: Auf die Kreise kleine Klötzchen aus Holzresten aufleimen
+        caption: Auf die Kreise werde kleine Klötzchen aus Holzresten, Furnieren etc. aufgeleimt.
         alt: ''
       - src: /src/assets/images/workshop/wölbungsstock-oder-radius-dish/RD06.jpg
         caption: Die Höhe der Klötzchen bestimmt den Radius der Wölbung
         alt: ''
       - src: /src/assets/images/workshop/wölbungsstock-oder-radius-dish/RD08.jpg
-        caption: Dann die Hartfaserplatten so aufschrauben, dass die Schrauben zwischen den kleinen Holzklötzchen sitzen. Die Schrauben gut versenken.
+        caption: Dann werden die Hartfaserplatten so aufgeschraubt, dass die Schrauben zwischen den kleinen Holzklötzchen sitzen. Zwei Hartfaserplatten übereinander sorgen für eine gleichmäßigere Wölbung. Die Schrauben bitte gut versenken.
         alt: ''
       - src: /src/assets/images/workshop/wölbungsstock-oder-radius-dish/RD01.jpg
-        caption: Fertig
+        caption: Fertige Wölbungsstöcke oder Radius-Dishes
         alt: ''
   - title: Berechnung des Radius
     description: |-
@@ -49,14 +49,14 @@ build_steps:
       Oder man berechnet den Abstand zu vorhanden Klötzchen Material:
 
       $ a=\sqrt{h(2R-h)} $
-    display: single
+    display: gallery
     images:
       - src: /src/assets/images/workshop/wölbungsstock-oder-radius-dish/RD09.jpg
         caption: ''
         alt: ''
   - title: Einsatz
     description: ''
-    display: gallery
+    display: carousel
     images:
       - src: /src/assets/images/workshop/wölbungsstock-oder-radius-dish/RD16.jpg
         caption: Anpassen der Leisten an die Wölbung
