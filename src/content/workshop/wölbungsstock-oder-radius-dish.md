@@ -30,7 +30,7 @@ build_steps:
         caption: Dann werden die Hartfaserplatten so aufgeschraubt, dass die Schrauben zwischen den kleinen Holzklötzchen sitzen. Zwei Hartfaserplatten übereinander sorgen für eine gleichmäßigere Wölbung. Die Schrauben bitte gut versenken.
         alt: ''
       - src: /src/assets/images/workshop/wölbungsstock-oder-radius-dish/RD01.jpg
-        caption: Fertige Wölbungsstöcke oder Radius-Dishes
+        caption: Fertige Wölbungsstöcke oder Radius-Dishes und ein Dach für das Himmelbett.
         alt: ''
   - title: Berechnung des Radius
     description: |-
@@ -59,13 +59,13 @@ build_steps:
     display: carousel
     images:
       - src: /src/assets/images/workshop/wölbungsstock-oder-radius-dish/RD16.jpg
-        caption: Anpassen der Leisten an die Wölbung
+        caption: Leisten werden an die Wölbung von Decke und Boden angepasst.
         alt: ''
       - src: /src/assets/images/workshop/wölbungsstock-oder-radius-dish/RD13.jpg
-        caption: Sog. "Himmelbett" zum Einleimen der Leisten
+        caption: Das sog. "Himmelbett" zum Einleimen der Leisten auf Decke und Boden.
         alt: ''
       - src: /src/assets/images/workshop/wölbungsstock-oder-radius-dish/RD15.jpg
-        caption: Mit Schleifpapier beklebt zum Formen des Zargenkranz.
+        caption: Mit Schleifpapier auf dem Wölbungsstock wird der Zargenkranz an die Form des Kugelabschnitts angepasst.
         alt: ''
 ---
 
