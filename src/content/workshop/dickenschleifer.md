@@ -24,13 +24,13 @@ build_steps:
         caption: Der Auflagetisch sollte sich auch unter Belastung nicht durchbiegen. Ein Stück Küchenarbeitsplatte ist stabil genug (Kochfeld-Ausschnitt).
         alt: ''
       - src: /src/assets/images/workshop/dickenschleifer/DS05.jpg
-        caption: Als Höhenverstellung dient ein Stück Gewindestange, geführt in einer Einschlagmutter im Holzrahmen.
+        caption: Als Höhenverstellung dient ein Stück Gewindestange, geführt in einer Einschlagmutter im Holzrahmen. Eine Konter-Rändelmutter (hier nicht sichtbar) stellt sicher, dass sich bei Vibration nichts verstellt.
         alt: ''
       - src: /src/assets/images/workshop/dickenschleifer/DS07.jpg
         caption: Das Schleifpapier wird später an den Enden der Schleifwalze mit kleinen Klemmblöcken gesichert.
         alt: ''
       - src: /src/assets/images/workshop/dickenschleifer/DS09.jpg
-        caption: Nach der Montage wird die Walze plan geraspelt und geschliffen.
+        caption: Nach der Montage wird die Walze aus Multiplexscheiben plan geraspelt und geschliffen.
         alt: ''
       - src: /src/assets/images/workshop/dickenschleifer/DS10.jpg
         caption: Ein Betrieb ohne Staubabsaugung ist nicht empfehlenswert. Gut ist, wenn man dabei noch etwas Sicht auf das Werkstück hat. Deshalb kommt hier eine Haube aus Plexiglas zum Einsatz.
