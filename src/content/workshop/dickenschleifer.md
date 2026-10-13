@@ -15,7 +15,7 @@ build_steps:
         caption: 'Das Ausgangsmaterial: Ein alter Rasenmähermotor, eine Welle, zwei Stehlager, Motorschalter und Multiplexreste.'
         alt: ''
       - src: /src/assets/images/workshop/binding-jig/01.jpg
-        caption: Für die optimale Schleifgeschwindigkeit von ca. 300m/min wurde eine passende Riemenscheibe entworfen und vom 3D Drucker erstellt.
+        caption: Für die optimale Schleifgeschwindigkeit von ca. 300m/min wurde eine passende Riemenscheibe berechnet, entworfen und vom 3D Drucker erstellt.
         alt: ''
       - src: /src/assets/images/workshop/dickenschleifer/DS03.jpg
         caption: Das Gehäuse besteht aus Holzresten anderer Projekte.
