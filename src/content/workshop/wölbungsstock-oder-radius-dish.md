@@ -62,7 +62,7 @@ build_steps:
 
       $$
 
-      Beispiel: Für eine übliche Deckenwölbung mit 25 Fuß Radius (7622mm) und einem Wölbungsstock mit 60cm Durchmesser ergeben sich für Klötzchen im Abstand von 10cm, 20cm und 30cm die Höhen 0,65mm, 2,6mm und 5,9mm.
+      Ein Beispiel: Für eine übliche Deckenwölbung mit 25 Fuß Radius (7622mm) und einem Wölbungsstock mit 60cm Durchmesser ergeben sich für Klötzchen im Abstand von 10cm, 20cm und 30cm die Höhen 0,65mm, 2,6mm und 5,9mm.
     display: gallery
     images:
       - src: /src/assets/images/workshop/wölbungsstock-oder-radius-dish/RD09.jpg
