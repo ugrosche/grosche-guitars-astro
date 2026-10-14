@@ -4,12 +4,12 @@ order: 5
 year: 2024
 hero:
   src: /src/assets/images/guitars/kuun/Kuun.jpg
-  alt: Die fertige Gitarre
+  alt: ''
   description: ''
 description: Handliche Wohnzimmer-Gitarre aus Hölzern mit Vorgeschichte
 specifications: []
 build_steps:
-  - title: Galerie
+  - title: Die fertige Gitarre
     description: ''
     display: carousel
     images:
