@@ -9,8 +9,8 @@ hero:
 description: Handliche Wohnzimmer-Gitarre aus Hölzern mit Vorgeschichte
 specifications: []
 build_steps:
-  - title: Boden
-    description: kleine Sofa-Gitarre
+  - title: Galerie
+    description: ''
     display: carousel
     images:
       - src: /src/assets/images/guitars/kuun/2025-11-17 10.08.33.jpg
