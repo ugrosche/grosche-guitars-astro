@@ -1,7 +1,7 @@
 ---
 title: Dickenschleifer
 order: 1
-description: ''
+description: Ein Dickenschleifer (auch Walzenschleifer oder Drum Sander genannt) ist eine stationäre Schleifmaschine in der Holzbearbeitung, mit der Werkstücke auf ein exaktes, gleichmäßiges Maß in der Dicke geschliffen werden können.
 hero:
   src: /src/assets/images/workshop/dickenschleifer/DS15.jpg
   alt: ''
