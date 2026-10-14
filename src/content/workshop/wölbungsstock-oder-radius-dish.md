@@ -1,7 +1,7 @@
 ---
 title: Wölbungsstock (Radius-Dish)
 order: 2
-description: ''
+description: Ein Wölbungsstock (im englischsprachigen Raum auch als Radius Dish bekannt) dient als präzise Formschablone, um der Decke oder dem Boden einer Akustikgitarre eine exakte, gleichmäßige Wölbung zu verleihen.
 hero:
   src: /src/assets/images/workshop/wölbungsstock-oder-radius-dish/RD14.jpg
   alt: ''
