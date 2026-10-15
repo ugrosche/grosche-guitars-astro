@@ -317,6 +317,13 @@ figcaption,
   object-fit: contain;
 }
 
+/* Bildunterschrift auf Bildbreite begrenzen */
+.build-images-carousel .build-image figcaption {
+  max-width: 560px;
+  margin: 8px auto 0;
+  text-align: center;
+}
+
 .carousel-controls {
   display: flex;
   align-items: center;
