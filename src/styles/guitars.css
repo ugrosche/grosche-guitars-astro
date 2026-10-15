@@ -393,7 +393,7 @@ figcaption,
 
   background: var(--color-border);
 
-  border-radius: 50% 90% 50% 15%;
+  border-radius: 50% 90% 50% 20%;
   transform: rotate(-45deg);
 
   cursor: pointer;
