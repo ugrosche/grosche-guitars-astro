@@ -386,18 +386,26 @@ figcaption,
 }
 
 .carousel-dot {
-  width: 11px;
-  height: 11px;
+  width: 13px;
+  height: 13px;
   padding: 0;
   border: 0;
-  border-radius: 50%;
+
   background: var(--color-border);
+
+  border-radius: 50% 50% 50% 15%;
+  transform: rotate(-45deg);
+
   cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
 }
 
 .carousel-dot[aria-current='true'] {
   background: var(--color-accent);
-  transform: scale(1.25);
+  transform: rotate(-45deg) scale(1.25);
 }
 
 .carousel-dot:hover {
