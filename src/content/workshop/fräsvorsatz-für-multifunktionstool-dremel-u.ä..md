@@ -33,10 +33,10 @@ build_steps:
       - src: /src/assets/images/workshop/fräsvorsatz-für-multifunktionstool-dremel-u.ä./FV10.jpg
         caption: Hier wird mit entsprechenden Anschlägen die Nut für eine Stegeinlage gefräst.
         alt: ''
-      - src: /src/assets/images/workshop/fräsvorsatz-für-multifunktionstool-dremel-u.ä./FV08.jpg
+      - src: /src/assets/images/workshop/fräsvorsatz-für-multifunktionstool-dremel-u.ä./FV09.jpg
         caption: Mit einem montiertem Anschlag aus einem Kugellager lassen sich die Binding-Kanäle sauber fräsen.
         alt: ''
-      - src: /src/assets/images/workshop/fräsvorsatz-für-multifunktionstool-dremel-u.ä./FV09.jpg
-        caption: ''
+      - src: /src/assets/images/workshop/fräsvorsatz-für-multifunktionstool-dremel-u.ä./FV08.jpg
+        caption: Ebenso sind mehrstufige Kanäle für Bindings mit Zierstreifen machbar.
         alt: ''
 ---
