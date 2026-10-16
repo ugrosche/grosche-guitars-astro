@@ -141,5 +141,100 @@ build_steps:
       - src: /src/assets/images/guitars/kuun/GOZ13.jpg
         caption: Aussparungen für Balken
         alt: ''
+  - title: Korpus
+    description: ''
+    display: carousel
+    images:
+      - src: /src/assets/images/guitars/kuun/GOB01.jpg
+        caption: Anpassung von Balken und Fugenleisten auf Zargenkranz
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOB02.jpg
+        caption: ebenso an der Decke
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOB03.jpg
+        caption: Verleimen im Wölbungsstock
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOB04.jpg
+        caption: Überstand entfernen undArmauflage ausarbeiten
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOB05.jpg
+        caption: Schallloch anzeichnen
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOB06.jpg
+        caption: und ausarbeiten
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOB07.jpg
+        caption: fertige Schallöcher
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOB08.jpg
+        caption: Halterung füe den Piezo Preamp
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOB09.jpg
+        caption: Montageposition
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOB10.jpg
+        caption: Montagetest
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOB11.jpg
+        caption: innen beizen
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOB12.jpg
+        caption: Schließen
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOB13.jpg
+        caption: Binding-Kanal fräsen
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOB14.jpg
+        caption: Binding vorbiegen
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOB15.jpg
+        caption: Kanäle sauber schleifen
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOB16.jpg
+        caption: Binding ankleben
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOB17.jpg
+        caption: Binding beischleifen
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOB18.jpg
+        caption: Ansicht am Arm-Bevel
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOB19.jpg
+        caption: Schleifen und Wässern
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOB20.jpg
+        caption: so oft, bis die Fasern nicht mehr hochkommen
+        alt: ''
+  - title: Griffbrett
+    description: ''
+    display: carousel
+    images:
+      - src: /src/assets/images/guitars/kuun/GOG01.jpg
+        caption: Ausgangsmaterial Schneidebrett aus Bambus
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOG02.jpg
+        caption: Bundschlize einsägen mit verstellbarer Führung
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOG03.jpg
+        caption: Schlitze anfasen
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOG04.jpg
+        caption: Binding anleimen
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOG05.jpg
+        caption: Schlitze für Bundmarkierungen fräsen
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOG06.jpg
+        caption: Markierungen aus dunklem Hartholz
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOG07.jpg
+        caption: Radius einschleifen
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOG08.jpg
+        caption: Bünde einpressen
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOG09.jpg
+        caption: Kanten müssen noch abgerichtet werden
+        alt: ''
 gallery: []
 ---
