@@ -236,5 +236,57 @@ build_steps:
       - src: /src/assets/images/guitars/kuun/GOG09.jpg
         caption: Kanten müssen noch abgerichtet werden
         alt: ''
+  - title: Hals
+    description: ''
+    display: carousel
+    images:
+      - src: /src/assets/images/guitars/kuun/GOH01.jpg
+        caption: Ausgangsmaterial
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOH02.jpg
+        caption: Kanal für Halsstab
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOH03.jpg
+        caption: Auf Stärke bringen
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOH04.jpg
+        caption: Halsfuß ausformen
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOH05.jpg
+        caption: Kopfplatte auf Sollstärke
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOH06.jpg
+        caption: Kopfplattenfurnier
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOH07.jpg
+        caption: Epoxy Füllung für Kreuz Inlay
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOH08.jpg
+        caption: Ausgießen der zweiten Hälfte
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOH09.jpg
+        caption: noch matt
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOH11.jpg
+        caption: Befestigung der Griffbrettzunge
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOH12a.jpg
+        caption: Probemontage
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOH12.jpg
+        caption: Anzeichnen der Facetten
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOH13.jpg
+        caption: Facetten ausarbeiten
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOH15.jpg
+        caption: Anschließend verrunden
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOH16.jpg
+        caption: Volute ausarbeiten
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOH18.jpg
+        caption: Halsfußplättchen oder Heel-Cap
+        alt: ''
 gallery: []
 ---
