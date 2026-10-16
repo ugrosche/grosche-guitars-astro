@@ -288,5 +288,82 @@ build_steps:
       - src: /src/assets/images/guitars/kuun/GOH18.jpg
         caption: Halsfußplättchen oder Heel-Cap
         alt: ''
+  - title: Steg
+    description: ''
+    display: carousel
+    images:
+      - src: /src/assets/images/guitars/kuun/GOS01.jpg
+        caption: Fräsen der Nut für die Stegeinlage
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOS02.jpg
+        caption: Schräg wegen Saitenwinkel
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOS03.jpg
+        caption: ausgesägt
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOS04.jpg
+        caption: Vorbereitung Schleifklotz
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOS05.jpg
+        caption: Wölbung einschleifen
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOS06.jpg
+        caption: Flügel schleifen
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOS07.jpg
+        caption: Flügelform
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOS08.jpg
+        caption: Einlage aus Büffelhorn
+        alt: ''
+  - title: Abschlußarbeiten
+    description: ''
+    display: carousel
+    images:
+      - src: /src/assets/images/guitars/kuun/GOF01.jpg
+        caption: erste Beizung
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOF02.jpg
+        caption: Beizung auf Eiche
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOF03.jpg
+        caption: Klebstoffreste an den Rändern
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOF04.jpg
+        caption: mehrere Beizdurchgänge
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOF05.jpg
+        caption: Stegposition ermitteln
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOF06.jpg
+        caption: Montagebohrungen
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOF07.jpg
+        caption: Abkleben der Stegposition
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOF09.jpg
+        caption: mehrere Lackschichten
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOF10.jpg
+        caption: Nach Schleifen Abdeckband entfernen
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOF11.jpg
+        caption: Montageschrauben für Steg
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOF13.jpg
+        caption: Steg einleimen
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOF14.jpg
+        caption: Probemontage
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOF15.jpg
+        caption: Testbesaitung
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOF16.jpg
+        caption: Schlußglanz mit einer dünnen Schicht Schellack
+        alt: ''
+      - src: /src/assets/images/guitars/kuun/GOF17.jpg
+        caption: Schellack am Hals
+        alt: ''
 gallery: []
 ---
