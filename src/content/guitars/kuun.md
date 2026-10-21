@@ -238,80 +238,80 @@ build_steps:
     display: carousel
     images:
       - src: /src/assets/images/guitars/kuun/GOH01.jpg
-        caption: Ausgangsmaterial
+        caption: Auch der Hals wird aus dem Holz der Eichen-Kreuze hergestellt. Mit einem kleinen Zier-Mittelstreifen ist die Breite ausreichend.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOH02.jpg
-        caption: Kanal für Halsstab
+        caption: Der Kanal für den Halsstab wird gefäst.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOH03.jpg
-        caption: Auf Stärke bringen
+        caption: Mit dem "Safe-T Planer" wird der Hals auf Soll-Stärke gebracht.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOH04.jpg
-        caption: Halsfuß ausformen
+        caption: Ein Raspel-Aufsatz hilft, den Halsfuß grob auszuformen.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOH05.jpg
-        caption: Kopfplatte auf Sollstärke
+        caption: Die Kopfplatte bekommt die Sollstärke im Dickenschleifer.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOH06.jpg
-        caption: Kopfplattenfurnier
+        caption: zur Verschönerung gibt es noch ein Kopfplattenfurnier.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOH07.jpg
-        caption: Epoxy Füllung für Kreuz Inlay
+        caption: Als Erinnerung an die Holz-Herkunft gibt es eine kleine Einlage in der Kopfplatte. Ein Loch wird nach dem Beizen zur Hälfte mit Epoxidharz gefüllt.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOH08.jpg
-        caption: Ausgießen der zweiten Hälfte
+        caption: Ein aussortiertes Schmuck-Kreuzchen wird eingelegt und vergossen. Ein Kranz aus Heißkleber verhindert, dass Epoxi überläuft.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOH09.jpg
-        caption: noch matt
+        caption: Nach dem Schleifen ist es noch matt.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOH11.jpg
-        caption: Befestigung der Griffbrettzunge
+        caption: Um die überstehende Griffbrettzunge am Korpus bei diesem Schraubhals zu befestigen, werden zwei kurze Schrauben in das Griffbrett geklebt.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOH12a.jpg
-        caption: Probemontage
+        caption: Bi der ersten Probemontage stimmt der Halswinkel.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOH12.jpg
-        caption: Anzeichnen der Facetten
+        caption: Für die Ausarbeitung des Halsprofils werden "Facetten" angezeichnet.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOH13.jpg
-        caption: Facetten ausarbeiten
+        caption: Die Facetten werden ausgearbeitet, so dass der Hals zunächst noch Kanten hat.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOH15.jpg
-        caption: Anschließend verrunden
+        caption: Das Verrunden ist anschließend schnell erledigt. Mit dieser Facettenmethode komme ich schneller an das gewünschte Profil. Bisher habe ich das Profil nach Gefühl ausgearbeitet und musste oft am fast fertigen Instrument nacharbeiten.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOH16.jpg
-        caption: Volute ausarbeiten
+        caption: Beim Schleifen der Volute hilft der Aufsatz am Multitool.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOH18.jpg
-        caption: Halsfußplättchen oder Heel-Cap
+        caption: Mit dem Halsfußplättchen oder Heel-Cap wird Hals unten abgeschlossen.
         alt: ''
   - title: Steg
     description: ''
     display: carousel
     images:
       - src: /src/assets/images/guitars/kuun/GOS01.jpg
-        caption: Fräsen der Nut für die Stegeinlage
+        caption: In den Bambus-Klotz für den Steg fräse ich als ersten Schritt die Nut für die Stegeinlage.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOS02.jpg
-        caption: Schräg wegen Saitenwinkel
+        caption: Danach wird der Rohling etwas schräg gehobelt, um den Saitendruck möglichst senkrecht auf die Stegeinlage zu bekommen.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOS03.jpg
-        caption: ausgesägt
+        caption: Die Form wird grob ausgesägt.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOS04.jpg
-        caption: Vorbereitung Schleifklotz
+        caption: Da der Steg auf die gewölbte Decke kommt, muss er unten leicht hohl geschliffen sein. Hierfür schleife ich die Wölbung in ein Stück Abfallholz.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOS05.jpg
-        caption: Wölbung einschleifen
+        caption: Diesen Stück belege ich mit Schleifpapier und arbeite die leichte Wölbung aus.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOS06.jpg
-        caption: Flügel schleifen
+        caption: Die "Flügel" des Steges lasse sich komfortabel am Dickenschleifer anfertigen.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOS07.jpg
-        caption: Flügelform
+        caption: Die fertige Flügelform.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOS08.jpg
-        caption: Einlage aus Büffelhorn
+        caption: Aufgrund des Farbkonzeptes wird die Stegeinlage und der Sattel anstatt aus Knochen hier aus Büffelhorn gefertigt.
         alt: ''
   - title: Abschlußarbeiten
     description: ''
