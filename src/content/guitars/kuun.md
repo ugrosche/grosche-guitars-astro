@@ -48,162 +48,159 @@ build_steps:
     display: carousel
     images:
       - src: /src/assets/images/guitars/kuun/DB01.jpg
-        caption: Ausgangsmaterial
+        caption: Der Großteil der Gitarre besteht aus dem Holz der Eiche Kreuzen.
         alt: ''
       - src: /src/assets/images/guitars/kuun/DB02.jpg
-        caption: aufgesägt und geschliffen
+        caption: Hier ist ein Teil aufgesägt und grob auf Stärke geschliffen.
         alt: ''
       - src: /src/assets/images/guitars/kuun/DB03.jpg
-        caption: mehrteiliger Boden
+        caption: Aufgrund der verfügbaren Holzbreite wird der Boden mehrteilig.
         alt: ''
       - src: /src/assets/images/guitars/kuun/DB04.jpg
-        caption: mit Montageöffnung
+        caption: Die Montageöffnung mit passendem Deckel.
         alt: ''
       - src: /src/assets/images/guitars/kuun/DB05.jpg
-        caption: Fugenleisten
+        caption: Die Fugenleisten werden aufgeleimt, nachdem der Boden einmal gebeizt wurde.
         alt: ''
       - src: /src/assets/images/guitars/kuun/DB06.jpg
-        caption: verrunden
+        caption: Aus optischen Gründen werden die Leisten an den Kanten verrundet.
         alt: ''
       - src: /src/assets/images/guitars/kuun/DB07.jpg
-        caption: beizen
+        caption: Auch die Leisten werden gebeizt. Danach werden die Ausklinkungen für die Boden-Balken hergestellt.
         alt: ''
       - src: /src/assets/images/guitars/kuun/DB08.jpg
-        caption: Balken aufleimen
+        caption: Die Balken für den Boden werden im "Himmelbett" aufgeleimt.
         alt: ''
       - src: /src/assets/images/guitars/kuun/DB10.jpg
-        caption: Balken profilieren
+        caption: Anschließend werden die Balken profiliert.
         alt: ''
       - src: /src/assets/images/guitars/kuun/DB10a.jpg
-        caption: Typenschild
+        caption: Das Typenschild kann jetzt noch leicht angebracht werden.
         alt: ''
       - src: /src/assets/images/guitars/kuun/DB11.jpg
-        caption: Deckenmaterial
+        caption: Die Decken wird traditionell aus Fichte gefertigt.
         alt: ''
       - src: /src/assets/images/guitars/kuun/DB12.jpg
-        caption: Aus den Resten die Fugenleisten
+        caption: Die Fugenleisten für den Boden wurden aus den Schnittresten der der Decke gesägt.
         alt: ''
       - src: /src/assets/images/guitars/kuun/DB13.jpg
-        caption: Balken aufleimen
+        caption: Auf die Decke werden zunächst die kleinen Balken aufgeleimt.
         alt: ''
       - src: /src/assets/images/guitars/kuun/DB14.jpg
-        caption: profilieren
-        alt: ''
-      - src: /src/assets/images/guitars/kuun/DB15.jpg
-        caption: zuerst die kleinen Balken
+        caption: Die kleinen Balken können besser bearbeitet werden, wenn das große Balkenkreuz noch nicht aufgeleimt ist.
         alt: ''
       - src: /src/assets/images/guitars/kuun/DB16.jpg
-        caption: danach das große Kreuz
+        caption: Danach kommt das große Balken-Kreuz.
         alt: ''
       - src: /src/assets/images/guitars/kuun/DB17.jpg
-        caption: mit Brückenplättchen oder Futter erstmal fertig
+        caption: Mit Brückenplättchen oder Futter ist die Decke erstmal fertig.
         alt: ''
   - title: Zargen
     description: ''
     display: carousel
     images:
       - src: /src/assets/images/guitars/kuun/GOZ01.jpg
-        caption: Ausgangsmaterial
+        caption: Auch die Zargen werden aus der Eiche der aufgesägten Kreuzen gefertigt.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOZ02.jpg
-        caption: Form
+        caption: Eine Form hält den Zargenkranz bei der Bearbeitung stabil.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOZ03.jpg
-        caption: Zargen gestückelt
+        caption: Für den üblichen senkrechen Zargenstoß reicht das Material nicht. Deshalb wird es hier eine dreiteilige Zarge.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOZ05.jpg
-        caption: Biegeeisen aus Muffenschweißgerät
+        caption: Die Einsatzmöglichkeiten des Muffenschweißgerätes für Kunststoffrohre habe ich mit einem Aluminium-Rundstück zum Biegeeisen erweitert.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOZ04.jpg
-        caption: Biegen
+        caption: Zum Abkühlen werden die Zargen in der Form verspannt.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOZ06.jpg
-        caption: Zargenstoß
+        caption: Der Zargenstoß passt.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOZ07.jpg
-        caption: Reifchen aus Resten vorbiegen
+        caption: Aus Eiche-Resten werden die "Reifchen" zur Verstärkung der Klebefläche von Boden und Decke vorgebogen.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOZ08.jpg
-        caption: Reifchen einleimen
+        caption: Zum Einleimen bracht man viele kleine Leimzwingen.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOZ09.jpg
-        caption: bereits stabil
+        caption: Mit der Reifchen oben und unten ist der Zargenkranz bereits stabil.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOZ10.jpg
-        caption: Halsklotz
+        caption: Mit dem Halsklotz und dem Stück für den Cutaway wird der Zargenkranz geschlossen.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOZ11.jpg
-        caption: Deckenwölbung in Wölbungsstock anzeichnen
+        caption: In Wölbungsstock kann man die Form der Deckenwölbung gut anzeichnen und dann grob hobeln. Hier sieht man auch zwei Stützleisten am Halsblock. Diese sollen verhindern, dass sich der Hals im Lauf der Zeit unter dem Saitenzug noch vorne neigt.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOZ12.jpg
-        caption: Wölbung einschleifen
+        caption: Für die genaue Wölbung wird der Wölbungsstock mit Schleifpapier beklebt.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOZ13.jpg
-        caption: Aussparungen für Balken
+        caption: Zum Abschluss werden die Aussparungen für die Balken an Decke und Boden ausgearbeitet.
         alt: ''
   - title: Korpus
     description: ''
     display: carousel
     images:
       - src: /src/assets/images/guitars/kuun/GOB01.jpg
-        caption: Anpassung von Balken und Fugenleisten auf Zargenkranz
+        caption: Die Balkenenden werden noch auf den Zargenkranz angepasst.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOB02.jpg
-        caption: ebenso an der Decke
+        caption: Ebenso an der Decke.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOB03.jpg
-        caption: Verleimen im Wölbungsstock
+        caption: Im Wölbungsstock wird die Decke aufgeleimt.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOB04.jpg
-        caption: Überstand entfernen undArmauflage ausarbeiten
+        caption: Danach wird der Decken-Überstand entfernt und die Armauflage ausgearbeitet.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOB05.jpg
-        caption: Schallloch anzeichnen
+        caption: Das Schallloch wird angezeichnet.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOB06.jpg
-        caption: und ausarbeiten
+        caption: Ausgeschnitten wird mit dem Skalpell.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOB07.jpg
-        caption: fertige Schallöcher
+        caption: Die Schalllöcher sind ausgearbeitet.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOB08.jpg
-        caption: Halterung füe den Piezo Preamp
+        caption: In den Zargenkranz muss noch der Piezo Preamp befestigt werden.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOB09.jpg
-        caption: Montageposition
+        caption: Vorgesehen ist der Preamp für eine Montage im üblichen Schallloch. Hier wird er aber in der Zarge montiert.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOB10.jpg
-        caption: Montagetest
+        caption: Ein Test der Montage.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOB11.jpg
-        caption: innen beizen
+        caption: Auch die Decke wird innen gebeizt.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOB12.jpg
-        caption: Schließen
+        caption: Dann wird der Korpus geschlossen.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOB13.jpg
-        caption: Binding-Kanal fräsen
+        caption: Als nächstes werden die Kanäle für das Binding gefräst.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOB14.jpg
-        caption: Binding vorbiegen
+        caption: Zum Vorbiegen wird das Kunststoff-Binding mit der Heißluftpistole weich gemacht und dann zum Abkühlen kurz an den Korpus gehalten.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOB15.jpg
-        caption: Kanäle sauber schleifen
+        caption: Ausgediente flexible Plastikkärtchen habe ich mit Schleifpapier beklebt, um die Kanäle sauber zu schleifen
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOB16.jpg
-        caption: Binding ankleben
+        caption: Dann wird das Binding angeklebt.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOB17.jpg
-        caption: Binding beischleifen
+        caption: Danach wird es bündig beigeschliffen.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOB18.jpg
-        caption: Ansicht am Arm-Bevel
+        caption: Für das Binding an der Arm-Auflage waren mehrere Lagen erforderlich.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOB19.jpg
-        caption: Schleifen und Wässern
+        caption: Zum Abschluss des Bauschritts wird der Korpus so oft gewässert und geschliffen, bis sich nach dem Trocknen keine Fasern mehr aufstellen.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOB20.jpg
-        caption: so oft, bis die Fasern nicht mehr hochkommen
+        caption: Damit ist der Korpus fertig für die Endbehandlung.
         alt: ''
   - title: Griffbrett
     description: ''
