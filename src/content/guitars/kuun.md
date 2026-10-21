@@ -207,7 +207,7 @@ build_steps:
     display: carousel
     images:
       - src: /src/assets/images/guitars/kuun/GOG01.jpg
-        caption: Als Material für das Griffbrett  dient ein günstiges Schneidebrett aus Bambus
+        caption: Als Material für das Griffbrett  dient ein günstiges Schneidebrett aus Bambus.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOG02.jpg
         caption: Die Bundschlitze werden mit einer verstellbaren Sägeführung eingesägt. Mit den Flügelmuttern wird das Griffbrett in der jeweiligen Position eingeklemmt. Die kleine Japansäge hat einen provisorischen Tiefenanschlag aufgeklebt bekommen.
@@ -268,7 +268,7 @@ build_steps:
         caption: Um die überstehende Griffbrettzunge am Korpus bei diesem Schraubhals zu befestigen, werden zwei kurze Schrauben in das Griffbrett geklebt.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOH12a.jpg
-        caption: Bi der ersten Probemontage stimmt der Halswinkel.
+        caption: Bei der ersten Probemontage stimmt der Halswinkel.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOH12.jpg
         caption: Für die Ausarbeitung des Halsprofils werden "Facetten" angezeichnet.
@@ -318,49 +318,49 @@ build_steps:
     display: carousel
     images:
       - src: /src/assets/images/guitars/kuun/GOF01.jpg
-        caption: erste Beizung
+        caption: Zum Beizen benutzte ich hier Eisenacetat. Zu Herstellung löst man etwas Stahlwolle in Essigessenz auf.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOF02.jpg
-        caption: Beizung auf Eiche
+        caption: Die Gerbsäure in der Eiche reagiert mit dem Eisenacetat und ergibt diese schwarze Färbung.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOF03.jpg
-        caption: Klebstoffreste an den Rändern
+        caption: An den Zargen gab es Klebstoffreste. Die müssen noch weggeschliffen werden, sonst gibt es diese hellen Stellen.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOF04.jpg
-        caption: mehrere Beizdurchgänge
+        caption: Nach 3-4 Beizdurchgängen bin ich mit der Färbung zufrieden.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOF05.jpg
-        caption: Stegposition ermitteln
+        caption: Bei der Stegplatzierung gibt es nur einen Versuch. Daher wird mehrfach gemessen und angezeichnet.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOF06.jpg
-        caption: Montagebohrungen
+        caption: Nach sauberer Positionierung bohre ich die äußeren Saitenlöcher durch die Decke.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOF07.jpg
-        caption: Abkleben der Stegposition
+        caption: Die Stegposition wird vor der Lackierung abgeklebt. Hierfür klebe ich Paketband auf die Decke, setze den Steg auf und fahre die Außenkante sanft mit einem Skalpell ab.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOF09.jpg
-        caption: mehrere Lackschichten
+        caption: Den Lackaufbau probiere ich hier mit "Clou Holzsiegel". Nach 3-4 Schichten darf der Lack ein paar Tage trocknen.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOF10.jpg
-        caption: Nach Schleifen Abdeckband entfernen
+        caption: Nach dem Schleifen de Lackes wird das Abdeckband entfernt.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOF11.jpg
-        caption: Montageschrauben für Steg
+        caption: Zum Verleimen des Steges werden Schrauben von innen durch die Montagelöcher gefädelt.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOF13.jpg
-        caption: Steg einleimen
+        caption: Der Leim sollte gleichmäßig unter dem Steg herausquellen.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOF14.jpg
-        caption: Probemontage
+        caption: Vor weiteren Schleifarbeiten gibt es eine Probemontage.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOF15.jpg
-        caption: Testbesaitung
+        caption: Mit der Testbesaitung gibt es die ersten Töne.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOF16.jpg
-        caption: Schlußglanz mit einer dünnen Schicht Schellack
+        caption: Um dem Lack mehr Glanz ohne tagelanges Schleifen zu verleihen, poliere ich testweise eine dünne Schicht Schellack über den ausgehärteten Lack.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOF17.jpg
-        caption: Schellack am Hals
+        caption: Nachdem der Hals auch glänzt, kann die Endmontage erfolgen.
         alt: ''
 gallery: []
 ---
