@@ -77,11 +77,6 @@ collections:
         widget: list
         required: false
 
-      - label: Technische Daten
-        name: specifications
-        widget: list
-        required: false
-
         fields:
 
           - label: Eigenschaft
