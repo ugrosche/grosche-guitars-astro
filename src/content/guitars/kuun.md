@@ -48,7 +48,7 @@ build_steps:
     display: carousel
     images:
       - src: /src/assets/images/guitars/kuun/DB01.jpg
-        caption: Der Großteil der Gitarre besteht aus dem Holz der Eiche Kreuzen.
+        caption: Der Großteil der Gitarre besteht aus dem Holz Grabkreuzen aus Eiche.
         alt: ''
       - src: /src/assets/images/guitars/kuun/DB02.jpg
         caption: Hier ist ein Teil aufgesägt und grob auf Stärke geschliffen.
@@ -93,7 +93,7 @@ build_steps:
         caption: Danach kommt das große Balken-Kreuz.
         alt: ''
       - src: /src/assets/images/guitars/kuun/DB17.jpg
-        caption: Mit Brückenplättchen oder Futter ist die Decke erstmal fertig.
+        caption: Mit Brückenplättchen oder -Futter ist die Decke erstmal fertig.
         alt: ''
   - title: Zargen
     description: ''
@@ -124,7 +124,7 @@ build_steps:
         caption: Zum Einleimen bracht man viele kleine Leimzwingen.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOZ09.jpg
-        caption: Mit der Reifchen oben und unten ist der Zargenkranz bereits stabil.
+        caption: Durch die Reifchen oben und unten ist der Zargenkranz bereits stabil.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOZ10.jpg
         caption: Mit dem Halsklotz und dem Stück für den Cutaway wird der Zargenkranz geschlossen.
@@ -133,7 +133,7 @@ build_steps:
         caption: In Wölbungsstock kann man die Form der Deckenwölbung gut anzeichnen und dann grob hobeln. Hier sieht man auch zwei Stützleisten am Halsblock. Diese sollen verhindern, dass sich der Hals im Lauf der Zeit unter dem Saitenzug noch vorne neigt.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOZ12.jpg
-        caption: Für die genaue Wölbung wird der Wölbungsstock mit Schleifpapier beklebt.
+        caption: Für die genaue Anpassung der Zargen wird der Wölbungsstock mit Schleifpapier beklebt.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOZ13.jpg
         caption: Zum Abschluss werden die Aussparungen für die Balken an Decke und Boden ausgearbeitet.
@@ -164,7 +164,7 @@ build_steps:
         caption: Die Schalllöcher sind ausgearbeitet.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOB08.jpg
-        caption: In den Zargenkranz muss noch der Piezo Preamp befestigt werden.
+        caption: In dem Zargenkranz muss noch der Piezo Preamp befestigt werden.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOB09.jpg
         caption: Vorgesehen ist der Preamp für eine Montage im üblichen Schallloch. Hier wird er aber in der Zarge montiert.
