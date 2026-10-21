@@ -207,31 +207,31 @@ build_steps:
     display: carousel
     images:
       - src: /src/assets/images/guitars/kuun/GOG01.jpg
-        caption: Ausgangsmaterial Schneidebrett aus Bambus
+        caption: Als Material für das Griffbrett  dient ein günstiges Schneidebrett aus Bambus
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOG02.jpg
-        caption: Bundschlize einsägen mit verstellbarer Führung
+        caption: Die Bundschlitze werden mit einer verstellbaren Sägeführung eingesägt. Mit den Flügelmuttern wird das Griffbrett in der jeweiligen Position eingeklemmt. Die kleine Japansäge hat einen provisorischen Tiefenanschlag aufgeklebt bekommen.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOG03.jpg
-        caption: Schlitze anfasen
+        caption: Die Bundschlitze werden leicht angefast, um das Einpressen zu erleichtern.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOG04.jpg
-        caption: Binding anleimen
+        caption: Danach wird ein Binding aus dem gleichen Bambus-Holz angeleimt.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOG05.jpg
-        caption: Schlitze für Bundmarkierungen fräsen
+        caption: Hier werden die Bundmarkierungen vorbereitet. Die Sägeführung kann auch als Führung für das Fräs-Tool genutzt werden.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOG06.jpg
-        caption: Markierungen aus dunklem Hartholz
+        caption: Die Markierungen bestehen aus dunklem Hartholz.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOG07.jpg
-        caption: Radius einschleifen
+        caption: Mit dem Radiusschleifklotz und aufgelegtem Schleifpapier wird der Griffbrettradius eingeschliffen.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOG08.jpg
-        caption: Bünde einpressen
+        caption: Der Schraubstock dient als provisorische Bundpresse.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOG09.jpg
-        caption: Kanten müssen noch abgerichtet werden
+        caption: Einpressen gelingt mir sauberer als Einhämmern. Bis auf das Abrichten der Kanten ist das Griffbrett fertig.
         alt: ''
   - title: Hals
     description: ''
