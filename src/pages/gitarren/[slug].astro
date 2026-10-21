@@ -17,6 +17,7 @@ export async function getStaticPaths() {
 
 const { guitar } = Astro.props;
 const data = guitar.data;
+const { Content } = await guitar.render();
 
 const images = import.meta.glob(
   '/src/assets/images/guitars/**/*.{jpg,jpeg,png,webp}',
