@@ -299,16 +299,16 @@ build_steps:
         caption: Die Form wird grob ausgesägt.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOS04.jpg
-        caption: Da der Steg auf die gewölbte Decke kommt, muss er unten leicht hohl geschliffen sein. Hierfür schleife ich die Wölbung in ein Stück Abfallholz.
+        caption: Da der Steg auf die gewölbte Decke kommt, muss er unten leicht hohl geschliffen sein. Hierfür schleife ich die Deckenwölbung in ein Stück Abfallholz.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOS05.jpg
-        caption: Diesen Stück belege ich mit Schleifpapier und arbeite die leichte Wölbung aus.
+        caption: Dieses Stück belege ich mit Schleifpapier und arbeite die leichte Wölbung aus.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOS06.jpg
-        caption: Die "Flügel" des Steges lasse sich komfortabel am Dickenschleifer anfertigen.
+        caption: Die "Flügel" des Steges lassen sich komfortabel am Dickenschleifer anfertigen.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOS07.jpg
-        caption: Die fertige Flügelform.
+        caption: Die fertige Flügelform
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOS08.jpg
         caption: Aufgrund des Farbkonzeptes wird die Stegeinlage und der Sattel anstatt aus Knochen hier aus Büffelhorn gefertigt.
@@ -318,7 +318,7 @@ build_steps:
     display: carousel
     images:
       - src: /src/assets/images/guitars/kuun/GOF01.jpg
-        caption: Zum Beizen benutzte ich hier Eisenacetat. Zu Herstellung löst man etwas Stahlwolle in Essigessenz auf.
+        caption: Als Beizen benutzte ich hier Eisenacetat. Zur Herstellung löst man etwas Stahlwolle in Essigessenz auf.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOF02.jpg
         caption: Die Gerbsäure in der Eiche reagiert mit dem Eisenacetat und ergibt diese schwarze Färbung.
@@ -339,10 +339,10 @@ build_steps:
         caption: Die Stegposition wird vor der Lackierung abgeklebt. Hierfür klebe ich Paketband auf die Decke, setze den Steg auf und fahre die Außenkante sanft mit einem Skalpell ab.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOF09.jpg
-        caption: Den Lackaufbau probiere ich hier mit "Clou Holzsiegel". Nach 3-4 Schichten darf der Lack ein paar Tage trocknen.
+        caption: Als Decklack teste ich diesmal "Clou Holzsiegel". Nach 3-4 Schichten darf der Lack ein paar Tage trocknen.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOF10.jpg
-        caption: Nach dem Schleifen de Lackes wird das Abdeckband entfernt.
+        caption: Nach dem Schleifen des Lackes wird das Abdeckband entfernt.
         alt: ''
       - src: /src/assets/images/guitars/kuun/GOF11.jpg
         caption: Zum Verleimen des Steges werden Schrauben von innen durch die Montagelöcher gefädelt.
