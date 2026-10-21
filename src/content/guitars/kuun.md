@@ -2,11 +2,11 @@
 title: Graveyard Oak
 order: 5
 year: 2024
+description: Handliche Wohnzimmer-Gitarre aus Hölzern mit Vorgeschichte
 hero:
   src: /src/assets/images/guitars/kuun/Kuun.jpg
   alt: ''
   description: ''
-description: Handliche Wohnzimmer-Gitarre aus Hölzern mit Vorgeschichte
 specifications: []
 build_steps:
   - title: Die fertige Gitarre
@@ -367,3 +367,13 @@ build_steps:
         alt: ''
 gallery: []
 ---
+
+Ziel dieses Projekts war eine kleine, handliche Übungsgitarre, die bewusst nicht zu laut sein sollte.
+
+Als die provisorischen Grabkreuze meiner Schwiegereltern durch die endgültige Grabplatte ersetzt wurden, kam mir die Idee, das Eichenholz der Kreuze für den Bau einer Gitarre zu verwenden. So ist daraus ein sehr persönliches Instrument geworden, das mich jedes Mal an die beiden erinnert, wenn ich es in die Hand nehme.
+
+Auch bei der Gestaltung wollte ich etwas Neues ausprobieren und den üblichen Hell-Dunkel-Kontrast einmal umkehren. Deshalb habe ich für Griffbrett und Steg helles Bambus gewählt, während der restliche Korpus in dunkleren Farbtönen gehalten ist.
+
+Auf der Rückseite befindet sich eine großzügige Montageöffnung, die einen einfachen Zugang zum Inneren ermöglicht. Zusätzlich habe ich mit einer Passivmembran experimentiert, um die Basswiedergabe zu unterstützen. Das Ergebnis entsprach allerdings nicht ganz meinen Erwartungen.
+
+Aufgrund ihrer geringen Größe klingt die Gitarre wie gewünscht eher leise und zurückhaltend, mit naturgemäß wenig Bass. Damit erfüllt sie aber genau den Zweck, für den sie gedacht war: eine kleine, handliche Gitarre zum Üben.
