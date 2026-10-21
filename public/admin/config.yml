@@ -60,10 +60,17 @@ collections:
             widget: string
             required: false
 
-      - label: Beschreibung
-        name: description
+          - label: Kurzbeschreibung
+            name: description
+            widget: text
+            required: false
+            hint: "Kurzer Text für die Gitarrenübersicht."
+
+      - label: Projektbeschreibung
+        name: body
         widget: markdown
         required: false
+        hint: "Hier kannst du Hintergrund, Idee und Besonderheiten der Gitarre ausführlicher beschreiben."
 
       - label: Technische Daten
         name: specifications
