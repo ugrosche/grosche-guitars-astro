@@ -300,5 +300,84 @@ build_steps:
       - src: /src/assets/images/guitars/testgitarre/MH23.jpg
         caption: ''
         alt: ''
+  - title: Korpus
+    description: ''
+    display: carousel
+    images:
+      - src: /src/assets/images/guitars/testgitarre/MB01.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MB02.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MB03.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MB04.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MB06.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MB07.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MB08.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MB09.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MB10.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MB11.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MB12.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MB13.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MB14.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MB15.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MB16.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MB17.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MB19.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MB20.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MB21.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MB22.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MB23.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MB25.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MB26.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MB27.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MB28.jpg
+        caption: ''
+        alt: ''
 gallery: []
 ---
