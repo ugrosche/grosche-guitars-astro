@@ -37,9 +37,6 @@ build_steps:
       - src: /src/assets/images/guitars/kuun/2025-11-17 10.11.02.jpg
         caption: ''
         alt: ''
-      - src: /src/assets/images/guitars/kuun/2025-11-17 10.09.00.jpg
-        caption: ''
-        alt: ''
       - src: /src/assets/images/guitars/kuun/20241208_194854.jpg
         caption: ''
         alt: ''
