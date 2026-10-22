@@ -11,7 +11,7 @@ specifications: []
 build_steps:
   - title: Die fertige Gitarre
     description: ''
-    display: carousel
+    display: gallery
     images:
       - src: /src/assets/images/guitars/kuun/2025-11-17 10.08.33.jpg
         caption: ''
