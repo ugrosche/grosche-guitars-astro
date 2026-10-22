@@ -379,5 +379,131 @@ build_steps:
       - src: /src/assets/images/guitars/testgitarre/MB28.jpg
         caption: ''
         alt: ''
+  - title: Pickup
+    description: ''
+    display: carousel
+    images:
+      - src: /src/assets/images/guitars/testgitarre/MPU01.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MPU02.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MPU03.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MPU04.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MPU05.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MPU06.jpg
+        caption: ''
+        alt: ''
+  - title: Steg
+    description: ''
+    display: carousel
+    images:
+      - src: /src/assets/images/guitars/testgitarre/MS01.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MS02.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MS03.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MS04.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MS05.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MS06.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MS07.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MS08.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MS09.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MS10.jpg
+        caption: ''
+        alt: ''
+  - title: Abschlussarbeiten
+    description: ''
+    display: carousel
+    images:
+      - src: /src/assets/images/guitars/testgitarre/MAS00.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MAS01.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MAS02.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MAS03.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MAS04.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MAS05.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MAS06.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MAS07.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MAS08.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MAS09.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MAS10.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MAS20.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MAS21.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MAS22.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MAS23.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MAS24.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MAS30.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MAS31.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MAS32.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MAS33.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MAS34.jpg
+        caption: ''
+        alt: ''
+      - src: /src/assets/images/guitars/testgitarre/MAS35.jpg
+        caption: ''
+        alt: ''
 gallery: []
 ---
