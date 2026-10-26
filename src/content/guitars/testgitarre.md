@@ -142,43 +142,43 @@ build_steps:
     display: carousel
     images:
       - src: /src/assets/images/guitars/testgitarre/MZ01.jpg
-        caption: ''
+        caption: Eine Form hält die Zargen in Position. Hier eine zweiteilige Version.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MZ02.jpg
-        caption: ''
+        caption: 'Der erste Versuch eines Biegeeisens: Eine Heißluftpistole ist unter einem Metallrohr montiert.'
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MZ03.jpg
-        caption: ''
+        caption: Da es etwas verkokelt riecht, wurden die Biegeversuche nach draußen verlagert.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MZ04.jpg
-        caption: ''
+        caption: Faszinierend, wenn das Holz nach einiger Zeit tatsächlich weich wird und sich formen lässt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MZ05.jpg
-        caption: ''
+        caption: Aus kleinen Fichteleisten werden die Reifchen hergestellt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MZ06.jpg
-        caption: ''
+        caption: An der Bandsäge werden sie geschlitzt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MZ07.jpg
-        caption: ''
+        caption: Zuerst werden Hals- und Endklotz mit den Zargen verleimt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MZ08.jpg
-        caption: ''
+        caption: Dann gibt es bei dünnen Zargen noch senkrechte Verstärkungsleisten.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MZ09.jpg
-        caption: ''
+        caption: Die Reifchen werden stückweise eingeleimt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MZ10.jpg
-        caption: ''
+        caption: Der fertige Zargenkranz wird in der Form plan geschliffen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MZ11.jpg
-        caption: ''
+        caption: Am fertigen Zargenkranz sieht man das Füllstück für die Armauflage.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MZ12.jpg
-        caption: ''
+        caption: Hier wird ein "Soundport" eingebaut. Dieses Loch soll die Schallabstrahlung zum Spieler verbessern.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MZ13.jpg
-        caption: ''
+        caption: Auch der Soundport bekommt ein Binding.
         alt: ''
   - title: Griffbrett
     description: ''
