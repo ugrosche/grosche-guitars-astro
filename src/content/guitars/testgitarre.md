@@ -7,7 +7,13 @@ hero:
   src: /src/assets/images/guitars/testgitarre/Massari2.jpg
   alt: Vollansicht
   description: ''
-specifications: []
+specifications:
+  - label: Mensur
+    value: 64,5cm
+  - label: Decke
+    value: Fichte
+  - label: Boden und Zargen
+    value: Ahorn
 build_steps:
   - title: Galerie
     description: ''
