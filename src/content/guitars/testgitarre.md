@@ -7,13 +7,7 @@ hero:
   src: /src/assets/images/guitars/testgitarre/Massari2.jpg
   alt: Vollansicht
   description: ''
-specifications:
-  - label: Mensur
-    value: 64,5cm
-  - label: Decke
-    value: Fichte
-  - label: Boden und Zargen
-    value: Ahorn
+specifications: []
 build_steps:
   - title: Galerie
     description: ''
@@ -60,91 +54,88 @@ build_steps:
     display: carousel
     images:
       - src: /src/assets/images/guitars/testgitarre/MDB01.jpg
-        caption: ''
+        caption: Die Fuge beim Verleimen von Boden und Decke muss spaltfrei sein. Wer sauber hobeln kann, braucht so eine Hilfseinrichtung zum Schleifen nicht.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB02.jpg
-        caption: ''
+        caption: Der Boden hat an der Fuge noch ein Trennfurnier bekommen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB03.jpg
-        caption: ''
+        caption: Dann wird die Form grob ausgesägt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB04.jpg
-        caption: ''
+        caption: An der Ständerbohrmaschine werden für die Wölbung zunächst Stufen gefräst.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB05.jpg
-        caption: ''
+        caption: So entsteht ein Terassen-Gebilde der späteren Wölbung.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB06.jpg
-        caption: ''
+        caption: Ab hier wird mit Handwerkzeugen weiter gearbeitet.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB07.jpg
-        caption: ''
+        caption: Nach der Arbeit mit dem Hobel wechsele ich auf die Ziehklinge.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB08.jpg
-        caption: ''
+        caption: Die Außenwölbung passt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB09.jpg
-        caption: ''
-        alt: ''
-      - src: /src/assets/images/guitars/testgitarre/MDB9.jpg
-        caption: ''
+        caption: Innen wird zuerst Material an der Standbohrmaschine ausgebohrt. Die Ausladung der Bohrmaschine reicht leider nicht für die gesamte Korpusbreite.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB10.jpg
-        caption: ''
+        caption: Und weitere Markierungsbohrungen ...
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB11.jpg
-        caption: ''
+        caption: Mit diesem selbstgebauten Dickentaster prüfe ich die Stärke des Bodens.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB12.jpg
-        caption: ''
+        caption: Mit der Beschriftung markiere ich die Bereiche, die noch dünner ausgearbeitet werden sollen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB13.jpg
-        caption: ''
+        caption: Wenn ich auf der Zielstärke bin, wird mit der Ziehklinge geglättet.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB15.jpg
-        caption: ''
+        caption: An der Decke gibt es die gleichen Arbeitsschritte.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB16.jpg
-        caption: ''
+        caption: Zunächst werden die Stufen gefräst.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB17.jpg
-        caption: ''
+        caption: Danach fließend ausgearbeitet.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB18.jpg
-        caption: ''
+        caption: Solange, bis es eine gleichmäßige Wölbung gibt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB20.jpg
-        caption: ''
+        caption: Mit einer Schablone zeichne ich die F-Löcher an.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB21.jpg
-        caption: ''
+        caption: Ausschneiden gelingt in der weichen Fichte mit Skalpell besser als mit der Laubsäge.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB22.jpg
-        caption: ''
+        caption: Danach leime ich die erste Binding-Lage an.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB23.jpg
-        caption: ''
+        caption: ... und noch zwei Binding-Lagen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB24.jpg
-        caption: ''
+        caption: Die Form hat mit dem traditionellem F nicht mehr viel gemeinsam.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB25.jpg
-        caption: ''
+        caption: Die Decke wird mit einer X-Bebalkung verstärkt. Zum Übertragen der Deckenform auf die Leiste gibt es einen kleinen Trick mit einer passenden Unterlegscheibe.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB26.jpg
-        caption: ''
+        caption: Das Einschleifen passiert mit minimalen Schleifbewegungen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB27.jpg
-        caption: ''
+        caption: Die traditionellen Methode mit Kohle habe ich wieder verworfen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB28.jpg
-        caption: ''
+        caption: Dann wird das Kreuz verleimt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB29.jpg
-        caption: ''
+        caption: Nach dem Einleimen an die Decke werden die Balken ausgedünnt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB30.jpg
-        caption: ''
+        caption: Die Decke soll nicht zu steif aber auch nicht zu weich sein. Deshalb wird die Decke bei der Bearbeitung regelmäßig "abgeklopft" um die Tonänderung zu beurteilen.
         alt: ''
   - title: Zargen
     description: ''
