@@ -2,17 +2,13 @@
 title: Massari
 order: 1
 year: 2026
+description: 'Archtop im Stil der "Massari" von Pagelli:'
 hero:
   src: /src/assets/images/guitars/testgitarre/Massari2.jpg
   alt: Vollansicht
   description: ''
-description: 'Archtop im Stil der "Massari" von Pagelli:'
 specifications: []
 build_steps:
-  - title: Deckenwölbung
-    description: ''
-    display: single
-    images: []
   - title: Galerie
     description: ''
     display: gallery
