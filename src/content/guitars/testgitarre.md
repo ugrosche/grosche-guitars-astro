@@ -172,10 +172,10 @@ build_steps:
         caption: Der fertige Zargenkranz wird in der Form plan geschliffen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MZ11.jpg
-        caption: Am fertigen Zargenkranz sieht man das Füllstück für die Armauflage.
+        caption: Hier sieht man das Füllstück für die Armauflage.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MZ12.jpg
-        caption: Hier wird ein "Soundport" eingebaut. Dieses Loch soll die Schallabstrahlung zum Spieler verbessern.
+        caption: Ein "Soundport" wird eingebaut. Dieses Loch soll die Schallabstrahlung zum Spieler verbessern.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MZ13.jpg
         caption: Auch der Soundport bekommt ein Binding.
