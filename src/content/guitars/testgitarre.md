@@ -185,40 +185,40 @@ build_steps:
     display: carousel
     images:
       - src: /src/assets/images/guitars/testgitarre/MGB01.jpg
-        caption: ''
+        caption: Mit Winkel und Tiefenanschlag an der Säge werden die Bundschschlitze gesägt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MGB02.jpg
-        caption: ''
+        caption: Dann wird das Binding angebracht und die Dots gebohrt und eingeklebt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MGB03.jpg
-        caption: ''
+        caption: Dieser kleine Hilfswinkel sorgt dafür, dass die seitlichen Dots in einer Linie liegen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MGB04.jpg
-        caption: ''
+        caption: Zunächst wird er so positioniert, dass die Hilfslinie auf der Höhe des Dots auf der Griffbrettoberseite liegt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MGB05.jpg
-        caption: ''
+        caption: Dann wird er fixiert und es wird gebohrt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MGB06.jpg
-        caption: ''
+        caption: Dann werden die seitlichen Markierungen eingeklebt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MGB07.jpg
-        caption: ''
+        caption: Griffbrett fertig zum Verleimen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MGB07a.jpg
-        caption: ''
+        caption: Positionierung auf dem Hals und verleimen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MGB08.jpg
-        caption: ''
+        caption: Einhämmern der Bünde
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MGB09.jpg
-        caption: ''
+        caption: Hier habe ich ein Hartholzklotz mit Griffbrettwölbung als Zulage genommen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MGB10.jpg
-        caption: ''
+        caption: Nach dem Einschlagen der Bünden werden die Seiten abgerichtet.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MGB11.jpg
-        caption: ''
+        caption: Hier habe ich versucht, die Bundenden kugelförmig zu verrunden.
         alt: ''
   - title: Hals
     description: ''
