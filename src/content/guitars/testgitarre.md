@@ -225,73 +225,73 @@ build_steps:
     display: carousel
     images:
       - src: /src/assets/images/guitars/testgitarre/MH01.jpg
-        caption: ''
+        caption: Aus einem Ahorn-Kantel werden die Teile für den Hals mit möglichst wenig Verschnitt ausgesägt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH02.jpg
-        caption: ''
+        caption: Danach wird die Griffbrettseite als Referenz plan geschliffen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH03.jpg
-        caption: ''
+        caption: Die Kopfplatte wird ausgearbeitet.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH04.jpg
-        caption: ''
+        caption: Mit dem Dickenschleifer gelingt das besonders schnell.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH05.jpg
-        caption: ''
+        caption: Der Zapfen für die Schwalbenschwanzverbindung wird hergestellt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH06.jpg
-        caption: ''
+        caption: Die Winkel in drei Ebenen müssen stimmen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH07.jpg
-        caption: ''
+        caption: Wenn der Hals soweit passt, kann das Endstück für das schwebende Griffbrett angeleimt werden.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH08.jpg
-        caption: ''
+        caption: Halsstabkanal
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH09.jpg
-        caption: ''
+        caption: Hier wird die Halsstärke festgelegt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH10.jpg
-        caption: ''
+        caption: Die Stärke stimmt. Hier noch ohne Halsprofil.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH11.jpg
-        caption: ''
+        caption: Die Kopfplatte bekommt die erste Binding-Lage.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH12.jpg
-        caption: ''
+        caption: Fertiges Kopfplattenplättchen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH13.jpg
-        caption: ''
+        caption: Auch hier sollen die Übergänge hübsch aussehen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH14.jpg
-        caption: ''
+        caption: Die erste Lage der Kopfplatenunterseite.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH15.jpg
-        caption: ''
+        caption: Und auch hier noch eine Lage Wurzelfurnier.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH16.jpg
-        caption: ''
+        caption: Hier werden Furnierlagen für ein magnetisch fixiertes Halsstabplättchen verleimt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH17.jpg
-        caption: ''
+        caption: Das kreuzverleimte Furnier hält durch die Magneten.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH18.jpg
-        caption: ''
+        caption: Hier die endgültige Form des Plättchens.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH19.jpg
-        caption: ''
+        caption: Da dies meine 5. spielbare Eigenbau-Gitarre ist und mein Geburtsjahr 1963 ist und ich "Grosche" mit Nachnamen heiße, wollte ich diese Münze als Einlage verwenden.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH20.jpg
-        caption: ''
+        caption: Die Münze wird mit Epoxidharz vergossen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH21.jpg
-        caption: ''
+        caption: ... und plan geschliffen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH22.jpg
-        caption: ''
+        caption: so wird es später aussehen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH23.jpg
-        caption: ''
+        caption: Das Halsprofil wird ausgearbeitet.
         alt: ''
   - title: Korpus
     description: ''
