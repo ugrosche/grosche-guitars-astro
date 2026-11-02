@@ -1,7 +1,7 @@
 ---
 title: Massari
 order: 1
-year: 2026
+year: 2017
 description: 'Archtop im Stil der "Massari" von Pagelli:'
 hero:
   src: /src/assets/images/guitars/testgitarre/Massari2.jpg
