@@ -1,12 +1,12 @@
 ---
 title: Graffiti
 order: 3
-year: 2021
+year: 2017
+description: Design Experimente
 hero:
   src: /src/assets/images/guitars/graffiti/Graffiti.jpg
   alt: ''
   description: ''
-description: Design Experimente
 specifications: []
 build_steps: []
 gallery: []
