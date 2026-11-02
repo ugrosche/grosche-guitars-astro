@@ -1,12 +1,12 @@
 ---
 title: Kaizen Bass
 order: 2
-year: 2020
+year: 2019
+description: Bass mit Formexperimenten
 hero:
   src: /src/assets/images/guitars/kaizen-bass/Kaizen2.jpg
   alt: ''
   description: ''
-description: Bass mit Formexperimenten
 specifications: []
 build_steps: []
 gallery: []
