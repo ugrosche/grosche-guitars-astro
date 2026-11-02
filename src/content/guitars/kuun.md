@@ -1,12 +1,12 @@
 ---
 title: Graveyard Oak
 order: 5
-year: 2024
+year: 2025
+description: Handliche Wohnzimmer-Gitarre aus Hölzern mit Vorgeschichte
 hero:
   src: /src/assets/images/guitars/kuun/Kuun.jpg
   alt: ''
   description: ''
-description: Handliche Wohnzimmer-Gitarre aus Hölzern mit Vorgeschichte
 specifications: []
 build_steps:
   - title: 'Die fertige Gitarre:'
