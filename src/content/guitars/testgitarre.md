@@ -374,22 +374,22 @@ build_steps:
     display: carousel
     images:
       - src: /src/assets/images/guitars/testgitarre/MPU01.jpg
-        caption: ''
+        caption: Der Tonabnehmer wird als "Floating Pickup" gebaut. Wenn er über der Decke schwebt, kann diese freier schwingen. Basis ist eine günstige Kopie eines P90 Pickup.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MPU02.jpg
-        caption: ''
+        caption: Aus einem Kopfplattenbrettchen habe ich eine Kappe gebaut.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MPU03.jpg
-        caption: ''
+        caption: Diese wird mit 2 Stäben am Griffbrett gehalten
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MPU04.jpg
-        caption: ''
+        caption: Die Elektronik wird auf einer kleinen Platine aufgebaut. Sie besteht aus Lautstärkeund Tonregelung.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MPU05.jpg
-        caption: ''
+        caption: Diese Platine wird an dem kleinen Pickguard verbaut.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MPU06.jpg
-        caption: ''
+        caption: So wird es später aussehen.
         alt: ''
   - title: Steg
     description: ''
