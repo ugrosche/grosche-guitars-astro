@@ -298,79 +298,76 @@ build_steps:
     display: carousel
     images:
       - src: /src/assets/images/guitars/testgitarre/MB01.jpg
-        caption: ''
+        caption: Diese Zulagestücke beim Verleimen von Decke und Boden nennt man "Verleimbrille"
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB02.jpg
-        caption: ''
+        caption: Wenn der Leim gleichmäßig herausquillt, stimmt alles.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB03.jpg
-        caption: ''
+        caption: Nach dem Aufleimen der Decke kann die Schräge am Cutaway ausgearbeitet werden.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB04.jpg
-        caption: ''
+        caption: Ebenso die Schräge für die Armauflage. Ein Richtwert für den Winkel sind ca 30°.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB06.jpg
-        caption: ''
+        caption: Die Aufnahme für den Schwalbenschwanz war für mich eine Herausforderung.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB07.jpg
-        caption: ''
-        alt: ''
-      - src: /src/assets/images/guitars/testgitarre/MB08.jpg
-        caption: ''
+        caption: Danach könne die Kanäle füe das Binding gefräst werden. Hier sieht man die einfache Hilfskonstruktion.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB09.jpg
-        caption: ''
+        caption: fertige Binding-Kanäle
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB10.jpg
-        caption: ''
+        caption: Am Zargenstoß gibt es eine Aufnahme für den Pflock, der den Saitenhalter trägt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB11.jpg
-        caption: ''
+        caption: Decke und Boden werden vor dem "Aufschachteln" einmal mit Schellack eingepinselt. Das soll helfen, Luftfeuchtigkeits-Unterschiede innen und außen gleichmäßig auf das Holz wirken zu lassen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB12.jpg
-        caption: ''
+        caption: Vorher gibt es noch ein Zettelchen, welches durch das F-Loch zu sichtbar sein wird.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB13.jpg
-        caption: ''
+        caption: Dann werden die Schachtel geschlossen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB14.jpg
-        caption: ''
+        caption: Nachdem auch auf der Unterseite die Kanäle gefräst sind, können die ersten Binding-Lagen angeleimt werden.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB15.jpg
-        caption: ''
+        caption: ein Stück weicher Bastel-Kunststoff dient als Pressbeilage
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB16.jpg
-        caption: ''
+        caption: Knifflig sind die Stellen, an denen sich das Bindung teilt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB17.jpg
-        caption: ''
+        caption: Das ist an den Schrägen der Armauflage und dem Cutaway der Fall.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB19.jpg
-        caption: ''
+        caption: Hier bin ich mit dem Fräser abgerutscht und es gab eine "Delle".
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB20.jpg
-        caption: ''
+        caption: Glücklicherweise gab es noch den passenden Schnittrest.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB21.jpg
-        caption: ''
+        caption: So sieht es nach der Reparatur aus.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB22.jpg
-        caption: ''
+        caption: Die Randeinlagen sind komplett.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB23.jpg
-        caption: ''
+        caption: .. auch hier.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB25.jpg
-        caption: ''
+        caption: Jetzt werden die Schrägen sauber ausgearbeitet ...
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB26.jpg
-        caption: ''
+        caption: ... und mit Zierfurnier belegt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB27.jpg
-        caption: ''
+        caption: Ansicht nach dem Beischleifen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB28.jpg
-        caption: ''
+        caption: Ähnliche Arbeiten an der Armauflage.
         alt: ''
   - title: Pickup
     description: ''
