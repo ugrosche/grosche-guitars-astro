@@ -383,7 +383,7 @@ build_steps:
         caption: Diese wird mit 2 Stäben am Griffbrett gehalten
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MPU04.jpg
-        caption: Die Elektronik wird auf einer kleinen Platine aufgebaut. Sie besteht aus Lautstärkeund Tonregelung.
+        caption: Die Elektronik wird auf einer kleinen Platine aufgebaut. Sie besteht aus Lautstärke und Tonregelung.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MPU05.jpg
         caption: Diese Platine wird an dem kleinen Pickguard verbaut.
