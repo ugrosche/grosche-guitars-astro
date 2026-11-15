@@ -328,7 +328,7 @@ build_steps:
         caption: Vorher gibt es noch ein Zettelchen, welches durch das F-Loch zu sichtbar sein wird.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB13.jpg
-        caption: Dann werden die Schachtel geschlossen.
+        caption: Dann wird die Schachtel geschlossen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB14.jpg
         caption: Nachdem auch auf der Unterseite die Kanäle gefräst sind, können die ersten Binding-Lagen angeleimt werden.
