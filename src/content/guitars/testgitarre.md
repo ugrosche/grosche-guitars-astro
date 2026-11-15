@@ -313,7 +313,7 @@ build_steps:
         caption: Die Aufnahme für den Schwalbenschwanz war für mich eine Herausforderung.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB07.jpg
-        caption: Danach könne die Kanäle füe das Binding gefräst werden. Hier sieht man die einfache Hilfskonstruktion.
+        caption: Danach können die Kanäle füe das Binding gefräst werden. Hier sieht man die einfache Hilfskonstruktion.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB09.jpg
         caption: fertige Binding-Kanäle
