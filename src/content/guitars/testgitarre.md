@@ -423,7 +423,7 @@ build_steps:
         caption: Hier die beiden Modelle im Vergleich.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MS10.jpg
-        caption: Um die Decke frei schwingen zu lassen, sollte der Steg so leicht wir möglich sein.
+        caption: Um die Decke frei schwingen zu lassen, sollte der Steg so leicht wie möglich sein.
         alt: ''
   - title: Abschlussarbeiten
     description: ''
