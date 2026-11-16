@@ -396,34 +396,34 @@ build_steps:
     display: carousel
     images:
       - src: /src/assets/images/guitars/testgitarre/MS01.jpg
-        caption: ''
+        caption: Als Provisorium dient ein günstiger gekaufter Steg. Auf der Decke wird die Wölbung in des Stegfuß geschliffen. Mit Kreide kontrolliere ich, ob alle Stellen erfasst wurden.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MS02.jpg
-        caption: ''
+        caption: Die fertige Wölbung
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MS03.jpg
-        caption: ''
+        caption: In den endgültigen Steg wurde zuerst die Nut für die Stegeinlage gesägt und gefräst.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MS04.jpg
-        caption: ''
+        caption: Danach wird die Form grob ausgesägt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MS05.jpg
-        caption: ''
+        caption: Die Unterseite wird auch hier an die Deckenwölbung angepasst.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MS06.jpg
-        caption: ''
+        caption: Mit kleinen Holzstücken wird der Schlitz begrenzt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MS07.jpg
-        caption: ''
+        caption: Dann bekommt der Steg seine Form.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MS08.jpg
-        caption: ''
+        caption: Nach dem Feinschliff hat er seine endgültiger Form.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MS09.jpg
-        caption: ''
+        caption: Hier die beiden Modelle im Vergleich.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MS10.jpg
-        caption: ''
+        caption: Um die Decke frei schwingen zu lassen, sollte der Steg so leicht wir möglich sein.
         alt: ''
   - title: Abschlussarbeiten
     description: ''
