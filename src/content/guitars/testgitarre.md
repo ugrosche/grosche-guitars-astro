@@ -430,70 +430,70 @@ build_steps:
     display: carousel
     images:
       - src: /src/assets/images/guitars/testgitarre/MAS00.jpg
-        caption: ''
+        caption: Bei der "Hochzeit" wird der Hals mit dem Korpus verleimt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS01.jpg
-        caption: ''
+        caption: Die Basis des Saitenhalters ist ein Stahlblech.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS02.jpg
-        caption: ''
+        caption: Hier werden die Binding-Lagen an den Saitenhalter geleimt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS03.jpg
-        caption: ''
+        caption: Die Rohversion des Saitenhalters.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS04.jpg
-        caption: ''
+        caption: An den kleinen Löchern kann die Saitenerdung angeschlossen werden.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS05.jpg
-        caption: ''
+        caption: Die Anbauteile im Überblick.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS06.jpg
-        caption: ''
+        caption: Mit den kleinen Halteklötzchen kann der Schellack leichter aufgetragen werden.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS07.jpg
-        caption: ''
+        caption: Nach genügend Schelleck Schichten wird poliert.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS08.jpg
-        caption: ''
+        caption: der Pflock für den Saitenhalter wird angepasst.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS09.jpg
-        caption: ''
+        caption: Der "Saitenknickwinkel" hat Einfluss auf den Klang.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS10.jpg
-        caption: ''
+        caption: Aus diesem Winkel ergibt sich, in welcher Höhe der Saitenhalter eingehängt wird.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS20.jpg
-        caption: ''
+        caption: 'Das erste Probesetup: Der Klang war mir noch zu "holzig" mit zu wenig Resonanz.'
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS21.jpg
-        caption: ''
+        caption: Deshalb wurde die Hohlkehle am Rand von Boden und Decke noch weiter ausgedünnt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS22.jpg
-        caption: ''
+        caption: Die Klangveränderung ist sofort erkennbar.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS23.jpg
-        caption: ''
+        caption: Auch das Halsprofil war mich noch etwas zu klobig.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS24.jpg
-        caption: ''
+        caption: Zur Sicherheit kontrolliere ich das Profil mit Schablonen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS30.jpg
-        caption: ''
+        caption: Dann geht es los mit dem Schellack-Auftrag.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS31.jpg
-        caption: ''
+        caption: Es brauchet mehr als 10 Schichten, bis sich ein leichter Glanz einstellt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS32.jpg
-        caption: ''
+        caption: Hier erkennt man, wie der Schellack die Holzmaserung anfeuert.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS33.jpg
-        caption: ''
+        caption: Beim Hals hat es weniger Schichten gebraucht.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS34.jpg
-        caption: ''
+        caption: Die Montagelöcher für das Pickguard werden gebohrt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS35.jpg
-        caption: ''
+        caption: Und vor dem Setup wird alles verlötet. Eine Pappschablone verhindert, dass die fertige Decke in Mitleidenschaft gezogen wird.
         alt: ''
 gallery: []
 ---
