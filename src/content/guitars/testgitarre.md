@@ -454,7 +454,7 @@ build_steps:
         caption: Nach genügend Schelleck Schichten wird poliert.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS08.jpg
-        caption: der Pflock für den Saitenhalter wird angepasst.
+        caption: Der Pflock für den Saitenhalter wird angepasst.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS09.jpg
         caption: Der "Saitenknickwinkel" hat Einfluss auf den Klang.
