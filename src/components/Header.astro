@@ -7,7 +7,7 @@ const workshopUrl = base + "/werkstatt/";
 const aboutUrl = base + "/ueber-mich/";
 const logoUrl = base + "/favicon.png";
 const pathname = Astro.url.pathname;
-const homeClass = pathname === homeUrl ? "active" : "";
+const homeClass = pathname === homeUrl || pathname === homeUrl + "/" ? "active" : "";
 const guitarsClass = pathname.startsWith(guitarsUrl) ? "active" : "";
 const processClass = pathname.startsWith(processUrl) ? "active" : "";
 const workshopClass = pathname.startsWith(workshopUrl) ? "active" : "";
