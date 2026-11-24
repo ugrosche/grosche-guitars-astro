@@ -1,7 +1,5 @@
 ---
 import "../styles/guitars.css";
-import { Image } from "astro:assets";
-import heroImage from "../assets/images/home/hero.jpg";
 import Footer from "../components/Footer.astro";
 import Head from "../components/Head.astro";
 import Header from "../components/Header.astro";
@@ -29,7 +27,7 @@ const workshopUrl = base + "/werkstatt/";
           <p class="hero-note">Eine private Gitarrenbauwerkstatt – dokumentiert mit Bildern, Ideen und Erfahrungen.</p>
         </div>
         <figure class="home-image redesign-hero-image">
-          <Image src={heroImage} alt="Gitarren aus der Werkstatt von Grosche Guitars" widths={[700,1000,1400,1800]} sizes="(max-width: 900px) calc(100vw - 36px), 58vw" />
+          <img src={base + "/images/home/hero.jpg"} alt="Gitarren aus der Werkstatt von Grosche Guitars" loading="eager" fetchpriority="high" />
         </figure>
       </section>
 
