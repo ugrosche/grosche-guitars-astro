@@ -895,3 +895,121 @@ figcaption,
     font-size: 0.9rem;
   }
 }
+
+
+/* =========================================================
+   Grosche Guitars – Manufaktur / Studio Redesign
+   ========================================================= */
+:root {
+  --color-background: #f3efe7;
+  --color-surface: #fbf9f4;
+  --color-text: #29231e;
+  --color-muted: #766b60;
+  --color-accent: #9a6844;
+  --color-accent-hover: #71482e;
+  --color-border: #d9cfc1;
+  --color-dark: #29231e;
+  --color-dark-soft: #3a3028;
+  --page-width: 1180px;
+  --radius: 4px;
+}
+body { background: var(--color-background); }
+.site-header { position: relative; z-index: 5; border-bottom: 1px solid rgba(95,75,57,.18); background: rgba(243,239,231,.96); }
+.site-header-inner { max-width: 1320px; min-height: 84px; padding: 18px 34px; }
+.site-logo { gap: 12px; font-family: Georgia, 'Times New Roman', serif; font-size: 1.18rem; letter-spacing: .025em; }
+.site-logo-image { width: 34px; height: 34px; }
+.site-logo-wordmark > span { color: var(--color-accent); }
+.site-nav { gap: clamp(15px,2.3vw,34px); }
+.site-nav a { position: relative; padding: 9px 0; color: #554a40; font-size: .86rem; letter-spacing: .035em; }
+.site-nav a::after { position:absolute; right:0; bottom:2px; left:0; height:1px; background:var(--color-accent); content:''; transform:scaleX(0); transform-origin:left; transition:transform .2s ease; }
+.site-nav a:hover::after, .site-nav a.active::after { transform:scaleX(1); }
+.site-nav a.active { color:var(--color-text); }
+.home-redesign { max-width: 1320px; padding: 48px 34px 90px; }
+.redesign-hero { display:grid; grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr); align-items:center; gap: clamp(28px,5vw,76px); text-align:left; min-height: min(650px, calc(100vh - 150px)); }
+.hero-copy { padding: 28px 0; }
+.eyebrow, .path-number { margin:0 0 18px; color:var(--color-accent); font-family:Inter,Arial,sans-serif; font-size:.72rem; font-weight:600; letter-spacing:.16em; line-height:1.5; text-transform:uppercase; }
+.redesign-hero h1 { margin:0; font-family:Georgia,'Times New Roman',serif; font-size:clamp(3rem,5.7vw,5.5rem); font-weight:400; letter-spacing:-.045em; line-height:.99; }
+.redesign-hero h1 em { color:var(--color-accent); font-weight:400; }
+.redesign-hero .home-intro { max-width:490px; margin:26px 0 28px; color:#61564c; font-size:1.05rem; line-height:1.8; }
+.home-buttons { justify-content:flex-start; gap:12px; }
+.home-button { padding:14px 19px; border:1px solid var(--color-dark); border-radius:2px; background:var(--color-dark); font-size:.84rem; letter-spacing:.025em; }
+.home-button:hover { background:var(--color-accent-hover); }
+.home-button-secondary { border-color:#b9aa99; color:var(--color-text); background:transparent; }
+.home-button-secondary:hover { color:white; border-color:var(--color-dark); background:var(--color-dark); }
+.hero-note { margin:22px 0 0; color:var(--color-muted); font-size:.82rem; letter-spacing:.015em; }
+.redesign-hero-image { max-width:none; width:100%; margin:0; }
+.redesign-hero-image img { width:100%; height:clamp(350px,47vw,610px); max-height:none; border-radius:2px; object-fit:cover; box-shadow:18px 18px 0 rgba(154,104,68,.12); }
+.home-intro-band { max-width:760px; margin:95px auto 80px; text-align:center; }
+.home-intro-band .eyebrow { margin-bottom:12px; }
+.home-intro-band h2, .redesign-about h2 { margin:0 0 18px; font-family:Georgia,'Times New Roman',serif; font-size:clamp(2rem,3.5vw,3.1rem); font-weight:400; letter-spacing:-.025em; line-height:1.12; }
+.home-intro-band > p:last-child { color:var(--color-muted); font-size:1.02rem; line-height:1.85; }
+.home-paths { display:grid; grid-template-columns:1.1fr 1fr 1fr; gap:16px; }
+.path-card { display:flex; min-height:285px; flex-direction:column; align-items:flex-start; padding:30px 28px; border:1px solid var(--color-border); background:var(--color-surface); color:var(--color-text); text-decoration:none; transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease; }
+.path-card:hover { transform:translateY(-4px); border-color:#b89473; box-shadow:0 14px 34px rgba(54,40,27,.08); color:var(--color-text); }
+.path-card-featured { color:#f5eee4; border-color:var(--color-dark); background:var(--color-dark); }
+.path-card-featured:hover { color:#fff; border-color:var(--color-accent); }
+.path-card .path-number { margin-bottom:36px; font-size:.67rem; }
+.path-card-featured .path-number { color:#c99b76; }
+.path-card h2 { margin:0 0 12px; font-family:Georgia,'Times New Roman',serif; font-size:1.8rem; font-weight:400; line-height:1.12; }
+.path-card p { margin:0; color:var(--color-muted); font-size:.92rem; line-height:1.7; }
+.path-card-featured p { color:#d4c8bb; }
+.path-link { display:flex; gap:12px; align-items:center; margin-top:auto; padding-top:28px; color:var(--color-accent); font-size:.82rem; font-weight:600; }
+.path-card-featured .path-link { color:#e2b58f; }
+.redesign-about { display:grid; grid-template-columns:.8fr 1.2fr; gap:60px; max-width:950px; margin:110px auto 10px; padding-top:54px; border-top:1px solid var(--color-border); }
+.redesign-about h2 { max-width:360px; }
+.about-copy p { margin:0 0 16px; color:#5f554b; font-size:.98rem; line-height:1.85; }
+.text-link { display:inline-block; margin-top:8px; color:var(--color-accent); font-size:.88rem; font-weight:600; text-decoration:none; }
+.text-link:hover { color:var(--color-accent-hover); text-decoration:underline; }
+/* Listen und Projektseiten */
+main:not(.home) { padding-top:58px; }
+main:not(.home) > h1 { font-family:Georgia,'Times New Roman',serif; font-size:clamp(2.5rem,5vw,4rem); font-weight:400; letter-spacing:-.035em; }
+.intro { max-width:720px; margin:12px 0 52px; color:var(--color-muted); font-size:1.08rem; line-height:1.8; }
+.guitar-grid { gap:54px 30px; }
+.card-image { border-radius:2px; background:#e6dfd4; }
+.card-content h2 { font-family:Georgia,'Times New Roman',serif; font-size:1.65rem; font-weight:400; }
+.card-content .description { color:#62584e; line-height:1.75; }
+.card-link { padding:0; border:0; border-bottom:1px solid #c5a88e; border-radius:0; color:var(--color-accent); font-size:.82rem; }
+.card-link:hover { border-color:var(--color-accent-hover); background:transparent; transform:none; }
+.project-detail h1 { font-family:Georgia,'Times New Roman',serif; font-size:clamp(2.5rem,5vw,4rem); font-weight:400; }
+.project-hero { margin:28px 0 34px; }
+.project-hero-image { border-radius:2px !important; }
+.build-step { margin-top:3.5rem; padding-top:2rem; border-color:var(--color-border); }
+.build-step h3 { font-family:Georgia,'Times New Roman',serif; font-size:1.7rem; font-weight:400; }
+.site-footer { max-width:1320px; margin-top:80px; padding:28px 34px; border-color:var(--color-border); }
+.site-footer a { color:var(--color-muted); }
+.site-footer a:hover { color:var(--color-accent); }
+.editorial-page { max-width:900px; }
+.editorial-page .lead { max-width:760px; margin:18px 0 42px; color:var(--color-muted); font-family:Georgia,'Times New Roman',serif; font-size:1.45rem; line-height:1.55; }
+.editorial-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; margin:42px 0; }
+.editorial-tile { padding:26px; border:1px solid var(--color-border); background:var(--color-surface); text-decoration:none; }
+.editorial-tile h2 { margin:0 0 10px; font-family:Georgia,'Times New Roman',serif; font-size:1.55rem; font-weight:400; }
+.editorial-tile p { margin:0; color:var(--color-muted); font-size:.94rem; line-height:1.7; }
+.editorial-tile span { display:block; margin-top:22px; color:var(--color-accent); font-size:.82rem; font-weight:600; }
+.editorial-copy { max-width:760px; color:#5f554b; line-height:1.9; }
+.editorial-copy h2 { margin-top:2.5rem; font-family:Georgia,'Times New Roman',serif; font-size:1.8rem; font-weight:400; }
+@media (max-width:850px) {
+ .redesign-hero { grid-template-columns:1fr; min-height:0; gap:24px; }
+ .hero-copy { padding:20px 0 0; }
+ .redesign-hero-image { max-width:760px; }
+ .redesign-hero-image img { height:auto; max-height:540px; aspect-ratio:5/4; }
+ .home-paths { grid-template-columns:1fr 1fr; }
+ .path-card-featured { grid-column:1/-1; min-height:230px; }
+ .redesign-about { gap:30px; }
+}
+@media (max-width:600px) {
+ .site-header-inner { flex-direction:column; align-items:flex-start; gap:12px; padding:14px 18px; }
+ .site-nav { width:100%; flex-wrap:wrap; gap:5px 19px; }
+ .site-nav a { padding:7px 0; font-size:.82rem; }
+ .home-redesign { padding:28px 18px 60px; }
+ .redesign-hero h1 { font-size:clamp(2.7rem,13vw,4rem); }
+ .redesign-hero .home-intro { font-size:.98rem; }
+ .home-buttons { align-items:stretch; flex-direction:column; }
+ .home-button { text-align:center; }
+ .home-intro-band { margin:68px auto 55px; }
+ .home-paths { grid-template-columns:1fr; }
+ .path-card, .path-card-featured { grid-column:auto; min-height:235px; padding:25px; }
+ .path-card .path-number { margin-bottom:25px; }
+ .redesign-about { grid-template-columns:1fr; gap:8px; margin-top:72px; padding-top:38px; }
+ .editorial-grid { grid-template-columns:1fr; }
+ .site-footer { padding:24px 18px; }
+}
