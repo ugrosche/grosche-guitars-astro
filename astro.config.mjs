@@ -4,7 +4,7 @@ import rehypeKatex from 'rehype-katex';
 
 export default defineConfig({
   site: 'https://ugrosche.github.io',
-  base: '/grosche-guitars-astro',
+  base: process.env.ASTRO_PREVIEW === '1' ? '/' : '/grosche-guitars-astro',
 
   markdown: {
     remarkPlugins: [remarkMath],
