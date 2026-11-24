@@ -938,7 +938,7 @@ body { background: var(--color-background); }
 .home-button-secondary:hover { color:white; border-color:var(--color-dark); background:var(--color-dark); }
 .hero-note { margin:22px 0 0; color:var(--color-muted); font-size:.82rem; letter-spacing:.015em; }
 .redesign-hero-image { max-width:none; width:100%; margin:0; }
-.redesign-hero-image img { width:100%; height:clamp(350px,47vw,610px); max-height:none; border-radius:2px; object-fit:cover; box-shadow:18px 18px 0 rgba(154,104,68,.12); }
+.redesign-hero-image img { display:block; width:100%; height:auto; max-height:610px; border-radius:2px; object-fit:contain; object-position:center; box-shadow:none; }
 .home-intro-band { max-width:760px; margin:95px auto 80px; text-align:center; }
 .home-intro-band .eyebrow { margin-bottom:12px; }
 .home-intro-band h2, .redesign-about h2 { margin:0 0 18px; font-family:Georgia,'Times New Roman',serif; font-size:clamp(2rem,3.5vw,3.1rem); font-weight:400; letter-spacing:-.025em; line-height:1.12; }
@@ -991,7 +991,7 @@ main:not(.home) > h1 { font-family:Georgia,'Times New Roman',serif; font-size:cl
  .redesign-hero { grid-template-columns:1fr; min-height:0; gap:24px; }
  .hero-copy { padding:20px 0 0; }
  .redesign-hero-image { max-width:760px; }
- .redesign-hero-image img { height:auto; max-height:540px; aspect-ratio:5/4; }
+ .redesign-hero-image img { height:auto; max-height:540px; aspect-ratio:auto; object-fit:contain; }
  .home-paths { grid-template-columns:1fr 1fr; }
  .path-card-featured { grid-column:1/-1; min-height:230px; }
  .redesign-about { gap:30px; }
