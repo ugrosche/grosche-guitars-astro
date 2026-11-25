@@ -1061,3 +1061,52 @@ main:not(.home) > h1 { font-family:Georgia,'Times New Roman',serif; font-size:cl
   .build-toc { padding: 1.25rem; }
   .build-toc ol { grid-template-columns: 1fr; }
 }
+
+
+/* Graveyard Oak – redaktioneller Baubericht */
+.project-detail .description { max-width: 760px; margin: 18px 0 30px; color: #62584e; font-size: 1.12rem; line-height: 1.85; }
+.finished-story { margin: 4rem 0 5rem; padding: 2.6rem 0 3.4rem; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
+.finished-heading { max-width: 700px; margin: 0 0 2rem; }
+.finished-heading .eyebrow { margin-bottom: 10px; }
+.finished-heading h2 { margin: 0 0 12px; font-family: Georgia,'Times New Roman',serif; font-size: clamp(2rem,3.5vw,2.8rem); font-weight: 400; }
+.finished-heading > p:last-child { max-width: 620px; margin: 0; color: var(--color-muted); line-height: 1.8; }
+.finished-gallery { display: grid; grid-template-columns: repeat(12,minmax(0,1fr)); gap: 18px; align-items: start; }
+.finished-image { grid-column: span 4; margin: 0; }
+.finished-image:first-child { grid-column: span 8; grid-row: span 2; }
+.finished-image:nth-child(2) { grid-column: span 4; }
+.finished-image:nth-child(3), .finished-image:nth-child(4) { grid-column: span 4; }
+.finished-image img { display: block; width: 100%; height: auto; max-height: 520px; object-fit: cover; border-radius: 2px; }
+.finished-image:first-child img { max-height: 680px; }
+.finished-image figcaption { max-width: 95%; }
+.build-toc { margin: 4rem 0 1rem; padding: 1.6rem 0; border: 0; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); border-radius: 0; background: transparent; }
+.build-toc h2 { font-family: Georgia,'Times New Roman',serif; font-size: 1.8rem; font-weight: 400; }
+.build-toc ol { grid-template-columns: repeat(3,minmax(0,1fr)); gap: .7rem 1.8rem; }
+.build-toc a { font-size: .92rem; }
+.build-step { display: grid; grid-template-columns: minmax(220px,.72fr) minmax(0,1.28fr); column-gap: clamp(28px,5vw,70px); row-gap: 1.2rem; margin-top: 5rem; padding-top: 2.5rem; border-top: 1px solid var(--color-border); }
+.chapter-heading { grid-column: 1; grid-row: 1; display: flex; align-items: baseline; gap: 14px; }
+.chapter-number { color: var(--color-accent); font-family: Inter,Arial,sans-serif; font-size: .78rem; letter-spacing: .12em; }
+.build-step h3 { margin: 0; font-size: clamp(1.65rem,2.5vw,2.1rem); line-height: 1.15; }
+.step-description { grid-column: 1; grid-row: 2; color: #5f554b; font-size: .96rem; line-height: 1.85; }
+.step-description p:first-child { margin-top: 0; }
+.build-images-shell { grid-column: 2; grid-row: 1 / span 2; margin-top: 0; }
+.build-images-editorial { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; align-items: start; }
+.build-images-editorial .build-image { min-width: 0; }
+.build-images-editorial .build-image:first-child { grid-column: 1 / -1; }
+.build-images-editorial .build-image:first-child img { max-height: 560px; width: 100%; object-fit: contain; object-position: center; background: #e8e1d7; }
+.build-images-editorial .build-image img { width: 100%; height: auto; border-radius: 2px; }
+.build-images-editorial .build-image figcaption { font-size: .82rem; line-height: 1.55; }
+.build-images-editorial .lightbox-trigger { background: transparent; }
+@media (max-width: 760px) {
+ .finished-gallery { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+ .finished-image, .finished-image:first-child, .finished-image:nth-child(2), .finished-image:nth-child(3), .finished-image:nth-child(4) { grid-column: span 1; grid-row: auto; }
+ .finished-image:first-child { grid-column: 1 / -1; }
+ .build-toc ol { grid-template-columns: repeat(2,minmax(0,1fr)); }
+ .build-step { grid-template-columns: 1fr; row-gap: 1rem; margin-top: 3.5rem; }
+ .chapter-heading, .step-description, .build-images-shell { grid-column: 1; grid-row: auto; }
+ .build-images-shell { margin-top: .5rem; }
+}
+@media (max-width: 480px) {
+ .finished-gallery, .build-images-editorial { grid-template-columns: 1fr; }
+ .finished-image:first-child, .build-images-editorial .build-image:first-child { grid-column: 1; }
+ .build-toc ol { grid-template-columns: 1fr; }
+}
