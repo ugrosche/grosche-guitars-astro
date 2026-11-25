@@ -1,0 +1,37 @@
+---
+import { getCollection, render } from 'astro:content';
+import ProjectDetail from '../../components/ProjectDetail.astro';
+
+export async function getStaticPaths() {
+  const guitars = await getCollection('guitars');
+  return guitars.map((guitar) => ({
+    params: { slug: guitar.id },
+    props: { guitar }
+  }));
+}
+
+const { guitar } = Astro.props;
+const data = guitar.data;
+const { Content } = await render(guitar);
+const images = import.meta.glob(
+  '/src/assets/images/guitars/**/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}',
+  { eager: true }
+);
+const heroImage = data.hero?.src ? images[data.hero.src]?.default : undefined;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<ProjectDetail
+  title={data.title}
+  description={data.description}
+  year={data.year}
+  heroImage={heroImage}
+  heroAlt={data.hero?.alt}
+  heroDescription={data.hero?.description}
+  backHref={base + '/bauprozess/'}
+  backLabel="Alle Bauberichte"
+  buildTitle="Der Bau"
+  buildSteps={data.build_steps || []}
+  imageModules={images}
+>
+  <Content />
+</ProjectDetail>
