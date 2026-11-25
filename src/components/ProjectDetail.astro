@@ -171,18 +171,25 @@ style="position: absolute; inset: 0; display: block; width: 100%; height: 100%; 
 
 
       {renderedBuildSteps.length > 0 && (
-
-        <section class="build">
-
-
-          {renderedBuildSteps.map((step, stepIndex) => {
+        <>
+          <nav class="build-toc" aria-label="Inhaltsverzeichnis des Bauberichts">
+            <p class="eyebrow">Der Weg zum Instrument</p>
+            <h2>Einblicke in den Bau</h2>
+            <ol>
+              {renderedBuildSteps.map((step, stepIndex) => (
+                <li><a href={`#bauabschnitt-${stepIndex + 1}`}>{step.title}</a></li>
+              ))}
+            </ol>
+          </nav>
+          <section class="build">
+            {renderedBuildSteps.map((step, stepIndex) => {
 
             const display = step.display || 'gallery';
             const stepImages = step.images || [];
 
             return (
 
-              <article class="build-step">
+              <article class="build-step" id={`bauabschnitt-${stepIndex + 1}`}>
 
                 <h3>{step.title}</h3>
 
@@ -376,8 +383,8 @@ style="position: absolute; inset: 0; display: block; width: 100%; height: 100%; 
             );
           })}
 
-        </section>
-
+          </section>
+        </>
       )}
 
     </main>
