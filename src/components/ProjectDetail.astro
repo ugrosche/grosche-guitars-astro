@@ -26,6 +26,7 @@ interface Props {
   title: string;
   description?: string;
   year?: string | number;
+  specifications?: { label: string; value: string }[];
 
   heroImage?: any;
   heroAlt?: string;
@@ -43,6 +44,7 @@ const {
   title,
   description,
   year,
+  specifications = [],
   heroImage,
   heroAlt = '',
   heroDescription,
@@ -135,7 +137,7 @@ function resolveImage(src?: string) {
 <figure class="project-hero">
 <div
 class="project-hero-image"
-style="position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 10px;"
+class="project-hero-frame"
 >
 <Image
 src={heroImage}
@@ -144,7 +146,7 @@ class="hero"
 widths={[600, 900, 1200, 1600]}
 sizes="(max-width: 900px) 100vw, 1200px"
 loading="eager"
-style="position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center;"
+style="display: block; width: 100%; height: auto; max-height: 76vh; object-fit: contain; object-position: center;"
 />
 </div>
  
@@ -165,6 +167,20 @@ style="position: absolute; inset: 0; display: block; width: 100%; height: 100%; 
       )}
 
 
+      {specifications.length > 0 && (
+        <section class="specifications" aria-labelledby="specifications-title">
+          <h2 id="specifications-title">Steckbrief</h2>
+          <dl>
+            {specifications.map((item) => (
+              <div class="specification-row">
+                <dt>{item.label}</dt>
+                <dd>{item.value}</dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+      )}
+
       <div class="project-content">
         <slot />
       </div>
@@ -176,8 +192,8 @@ style="position: absolute; inset: 0; display: block; width: 100%; height: 100%; 
             <section class="finished-story" aria-labelledby="finished-title">
               <div class="finished-heading">
                 <p class="eyebrow">Das fertige Instrument</p>
-                <h2 id="finished-title">Graveyard Oak – in Ansichten</h2>
-                <p>Ein Eindruck von Form, Material und den Details, die diese Gitarre unverwechselbar machen.</p>
+                <h2 id="finished-title">{title} – in Ansichten</h2>
+                <p>Ein Eindruck von Form, Material und den Details, die dieses Instrument unverwechselbar machen.</p>
               </div>
               <div class="finished-gallery">
                 {(renderedBuildSteps[0].images || []).map((image, imageIndex) => {
