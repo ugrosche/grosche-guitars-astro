@@ -1110,3 +1110,33 @@ main:not(.home) > h1 { font-family:Georgia,'Times New Roman',serif; font-size:cl
  .finished-image:first-child, .build-images-editorial .build-image:first-child { grid-column: 1; }
  .build-toc ol { grid-template-columns: 1fr; }
 }
+
+
+/* Bauabschnittstexte bewusst vor die zugehörige Bildstrecke stellen */
+@media (min-width: 761px) {
+  .build-step {
+    grid-template-columns: minmax(0,1fr);
+    row-gap: 1rem;
+  }
+  .chapter-heading,
+  .step-description,
+  .build-images-shell {
+    grid-column: 1;
+    grid-row: auto;
+  }
+  .step-description {
+    max-width: 780px;
+    margin: 0 0 .8rem;
+    font-size: 1.02rem;
+  }
+  .build-images-shell {
+    margin-top: .4rem;
+  }
+  .build-images-editorial {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 20px;
+  }
+  .build-images-editorial .build-image:first-child {
+    grid-column: 1 / -1;
+  }
+}
