@@ -364,7 +364,7 @@ gallery: []
 
 ## Eine Gitarre mit einer besonderen Geschichte
 
-Test Dieses Instrument beginnt nicht mit einer Holzbestellung, sondern mit einem Abschied. Die provisorischen Grabkreuze meiner Schwiegereltern wurden durch die endgültige Grabplatte ersetzt. Das Eichenholz der Kreuze war damit nicht mehr an seinem ursprünglichen Platz – aber zu schade, um einfach zu verschwinden. Daraus entstand die Idee, eine Gitarre zu bauen und dem Material eine neue Aufgabe zu geben.
+Dieses Instrument beginnt nicht mit einer Holzbestellung, sondern mit einem Abschied. Die provisorischen Grabkreuze meiner Schwiegereltern wurden durch die endgültige Grabplatte ersetzt. Das Eichenholz der Kreuze war damit nicht mehr an seinem ursprünglichen Platz – aber zu schade, um einfach zu verschwinden. Daraus entstand die Idee, eine Gitarre zu bauen und dem Material eine neue Aufgabe zu geben.
 
 So wurde **Graveyard Oak** zu einem sehr persönlichen Projekt. Die Gitarre erinnert mich an zwei Menschen, und ihre Geschichte steckt nicht nur im Namen, sondern ganz konkret im Holz des Instruments.
 
