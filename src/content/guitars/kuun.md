@@ -42,7 +42,7 @@ build_steps:
         alt: ''
   - title: Decke und Boden
     description: "Das ungewöhnliche Material bestimmt die Konstruktion von Anfang an. Die Eiche der ausgedienten Grabkreuze ist nicht in beliebig breiten, makellosen Brettern verfügbar. Deshalb muss ich die Bauteile aus den vorhandenen Stücken entwickeln und die Konstruktion an das Material anpassen. Der Boden wird mehrteilig aufgebaut; die Fugenleisten und die Balkenkonstruktion geben ihm anschließend Stabilität. Die Decke entsteht dagegen ganz klassisch aus Fichte."
-    display: carousel
+    display: editorial
     images:
       - src: /src/assets/images/guitars/kuun/DB01.jpg
         caption: Der größte Teil der Gitarre besteht aus dem Eichenholz der ehemaligen Grabkreuze.
@@ -94,7 +94,7 @@ build_steps:
         alt: ''
   - title: Zargen
     description: "Auch bei den Zargen zeigt sich, dass hier nicht einfach ein handelsübliches Stück Holz verarbeitet werden kann. Die verfügbare Breite reicht nicht für einen durchgehenden Zargenstoß. Ich teile die Zarge deshalb in mehrere Segmente und füge sie zu einem stabilen Kranz zusammen. Zum Biegen nutze ich ein selbst angepasstes Biegeeisen: Ein Aluminium-Rundstück macht aus einem Muffenschweißgerät für Kunststoffrohre ein brauchbares Werkzeug."
-    display: carousel
+    display: editorial
     images:
       - src: /src/assets/images/guitars/kuun/GOZ01.jpg
         caption: Auch die Zargen entstehen aus dem Eichenholz der aufgesägten Grabkreuze.
@@ -137,7 +137,7 @@ build_steps:
         alt: ''
   - title: Korpus
     description: "Nun wachsen Decke, Boden und Zargenkranz zum eigentlichen Instrument zusammen. Die Decke wird in der Wölbungsform verleimt; anschließend arbeite ich die Armauflage und die Schallöffnungen aus. Eine Besonderheit ist der Piezo-Vorverstärker: Er ist eigentlich für die Montage im Schallloch vorgesehen, soll hier aber in der Zarge sitzen. Nach dem Schließen des Korpus folgen die Fräsarbeiten für das Binding. Zum Schluss wird die Oberfläche wiederholt gewässert und geschliffen, damit sich später keine Holzfasern aufstellen."
-    display: carousel
+    display: editorial
     images:
       - src: /src/assets/images/guitars/kuun/GOB01.jpg
         caption: Die Enden der Balken passe ich noch an den Zargenkranz an.
@@ -201,7 +201,7 @@ build_steps:
         alt: ''
   - title: Griffbrett
     description: "Für das Griffbrett probiere ich bewusst ein ungewöhnliches Material aus: Bambus. Das Holz stammt von einem einfachen Schneidebrett. Es greift die helle Farbigkeit auf, die später auch den Steg prägt, und bildet damit einen deutlichen Kontrast zur dunklen Eiche. Die Bundschlitze entstehen mit einer verstellbaren Sägeführung. Auch Binding und Markierungen werden aus beziehungsweise in kontrastierenden Materialien ausgeführt."
-    display: carousel
+    display: editorial
     images:
       - src: /src/assets/images/guitars/kuun/GOG01.jpg
         caption: Als Ausgangsmaterial für das Griffbrett dient ein einfaches Schneidebrett aus Bambus.
@@ -232,7 +232,7 @@ build_steps:
         alt: ''
   - title: Hals
     description: "Der Hals entsteht ebenfalls aus der Eiche der Grabkreuze. Weil das Ausgangsmaterial für die benötigte Breite nicht ausreicht, ergänze ich einen schmalen Zierstreifen. Neben dem Halsstabkanal und der Formgebung bekommt die Kopfplatte ein Furnier und eine kleine Erinnerung an die Herkunft des Holzes: ein Schmuckkreuzchen, das in Epoxidharz eingelassen wird. Für das Halsprofil verwende ich erstmals eine Facettenmethode. Statt die Rundung ausschließlich nach Gefühl herauszuarbeiten, lege ich zunächst definierte Flächen an und verrunde sie anschließend. Das macht den Weg zum gewünschten Profil kontrollierbarer."
-    display: carousel
+    display: editorial
     images:
       - src: /src/assets/images/guitars/kuun/GOH01.jpg
         caption: Auch der Hals entsteht aus dem Eichenholz der Grabkreuze. Ein schmaler Zierstreifen in der Mitte ergänzt die fehlende Breite.
@@ -284,7 +284,7 @@ build_steps:
         alt: ''
   - title: Steg
     description: "Der Steg greift das Materialkonzept des Griffbretts auf und wird aus Bambus gefertigt. Seine Unterseite muss zur gewölbten Decke passen; dafür übertrage ich die Wölbung auf eine Schleifunterlage und arbeite die Kontaktfläche passend aus. Auch bei den Saitenauflagen bleibt die Gestaltung konsequent: Sattel und Stegeinlage bestehen aus Büffelhorn statt aus dem üblichen Knochen."
-    display: carousel
+    display: editorial
     images:
       - src: /src/assets/images/guitars/kuun/GOS01.jpg
         caption: Als Erstes fräse ich die Nut für die Stegeinlage in den Bambusrohling des Stegs.
@@ -312,7 +312,7 @@ build_steps:
         alt: ''
   - title: Abschlussarbeiten
     description: "Die dunkle Färbung der Eiche entsteht nicht durch einen deckenden Farblack. Ich setze Eisenacetat ein, das mit den Gerbstoffen im Eichenholz reagiert und die Oberfläche dunkel bis schwarz färbt. Nach mehreren Beizdurchgängen kontrolliere ich das Ergebnis und beseitige verbliebene Leimspuren, bevor die Oberfläche fertiggestellt wird. Die Stegposition wird besonders sorgfältig festgelegt und vor dem Lackieren ausgespart. Als Decklack teste ich Clou Holzsiegel; nach dem Aushärten folgt ein dünner Schellackauftrag, um den Glanz zu steigern. Eine Probebesaitung liefert schließlich die ersten Töne."
-    display: carousel
+    display: editorial
     images:
       - src: /src/assets/images/guitars/kuun/GOF01.jpg
         caption: Als Beize verwende ich hier Eisenacetat. Dafür lasse ich Stahlwolle in Essigessenz reagieren.
