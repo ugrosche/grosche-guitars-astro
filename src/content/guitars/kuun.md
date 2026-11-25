@@ -45,7 +45,7 @@ build_steps:
     display: editorial
     images:
       - src: /src/assets/images/guitars/kuun/DB01.jpg
-        caption: Der größte Teil der Gitarre besteht aus dem Eichenholz der ehemaligen Grabkreuze.
+        caption: test Der größte Teil der Gitarre besteht aus dem Eichenholz der ehemaligen Grabkreuze.
         alt: ''
       - src: /src/assets/images/guitars/kuun/DB02.jpg
         caption: Ein Teil des Holzes ist bereits aufgesägt und grob auf die benötigte Stärke geschliffen.
