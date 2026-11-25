@@ -1013,3 +1013,51 @@ main:not(.home) > h1 { font-family:Georgia,'Times New Roman',serif; font-size:cl
  .editorial-grid { grid-template-columns:1fr; }
  .site-footer { padding:24px 18px; }
 }
+
+/* Baubericht: Kapitel-Navigation */
+.build-toc {
+  margin: 2.5rem 0 3.5rem;
+  padding: 1.6rem 1.8rem;
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-accent);
+  border-radius: var(--radius);
+  background: rgb(255 255 255 / 55%);
+}
+.build-toc .eyebrow {
+  margin: 0 0 .35rem;
+  color: var(--color-muted);
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.build-toc h2 {
+  margin: 0 0 1rem;
+  font-size: 1.45rem;
+}
+.build-toc ol {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .55rem 2rem;
+  margin: 0;
+  padding-left: 1.25rem;
+}
+.build-toc li {
+  padding-left: .2rem;
+  color: var(--color-muted);
+}
+.build-toc a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+.build-toc a:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+.build-step[id] {
+  scroll-margin-top: 2rem;
+}
+@media (max-width: 640px) {
+  .build-toc { padding: 1.25rem; }
+  .build-toc ol { grid-template-columns: 1fr; }
+}
