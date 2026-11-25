@@ -41,7 +41,7 @@ build_steps:
         caption: ''
         alt: ''
   - title: Decke und Boden
-    description: ''
+    description: "Das ungewöhnliche Material bestimmt die Konstruktion von Anfang an. Die Eiche der ausgedienten Grabkreuze ist nicht in beliebig breiten, makellosen Brettern verfügbar. Deshalb muss ich die Bauteile aus den vorhandenen Stücken entwickeln und die Konstruktion an das Material anpassen. Der Boden wird mehrteilig aufgebaut; die Fugenleisten und die Balkenkonstruktion geben ihm anschließend Stabilität. Die Decke entsteht dagegen ganz klassisch aus Fichte."
     display: carousel
     images:
       - src: /src/assets/images/guitars/kuun/DB01.jpg
@@ -93,7 +93,7 @@ build_steps:
         caption: Mit Brückenplättchen oder -Futter ist die Decke erstmal fertig.
         alt: ''
   - title: Zargen
-    description: ''
+    description: "Auch bei den Zargen zeigt sich, dass hier nicht einfach ein handelsübliches Stück Holz verarbeitet werden kann. Die verfügbare Breite reicht nicht für einen durchgehenden Zargenstoß. Ich teile die Zarge deshalb in mehrere Segmente und füge sie zu einem stabilen Kranz zusammen. Zum Biegen nutze ich ein selbst angepasstes Biegeeisen: Ein Aluminium-Rundstück macht aus einem Muffenschweißgerät für Kunststoffrohre ein brauchbares Werkzeug."
     display: carousel
     images:
       - src: /src/assets/images/guitars/kuun/GOZ01.jpg
@@ -136,7 +136,7 @@ build_steps:
         caption: Zum Abschluss werden die Aussparungen für die Balken an Decke und Boden ausgearbeitet.
         alt: ''
   - title: Korpus
-    description: ''
+    description: "Nun wachsen Decke, Boden und Zargenkranz zum eigentlichen Instrument zusammen. Die Decke wird in der Wölbungsform verleimt; anschließend arbeite ich die Armauflage und die Schallöffnungen aus. Eine Besonderheit ist der Piezo-Vorverstärker: Er ist eigentlich für die Montage im Schallloch vorgesehen, soll hier aber in der Zarge sitzen. Nach dem Schließen des Korpus folgen die Fräsarbeiten für das Binding. Zum Schluss wird die Oberfläche wiederholt gewässert und geschliffen, damit sich später keine Holzfasern aufstellen."
     display: carousel
     images:
       - src: /src/assets/images/guitars/kuun/GOB01.jpg
@@ -200,7 +200,7 @@ build_steps:
         caption: Damit ist der Korpus fertig für die Endbehandlung.
         alt: ''
   - title: Griffbrett
-    description: ''
+    description: "Für das Griffbrett probiere ich bewusst ein ungewöhnliches Material aus: Bambus. Das Holz stammt von einem einfachen Schneidebrett. Es greift die helle Farbigkeit auf, die später auch den Steg prägt, und bildet damit einen deutlichen Kontrast zur dunklen Eiche. Die Bundschlitze entstehen mit einer verstellbaren Sägeführung. Auch Binding und Markierungen werden aus beziehungsweise in kontrastierenden Materialien ausgeführt."
     display: carousel
     images:
       - src: /src/assets/images/guitars/kuun/GOG01.jpg
@@ -231,7 +231,7 @@ build_steps:
         caption: Einpressen gelingt mir sauberer als Einhämmern. Bis auf das Abrichten der Kanten ist das Griffbrett fertig.
         alt: ''
   - title: Hals
-    description: ''
+    description: "Der Hals entsteht ebenfalls aus der Eiche der Grabkreuze. Weil das Ausgangsmaterial für die benötigte Breite nicht ausreicht, ergänze ich einen schmalen Zierstreifen. Neben dem Halsstabkanal und der Formgebung bekommt die Kopfplatte ein Furnier und eine kleine Erinnerung an die Herkunft des Holzes: ein Schmuckkreuzchen, das in Epoxidharz eingelassen wird. Für das Halsprofil verwende ich erstmals eine Facettenmethode. Statt die Rundung ausschließlich nach Gefühl herauszuarbeiten, lege ich zunächst definierte Flächen an und verrunde sie anschließend. Das macht den Weg zum gewünschten Profil kontrollierbarer."
     display: carousel
     images:
       - src: /src/assets/images/guitars/kuun/GOH01.jpg
@@ -283,7 +283,7 @@ build_steps:
         caption: Mit dem Halsfußplättchen oder Heel-Cap wird Hals unten abgeschlossen.
         alt: ''
   - title: Steg
-    description: ''
+    description: "Der Steg greift das Materialkonzept des Griffbretts auf und wird aus Bambus gefertigt. Seine Unterseite muss zur gewölbten Decke passen; dafür übertrage ich die Wölbung auf eine Schleifunterlage und arbeite die Kontaktfläche passend aus. Auch bei den Saitenauflagen bleibt die Gestaltung konsequent: Sattel und Stegeinlage bestehen aus Büffelhorn statt aus dem üblichen Knochen."
     display: carousel
     images:
       - src: /src/assets/images/guitars/kuun/GOS01.jpg
@@ -311,7 +311,7 @@ build_steps:
         caption: Aufgrund des Farbkonzeptes wird die Stegeinlage und der Sattel anstatt aus Knochen hier aus Büffelhorn gefertigt.
         alt: ''
   - title: Abschlußarbeiten
-    description: ''
+    description: "Die dunkle Färbung der Eiche entsteht nicht durch einen deckenden Farblack. Ich setze Eisenacetat ein, das mit den Gerbstoffen im Eichenholz reagiert und die Oberfläche dunkel bis schwarz färbt. Nach mehreren Beizdurchgängen kontrolliere ich das Ergebnis und beseitige verbliebene Leimspuren, bevor die Oberfläche fertiggestellt wird. Die Stegposition wird besonders sorgfältig festgelegt und vor dem Lackieren ausgespart. Als Decklack teste ich Clou Holzsiegel; nach dem Aushärten folgt ein dünner Schellackauftrag, um den Glanz zu steigern. Eine Probebesaitung liefert schließlich die ersten Töne."
     display: carousel
     images:
       - src: /src/assets/images/guitars/kuun/GOF01.jpg
@@ -361,13 +361,32 @@ build_steps:
         alt: ''
 gallery: []
 ---
+## Eine Gitarre mit einer besonderen Geschichte
 
-Ziel dieses Projekts war eine kleine, handliche Übungsgitarre, die bewusst nicht zu laut sein sollte.
+Dieses Instrument beginnt nicht mit einer Holzbestellung, sondern mit einem Abschied. Die provisorischen Grabkreuze meiner Schwiegereltern wurden durch die endgültige Grabplatte ersetzt. Das Eichenholz der Kreuze war damit nicht mehr an seinem ursprünglichen Platz – aber zu schade, um einfach zu verschwinden. Daraus entstand die Idee, eine Gitarre zu bauen und dem Material eine neue Aufgabe zu geben.
 
-Als die provisorischen Grabkreuze meiner Schwiegereltern durch die endgültige Grabplatte ersetzt wurden, kam mir die Idee, das Eichenholz der Kreuze für den Bau einer Gitarre zu verwenden. So ist daraus ein sehr persönliches Instrument geworden, das mich jedes Mal an die beiden erinnert, wenn ich es in die Hand nehme.
+So wurde **Graveyard Oak** zu einem sehr persönlichen Projekt. Die Gitarre erinnert mich an zwei Menschen, und ihre Geschichte steckt nicht nur im Namen, sondern ganz konkret im Holz des Instruments.
 
-Auch bei der Gestaltung wollte ich etwas Neues ausprobieren und den üblichen Hell-Dunkel-Kontrast einmal umkehren. Deshalb habe ich für Griffbrett und Steg helles Bambus gewählt, während der restliche Korpus in dunkleren Farbtönen gehalten ist.
+## Klein, handlich und bewusst zurückhaltend
 
-Auf der Rückseite befindet sich eine großzügige Montageöffnung, die einen einfachen Zugang zum Inneren ermöglicht. Zusätzlich habe ich mit einer Passivmembran experimentiert, um die Basswiedergabe zu unterstützen. Das Ergebnis entsprach allerdings nicht ganz meinen Erwartungen.
+Die Idee war keine möglichst laute Konzertgitarre. Ich wollte eine kleine, handliche Wohnzimmer- und Übungsgitarre, die bewusst nicht zu laut auftritt. Die kompakte Bauform bringt naturgemäß weniger Bass mit sich. Genau diese Zurückhaltung war Teil des Konzepts.
 
-Aufgrund ihrer geringen Größe klingt die Gitarre wie gewünscht eher leise und zurückhaltend, mit naturgemäß wenig Bass. Damit erfüllt sie aber genau den Zweck, für den sie gedacht war: eine kleine, handliche Gitarre zum Üben.
+Auch gestalterisch sollte das Instrument einen eigenen Weg gehen. Statt des vertrauten dunklen Griffbretts auf hellem Korpus wollte ich den Kontrast umkehren: Das Eichenholz wird dunkel gefärbt, Griffbrett und Steg setzen sich mit hellem Bambus ab. Sattel und Stegeinlage aus Büffelhorn führen diese Farbidee weiter.
+
+## Bauen mit dem, was das Holz vorgibt
+
+Das Ausgangsmaterial war besonders – und gerade deshalb nicht so berechenbar wie frisch gekauftes Tonholz. Die Breite und Länge der vorhandenen Eichenstücke gaben vor, wie Boden, Zargen und Hals aufgebaut werden konnten. Einige Bauteile mussten mehrteilig entstehen. Die Konstruktion ist also nicht unabhängig vom Material entworfen worden; sie hat sich an dessen Möglichkeiten orientiert.
+
+Neben den klassischen Arbeitsschritten gab es einige Lösungen, die ich ausprobieren wollte: eine dreiteilige Zarge, ein selbst angepasstes Biegeeisen, eine großzügige Montageöffnung auf der Rückseite und ein in der Zarge untergebrachter Piezo-Vorverstärker. Auch eine Passivmembran zur Unterstützung der Basswiedergabe habe ich getestet. Sie brachte allerdings nicht das erhoffte Ergebnis.
+
+## Der Bau in Bildern
+
+Die folgenden Abschnitte zeigen den Weg vom aufgesägten Eichenholz bis zum fertigen Instrument. Die Bildunterschriften halten die einzelnen Arbeitsschritte fest; die begleitenden Texte ordnen die Entscheidungen und Besonderheiten des Projekts ein.
+
+## Das Ergebnis
+
+Graveyard Oak ist eine kleine Gitarre mit einer ungewöhnlichen Herkunft. Der dunkle Eichenkorpus, die hellen Bambusdetails und die kleine Einlage in der Kopfplatte machen die Geschichte des Materials sichtbar, ohne sie plakativ auszustellen.
+
+Klanglich bleibt das Instrument seiner Größe entsprechend eher leise und zurückhaltend, mit wenig Bass. Die Passivmembran hat meine Erwartungen nicht erfüllt – ein Versuch, der zum Bauprozess dazugehört und nicht nachträglich schöngeredet werden muss. Als handliche Gitarre zum Üben erfüllt Graveyard Oak aber genau den Zweck, für den ich sie gebaut habe.
+
+[Graveyard Oak als fertiges Instrument ansehen →](/gitarren/kuun/)
