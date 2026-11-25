@@ -1086,7 +1086,7 @@ main:not(.home) > h1 { font-family:Georgia,'Times New Roman',serif; font-size:cl
 .chapter-heading { grid-column: 1; grid-row: 1; display: flex; align-items: baseline; gap: 14px; }
 .chapter-number { color: var(--color-accent); font-family: Inter,Arial,sans-serif; font-size: .78rem; letter-spacing: .12em; }
 .build-step h3 { margin: 0; font-size: clamp(1.65rem,2.5vw,2.1rem); line-height: 1.15; }
-.step-description { grid-column: 1; grid-row: 2; color: #5f554b; font-size: .96rem; line-height: 1.85; }
+.step-description { grid-column: 1; grid-row: 1 / span 2; align-self: start; margin-top: 3.2rem; color: #5f554b; font-size: .96rem; line-height: 1.85; }
 .step-description p:first-child { margin-top: 0; }
 .build-images-shell { grid-column: 2; grid-row: 1 / span 2; margin-top: 0; }
 .build-images-editorial { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; align-items: start; }
