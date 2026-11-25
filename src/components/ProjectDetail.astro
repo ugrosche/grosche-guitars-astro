@@ -172,26 +172,54 @@ style="position: absolute; inset: 0; display: block; width: 100%; height: 100%; 
 
       {renderedBuildSteps.length > 0 && (
         <>
+          {renderedBuildSteps[0] && (
+            <section class="finished-story" aria-labelledby="finished-title">
+              <div class="finished-heading">
+                <p class="eyebrow">Das fertige Instrument</p>
+                <h2 id="finished-title">Graveyard Oak – in Ansichten</h2>
+                <p>Ein Eindruck von Form, Material und den Details, die diese Gitarre unverwechselbar machen.</p>
+              </div>
+              <div class="finished-gallery">
+                {(renderedBuildSteps[0].images || []).map((image, imageIndex) => {
+                  const optimizedImage = resolveImage(image.src);
+                  if (!optimizedImage) return null;
+                  const imageAlt = image.alt || image.caption || 'Graveyard Oak – Detailansicht';
+                  return (
+                    <figure class="finished-image">
+                      <button type="button" class="lightbox-trigger" data-lightbox-trigger
+                        data-lightbox-group="finished-guitar" data-lightbox-index={imageIndex}
+                        data-lightbox-src={optimizedImage.src} data-lightbox-alt={imageAlt}
+                        data-lightbox-caption={image.caption || ''} aria-label={'Bild groß anzeigen: ' + imageAlt}>
+                        <Image src={optimizedImage} alt={imageAlt} widths={[500, 800, 1200, 1600]}
+                          sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 700px" loading="lazy" />
+                      </button>
+                      {image.caption && <figcaption>{image.caption}</figcaption>}
+                    </figure>
+                  );
+                })}
+              </div>
+            </section>
+          )}
           <nav class="build-toc" aria-label="Inhaltsverzeichnis des Bauberichts">
             <p class="eyebrow">Der Weg zum Instrument</p>
-            <h2>Einblicke in den Bau</h2>
+            <h2>Die Bauabschnitte</h2>
             <ol>
-              {renderedBuildSteps.map((step, stepIndex) => (
+              {renderedBuildSteps.slice(1).map((step, stepIndex) => (
                 <li><a href={`#bauabschnitt-${stepIndex + 1}`}>{step.title}</a></li>
               ))}
             </ol>
           </nav>
           <section class="build">
-            {renderedBuildSteps.map((step, stepIndex) => {
+            {renderedBuildSteps.slice(1).map((step, stepIndex) => {
 
-            const display = step.display || 'gallery';
+            const display = 'editorial';
             const stepImages = step.images || [];
 
             return (
 
               <article class="build-step" id={`bauabschnitt-${stepIndex + 1}`}>
 
-                <h3>{step.title}</h3>
+                <div class="chapter-heading"><span class="chapter-number">{String(stepIndex + 1).padStart(2, '0')}</span><h3>{step.title}</h3></div>
 
 
           {step.renderedDescription && (
