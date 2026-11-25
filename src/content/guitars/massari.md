@@ -188,7 +188,7 @@ build_steps:
         caption: Mit einer Sägeführung samt Winkel- und Tiefenanschlag säge ich die Bundschlitze.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MGB02.jpg
-        caption: Anschließend bringe ich das Binding an und bohre die Löcher für die Dots, die ich danach eink lebe.
+        caption: Anschließend bringe ich das Binding an und bohre die Löcher für die Dots, die ich danach einklebe.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MGB03.jpg
         caption: Dieser kleine Hilfswinkel sorgt dafür, dass die seitlichen Dots in einer Linie liegen.
@@ -212,7 +212,7 @@ build_steps:
         caption: Die Bünde werden eingesetzt und eingehämmert.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MGB09.jpg
-        caption: Hier habe ich ein Hartholzklotz mit Griffbrettwölbung als Zulage genommen.
+        caption: Hier verwende ich einen Hartholzklotz mit passender Griffbrettwölbung als Zulage.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MGB10.jpg
         caption: Nach dem Einschlagen der Bünde werden die Seiten abgerichtet.
