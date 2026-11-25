@@ -381,12 +381,4 @@ Neben den klassischen Arbeitsschritten gab es einige Lösungen, die ich ausprobi
 
 ## Der Bau in Bildern
 
-Die folgenden Abschnitte zeigen den Weg vom aufgesägten Eichenholz bis zum fertigen Instrument. Die Bildunterschriften halten die einzelnen Arbeitsschritte fest; die begleitenden Texte ordnen die Entscheidungen und Besonderheiten des Projekts ein.
-
-## Das Ergebnis
-
-Graveyard Oak ist eine kleine Gitarre mit einer ungewöhnlichen Herkunft. Der dunkle Eichenkorpus, die hellen Bambusdetails und die kleine Einlage in der Kopfplatte machen die Geschichte des Materials sichtbar, ohne sie plakativ auszustellen.
-
-Klanglich bleibt das Instrument seiner Größe entsprechend eher leise und zurückhaltend, mit wenig Bass. Die Passivmembran hat meine Erwartungen nicht erfüllt – ein Versuch, der zum Bauprozess dazugehört und nicht nachträglich schöngeredet werden muss. Als handliche Gitarre zum Üben erfüllt Graveyard Oak aber genau den Zweck, für den ich sie gebaut habe.
-
-[Graveyard Oak als fertiges Instrument ansehen →](/gitarren/kuun/)
+Zunächst zeigen ausgewählte Ansichten das fertige Instrument. Anschließend führt der Baubericht Schritt für Schritt vom aufgesägten Eichenholz bis zur fertigen Gitarre. Die Bildunterschriften halten die Arbeitsschritte fest; die begleitenden Texte ordnen Entscheidungen und Besonderheiten des Projekts ein.
