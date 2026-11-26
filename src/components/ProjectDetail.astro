@@ -190,9 +190,11 @@ style="display: block; width: 100%; height: auto; max-height: 76vh; object-fit: 
         </p>
       )}
 
-      <div class="project-content">
-        <slot />
-      </div>
+      {view === 'guitar' && (
+        <div class="project-content">
+          <slot />
+        </div>
+      )}
 
 
       {view === 'guitar' && renderedBuildSteps[0] && (
