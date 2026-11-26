@@ -1,5 +1,5 @@
 ---
-import { getCollection, render } from 'astro:content';
+import { getCollection } from 'astro:content';
 import ProjectDetail from '../../components/ProjectDetail.astro';
 
 export async function getStaticPaths() {
@@ -12,7 +12,6 @@ export async function getStaticPaths() {
 
 const { guitar } = Astro.props;
 const data = guitar.data;
-const { Content } = await render(guitar);
 const images = import.meta.glob(
   '/src/assets/images/guitars/**/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}',
   { eager: true }
@@ -28,6 +27,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   crossLinkLabel="Zum fertigen Instrument" 
   title={data.title}
   description={data.description}
+  introContent={data.build_intro}
   year={data.year}
   heroImage={heroImage}
   heroAlt={firstBuildImage?.alt || firstBuildStep?.title || data.title}
@@ -38,5 +38,4 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   buildSteps={data.build_steps || []}
   imageModules={images}
 >
-  <Content />
 </ProjectDetail>
