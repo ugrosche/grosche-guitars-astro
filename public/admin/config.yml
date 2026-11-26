@@ -119,6 +119,9 @@ collections:
               - label: Einzelbilder
                 value: single
 
+              - label: Redaktionelles Layout
+                value: editorial
+
           - label: Bilder
             name: images
             widget: list

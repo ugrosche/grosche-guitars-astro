@@ -18,14 +18,19 @@ interface ProjectImage {
 interface BuildStep {
   title: string;
   description?: string;
-  display?: 'single' | 'gallery' | 'carousel';
+  display?: 'single' | 'gallery' | 'carousel' | 'editorial';
   images?: ProjectImage[];
 }
 
 interface Props {
   title: string;
   description?: string;
+  introContent?: string;
   year?: string | number;
+  specifications?: { label: string; value: string }[];
+  view: 'guitar' | 'build';
+  crossLinkHref: string;
+  crossLinkLabel: string;
 
   heroImage?: any;
   heroAlt?: string;
@@ -42,7 +47,12 @@ interface Props {
 const {
   title,
   description,
+  introContent,
   year,
+  specifications = [],
+  view = 'build',
+  crossLinkHref,
+  crossLinkLabel,
   heroImage,
   heroAlt = '',
   heroDescription,
@@ -64,6 +74,8 @@ async function renderMarkdown(content: string) {
   const { code } = await markdownProcessor.render(content);
   return code;
 }
+
+const renderedIntro = introContent ? await renderMarkdown(introContent) : '';
 
 const renderedBuildSteps = await Promise.all(
   buildSteps.map(async (step) => ({
@@ -133,10 +145,7 @@ function resolveImage(src?: string) {
 
 {heroImage && (
 <figure class="project-hero">
-<div
-class="project-hero-image"
-style="position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 10px;"
->
+<div class="project-hero-frame">
 <Image
 src={heroImage}
 alt={heroAlt || title}
@@ -144,7 +153,7 @@ class="hero"
 widths={[600, 900, 1200, 1600]}
 sizes="(max-width: 900px) 100vw, 1200px"
 loading="eager"
-style="position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center;"
+style="display: block; width: 100%; height: auto; max-height: 76vh; object-fit: contain; object-position: center;"
 />
 </div>
  
@@ -165,219 +174,112 @@ style="position: absolute; inset: 0; display: block; width: 100%; height: 100%; 
       )}
 
 
-      <div class="project-content">
-        <slot />
-      </div>
-
-
-      {renderedBuildSteps.length > 0 && (
-
-        <section class="build">
-
-
-          {renderedBuildSteps.map((step, stepIndex) => {
-
-            const display = step.display || 'gallery';
-            const stepImages = step.images || [];
-
-            return (
-
-              <article class="build-step">
-
-                <h3>{step.title}</h3>
-
-
-          {step.renderedDescription && (
-          <div
-          class="step-description"
-          set:html={step.renderedDescription}
-          />
-          )}
-
-                {stepImages.length > 0 && (
-
-                  <div
-                    class="build-images-shell"
-                    data-carousel={
-                      display === 'carousel'
-                        ? ''
-                        : undefined
-                    }
-                  >
-
-
-                    {
-                      display === 'carousel' &&
-                      stepImages.length > 1 && (
-
-                        <div class="carousel-controls">
-
-                          <button
-                            type="button"
-                            class="carousel-arrow"
-                            data-carousel-prev
-                            aria-label="Vorheriges Bild"
-                          >
-                            ‹
-                          </button>
-
-
-                          <div
-                            class="carousel-counter"
-                            aria-live="polite"
-                          >
-                            Bild
-                            {' '}
-                            <span data-carousel-current>
-                              1
-                            </span>
-                            {' '}
-                            von
-                            {' '}
-                            <span>
-                              {stepImages.length}
-                            </span>
-                          </div>
-
-
-                          <button
-                            type="button"
-                            class="carousel-arrow"
-                            data-carousel-next
-                            aria-label="Nächstes Bild"
-                          >
-                            ›
-                          </button>
-
-                        </div>
-
-                      )
-                    }
-
-
-                    <div
-                      class={`build-images build-images-${display}`}
-                      data-carousel-track={
-                        display === 'carousel'
-                          ? ''
-                          : undefined
-                      }
-                    >
-
-                      {
-                        stepImages.map((image, imageIndex) => {
-
-                          const optimizedImage =
-                            resolveImage(image.src);
-
-                          if (!optimizedImage) {
-                            return null;
-                          }
-
-                          const imageAlt =
-                            image.alt ||
-                            image.caption ||
-                            step.title;
-
-                          return (
-
-                            <figure
-                              class="build-image"
-                              data-carousel-slide={
-                                display === 'carousel'
-                                  ? ''
-                                  : undefined
-                              }
-                            >
-
-                              <button
-                                type="button"
-                                class="lightbox-trigger"
-                                data-lightbox-trigger
-                                data-lightbox-group={`build-step-${stepIndex}`}
-                                data-lightbox-index={imageIndex}
-                                data-lightbox-src={optimizedImage.src}
-                                data-lightbox-alt={imageAlt}
-                                data-lightbox-caption={image.caption || ''}
-                                aria-label={`Bild groß anzeigen: ${imageAlt}`}
-                              >
-
-                                <Image
-                                  src={optimizedImage}
-                                  alt={imageAlt}
-                                  widths={[400, 700, 1000, 1400]}
-                                  sizes={
-                                    display === 'single'
-                                      ? '(max-width: 900px) 100vw, 1000px'
-                                      : '(max-width: 700px) 100vw, 500px'
-                                  }
-                                  loading="lazy"
-                               />
-
-                              </button>
-
-
-                              {image.caption && (
-
-                                <figcaption>
-                                  {image.caption}
-                                </figcaption>
-
-                              )}
-
-                            </figure>
-
-                          );
-                        })
-                      }
-
-                    </div>
-
-
-                    {
-                      display === 'carousel' &&
-                      stepImages.length > 1 && (
-
-                        <div
-                          class="carousel-dots"
-                          aria-label="Bildauswahl"
-                        >
-
-                          {
-                            stepImages.map((image, imageIndex) => (
-
-                              <button
-                                type="button"
-                                class="carousel-dot"
-                                data-carousel-dot
-                                data-index={imageIndex}
-                                aria-label={`Bild ${imageIndex + 1} anzeigen`}
-                                aria-current={
-                                  imageIndex === 0
-                                    ? 'true'
-                                    : 'false'
-                                }
-                              />
-
-                            ))
-                          }
-
-                        </div>
-
-                      )
-                    }
-
-                  </div>
-
-                )}
-
-              </article>
-
-            );
-          })}
-
+      {view === 'guitar' && specifications.length > 0 && (
+        <section class="specifications" aria-labelledby="specifications-title">
+          <h2 id="specifications-title">Steckbrief</h2>
+          <dl>
+            {specifications.map((item) => (
+              <div class="specification-row">
+                <dt>{item.label}</dt>
+                <dd>{item.value}</dd>
+              </div>
+            ))}
+          </dl>
         </section>
+      )}
 
+      {crossLinkHref && (
+        <p class="project-crosslink">
+          <a class="text-link" href={crossLinkHref}>{crossLinkLabel} <span aria-hidden="true">↗</span></a>
+        </p>
+      )}
+
+      {(view === 'guitar' || (view === 'build' && renderedIntro)) && (
+        <div class="project-content">
+          {view === 'guitar' ? <slot /> : <div set:html={renderedIntro} />}
+        </div>
+      )}
+
+
+      {view === 'guitar' && renderedBuildSteps[0] && (
+        <section class="finished-story" aria-labelledby="finished-title">
+          <div class="finished-heading">
+            <p class="eyebrow">Galerie</p>
+            <h2 id="finished-title">{title} – das fertige Instrument</h2>
+            <p>Die Galerie zeigt Form, Materialien und Details des fertigen Instruments. Konstruktive Entscheidungen und einzelne Arbeitsschritte sind im Baubericht dokumentiert.</p>
+          </div>
+          <div class="finished-gallery">
+            {(renderedBuildSteps[0].images || []).map((image, imageIndex) => {
+              const optimizedImage = resolveImage(image.src);
+              if (!optimizedImage) return null;
+              const imageAlt = image.alt || image.caption || title + ' – Detailansicht';
+              return (
+                <figure class="finished-image">
+                  <button type="button" class="lightbox-trigger" data-lightbox-trigger
+                    data-lightbox-group="finished-guitar" data-lightbox-index={imageIndex}
+                    data-lightbox-src={optimizedImage.src} data-lightbox-alt={imageAlt}
+                    data-lightbox-caption={image.caption || ''} aria-label={'Bild groß anzeigen: ' + imageAlt}>
+                    <Image src={optimizedImage} alt={imageAlt} widths={[500, 800, 1200, 1600]}
+                      sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 700px" loading="lazy" />
+                  </button>
+                  {image.caption && <figcaption>{image.caption}</figcaption>}
+                </figure>
+              );
+            })}
+          </div>
+        </section>
+      )}
+
+      {view === 'build' && renderedBuildSteps.length > 1 && (
+        <>
+          <nav class="build-toc" aria-label="Inhaltsverzeichnis des Bauberichts">
+            <p class="eyebrow">Entstehung</p>
+            <h2>Arbeitsschritte und Entscheidungen</h2>
+            <ol>
+              {renderedBuildSteps.slice(1).map((step, stepIndex) => (
+                <li><a href={`#bauabschnitt-${stepIndex + 1}`}>{step.title}</a></li>
+              ))}
+            </ol>
+          </nav>
+          <section class="build">
+            {renderedBuildSteps.slice(1).map((step, stepIndex) => {
+              const display = 'editorial';
+              const stepImages = step.images || [];
+              return (
+                <article class="build-step" id={`bauabschnitt-${stepIndex + 1}`}>
+                  <div class="chapter-heading"><span class="chapter-number">{String(stepIndex + 1).padStart(2, '0')}</span><h3>{step.title}</h3></div>
+                  {step.renderedDescription && (
+                    <div class="step-description" set:html={step.renderedDescription} />
+                  )}
+                  {stepImages.length > 0 && (
+                    <div class="build-images-shell">
+                      <div class="build-images build-images-editorial">
+                        {stepImages.map((image, imageIndex) => {
+                          const optimizedImage = resolveImage(image.src);
+                          if (!optimizedImage) return null;
+                          const imageAlt = image.alt || image.caption || step.title;
+                          return (
+                            <figure class="build-image">
+                              <button type="button" class="lightbox-trigger" data-lightbox-trigger
+                                data-lightbox-group={`build-step-${stepIndex}`} data-lightbox-index={imageIndex}
+                                data-lightbox-src={optimizedImage.src} data-lightbox-alt={imageAlt}
+                                data-lightbox-caption={image.caption || ''}
+                                aria-label={`Bild groß anzeigen: ${imageAlt}`}>
+                                <Image src={optimizedImage} alt={imageAlt} widths={[400, 700, 1000, 1400]}
+                                  sizes="(max-width: 700px) 100vw, 900px" loading="lazy" />
+                              </button>
+                              {image.caption && <figcaption>{image.caption}</figcaption>}
+                            </figure>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
+                </article>
+              );
+            })}
+          </section>
+        </>
       )}
 
     </main>
@@ -663,6 +565,7 @@ style="position: absolute; inset: 0; display: block; width: 100%; height: 100%; 
 
         let currentGroup = [];
         let currentIndex = 0;
+        let imageRequestId = 0;
 
         let swipeStartX = 0;
         let swipeStartY = 0;
@@ -695,8 +598,28 @@ style="position: absolute; inset: 0; display: block; width: 100%; height: 100%; 
           const caption =
             trigger.dataset.lightboxCaption || '';
 
-          lightboxImage.src = src;
+          // Das vorherige Bild sofort ausblenden. Sonst bleibt dessen
+          // bereits geladener Bildinhalt sichtbar, bis die neue Datei geladen ist.
+          const requestId = ++imageRequestId;
+          lightboxImage.style.visibility = 'hidden';
+          lightboxImage.removeAttribute('src');
           lightboxImage.alt = alt;
+
+          lightboxImage.onload = () => {
+            if (requestId === imageRequestId) {
+              lightboxImage.style.visibility = 'visible';
+            }
+          };
+
+          lightboxImage.onerror = () => {
+            if (requestId === imageRequestId) {
+              lightboxImage.style.visibility = 'visible';
+            }
+          };
+
+          if (src) {
+            lightboxImage.src = src;
+          }
 
           lightboxCaption.textContent = caption;
           lightboxCaption.hidden =
@@ -870,6 +793,9 @@ style="position: absolute; inset: 0; display: block; width: 100%; height: 100%; 
 
 
 lightbox.addEventListener('close', () => {
+imageRequestId++;
+lightboxImage.style.visibility = 'hidden';
+lightboxImage.removeAttribute('src');
 lightboxCaption.textContent = '';
 lightboxCaption.hidden = true;
 });

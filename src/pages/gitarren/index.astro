@@ -65,12 +65,12 @@ const sortedGuitars = [...guitars].sort(
 
 <Header />
 
-<main>
+<main class="guitar-overview">
 
   <h1>Meine Gitarren</h1>
 
   <p class="intro">
-    Eine Auswahl meiner selbst gebauten Gitarren und ihrer Entstehung.
+    Hier stehen die fertigen Instrumente im Mittelpunkt: ihre Gestaltung, Materialien, Konstruktion und besonderen Details. Die Entstehungsgeschichten findest du in den dazugehörigen Bauberichten.
   </p>
 
   <div class="guitar-grid">
@@ -94,6 +94,7 @@ const sortedGuitars = [...guitars].sort(
       sizes="(max-width: 600px) calc(100vw - 32px), 520px"
       loading="lazy"
       class="card-image-img"
+      
     />
   )}
 
@@ -117,7 +118,7 @@ const sortedGuitars = [...guitars].sort(
               )}
 
               <span class="card-link">
-                Baubericht ansehen →
+                Instrument ansehen →
               </span>
 
             </div>

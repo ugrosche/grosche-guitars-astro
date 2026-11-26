@@ -1,0 +1,41 @@
+---
+import { getCollection } from 'astro:content';
+import ProjectDetail from '../../components/ProjectDetail.astro';
+
+export async function getStaticPaths() {
+  const guitars = await getCollection('guitars');
+  return guitars.map((guitar) => ({
+    params: { slug: guitar.id },
+    props: { guitar }
+  }));
+}
+
+const { guitar } = Astro.props;
+const data = guitar.data;
+const images = import.meta.glob(
+  '/src/assets/images/guitars/**/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}',
+  { eager: true }
+);
+const firstBuildStep = data.build_steps?.find((step) => step.display !== 'gallery' && step.images?.length);
+const firstBuildImage = firstBuildStep?.images?.[0];
+const heroImage = firstBuildImage?.src ? images[firstBuildImage.src]?.default : undefined;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<ProjectDetail
+  view="build"
+  crossLinkHref={base + '/gitarren/' + guitar.id + '/'}
+  crossLinkLabel="Zur Gitarrenseite – Galerie und Instrumentendetails" 
+  title={data.title}
+  description={data.description}
+  introContent={data.build_intro}
+  year={data.year}
+  heroImage={heroImage}
+  heroAlt={firstBuildImage?.alt || firstBuildStep?.title || data.title}
+  heroDescription={data.hero?.description}
+  backHref={base + '/bauprozess/'}
+  backLabel="Alle Bauberichte"
+  buildTitle="Der Bau"
+  buildSteps={data.build_steps || []}
+  imageModules={images}
+>
+</ProjectDetail>

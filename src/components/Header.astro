@@ -1,41 +1,30 @@
 ---
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
-
 const homeUrl = base + "/";
 const guitarsUrl = base + "/gitarren/";
+const processUrl = base + "/bauprozess/";
 const workshopUrl = base + "/werkstatt/";
+const aboutUrl = base + "/ueber-mich/";
 const logoUrl = base + "/favicon.png";
-
 const pathname = Astro.url.pathname;
-
-const homeClass = pathname === homeUrl ? "active" : "";
+const homeClass = pathname === homeUrl || pathname === homeUrl + "/" ? "active" : "";
 const guitarsClass = pathname.startsWith(guitarsUrl) ? "active" : "";
+const processClass = pathname.startsWith(processUrl) ? "active" : "";
 const workshopClass = pathname.startsWith(workshopUrl) ? "active" : "";
+const aboutClass = pathname.startsWith(aboutUrl) ? "active" : "";
 ---
-
 <header class="site-header">
   <div class="site-header-inner">
-
-    <a href={homeUrl} class="site-logo">
+    <a href={homeUrl} class="site-logo" aria-label="Grosche Guitars – Startseite">
       <img src={logoUrl} alt="" class="site-logo-image" />
-      <span>Grosche Guitars</span>
+      <span class="site-logo-wordmark">Grosche <span>Guitars</span></span>
     </a>
-
     <nav class="site-nav" aria-label="Hauptnavigation">
-
-      <a href={homeUrl} class={homeClass}>
-        Startseite
-      </a>
-
-      <a href={guitarsUrl} class={guitarsClass}>
-        Gitarren
-      </a>
-
-      <a href={workshopUrl} class={workshopClass}>
-        Werkstatt
-      </a>
-
+      <a href={homeUrl} class={homeClass}>Startseite</a>
+      <a href={guitarsUrl} class={guitarsClass}>Gitarren</a>
+      <a href={processUrl} class={processClass}>Bauprozess</a>
+      <a href={workshopUrl} class={workshopClass}>Werkstatt</a>
+      <a href={aboutUrl} class={aboutClass}>Über mich</a>
     </nav>
-
   </div>
 </header>

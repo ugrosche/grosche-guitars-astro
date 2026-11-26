@@ -33,6 +33,10 @@ const heroImage = heroPath
 const base = import.meta.env.BASE_URL;
 
 function baseUrl(path) {
+  return base.replace(/\/$/, '') + '/' + path.replace(/^\//, '');
+}
+
+function baseUrl(path) {
   return (
     base.replace(/\/$/, '') +
     '/' +
@@ -45,6 +49,10 @@ function baseUrl(path) {
   title={data.title}
   description={data.description}
   year={data.year}
+  specifications={data.specifications || []}
+  view="guitar"
+  crossLinkHref={baseUrl('/bauprozess/' + guitar.id + '/')}
+  crossLinkLabel="Zum Baubericht – Konstruktion und Arbeitsschritte"
   heroImage={heroImage}
   heroAlt={data.hero?.alt}
   heroDescription={data.hero?.description}

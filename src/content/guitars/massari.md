@@ -2,15 +2,15 @@
 title: Massari
 order: 1
 year: 2018
-description: 'Archtop im Stil der "Massari" von Pagelli:'
+description: 'Eine eigenständige Archtop-Gitarre, inspiriert von der Massari von Pagelli. Mit gewölbter Decke und Boden, ungewöhnlich geformten F-Löchern, schwebendem Tonabnehmer und einem selbst entwickelten Saitenhalter.'
 hero:
   src: /src/assets/images/guitars/testgitarre/Massari2.jpg
   alt: Vollansicht
   description: ''
 specifications: []
 build_steps:
-  - title: Galerie
-    description: ''
+  - title: Ansichten des fertigen Instruments
+    description: 'Die Galerie zeigt die fertige Archtop mit ihrer gewölbten Decke und dem eigenständigen Design. Die Entwicklung der Konstruktion und die Umsetzung der Details sind im Baubericht dokumentiert.'
     display: gallery
     images:
       - src: /src/assets/images/guitars/testgitarre/Massari.jpg
@@ -50,38 +50,38 @@ build_steps:
         caption: ''
         alt: ''
   - title: Decke und Boden
-    description: ''
-    display: carousel
+    description: 'Decke und Boden entstehen aus massiven Holzplatten. Beide werden gewölbt ausgearbeitet und anschließend auf ihre gewünschte Stärke gebracht. Besonders prägend ist die eigenständige Form der F-Löcher. Die Decke erhält eine X-Bebalkung, deren Steifigkeit ich durch wiederholtes Abklopfen kontrolliere.'
+    display: editorial
     images:
       - src: /src/assets/images/guitars/testgitarre/MDB01.jpg
         caption: Die Fuge beim Verleimen von Boden und Decke muss spaltfrei sein. Wer sauber hobeln kann, braucht so eine Hilfseinrichtung zum Schleifen nicht.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB02.jpg
-        caption: Der Boden hat an der Fuge noch ein Trennfurnier bekommen.
+        caption: Die Bodenfuge erhält zusätzlich ein Trennfurnier.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB03.jpg
         caption: Dann wird die Form grob ausgesägt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB04.jpg
-        caption: An der Ständerbohrmaschine werden für die Wölbung zunächst Stufen gefräst.
+        caption: An der Ständerbohrmaschine arbeite ich für die Wölbung zunächst mehrere Stufen heraus.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB05.jpg
-        caption: So entsteht ein Terassen-Gebilde der späteren Wölbung.
+        caption: So entsteht ein Terrassenform der späteren Wölbung.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB06.jpg
-        caption: Ab hier wird mit Handwerkzeugen weiter gearbeitet.
+        caption: Ab hier geht es mit Handwerkzeugen weiter.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB07.jpg
-        caption: Nach der Arbeit mit dem Hobel wechsele ich auf die Ziehklinge.
+        caption: Nach dem Hobeln glätte ich die Oberfläche mit der Ziehklinge.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB08.jpg
         caption: Die Außenwölbung passt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB09.jpg
-        caption: Innen wird zuerst Material an der Standbohrmaschine ausgebohrt. Die Ausladung der Bohrmaschine reicht leider nicht für die gesamte Korpusbreite.
+        caption: Auf der Innenseite trage ich zunächst an der Ständerbohrmaschine Material ab. Die Ausladung der Bohrmaschine reicht leider nicht für die gesamte Korpusbreite.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB10.jpg
-        caption: Und weitere Markierungsbohrungen ...
+        caption: Es folgen weitere Bohrungen zur Orientierung.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB11.jpg
         caption: Mit diesem selbstgebauten Dickentaster prüfe ich die Stärke des Bodens.
@@ -90,7 +90,7 @@ build_steps:
         caption: Mit der Beschriftung markiere ich die Bereiche, die noch dünner ausgearbeitet werden sollen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB13.jpg
-        caption: Wenn ich auf der Zielstärke bin, wird mit der Ziehklinge geglättet.
+        caption: Ist die gewünschte Stärke erreicht, glätte ich die Oberfläche mit der Ziehklinge.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB15.jpg
         caption: An der Decke gibt es die gleichen Arbeitsschritte.
@@ -108,7 +108,7 @@ build_steps:
         caption: Mit einer Schablone zeichne ich die F-Löcher an.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB21.jpg
-        caption: Ausschneiden gelingt in der weichen Fichte mit Skalpell besser als mit der Laubsäge.
+        caption: Die weiche Fichte lässt sich mit dem Skalpell sauberer ausschneiden als mit der Laubsäge.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB22.jpg
         caption: Danach leime ich die erste Binding-Lage an.
@@ -117,7 +117,7 @@ build_steps:
         caption: ... und noch zwei Binding-Lagen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB24.jpg
-        caption: Die Form hat mit dem traditionellem F nicht mehr viel gemeinsam.
+        caption: Die Form hat mit dem traditionellen F nicht mehr viel gemeinsam.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB25.jpg
         caption: Die Decke wird mit einer X-Bebalkung verstärkt. Zum Übertragen der Deckenform auf die Leiste gibt es einen kleinen Trick mit einer passenden Unterlegscheibe.
@@ -126,7 +126,7 @@ build_steps:
         caption: Das Einschleifen passiert mit minimalen Schleifbewegungen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB27.jpg
-        caption: Die traditionellen Methode mit Kohle habe ich wieder verworfen.
+        caption: Die traditionelle Methode mit Kohle habe ich wieder verworfen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB28.jpg
         caption: Dann wird das Kreuz verleimt.
@@ -135,11 +135,11 @@ build_steps:
         caption: Nach dem Einleimen an die Decke werden die Balken ausgedünnt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MDB30.jpg
-        caption: Die Decke soll nicht zu steif aber auch nicht zu weich sein. Deshalb wird die Decke bei der Bearbeitung regelmäßig "abgeklopft" um die Tonänderung zu beurteilen.
+        caption: Die Decke soll weder zu steif noch zu weich sein. Deshalb klopfe ich sie während der Bearbeitung regelmäßig ab und achte auf Veränderungen im Klang.
         alt: ''
   - title: Zargen
-    description: ''
-    display: carousel
+    description: 'Die Zargen geben der Archtop ihre Kontur. Für das Biegen baue ich zunächst ein eigenes Biegeeisen. Hals- und Endklotz verbinden die beiden Zargen, Reifchen und zusätzliche Verstärkungsleisten stabilisieren den Korpus. Eine integrierte Armauflage und der Soundport ergänzen die ungewöhnliche Form.'
+    display: editorial
     images:
       - src: /src/assets/images/guitars/testgitarre/MZ01.jpg
         caption: Eine Form hält die Zargen in Position. Hier eine zweiteilige Version.
@@ -148,10 +148,10 @@ build_steps:
         caption: 'Der erste Versuch eines Biegeeisens: Eine Heißluftpistole ist unter einem Metallrohr montiert.'
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MZ03.jpg
-        caption: Da es etwas verkokelt riecht, wurden die Biegeversuche nach draußen verlagert.
+        caption: Da es dabei etwas verkokelt riecht, verlege ich die Biegeversuche nach draußen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MZ04.jpg
-        caption: Faszinierend, wenn das Holz nach einiger Zeit tatsächlich weich wird und sich formen lässt.
+        caption: Es ist faszinierend, wenn das Holz nach einiger Zeit tatsächlich weich wird und sich formen lässt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MZ05.jpg
         caption: Aus kleinen Fichteleisten werden die Reifchen hergestellt.
@@ -175,20 +175,20 @@ build_steps:
         caption: Hier sieht man das Füllstück für die Armauflage.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MZ12.jpg
-        caption: Ein "Soundport" wird eingebaut. Dieses Loch soll die Schallabstrahlung zum Spieler verbessern.
+        caption: Ein Soundport wird eingebaut. Diese zusätzliche Öffnung soll den Klang direkter zum Spieler abstrahlen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MZ13.jpg
         caption: Auch der Soundport bekommt ein Binding.
         alt: ''
   - title: Griffbrett
-    description: ''
-    display: carousel
+    description: 'Das Griffbrett erhält ein Binding und klassische Punktmarkierungen auf der Oberseite. Kleine Hilfsvorrichtungen sorgen dafür, dass auch die seitlichen Dots sauber in einer Linie sitzen. Anschließend wird das Griffbrett aufgeleimt, bundiert und die Bundenden werden ausgearbeitet.'
+    display: editorial
     images:
       - src: /src/assets/images/guitars/testgitarre/MGB01.jpg
-        caption: Mit Winkel und Tiefenanschlag an der Säge werden die Bundschschlitze gesägt.
+        caption: Mit einer Sägeführung samt Winkel- und Tiefenanschlag säge ich die Bundschlitze.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MGB02.jpg
-        caption: Dann wird das Binding angebracht und die Dots gebohrt und eingeklebt.
+        caption: Anschließend bringe ich das Binding an und bohre die Löcher für die Dots, die ich danach einklebe.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MGB03.jpg
         caption: Dieser kleine Hilfswinkel sorgt dafür, dass die seitlichen Dots in einer Linie liegen.
@@ -197,7 +197,7 @@ build_steps:
         caption: Zunächst wird er so positioniert, dass die Hilfslinie auf der Höhe des Dots auf der Griffbrettoberseite liegt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MGB05.jpg
-        caption: Dann wird er fixiert und es wird gebohrt.
+        caption: Anschließend fixiere ich den Winkel und bohre die Löcher.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MGB06.jpg
         caption: Dann werden die seitlichen Markierungen eingeklebt.
@@ -206,26 +206,26 @@ build_steps:
         caption: Griffbrett fertig zum Verleimen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MGB07a.jpg
-        caption: Positionierung auf dem Hals und verleimen.
+        caption: Das Griffbrett wird auf dem Hals ausgerichtet und verleimt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MGB08.jpg
-        caption: Einhämmern der Bünde
+        caption: Die Bünde werden eingesetzt und eingehämmert.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MGB09.jpg
-        caption: Hier habe ich ein Hartholzklotz mit Griffbrettwölbung als Zulage genommen.
+        caption: Hier verwende ich einen Hartholzklotz mit passender Griffbrettwölbung als Zulage.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MGB10.jpg
-        caption: Nach dem Einschlagen der Bünden werden die Seiten abgerichtet.
+        caption: Nach dem Einschlagen der Bünde werden die Seiten abgerichtet.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MGB11.jpg
         caption: Hier habe ich versucht, die Bundenden kugelförmig zu verrunden.
         alt: ''
   - title: Hals
-    description: ''
-    display: carousel
+    description: 'Der Hals wird aus Ahorn aufgebaut. Die Schwalbenschwanzverbindung verlangt eine präzise Anpassung in mehreren Ebenen. Besondere Aufmerksamkeit bekommt die Kopfplatte: Mehrlagige Furniere, Binding und ein magnetisch gehaltenes Halsstabplättchen bilden hier eigene kleine Konstruktionsdetails. Als persönliche Einlage verwende ich eine Münze.'
+    display: editorial
     images:
       - src: /src/assets/images/guitars/testgitarre/MH01.jpg
-        caption: Aus einem Ahorn-Kantel werden die Teile für den Hals mit möglichst wenig Verschnitt ausgesägt.
+        caption: Aus einem Ahornkantel säge ich die Einzelteile für den Hals möglichst verschnittarm heraus.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH02.jpg
         caption: Danach wird die Griffbrettseite als Referenz plan geschliffen.
@@ -237,13 +237,13 @@ build_steps:
         caption: Mit dem Dickenschleifer gelingt das besonders schnell.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH05.jpg
-        caption: Der Zapfen für die Schwalbenschwanzverbindung wird hergestellt.
+        caption: Der Zapfen für die Schwalbenschwanzverbindung wird ausgearbeitet.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH06.jpg
         caption: Die Winkel in drei Ebenen müssen stimmen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH07.jpg
-        caption: Wenn der Hals soweit passt, kann das Endstück für das schwebende Griffbrett angeleimt werden.
+        caption: Sobald der Hals passt, leime ich das Endstück für das schwebende Griffbrett an.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH08.jpg
         caption: Halsstabkanal
@@ -264,7 +264,7 @@ build_steps:
         caption: Auch hier sollen die Übergänge hübsch aussehen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH14.jpg
-        caption: Die erste Lage der Kopfplatenunterseite.
+        caption: Die erste Lage der Kopfplattenunterseite.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH15.jpg
         caption: Und auch hier noch eine Lage Wurzelfurnier.
@@ -279,7 +279,7 @@ build_steps:
         caption: Hier die endgültige Form des Plättchens.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH19.jpg
-        caption: Da dies meine 5. spielbare Eigenbau-Gitarre ist und mein Geburtsjahr 1963 ist und ich "Grosche" mit Nachnamen heiße, wollte ich diese Münze als Einlage verwenden.
+        caption: Da dies meine fünfte spielbare Eigenbau-Gitarre ist, ich 1963 geboren wurde und Grosche heiße, bietet sich diese Münze als Einlage geradezu an.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH20.jpg
         caption: Die Münze wird mit Epoxidharz vergossen.
@@ -288,17 +288,17 @@ build_steps:
         caption: ... und plan geschliffen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH22.jpg
-        caption: so wird es später aussehen.
+        caption: So wird es später aussehen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MH23.jpg
         caption: Das Halsprofil wird ausgearbeitet.
         alt: ''
   - title: Korpus
-    description: ''
-    display: carousel
+    description: 'Beim Zusammenfügen von Decke, Boden und Zargen zeigt sich, ob die zuvor gefertigten Bauteile exakt zueinander passen. Danach folgen die ausgeprägten Schrägen an Cutaway und Armauflage sowie die aufwendigen Binding-Verläufe. Gerade an den Übergängen ist sorgfältiges Anpassen gefragt – und eine kleine Fräserpanne gehört ebenfalls zur Baugeschichte.'
+    display: editorial
     images:
       - src: /src/assets/images/guitars/testgitarre/MB01.jpg
-        caption: Diese Zulagestücke beim Verleimen von Decke und Boden nennt man "Verleimbrille"
+        caption: Diese Zulagestücke helfen beim Verleimen von Decke und Boden. Sie werden auch „Verleimbrille“ genannt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB02.jpg
         caption: Wenn der Leim gleichmäßig herausquillt, stimmt alles.
@@ -307,25 +307,25 @@ build_steps:
         caption: Nach dem Aufleimen der Decke kann die Schräge am Cutaway ausgearbeitet werden.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB04.jpg
-        caption: Ebenso die Schräge für die Armauflage. Ein Richtwert für den Winkel sind ca 30°.
+        caption: Ebenso die Schräge für die Armauflage. Ein Richtwert für den Winkel liegt bei etwa 30°.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB06.jpg
         caption: Die Aufnahme für den Schwalbenschwanz war für mich eine Herausforderung.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB07.jpg
-        caption: Danach können die Kanäle füe das Binding gefräst werden. Hier sieht man die einfache Hilfskonstruktion.
+        caption: Danach können die Kanäle für das Binding gefräst werden. Hier sieht man die einfache Hilfskonstruktion.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB09.jpg
-        caption: fertige Binding-Kanäle
+        caption: Die Binding-Kanäle sind fertig.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB10.jpg
         caption: Am Zargenstoß gibt es eine Aufnahme für den Pflock, der den Saitenhalter trägt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB11.jpg
-        caption: Decke und Boden werden vor dem "Aufschachteln" einmal mit Schellack eingepinselt. Das soll helfen, Luftfeuchtigkeits-Unterschiede innen und außen gleichmäßig auf das Holz wirken zu lassen.
+        caption: Vor dem Aufschachteln pinsele ich Decke und Boden innen mit Schellack ein. So sollen Feuchtigkeitsschwankungen von innen und außen möglichst gleichmäßig auf das Holz wirken.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB12.jpg
-        caption: Vorher gibt es noch ein Zettelchen, welches durch das F-Loch zu sichtbar sein wird.
+        caption: Vorher gibt es noch ein Zettelchen, das später durch das F-Loch zu sehen sein wird.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB13.jpg
         caption: Dann wird die Schachtel geschlossen.
@@ -334,16 +334,16 @@ build_steps:
         caption: Nachdem auch auf der Unterseite die Kanäle gefräst sind, können die ersten Binding-Lagen angeleimt werden.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB15.jpg
-        caption: ein Stück weicher Bastel-Kunststoff dient als Pressbeilage
+        caption: Ein Stück weicher Bastelkunststoff dient als Pressbeilage
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB16.jpg
-        caption: Knifflig sind die Stellen, an denen sich das Bindung teilt.
+        caption: Knifflig sind die Stellen, an denen sich das Binding geteilt wird.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB17.jpg
         caption: Das ist an den Schrägen der Armauflage und dem Cutaway der Fall.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB19.jpg
-        caption: Hier bin ich mit dem Fräser abgerutscht und es gab eine "Delle".
+        caption: Hier bin ich mit dem Fräser abgerutscht – dabei ist eine kleine Delle entstanden.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB20.jpg
         caption: Glücklicherweise gab es noch den passenden Schnittrest.
@@ -355,7 +355,7 @@ build_steps:
         caption: Die Randeinlagen sind komplett.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB23.jpg
-        caption: .. auch hier.
+        caption: Auch hier.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MB25.jpg
         caption: Jetzt werden die Schrägen sauber ausgearbeitet ...
@@ -370,20 +370,20 @@ build_steps:
         caption: Ähnliche Arbeiten an der Armauflage.
         alt: ''
   - title: Pickup
-    description: ''
-    display: carousel
+    description: 'Der Tonabnehmer wird als Floating Pickup ausgeführt und sitzt nicht direkt auf der Decke. So bleibt deren Schwingungsverhalten möglichst unbeeinflusst. Ausgangspunkt ist ein P90-artiger Tonabnehmer, den ich mit einer eigenen Halterung und einer kleinen Platine für Lautstärke- und Tonregelung ergänze.'
+    display: editorial
     images:
       - src: /src/assets/images/guitars/testgitarre/MPU01.jpg
-        caption: Der Tonabnehmer wird als "Floating Pickup" gebaut. Wenn er über der Decke schwebt, kann diese freier schwingen. Basis ist eine günstige Kopie eines P90 Pickup.
+        caption: Der Tonabnehmer wird als "Floating Pickup" gebaut. Wenn er über der Decke schwebt, kann diese freier schwingen. Basis ist eine günstige Kopie eines P90-Pickup.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MPU02.jpg
         caption: Aus einem Kopfplattenbrettchen habe ich eine Kappe gebaut.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MPU03.jpg
-        caption: Diese wird mit 2 Stäben am Griffbrett gehalten
+        caption: Zwei Stäbe verbinden die Kappe mit dem Griffbrett und halten sie in Position.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MPU04.jpg
-        caption: Die Elektronik wird auf einer kleinen Platine aufgebaut. Sie besteht aus Lautstärke-und Tonregelung.
+        caption: Die Elektronik wird auf einer kleinen Platine aufgebaut. Sie besteht aus Lautstärke- und Tonregelung.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MPU05.jpg
         caption: Diese Platine wird an dem kleinen Pickguard verbaut.
@@ -392,11 +392,11 @@ build_steps:
         caption: So wird es später aussehen.
         alt: ''
   - title: Steg
-    description: ''
-    display: carousel
+    description: 'Der Steg muss exakt auf die gewölbte Decke passen. Zunächst dient ein gekaufter Steg als Provisorium, um die Auflagefläche anzupassen. Anschließend entsteht der endgültige Steg mit möglichst geringem Gewicht – damit die Decke möglichst frei schwingen kann.'
+    display: editorial
     images:
       - src: /src/assets/images/guitars/testgitarre/MS01.jpg
-        caption: Als Provisorium dient ein günstiger gekaufter Steg. Auf der Decke wird die Wölbung in des Stegfuß geschliffen. Mit Kreide kontrolliere ich, ob alle Stellen erfasst wurden.
+        caption: Als Provisorium dient ein günstiger gekaufter Steg. Auf der Decke wird die Wölbung in den Stegfuß geschliffen. Mit Kreide kontrolliere ich, ob alle Stellen erfasst wurden.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MS02.jpg
         caption: Die fertige Wölbung
@@ -408,7 +408,7 @@ build_steps:
         caption: Danach wird die Form grob ausgesägt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MS05.jpg
-        caption: Die Unterseite wird auch hier an die Deckenwölbung angepasst.
+        caption: Auch die Unterseite des endgültigen Stegs passe ich an die Wölbung der Decke an.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MS06.jpg
         caption: Mit kleinen Holzstücken wird der Schlitz begrenzt.
@@ -417,17 +417,17 @@ build_steps:
         caption: Dann bekommt der Steg seine Form.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MS08.jpg
-        caption: Nach dem Feinschliff hat er seine endgültiger Form.
+        caption: Nach dem Feinschliff hat er seine endgültige Form.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MS09.jpg
         caption: Hier die beiden Modelle im Vergleich.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MS10.jpg
-        caption: Um die Decke frei schwingen zu lassen, sollte der Steg so leicht wie möglich sein.
+        caption: Damit die Decke möglichst frei schwingen kann, halte ich den Steg so leicht wie möglich.
         alt: ''
   - title: Abschlussarbeiten
-    description: ''
-    display: carousel
+    description: 'Zum Schluss werden Hals und Korpus verbunden, der Saitenhalter fertiggestellt und die Oberfläche mit Schellack aufgebaut. Beim ersten Probespiel zeigt sich, dass der Klang noch zu holzig und wenig resonant ist. Durch weiteres Ausarbeiten der Hohlkehle verändert sich das Ansprechverhalten deutlich. Nach den letzten Anpassungen folgen Lackierung, Elektrik und Setup.'
+    display: editorial
     images:
       - src: /src/assets/images/guitars/testgitarre/MAS00.jpg
         caption: Bei der "Hochzeit" wird der Hals mit dem Korpus verleimt.
@@ -451,40 +451,40 @@ build_steps:
         caption: Mit den kleinen Halteklötzchen kann der Schellack leichter aufgetragen werden.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS07.jpg
-        caption: Nach genügend Schelleck Schichten wird poliert.
+        caption: Nach genügend Schellackschichten wird poliert.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS08.jpg
         caption: Der Pflock für den Saitenhalter wird angepasst.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS09.jpg
-        caption: Der "Saitenknickwinkel" hat Einfluss auf den Klang.
+        caption: Der Knickwinkel der Saiten beeinflusst die Kraft, mit der sie auf den Steg wirken, und damit auch den Klang.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS10.jpg
         caption: Aus diesem Winkel ergibt sich, in welcher Höhe der Saitenhalter eingehängt wird.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS20.jpg
-        caption: 'Das erste Probesetup: Der Klang war mir noch zu "holzig" mit zu wenig Resonanz.'
+        caption: 'Beim ersten Probespiel klingt die Gitarre für mich noch zu „holzig“ und wenig resonant.'
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS21.jpg
-        caption: Deshalb wurde die Hohlkehle am Rand von Boden und Decke noch weiter ausgedünnt.
+        caption: Deshalb dünne ich die Hohlkehle am Rand von Boden und Decke weiter aus.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS22.jpg
-        caption: Die Klangveränderung ist sofort erkennbar.
+        caption: Die Veränderung im Klang ist unmittelbar hörbar.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS23.jpg
-        caption: Auch das Halsprofil war mich noch etwas zu klobig.
+        caption: Auch das Halsprofil war mir noch etwas zu klobig.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS24.jpg
         caption: Zur Sicherheit kontrolliere ich das Profil mit Schablonen.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS30.jpg
-        caption: Dann geht es los mit dem Schellack-Auftrag.
+        caption: Nun beginnt der Schellackauftrag.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS31.jpg
-        caption: Es brauchet mehr als 10 Schichten, bis sich ein leichter Glanz einstellt.
+        caption: Es braucht mehr als zehn Schichten, bis sich ein leichter Glanz einstellt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS32.jpg
-        caption: Hier erkennt man, wie der Schellack die Holzmaserung anfeuert.
+        caption: Hier zeigt sich, wie der Schellack die Maserung des Holzes optisch hervorhebt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS33.jpg
         caption: Beim Hals hat es weniger Schichten gebraucht.
@@ -493,7 +493,26 @@ build_steps:
         caption: Die Montagelöcher für das Pickguard werden gebohrt.
         alt: ''
       - src: /src/assets/images/guitars/testgitarre/MAS35.jpg
-        caption: Und vor dem Setup wird alles verlötet. Eine Pappschablone verhindert, dass die fertige Decke in Mitleidenschaft gezogen wird.
+        caption: Vor dem Setup verlöte ich die Elektrik. Eine Pappschablone schützt dabei die fertige Decke.
         alt: ''
+build_intro: |
+  ## Entstehung und Arbeitsschritte
+
+  Der Baubericht zeigt die Entstehung der Massari – von den gewölbten Platten für Decke und Boden bis zu Hals, Korpus, Tonabnehmer und Saitenhalter. Die Bilder dokumentieren die einzelnen Arbeitsschritte; die begleitenden Texte erklären die konstruktiven Überlegungen und die eigens entwickelten Hilfslösungen.
+
+  ## Eine Archtop mit eigenen Lösungen
+
+  Einige Details dieser Gitarre verlangen mehr als die Übernahme klassischer Bauformen. Dazu gehören die ungewöhnlich gezeichneten F-Löcher, die integrierte Armauflage, der Soundport und die aufwendigen Binding-Verläufe. Auch der schwebende Tonabnehmer und der selbst entwickelte Saitenhalter werden im Verlauf des Berichts Schritt für Schritt vorgestellt.
 gallery: []
 ---
+
+
+## Gestaltung und Klangidee
+
+Die Massari ist meine eigenständige Interpretation einer Archtop-Gitarre. Ausgangspunkt war die Massari von Pagelli – mich reizten ihre besondere Linienführung und die Möglichkeit, klassische Archtop-Merkmale neu zu interpretieren. Die Decke und der Boden sind gewölbt ausgeführt; die F-Löcher greifen die traditionelle Form auf, lösen sich in ihrer Gestaltung aber bewusst davon.
+
+## Konstruktion und Details
+
+Die Gestaltung lebt von den Übergängen und den Details: eine integrierte Armauflage, ein zusätzlicher Soundport und sorgfältig geführte Binding-Linien prägen den Korpus. Der Tonabnehmer ist als Floating Pickup ausgeführt und sitzt nicht direkt auf der Decke. So soll deren Schwingungsverhalten möglichst wenig beeinflusst werden. Dazu kommt ein eigens entwickelter Saitenhalter, der die eigenständige Gestaltung des Instruments aufnimmt.
+
+Die Galerie zeigt die fertige Gitarre aus verschiedenen Perspektiven. Wie die gewölbten Bauteile entstanden sind und welche Lösungen ich für die Konstruktion entwickelt habe, ist im [Baubericht](../../bauprozess/massari/) dokumentiert.
