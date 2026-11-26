@@ -1117,7 +1117,7 @@ main:not(.home) > h1 { font-family:Georgia,'Times New Roman',serif; font-size:cl
 .guitar-overview .card-image {
   position: relative;
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 16 / 9;
   height: auto;
   overflow: hidden;
   border-radius: 0;
