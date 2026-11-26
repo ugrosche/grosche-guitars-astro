@@ -515,4 +515,4 @@ Die Massari ist meine eigenständige Interpretation einer Archtop-Gitarre. Ausga
 
 Die Gestaltung lebt von den Übergängen und den Details: eine integrierte Armauflage, ein zusätzlicher Soundport und sorgfältig geführte Binding-Linien prägen den Korpus. Der Tonabnehmer ist als Floating Pickup ausgeführt und sitzt nicht direkt auf der Decke. So soll deren Schwingungsverhalten möglichst wenig beeinflusst werden. Dazu kommt ein eigens entwickelter Saitenhalter, der die eigenständige Gestaltung des Instruments aufnimmt.
 
-Die Galerie zeigt die fertige Gitarre aus verschiedenen Perspektiven. Wie die gewölbten Bauteile entstanden sind und welche Lösungen ich für die Konstruktion entwickelt habe, ist im [Baubericht](/bauprozess/massari/) dokumentiert.
+Die Galerie zeigt die fertige Gitarre aus verschiedenen Perspektiven. Wie die gewölbten Bauteile entstanden sind und welche Lösungen ich für die Konstruktion entwickelt habe, ist im [Baubericht](../../bauprozess/massari/) dokumentiert.
