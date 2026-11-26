@@ -380,6 +380,3 @@ Das Ausgangsmaterial war besonders – und gerade deshalb nicht so berechenbar w
 
 Neben den klassischen Arbeitsschritten gab es einige Lösungen, die ich ausprobieren wollte: eine dreiteilige Zarge, ein selbst angepasstes Biegeeisen, eine großzügige Montageöffnung auf der Rückseite und ein in der Zarge untergebrachter Piezo-Vorverstärker. Auch eine Passivmembran zur Unterstützung der Basswiedergabe habe ich getestet. Sie brachte allerdings nicht das erhoffte Ergebnis.
 
-## Der Bau in Bildern
-
-Zunächst zeigen ausgewählte Ansichten das fertige Instrument. Anschließend führt der Baubericht Schritt für Schritt vom aufgesägten Eichenholz bis zur fertigen Gitarre. Die Bildunterschriften halten die Arbeitsschritte fest; die begleitenden Texte ordnen Entscheidungen und Besonderheiten des Projekts ein.
