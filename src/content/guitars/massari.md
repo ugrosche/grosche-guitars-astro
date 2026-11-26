@@ -9,8 +9,8 @@ hero:
   description: ''
 specifications: []
 build_steps:
-  - title: Galerie
-    description: 'Die Massari in ihrer fertigen Form: eine Archtop mit markanter Deckenwölbung, eigenwilliger Linienführung und zahlreichen Details, die während des Baus eigens entwickelt und umgesetzt wurden.'
+  - title: Ansichten des fertigen Instruments
+    description: 'Die Galerie zeigt die fertige Archtop mit ihrer gewölbten Decke und dem eigenständigen Design. Die Entwicklung der Konstruktion und die Umsetzung der Details sind im Baubericht dokumentiert.'
     display: gallery
     images:
       - src: /src/assets/images/guitars/testgitarre/Massari.jpg
@@ -495,5 +495,24 @@ build_steps:
       - src: /src/assets/images/guitars/testgitarre/MAS35.jpg
         caption: Vor dem Setup verlöte ich die Elektrik. Eine Pappschablone schützt dabei die fertige Decke.
         alt: ''
+build_intro: |
+  ## Entstehung und Arbeitsschritte
+
+  Der Baubericht zeigt die Entstehung der Massari – von den gewölbten Platten für Decke und Boden bis zu Hals, Korpus, Tonabnehmer und Saitenhalter. Die Bilder dokumentieren die einzelnen Arbeitsschritte; die begleitenden Texte erklären die konstruktiven Überlegungen und die eigens entwickelten Hilfslösungen.
+
+  ## Eine Archtop mit eigenen Lösungen
+
+  Einige Details dieser Gitarre verlangen mehr als die Übernahme klassischer Bauformen. Dazu gehören die ungewöhnlich gezeichneten F-Löcher, die integrierte Armauflage, der Soundport und die aufwendigen Binding-Verläufe. Auch der schwebende Tonabnehmer und der selbst entwickelte Saitenhalter werden im Verlauf des Berichts Schritt für Schritt vorgestellt.
 gallery: []
 ---
+
+
+## Gestaltung und Klangidee
+
+Die Massari ist meine eigenständige Interpretation einer Archtop-Gitarre. Ausgangspunkt war die Massari von Pagelli – mich reizten ihre besondere Linienführung und die Möglichkeit, klassische Archtop-Merkmale neu zu interpretieren. Die Decke und der Boden sind gewölbt ausgeführt; die F-Löcher greifen die traditionelle Form auf, lösen sich in ihrer Gestaltung aber bewusst davon.
+
+## Konstruktion und Details
+
+Die Gestaltung lebt von den Übergängen und den Details: eine integrierte Armauflage, ein zusätzlicher Soundport und sorgfältig geführte Binding-Linien prägen den Korpus. Der Tonabnehmer ist als Floating Pickup ausgeführt und sitzt nicht direkt auf der Decke. So soll deren Schwingungsverhalten möglichst wenig beeinflusst werden. Dazu kommt ein eigens entwickelter Saitenhalter, der die eigenständige Gestaltung des Instruments aufnimmt.
+
+Die Galerie zeigt die fertige Gitarre aus verschiedenen Perspektiven. Wie die gewölbten Bauteile entstanden sind und welche Lösungen ich für die Konstruktion entwickelt habe, ist im [Baubericht](/bauprozess/massari/) dokumentiert.
