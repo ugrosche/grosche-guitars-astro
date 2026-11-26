@@ -359,6 +359,16 @@ build_steps:
       - src: /src/assets/images/guitars/kuun/GOF17.jpg
         caption: Nachdem auch der Hals seine glänzende Oberfläche erhalten hat, kann ich die Gitarre endgültig montieren.
         alt: ''
+build_intro: |
+  ## Der Bau in Bildern
+
+  Die folgenden Abschnitte dokumentieren die Entstehung von Graveyard Oak – vom Aufarbeiten des ungewöhnlichen Eichenholzes bis zur Montage und ersten Besaitung. Die Fotos und Bildunterschriften zeigen die einzelnen Arbeitsschritte; die begleitenden Texte erläutern Materialentscheidungen, konstruktive Lösungen und Besonderheiten des Projekts.
+
+  ## Bauen mit dem, was das Holz vorgibt
+
+  Das Ausgangsmaterial war besonders – und gerade deshalb nicht so berechenbar wie frisch gekauftes Tonholz. Die Breite und Länge der vorhandenen Eichenstücke gaben vor, wie Boden, Zargen und Hals aufgebaut werden konnten. Einige Bauteile mussten mehrteilig entstehen. Die Konstruktion ist also nicht unabhängig vom Material entworfen worden; sie hat sich an dessen Möglichkeiten orientiert.
+
+  Neben den klassischen Arbeitsschritten gab es einige Lösungen, die ich ausprobieren wollte: eine dreiteilige Zarge, ein selbst angepasstes Biegeeisen, eine großzügige Montageöffnung auf der Rückseite und ein in der Zarge untergebrachter Piezo-Vorverstärker. Auch eine Passivmembran zur Unterstützung der Basswiedergabe habe ich getestet. Sie brachte allerdings nicht das erhoffte Ergebnis.
 gallery: []
 ---
 
@@ -373,10 +383,3 @@ So wurde **Graveyard Oak** zu einem sehr persönlichen Projekt. Die Gitarre erin
 Die Idee war keine möglichst laute Konzertgitarre. Ich wollte eine kleine, handliche Wohnzimmer- und Übungsgitarre, die bewusst nicht zu laut auftritt. Die kompakte Bauform bringt naturgemäß weniger Bass mit sich. Genau diese Zurückhaltung war Teil des Konzepts.
 
 Auch gestalterisch sollte das Instrument einen eigenen Weg gehen. Statt des vertrauten dunklen Griffbretts auf hellem Korpus wollte ich den Kontrast umkehren: Das Eichenholz wird dunkel gefärbt, Griffbrett und Steg setzen sich mit hellem Bambus ab. Sattel und Stegeinlage aus Büffelhorn führen diese Farbidee weiter.
-
-## Bauen mit dem, was das Holz vorgibt
-
-Das Ausgangsmaterial war besonders – und gerade deshalb nicht so berechenbar wie frisch gekauftes Tonholz. Die Breite und Länge der vorhandenen Eichenstücke gaben vor, wie Boden, Zargen und Hals aufgebaut werden konnten. Einige Bauteile mussten mehrteilig entstehen. Die Konstruktion ist also nicht unabhängig vom Material entworfen worden; sie hat sich an dessen Möglichkeiten orientiert.
-
-Neben den klassischen Arbeitsschritten gab es einige Lösungen, die ich ausprobieren wollte: eine dreiteilige Zarge, ein selbst angepasstes Biegeeisen, eine großzügige Montageöffnung auf der Rückseite und ein in der Zarge untergebrachter Piezo-Vorverstärker. Auch eine Passivmembran zur Unterstützung der Basswiedergabe habe ich getestet. Sie brachte allerdings nicht das erhoffte Ergebnis.
-
