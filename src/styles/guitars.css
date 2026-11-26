@@ -1125,12 +1125,21 @@ main:not(.home) > h1 { font-family:Georgia,'Times New Roman',serif; font-size:cl
 
 
 
-/* Gitarrenübersicht: natürliche Bilddarstellung ohne Passepartout oder Rahmen */
+/* Gitarrenübersicht: einheitliche 16:9-Vorschaubilder mit echtem Zuschnitt */
+.guitar-overview .guitar-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+}
+.guitar-overview .guitar-card {
+  min-width: 0;
+}
 .guitar-overview .card-image {
   position: relative;
+  display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
   height: auto;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   border-radius: 0;
   background: transparent;
@@ -1141,11 +1150,21 @@ main:not(.home) > h1 { font-family:Georgia,'Times New Roman',serif; font-size:cl
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
   padding: 0;
   background: transparent;
   transition: transform 0.25s ease;
+}
+@media (max-width: 900px) {
+  .guitar-overview .guitar-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .guitar-overview .guitar-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 .guitar-overview .guitar-card > a:hover .card-image img {
   transform: scale(1.01);
