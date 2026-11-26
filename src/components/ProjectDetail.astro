@@ -25,6 +25,7 @@ interface BuildStep {
 interface Props {
   title: string;
   description?: string;
+  introContent?: string;
   year?: string | number;
   specifications?: { label: string; value: string }[];
   view: 'guitar' | 'build';
@@ -46,6 +47,7 @@ interface Props {
 const {
   title,
   description,
+  introContent,
   year,
   specifications = [],
   view = 'build',
@@ -72,6 +74,8 @@ async function renderMarkdown(content: string) {
   const { code } = await markdownProcessor.render(content);
   return code;
 }
+
+const renderedIntro = introContent ? await renderMarkdown(introContent) : '';
 
 const renderedBuildSteps = await Promise.all(
   buildSteps.map(async (step) => ({
@@ -190,9 +194,9 @@ style="display: block; width: 100%; height: auto; max-height: 76vh; object-fit: 
         </p>
       )}
 
-      {view === 'guitar' && (
+      {(view === 'guitar' || (view === 'build' && renderedIntro)) && (
         <div class="project-content">
-          <slot />
+          {view === 'guitar' ? <slot /> : <div set:html={renderedIntro} />}
         </div>
       )}
 
