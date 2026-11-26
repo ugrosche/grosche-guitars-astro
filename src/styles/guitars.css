@@ -1115,18 +1115,20 @@ main:not(.home) > h1 { font-family:Georgia,'Times New Roman',serif; font-size:cl
 
 /* Gitarrenübersicht: natürliche Bilddarstellung ohne Passepartout oder Rahmen */
 .guitar-overview .card-image {
-  aspect-ratio: auto;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
   height: auto;
-  overflow: visible;
+  overflow: hidden;
   border-radius: 0;
+  background: transparent;
 }
 .guitar-overview .card-image-img {
-  position: static;
-  inset: auto;
+  position: absolute;
+  inset: 0;
   display: block;
   width: 100%;
-  height: auto;
-  max-height: 390px;
+  height: 100%;
   object-fit: contain;
   object-position: center;
   padding: 0;
@@ -1185,4 +1187,16 @@ main:not(.home) > h1 { font-family:Georgia,'Times New Roman',serif; font-size:cl
   .home-featured-paths { grid-template-columns: 1fr; gap: 44px; margin-top: 52px; }
   .home-feature-image { min-height: 0; max-height: none; }
   .home-feature-image img, .home-feature-process .home-feature-image img { max-height: 420px; }
+}
+
+
+/* Gegenseitige, klare Verlinkung zwischen Instrument und Baubericht */
+.project-crosslink {
+  margin: 1.5rem 0 2.5rem;
+}
+.project-crosslink .text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  font-weight: 600;
 }
