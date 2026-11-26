@@ -1125,15 +1125,31 @@ main:not(.home) > h1 { font-family:Georgia,'Times New Roman',serif; font-size:cl
 
 
 
-/* Gitarrenübersicht: einheitliche Bildformate */
+/* Gitarrenübersicht: gleich breite Kacheln und einheitliche 16:9-Bilder */
+.guitar-overview .guitar-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+}
 .guitar-overview .card-image {
   position: relative;
+  display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
   height: auto;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   border-radius: 0;
   background: transparent;
+}
+@media (max-width: 900px) {
+  .guitar-overview .guitar-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .guitar-overview .guitar-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 .guitar-overview .card-image-img {
   position: absolute;
