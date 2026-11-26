@@ -9,7 +9,7 @@ hero:
   description: ''
 specifications: []
 build_steps:
-  - title: 'Die fertige Gitarre:'
+  - title: 'Ansichten des fertigen Instruments'
     description: ''
     display: gallery
     images:
@@ -360,11 +360,11 @@ build_steps:
         caption: Nachdem auch der Hals seine glänzende Oberfläche erhalten hat, kann ich die Gitarre endgültig montieren.
         alt: ''
 build_intro: |
-  ## Der Bau in Bildern
+  ## Entstehung und Arbeitsschritte
 
-  Die folgenden Abschnitte dokumentieren die Entstehung von Graveyard Oak – vom Aufarbeiten des ungewöhnlichen Eichenholzes bis zur Montage und ersten Besaitung. Die Fotos und Bildunterschriften zeigen die einzelnen Arbeitsschritte; die begleitenden Texte erläutern Materialentscheidungen, konstruktive Lösungen und Besonderheiten des Projekts.
+  Dieser Baubericht führt durch die Entstehung von Graveyard Oak – vom Aufarbeiten des wiederverwendeten Eichenholzes bis zur Montage und ersten Besaitung. Die Bilder halten die einzelnen Arbeitsschritte fest; die Texte erläutern, warum ich bestimmte Materialien und Konstruktionen gewählt habe und welche Lösungen sich während des Baus ergeben haben.
 
-  ## Bauen mit dem, was das Holz vorgibt
+  ## Eine Konstruktion aus dem vorhandenen Material
 
   Das Ausgangsmaterial war besonders – und gerade deshalb nicht so berechenbar wie frisch gekauftes Tonholz. Die Breite und Länge der vorhandenen Eichenstücke gaben vor, wie Boden, Zargen und Hals aufgebaut werden konnten. Einige Bauteile mussten mehrteilig entstehen. Die Konstruktion ist also nicht unabhängig vom Material entworfen worden; sie hat sich an dessen Möglichkeiten orientiert.
 
