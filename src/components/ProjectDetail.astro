@@ -565,6 +565,7 @@ style="display: block; width: 100%; height: auto; max-height: 76vh; object-fit: 
 
         let currentGroup = [];
         let currentIndex = 0;
+        let imageRequestId = 0;
 
         let swipeStartX = 0;
         let swipeStartY = 0;
@@ -597,8 +598,28 @@ style="display: block; width: 100%; height: auto; max-height: 76vh; object-fit: 
           const caption =
             trigger.dataset.lightboxCaption || '';
 
-          lightboxImage.src = src;
+          // Das vorherige Bild sofort ausblenden. Sonst bleibt dessen
+          // bereits geladener Bildinhalt sichtbar, bis die neue Datei geladen ist.
+          const requestId = ++imageRequestId;
+          lightboxImage.style.visibility = 'hidden';
+          lightboxImage.removeAttribute('src');
           lightboxImage.alt = alt;
+
+          lightboxImage.onload = () => {
+            if (requestId === imageRequestId) {
+              lightboxImage.style.visibility = 'visible';
+            }
+          };
+
+          lightboxImage.onerror = () => {
+            if (requestId === imageRequestId) {
+              lightboxImage.style.visibility = 'visible';
+            }
+          };
+
+          if (src) {
+            lightboxImage.src = src;
+          }
 
           lightboxCaption.textContent = caption;
           lightboxCaption.hidden =
@@ -772,6 +793,9 @@ style="display: block; width: 100%; height: auto; max-height: 76vh; object-fit: 
 
 
 lightbox.addEventListener('close', () => {
+imageRequestId++;
+lightboxImage.style.visibility = 'hidden';
+lightboxImage.removeAttribute('src');
 lightboxCaption.textContent = '';
 lightboxCaption.hidden = true;
 });
