@@ -1,11 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" role="img" aria-labelledby="title desc">
-<title id="title">Grosche Guitars Signet</title>
-<desc id="desc">Organisches G mit vier getrennten Gitarrensaiten.</desc>
-<g fill="none" stroke="#4B2A17" stroke-width="20" stroke-linecap="round" stroke-linejoin="round">
-<path d="M398 104 C315 108 254 143 242 197 C235 224 252 244 264 265 C276 288 264 310 239 331 C208 357 185 383 190 420 C197 474 280 514 397 527"/>
-<path d="M501 105 H654 V176"/>
-<path d="M501 307 H681 C637 323 610 344 610 382 V459 C584 492 544 518 501 527"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="300 35 330 410" role="img" aria-labelledby="title desc">
+<title id="title">Grosche Guitars – G-Signet</title>
+<desc id="desc">Organisches G mit exakt vier Gitarrensaiten.</desc>
+<g fill="none" stroke="#4B2A17" stroke-width="23" stroke-linecap="round" stroke-linejoin="round">
+<path d="M438 92 C376 94 337 119 331 157 C326 181 342 197 352 211 C363 226 354 246 335 261 C308 283 304 309 319 333 C337 362 379 379 438 382"/>
+<path d="M482 92 H590 V150"/>
+<path d="M482 229 H621 C587 238 567 251 567 276 V333 C548 359 516 376 482 382"/>
 </g>
-<g fill="none" stroke="#4B2A17" stroke-width="4.5" stroke-linecap="round">
-<path d="M410 56 V555"/><path d="M437 56 V555"/><path d="M464 56 V555"/><path d="M491 56 V555"/>
-</g></svg>
+<g fill="none" stroke="#4B2A17" stroke-width="5.1" stroke-linecap="round">
+<path d="M447 48 V425"/><path d="M462 48 V425"/><path d="M477 48 V425"/><path d="M492 48 V425"/>
+</g>
+</svg>
