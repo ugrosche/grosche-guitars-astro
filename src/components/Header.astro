@@ -5,7 +5,7 @@ const guitarsUrl = base + "/gitarren/";
 const processUrl = base + "/bauprozess/";
 const workshopUrl = base + "/werkstatt/";
 const aboutUrl = base + "/ueber-mich/";
-const logoUrl = base + "/brand/grosche-guitars-mark.svg";
+const logoUrl = base + "/brand/grosche-guitars-logo.svg";
 const pathname = Astro.url.pathname;
 const homeClass = pathname === homeUrl || pathname === homeUrl + "/" ? "active" : "";
 const guitarsClass = pathname.startsWith(guitarsUrl) ? "active" : "";
@@ -16,8 +16,7 @@ const aboutClass = pathname.startsWith(aboutUrl) ? "active" : "";
 <header class="site-header">
   <div class="site-header-inner">
     <a href={homeUrl} class="site-logo" aria-label="Grosche Guitars – Startseite">
-      <img src={logoUrl} alt="" class="site-logo-image" />
-      <span class="site-logo-wordmark">Grosche <span>Guitars</span></span>
+      <img src={logoUrl} alt="Grosche Guitars" class="site-logo-image" />
     </a>
     <nav class="site-nav" aria-label="Hauptnavigation">
       <a href={homeUrl} class={homeClass}>Startseite</a>
