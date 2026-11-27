@@ -1444,3 +1444,57 @@ main:not(.home) > h1 { font-family:Georgia,'Times New Roman',serif; font-size:cl
   .home-redesign { padding: 22px 18px 60px; }
   .home-branding h1 { font-size: clamp(2rem, 8vw, 2.8rem); }
 }
+
+
+/* Startseite: vertikale Fläche oberhalb des Gitarrenmotivs reduzieren */
+.site-header-inner {
+  min-height: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.site-logo-image {
+  width: 124px;
+  max-height: 80px;
+}
+.home-redesign {
+  padding-top: 16px;
+}
+.home-hero-centered {
+  padding-top: 8px;
+}
+.home-branding .eyebrow {
+  margin-bottom: 4px;
+}
+.home-branding h1 {
+  font-size: clamp(2rem, 3.8vw, 3.15rem);
+  line-height: 1.08;
+}
+.home-branding-subtitle {
+  margin-top: 5px;
+  font-size: clamp(1rem, 1.7vw, 1.2rem);
+}
+.home-branding-intro {
+  margin-top: 6px;
+  line-height: 1.5;
+}
+.home-hero-photo {
+  margin-top: 12px;
+}
+@media (max-width: 850px) {
+  .site-header-inner { min-height: 0; padding-top: 5px; padding-bottom: 5px; }
+  .site-logo-image { width: 112px; max-height: 72px; }
+  .home-redesign { padding-top: 12px; }
+  .home-hero-centered { padding-top: 6px; }
+  .home-hero-photo { margin-top: 10px; }
+}
+@media (max-width: 600px) {
+  .site-header-inner { padding: 5px 14px 7px; gap: 5px; }
+  .site-logo-image { width: 118px; max-height: 76px; }
+  .site-nav a { padding: 2px 0; }
+  .home-redesign { padding-top: 10px; }
+  .home-hero-centered { padding-top: 4px; }
+  .home-branding h1 { font-size: clamp(1.85rem, 7.5vw, 2.45rem); }
+  .home-branding-subtitle { margin-top: 4px; }
+  .home-branding-intro { margin-top: 5px; }
+  .home-hero-photo { margin-top: 8px; }
+}
