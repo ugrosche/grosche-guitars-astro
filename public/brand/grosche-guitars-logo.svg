@@ -1,15 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 590" role="img" aria-labelledby="title desc">
 <title id="title">Grosche Guitars</title>
-<desc id="desc">Das freigegebene elegante Grosche-Guitars-Zeichen: organisch geformtes G mit vier feinen Saiten und klassischem Schriftzug.</desc>
+<desc id="desc">Elegantes Grosche-Gitarrenlogo mit organischem G, vier Saiten und gut lesbarem Schriftzug.</desc>
 <g fill="none" stroke="#4B2A17" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke-width="18" d="M398 104 C315 108 254 143 242 197 C235 224 252 244 264 265 C276 288 264 310 239 331 C208 357 185 383 190 420 C197 474 280 514 397 527"/>
-  <path stroke-width="18" d="M501 105 H654 V176"/>
-  <path stroke-width="18" d="M501 307 H681 C637 323 610 344 610 382 V459 C584 492 544 518 501 527"/>
+  <!-- Organisch geformtes G: bewusst nahe an der freigegebenen Vorlage -->
+  <path stroke-width="23" d="M438 92
+    C376 94 337 119 331 157
+    C326 181 342 197 352 211
+    C363 226 354 246 335 261
+    C308 283 304 309 319 333
+    C337 362 379 379 438 382"/>
+  <path stroke-width="23" d="M482 92 H590 V150"/>
+  <path stroke-width="23" d="M482 229 H621
+    C587 238 567 251 567 276
+    V333
+    C548 359 516 376 482 382"/>
 </g>
-<g fill="none" stroke="#4B2A17" stroke-width="4" stroke-linecap="round">
-  <path d="M410 56 V555"/><path d="M437 56 V555"/><path d="M464 56 V555"/><path d="M491 56 V555"/>
+<!-- Vier separat definierte, gleichmäßig gesetzte Saiten -->
+<g fill="none" stroke="#4B2A17" stroke-width="5.1" stroke-linecap="round">
+  <path d="M447 48 V425"/>
+  <path d="M462 48 V425"/>
+  <path d="M477 48 V425"/>
+  <path d="M492 48 V425"/>
 </g>
-<text x="450" y="590" text-anchor="middle" fill="#4B2A17" font-family="Georgia, 'Times New Roman', serif" font-size="82" letter-spacing="12">GROSCHE</text>
-<path d="M205 625 H330 M570 625 H695" stroke="#4B2A17" stroke-width="2.5"/>
-<text x="450" y="634" text-anchor="middle" fill="#4B2A17" font-family="Georgia, 'Times New Roman', serif" font-size="23" letter-spacing="11">GUITARS</text>
+<text x="450" y="500" text-anchor="middle" fill="#4B2A17"
+ font-family="Georgia, 'Times New Roman', serif" font-size="91"
+ font-weight="normal" letter-spacing="13">GROSCHE</text>
+<path d="M175 555 H330 M570 555 H725" stroke="#4B2A17" stroke-width="2.7" fill="none"/>
+<text x="450" y="568" text-anchor="middle" fill="#4B2A17"
+ font-family="Georgia, 'Times New Roman', serif" font-size="31"
+ letter-spacing="15">GUITARS</text>
 </svg>
