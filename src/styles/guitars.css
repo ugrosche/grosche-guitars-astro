@@ -930,7 +930,7 @@ body { background: var(--color-background); }
 .site-header { position: relative; z-index: 5; border-bottom: 1px solid rgba(95,75,57,.18); background: rgba(243,239,231,.96); }
 .site-header-inner { max-width: 1320px; min-height: 84px; padding: 18px 34px; }
 .site-logo { gap: 12px; font-family: Georgia, 'Times New Roman', serif; font-size: 1.18rem; letter-spacing: .025em; }
-.site-logo-image { width: 34px; height: 34px; }
+.site-logo-image { width: 132px; height: auto; max-height: 92px; object-fit: contain; }
 .site-logo-wordmark > span { color: var(--color-accent); }
 .site-nav { gap: clamp(15px,2.3vw,34px); }
 .site-nav a { position: relative; padding: 9px 0; color: #554a40; font-size: .86rem; letter-spacing: .035em; }
