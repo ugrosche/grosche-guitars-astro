@@ -1233,3 +1233,160 @@ main:not(.home) > h1 { font-family:Georgia,'Times New Roman',serif; font-size:cl
   gap: .4rem;
   font-weight: 600;
 }
+
+
+/* Startseite – zentrierter Manufaktur-Einstieg mit sanftem Bildverlauf */
+.home-hero-centered {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+  padding: clamp(24px, 3.8vw, 48px) 0 0;
+  text-align: center;
+}
+.home-hero-centered::before {
+  position: absolute;
+  z-index: -1;
+  top: -30px;
+  right: 50%;
+  bottom: 0;
+  width: 100vw;
+  content: "";
+  transform: translateX(50%);
+  background: radial-gradient(ellipse at 50% 38%, #fffdf9 0%, #faf7f0 48%, #f3efe7 82%);
+}
+.home-branding {
+  width: min(100%, 900px);
+  margin: 0 auto;
+  padding: 0 18px;
+}
+.home-branding .eyebrow {
+  margin: 0 0 10px;
+  color: var(--color-accent);
+  letter-spacing: .19em;
+}
+.home-branding h1 {
+  margin: 0;
+  color: #30251d;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2.7rem, 6vw, 5rem);
+  font-weight: 400;
+  letter-spacing: -.045em;
+  line-height: 1.04;
+}
+.home-branding-subtitle {
+  margin: 12px 0 0;
+  color: #66594d;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(1.05rem, 2vw, 1.45rem);
+  font-style: italic;
+  line-height: 1.45;
+}
+.home-branding-intro {
+  max-width: 650px;
+  margin: 14px auto 0;
+  color: var(--color-muted);
+  font-size: .96rem;
+  line-height: 1.7;
+}
+.home-hero-photo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1220px;
+  margin: clamp(20px, 3vw, 34px) auto 0;
+  padding: 0;
+  background: radial-gradient(ellipse at center, #fffdf9 0%, #f7f2e9 66%, rgb(243 239 231 / 0%) 100%);
+}
+.home-hero-photo picture {
+  display: block;
+  width: 100%;
+  line-height: 0;
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 68%, rgb(0 0 0 / .96) 79%, transparent 100%);
+  mask-image: radial-gradient(ellipse at center, #000 68%, rgb(0 0 0 / .96) 79%, transparent 100%);
+}
+.home-hero-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  border-radius: 0;
+  object-fit: contain;
+}
+.home-entry-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: min(100%, 850px);
+  margin: clamp(12px, 2vw, 22px) auto 0;
+  border-top: 1px solid rgb(121 99 78 / 28%);
+  border-bottom: 1px solid rgb(121 99 78 / 28%);
+}
+.home-entry-link {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 112px;
+  padding: 18px 34px;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: background .2s ease, color .2s ease;
+}
+.home-entry-link + .home-entry-link {
+  border-left: 1px solid rgb(121 99 78 / 28%);
+}
+.home-entry-link:hover {
+  color: var(--color-accent-hover);
+  background: rgb(255 255 255 / 38%);
+}
+.home-entry-title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(1.55rem, 3vw, 2.15rem);
+  font-weight: 400;
+  line-height: 1.2;
+}
+.home-entry-description {
+  margin-top: 5px;
+  color: var(--color-muted);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.02rem;
+  font-style: italic;
+}
+.home-entry-arrow {
+  position: absolute;
+  right: 22px;
+  top: 50%;
+  color: var(--color-accent);
+  font-size: 1.15rem;
+  transform: translateY(-50%);
+}
+.home-intro-band {
+  margin-top: 82px;
+}
+@media (max-width: 850px) {
+  .home-hero-centered { padding-top: 18px; }
+  .home-branding h1 { font-size: clamp(2.55rem, 9vw, 4.1rem); }
+  .home-hero-photo { margin-top: 20px; }
+  .home-entry-links { width: min(100%, 720px); }
+}
+@media (max-width: 600px) {
+  .home-branding { padding: 0 4px; }
+  .home-branding .eyebrow { font-size: .64rem; letter-spacing: .14em; }
+  .home-branding-subtitle { max-width: 340px; margin: 10px auto 0; font-size: 1.02rem; }
+  .home-branding-intro { max-width: 360px; margin-top: 10px; font-size: .9rem; }
+  .home-hero-photo { width: calc(100% + 24px); margin-top: 14px; }
+  .home-hero-photo picture { -webkit-mask-image: radial-gradient(ellipse at center, #000 76%, transparent 100%); mask-image: radial-gradient(ellipse at center, #000 76%, transparent 100%); }
+  .home-entry-links { grid-template-columns: 1fr; margin-top: 8px; }
+  .home-entry-link { min-height: 86px; padding: 14px 34px; }
+  .home-entry-link + .home-entry-link { border-top: 1px solid rgb(121 99 78 / 28%); border-left: 0; }
+  .home-entry-title { font-size: 1.65rem; }
+  .home-entry-description { font-size: .96rem; }
+  .home-entry-arrow { right: 18px; }
+  .home-intro-band { margin-top: 62px; }
+}
