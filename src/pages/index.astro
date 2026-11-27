@@ -35,7 +35,18 @@ const processImage = processStep?.images?.[0]?.src ? imageFiles[processStep.imag
           <p class="hero-note">Eine private Gitarrenbauwerkstatt – dokumentiert mit Bildern, Ideen und Erfahrungen.</p>
         </div>
         <figure class="home-image redesign-hero-image">
-          <img src={base + "/images/home/hero.jpg"} alt="Gitarren aus der Werkstatt von Grosche Guitars" loading="eager" fetchpriority="high" />
+          {finishedImage ? (
+            <Image
+              src={finishedImage}
+              alt={featuredGuitar?.data.hero?.alt || featuredGuitar?.data.title || "Handgebaute Gitarre aus der Werkstatt von Grosche Guitars"}
+              widths={[700, 1000, 1400]}
+              sizes="(max-width: 850px) 100vw, 54vw"
+              loading="eager"
+              fetchpriority="high"
+            />
+          ) : (
+            <img src={base + "/images/home/hero.jpg"} alt="Gitarren aus der Werkstatt von Grosche Guitars" loading="eager" fetchpriority="high" />
+          )}
         </figure>
       </section>
 
