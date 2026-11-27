@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
-import { Image } from "astro:assets";
+import { Image, Picture } from "astro:assets";
+import heroImage from "../assets/images/home/hero.jpg";
 import "../styles/guitars.css";
 import Footer from "../components/Footer.astro";
 import Head from "../components/Head.astro";
@@ -23,20 +24,37 @@ const processImage = processStep?.images?.[0]?.src ? imageFiles[processStep.imag
   <body>
     <Header />
     <main class="home home-redesign">
-      <section class="home-hero redesign-hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Gitarrenbau · Handwerk · Leidenschaft</p>
-          <h1>Instrumente mit<br /><em>eigener Handschrift.</em></h1>
-          <p class="home-intro">Gitarren entstehen nicht von der Stange. Hier geht es um Holz, Konstruktion, Klang und den Weg vom ersten Entwurf bis zum fertigen Instrument.</p>
-          <div class="home-buttons">
-            <a href={guitarUrl} class="home-button">Gitarren entdecken <span aria-hidden="true">↗</span></a>
-            <a href={processUrl} class="home-button home-button-secondary">Einblicke in den Bau</a>
-          </div>
-          <p class="hero-note">Eine private Gitarrenbauwerkstatt – dokumentiert mit Bildern, Ideen und Erfahrungen.</p>
+      <section class="home-hero home-hero-centered">
+        <div class="home-branding">
+          <p class="eyebrow">Gitarrenbau · Design · Handwerk</p>
+          <h1>Handwerk mit eigener Handschrift</h1>
+          <p class="home-branding-subtitle">Eigenständiges Design und sorgfältig gebaute Instrumente</p>
+          <p class="home-branding-intro">Handgebaute Instrumente und Einblicke in den Weg vom ersten Entwurf bis zur fertigen Gitarre.</p>
         </div>
-        <figure class="home-image redesign-hero-image">
-          <img src={base + "/images/home/hero.jpg"} alt="Gitarren aus der Werkstatt von Grosche Guitars" loading="eager" fetchpriority="high" />
+        <figure class="home-image home-hero-photo">
+          <Picture
+            src={heroImage}
+            alt="Zwei von Grosche Guitars gebaute Instrumente: eine weiße E-Gitarre und eine naturfarbene akustische Gitarre"
+            formats={["avif", "webp"]}
+            widths={[640, 960, 1280, 1600, 1920]}
+            sizes="(max-width: 850px) 100vw, 1180px"
+            quality={92}
+            loading="eager"
+            fetchpriority="high"
+          />
         </figure>
+        <nav class="home-entry-links" aria-label="Einstieg">
+          <a class="home-entry-link" href={guitarUrl}>
+            <span class="home-entry-title">Gitarren</span>
+            <span class="home-entry-description">Unsere Instrumente</span>
+            <span class="home-entry-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="home-entry-link" href={processUrl}>
+            <span class="home-entry-title">Bauprozess</span>
+            <span class="home-entry-description">Von der Idee zur Gitarre</span>
+            <span class="home-entry-arrow" aria-hidden="true">↗</span>
+          </a>
+        </nav>
       </section>
 
       <section class="home-intro-band">
