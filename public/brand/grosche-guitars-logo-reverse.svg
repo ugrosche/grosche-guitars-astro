@@ -1,8 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 590" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="160 25 580 555" role="img" aria-labelledby="title desc">
 <title id="title">Grosche Guitars – Negativversion</title>
-<desc id="desc">Elegantes Grosche-Gitarrenlogo mit organischem G, vier Saiten und gut lesbarem Schriftzug.</desc>
+<desc id="desc">Das freigegebene Grosche-Gitarrenlogo: organisches G, vier Saiten und gut lesbarer Schriftzug.</desc>
 <g fill="none" stroke="#F4F0E8" stroke-linecap="round" stroke-linejoin="round">
-  <!-- Organisch geformtes G: bewusst nahe an der freigegebenen Vorlage -->
   <path stroke-width="23" d="M438 92
     C376 94 337 119 331 157
     C326 181 342 197 352 211
@@ -15,7 +14,6 @@
     V333
     C548 359 516 376 482 382"/>
 </g>
-<!-- Vier separat definierte, gleichmäßig gesetzte Saiten -->
 <g fill="none" stroke="#F4F0E8" stroke-width="5.1" stroke-linecap="round">
   <path d="M447 48 V425"/>
   <path d="M462 48 V425"/>
@@ -27,6 +25,6 @@
  font-weight="normal" letter-spacing="13">GROSCHE</text>
 <path d="M175 555 H330 M570 555 H725" stroke="#F4F0E8" stroke-width="2.7" fill="none"/>
 <text x="450" y="568" text-anchor="middle" fill="#F4F0E8"
- font-family="Georgia, 'Times New Roman', serif" font-size="31"
- letter-spacing="15">GUITARS</text>
+ font-family="Georgia, 'Times New Roman', serif" font-size="38"
+ letter-spacing="13">GUITARS</text>
 </svg>
