@@ -928,9 +928,9 @@ figcaption,
 }
 body { background: var(--color-background); }
 .site-header { position: relative; z-index: 5; border-bottom: 1px solid rgba(95,75,57,.18); background: rgba(243,239,231,.96); }
-.site-header-inner { max-width: 1320px; min-height: 168px; padding: 9px 34px; }
+.site-header-inner { max-width: 1320px; min-height: 218px; padding: 8px 34px; }
 .site-logo { gap: 12px; font-family: Georgia, 'Times New Roman', serif; font-size: 1.18rem; letter-spacing: .025em; }
-.site-logo-image { width: 230px; height: auto; max-height: 150px; object-fit: contain; }
+.site-logo-image { width: 205px; height: auto; max-height: 205px; object-fit: contain; }
 .site-logo-wordmark > span { color: var(--color-accent); }
 .site-nav { gap: clamp(15px,2.3vw,34px); }
 .site-nav a { position: relative; padding: 9px 0; color: #554a40; font-size: .86rem; letter-spacing: .035em; }
@@ -1011,7 +1011,7 @@ main:not(.home) > h1 { font-family:Georgia,'Times New Roman',serif; font-size:cl
 }
 @media (max-width:600px) {
  .site-header-inner { flex-direction:column; align-items:flex-start; gap:12px; padding:12px 18px; min-height:0; }
- .site-logo-image { width:190px; max-height:124px; }
+ .site-logo-image { width:180px; max-height:180px; }
  .site-nav { width:100%; flex-wrap:wrap; gap:5px 19px; }
  .site-nav a { padding:7px 0; font-size:.82rem; }
  .home-redesign { padding:28px 18px 60px; }
