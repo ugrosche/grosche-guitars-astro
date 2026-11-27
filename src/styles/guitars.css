@@ -600,8 +600,9 @@ figcaption,
 }
 
 .site-logo-image {
-  width: 32px;
-  height: 34px;
+  width: 176px;
+  height: auto;
+  max-height: 126px;
   display: block;
   object-fit: contain;
 }
